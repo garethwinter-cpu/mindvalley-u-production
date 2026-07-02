@@ -1,0 +1,72 @@
+import type { Person } from './types'
+
+export const PEOPLE: Person[] = [
+  // ---- Production team ----
+  { id: 'gareth', name: 'Gareth Winter', role: 'exec', title: 'Creative Director & Head of Content' },
+  { id: 'khairul', name: 'Khairul Johari', role: 'crew', title: 'Head of Film Production' },
+  { id: 'nadir', name: 'Nadir Salam', role: 'crew', title: 'Production Lead' },
+  { id: 'kuhan', name: 'Kuhan Kunasegaran', role: 'crew', title: 'Senior Video Editor & Videographer' },
+  { id: 'jason', name: 'Jason Roper', role: 'crew', title: 'Video Editor (remote)', remote: true },
+  { id: 'meng', name: 'Meng', role: 'photographer', title: 'Photographer' },
+  { id: 'karen', name: 'Karen', role: 'photographer', title: 'Photographer' },
+  { id: 'mardo', name: 'Mardo', role: 'photographer', title: 'Photographer' },
+  { id: 'still-frame', name: 'Still Frame', role: 'partner', title: 'Estonian production co — stage record & broadcast' },
+
+  // ---- Author relations (roster incomplete) ----
+  { id: 'illiana', name: 'Illiana', role: 'author-relations', title: 'Author Relations' },
+  { id: 'mireille', name: 'Mireille', role: 'author-relations', title: 'Author Relations' },
+
+  // ---- Speakers (window = in-Estonia dates from Speaker DATES) ----
+  { id: 'vishen', name: 'Vishen Lakhiani', role: 'speaker', title: 'CEO, Mindvalley', window: { from: '2026-07-20', to: '2026-08-02' } },
+  { id: 'ailey-jolie', name: 'Ailey Jolie', role: 'speaker', window: { from: '2026-08-03', to: '2026-08-03' } },
+  { id: 'cynthia-thurlow', name: 'Cynthia Thurlow', role: 'speaker', window: { from: '2026-07-21', to: '2026-07-23' } },
+  { id: 'dan-brule', name: 'Dan Brulé', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-28' } },
+  { id: 'daniel-priestley', name: 'Daniel Priestley', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-22' } },
+  { id: 'dawn-hoang', name: 'Dawn Hoang', role: 'speaker', window: { from: '2026-07-17', to: '2026-08-03' } },
+  { id: 'jolene-brighten', name: 'Dr. Jolene Brighten', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-29' } },
+  { id: 'scott-lyon', name: 'Dr. Scott Lyon', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-24' } },
+  { id: 'eric-edmeades', name: 'Eric Edmeades', role: 'speaker', window: { from: '2026-07-20', to: '2026-08-02' } },
+  { id: 'fuckup-nights', name: 'Fuckup Nights', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-29' } },
+  { id: 'fumiko-takatsu', name: 'Fumiko Takatsu', role: 'speaker', window: { from: '2026-07-25', to: '2026-08-05' } },
+  { id: 'jade-shaw', name: 'Jade Shaw', role: 'speaker', window: { from: '2026-07-21', to: '2026-07-21' } },
+  { id: 'jeffrey-allen', name: 'Jeffrey Allen', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-26' } },
+  { id: 'jim-kwik', name: 'Jim Kwik', role: 'speaker', window: { from: '2026-07-28', to: '2026-08-02' } },
+  { id: 'john-lee', name: 'John Lee', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-22' } },
+  { id: 'john-wineland', name: 'John Wineland', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-26' } },
+  { id: 'kristina', name: 'Kristina Mand-Lakhiani', role: 'speaker', window: { from: '2026-07-20', to: '2026-08-02' } },
+  { id: 'lee-holden', name: 'Lee Holden', role: 'speaker', window: { from: '2026-07-23', to: '2026-08-02' } },
+  { id: 'lorin-krenn', name: 'Lorin Krenn', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-29' } },
+  { id: 'marisa-peer', name: 'Marisa Peer', role: 'speaker', window: { from: '2026-07-21', to: '2026-08-02' } },
+  { id: 'maya-raichoora', name: 'Maya Raichoora', role: 'speaker', window: { from: '2026-07-26', to: '2026-08-02' } },
+  { id: 'natalie-ellis', name: 'Natalie Ellis', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-24' } },
+  { id: 'nick-santonastasso', name: 'Nick Santonastasso', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-31' } },
+  { id: 'paul-mckenna', name: 'Paul McKenna', role: 'speaker', window: { from: '2026-07-27', to: '2026-07-31' } },
+  { id: 'rachel-pringle', name: 'Rachel Pringle', role: 'speaker', window: { from: '2026-07-29', to: '2026-08-01' } },
+  { id: 'regan-hillyer', name: 'Regan Hillyer', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-26' } },
+  { id: 'zen-takai', name: 'Sensei Zen Takai', role: 'speaker', window: { from: '2026-07-24', to: '2026-07-30' } },
+  { id: 'sheleana-aiyana', name: 'Sheleana Aiyana', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-22' } },
+  { id: 'shi-heng-yi', name: 'Shi Heng Yi', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-28' } },
+  { id: 'simon-ong', name: 'Simon Alexander Ong', role: 'speaker', window: { from: '2026-07-18', to: '2026-07-23' } },
+  // On the agenda but NOT on Speaker DATES (window unknown):
+  { id: 'hal-elrod', name: 'Hal Elrod', role: 'speaker' },
+  { id: 'maria-wendt', name: 'Maria Wendt', role: 'speaker' },
+  { id: 'jamie-sea', name: 'Jamie Sea', role: 'speaker' },
+  { id: 'jeremy-harbour', name: 'Jeremy Harbour', role: 'speaker' },
+  { id: 'robert-grant', name: 'Robert Grant', role: 'speaker' },
+  { id: 'zen-samurai', name: 'Zen Samurai', role: 'speaker' },
+]
+
+export const person = (id: string): Person => {
+  const p = PEOPLE.find((x) => x.id === id)
+  if (!p) throw new Error(`Unknown person: ${id}`)
+  return p
+}
+
+export const initials = (name: string) =>
+  name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join('')
+    .toUpperCase()
