@@ -10,7 +10,8 @@ function DayCard({ day, onOpen }: { day: DayMeta; onOpen: (date: string) => void
       CHIP_PRIORITY.indexOf(a.type as (typeof CHIP_PRIORITY)[number]) -
       CHIP_PRIORITY.indexOf(b.type as (typeof CHIP_PRIORITY)[number]),
   )
-  const shown = sorted.filter((e) => (CHIP_PRIORITY as readonly string[]).includes(e.type)).slice(0, 5)
+  const prioritized = sorted.filter((e) => (CHIP_PRIORITY as readonly string[]).includes(e.type))
+  const shown = (prioritized.length > 0 ? prioritized : sorted).slice(0, 5)
   const hidden = events.length - shown.length
   const conflicts = events.filter((e) => e.status === 'conflict').length
   const isToday = day.date === new Date().toISOString().slice(0, 10)
