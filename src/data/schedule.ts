@@ -37,13 +37,12 @@ export const EVENTS: ScheduleEvent[] = [
     date: '2026-07-06',
     start: '19:00',
     end: '20:30',
-    title: 'Daniel Priestley — accelerator webinar (Zoom, remote)',
-    type: 'production',
+    title: 'Daniel Priestley — accelerator webinar (Zoom, self-hosted)',
+    type: 'logistics',
     location: 'Remote — Zoom',
     speakers: ['daniel-priestley'],
-    status: 'tentative',
     notes:
-      '5pm London = 7pm Tallinn. 90 min: hook 10 / big idea 18 / principles 24 / journey 10 / soft CTA 6 / Q&A 22. Confirm whether our team produces this or Daniel self-hosts.',
+      'Handled — no crew required. 5pm London = 7pm Tallinn, 90 min. Funnel webinar driving signups to the 18–19 Jul intensive.',
   },
   {
     id: 'regan-webinar',
@@ -286,13 +285,6 @@ export const CONFLICTS: Conflict[] = [
     title: 'Regan Accelerator timing: microsite (5–8pm / 5–9pm) vs detailed agenda (9am–4pm)',
     detail:
       'Customer-facing microsite sells evenings; internal detailed agenda says daytime. Day 2 running to 9pm also collides with her listed departure day (26 Jul). Resolve before crew scheduling.',
-  },
-  {
-    id: 'c-priestley-webinar-owner',
-    severity: 'medium',
-    title: 'Priestley webinar (Mon 6 Jul, 5pm London, Zoom) — 4 days away',
-    detail:
-      'Remote Zoom webinar per his microsite. Confirm whether Gareth’s team produces it or Daniel self-hosts, and whether any capture/edit is owed.',
   },
   {
     id: 'c-priestley-format',
