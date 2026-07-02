@@ -7,8 +7,9 @@ export const EXPERIENCE = 'Experience Stage (Stalker Hall)'
 export const VENUE = 'Kultuurikatel, Tallinn'
 
 export const DAYS: DayMeta[] = [
-  { date: '2026-07-16', label: 'Thu 16 Jul', theme: 'Pre-event — Production kickoff', week: 0 },
-  { date: '2026-07-17', label: 'Fri 17 Jul', theme: 'Pre-event', week: 0 },
+  { date: '2026-07-06', label: 'Mon 6 Jul', theme: 'Pre-sprint — remote', week: 0 },
+  { date: '2026-07-16', label: 'Thu 16 Jul', theme: 'Pre-event', week: 0 },
+  { date: '2026-07-17', label: 'Fri 17 Jul', theme: 'Pre-event — Production kickoff', week: 0 },
   { date: '2026-07-18', label: 'Sat 18 Jul', theme: 'Pre-event', week: 0 },
   { date: '2026-07-19', label: 'Sun 19 Jul', theme: 'Pre-event', week: 0 },
   { date: '2026-07-20', label: 'Mon 20 Jul', theme: 'Opening', week: 1, noInterviews: true },
@@ -32,36 +33,52 @@ const CREW_CORE = ['khairul', 'nadir', 'kuhan']
 export const EVENTS: ScheduleEvent[] = [
   // ================= PRE-EVENT =================
   {
-    id: 'regan-webinar',
-    date: '2026-07-16',
-    title: 'Regan Hillyer — webinar shoot',
+    id: 'priestley-webinar',
+    date: '2026-07-06',
+    start: '19:00',
+    end: '20:30',
+    title: 'Daniel Priestley — accelerator webinar (Zoom, remote)',
     type: 'production',
+    location: 'Remote — Zoom',
+    speakers: ['daniel-priestley'],
+    status: 'tentative',
+    notes:
+      '5pm London = 7pm Tallinn. 90 min: hook 10 / big idea 18 / principles 24 / journey 10 / soft CTA 6 / Q&A 22. Confirm whether our team produces this or Daniel self-hosts.',
+  },
+  {
+    id: 'regan-webinar',
+    date: '2026-07-17',
+    title: 'Regan Hillyer — The Wealth Code masterclass (remote delivery)',
+    type: 'production',
+    location: 'Remote — Regan delivers remotely',
     speakers: ['regan-hillyer'],
     crew: CREW_CORE,
     gareth: true,
-    status: 'conflict',
+    status: 'tentative',
     notes:
-      'First production of the sprint. CONFLICT: Speaker DATES lists Regan in Estonia 19–26 Jul. Location for this shoot unconfirmed.',
+      'First production of the sprint. 1 hour: 40 min teaching + 20 min Q&A. Start time TBD — confirm and lock the remote-capture setup.',
   },
   {
     id: 'priestley-accel-1',
     date: '2026-07-18',
-    title: 'Daniel Priestley Accelerator — day 1',
+    title: 'Daniel Priestley Accelerator — day 1: Getting Oversubscribed (4h)',
     type: 'accelerator',
-    location: VENUE,
+    location: 'Remote + streamed',
     speakers: ['daniel-priestley'],
-    status: 'conflict',
-    notes: 'On the agenda 18–19 Jul, but his Speaker DATES window is 20–22 Jul. Times unspecified.',
+    status: 'tentative',
+    notes:
+      'Per Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales.',
   },
   {
     id: 'priestley-accel-2',
     date: '2026-07-19',
-    title: 'Daniel Priestley Accelerator — day 2',
+    title: 'Daniel Priestley Accelerator — day 2: Your 12-Month Customer Engine (4h)',
     type: 'accelerator',
-    location: VENUE,
+    location: 'Remote + streamed',
     speakers: ['daniel-priestley'],
-    status: 'conflict',
-    notes: 'See day 1 — window conflict unresolved.',
+    status: 'tentative',
+    notes:
+      'Remote delivery per Gareth. Sessions: Three-Part Year / Short-Long-Lead Form / Telegraph Capacity / Build 12-Month Calendar live. Start time TBD.',
   },
 
   // ================= MON 20 JUL — OPENING =================
@@ -161,30 +178,34 @@ export const EVENTS: ScheduleEvent[] = [
   {
     id: 'regan-accel-1',
     date: '2026-07-25',
-    start: '09:00',
-    end: '16:00',
-    title: 'Regan Wealth Accelerator — day 1',
+    start: '17:00',
+    end: '20:00',
+    title: 'Regan Wealth Code Accelerator — day 1: See It & Clear It (3h)',
     type: 'accelerator',
     location: MAIN_STAGE,
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
-    notes: 'Detailed agenda: 9AM–4PM (overview tab wrongly shows evening).',
+    status: 'conflict',
+    notes:
+      'TIME CONFLICT: microsite says 5–8pm; detailed agenda says 9AM–4PM. Microsite session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling. Confirm which timing is real.',
   },
   { id: 'jul25-eric', date: '2026-07-25', start: '11:00', end: '12:00', title: 'Eric Edmeades', type: 'stage-talk', location: MAIN_STAGE, speakers: ['eric-edmeades'], status: 'tentative' },
   { id: 'jul25-opening-party', date: '2026-07-25', start: '20:30', end: '02:00', title: 'Opening Party — Marvelous Wonderland', type: 'social' },
   {
     id: 'regan-accel-2',
     date: '2026-07-26',
-    start: '09:00',
-    end: '16:00',
-    title: 'Regan Wealth Accelerator — day 2',
+    start: '17:00',
+    end: '21:00',
+    title: 'Regan Wealth Code Accelerator — day 2: Become It & Activate It (4h)',
     type: 'accelerator',
     location: MAIN_STAGE,
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
-    notes: 'Regan departs Estonia this day per Speaker DATES — tight.',
+    status: 'conflict',
+    notes:
+      'TIME CONFLICT: microsite says 5–9pm; detailed agenda says 9AM–4PM. She departs Estonia this day per Speaker DATES — an evening run to 9pm makes that departure impossible. Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
   },
 
   // ================= MON 27 JUL — HEALING =================
@@ -260,17 +281,25 @@ export const EVENTS: ScheduleEvent[] = [
 
 export const CONFLICTS: Conflict[] = [
   {
-    id: 'c-regan-16',
+    id: 'c-regan-accel-time',
     severity: 'high',
-    title: 'Regan webinar shoot (16 Jul) vs her Estonia window (19–26 Jul)',
+    title: 'Regan Accelerator timing: microsite (5–8pm / 5–9pm) vs detailed agenda (9am–4pm)',
     detail:
-      'First shoot of the sprint contradicts Speaker DATES. Confirm shoot location: studio elsewhere, remote, or early arrival.',
+      'Customer-facing microsite sells evenings; internal detailed agenda says daytime. Day 2 running to 9pm also collides with her listed departure day (26 Jul). Resolve before crew scheduling.',
   },
   {
-    id: 'c-priestley-accel',
-    severity: 'high',
-    title: 'Priestley Accelerator (18–19 Jul) vs his window (20–22 Jul)',
-    detail: 'Accelerator scheduled before he lands per Speaker DATES. One of the two is wrong.',
+    id: 'c-priestley-webinar-owner',
+    severity: 'medium',
+    title: 'Priestley webinar (Mon 6 Jul, 5pm London, Zoom) — 4 days away',
+    detail:
+      'Remote Zoom webinar per his microsite. Confirm whether Gareth’s team produces it or Daniel self-hosts, and whether any capture/edit is owed.',
+  },
+  {
+    id: 'c-priestley-format',
+    severity: 'low',
+    title: 'Priestley Accelerator format: remote (per Gareth) vs “live in-person + streamed” (microsite)',
+    detail:
+      'Gareth says remote delivery, resolving the old window conflict (his Speaker DATES arrival is 20 Jul). Microsite still bills in-person — confirm final format and streaming setup for 18–19 Jul.',
   },
   {
     id: 'c-podcast-none',
@@ -328,8 +357,8 @@ export const CONFLICTS: Conflict[] = [
 export const BACKLOG: BacklogItem[] = [
   { id: 'b-superbrain', title: 'Jim Kwik — Superbrain masterclass', format: 'masterclass', speakers: ['jim-kwik'], constraint: 'Must shoot Jul 28–Aug 2 (his window), avoiding Jul 30 (his stage day).' },
   { id: 'b-duality', title: 'Jeffrey Allen — Duality masterclass', format: 'masterclass', speakers: ['jeffrey-allen'], constraint: 'Window Jul 19–26; his stage day is Jul 22.' },
-  { id: 'b-art-manifesting', title: 'Regan Hillyer — Art of Manifesting masterclass', format: 'masterclass', speakers: ['regan-hillyer'], constraint: 'Window Jul 19–26; accelerator Jul 25–26, stage Jul 22.' },
-  { id: 'b-accel-rec-priestley', title: 'Accelerator recording — Daniel Priestley', format: 'accelerator-recording', speakers: ['daniel-priestley'], constraint: 'Accelerator dates conflict with his window — resolve first.' },
+  { id: 'b-art-manifesting', title: 'Regan Hillyer — Art of Manifesting masterclass', format: 'masterclass', speakers: ['regan-hillyer'], constraint: 'Her Wealth Code masterclass is scheduled 17 Jul (remote). Confirm whether Art of Manifesting is the same deliverable or a separate shoot (window 19–26 Jul).' },
+  { id: 'b-accel-rec-priestley', title: 'Accelerator recording — Daniel Priestley', format: 'accelerator-recording', speakers: ['daniel-priestley'], constraint: 'Remote delivery 18–19 Jul — capture is stream-record; confirm who owns the recording chain.' },
   { id: 'b-accel-rec-regan', title: 'Accelerator recording — Regan Hillyer', format: 'accelerator-recording', speakers: ['regan-hillyer'], constraint: 'Jul 25–26, 9am–4pm, Main Stage.' },
   { id: 'b-accel-rec-vishen', title: 'Accelerator recording — Vishen AI Accelerator', format: 'accelerator-recording', speakers: ['vishen'], constraint: 'Aug 1, 11am–6pm, Main Stage.' },
   { id: 'b-podcasts', title: 'Podcast episodes — Vishen + key authors', format: 'podcast', speakers: ['vishen'], constraint: 'Viable days (per NO INTERVIEWS markers): Jul 21, 22, 29, 30 only. Guest list TBD.' },

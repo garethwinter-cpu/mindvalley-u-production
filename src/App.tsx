@@ -9,7 +9,7 @@ type Tab = 'overview' | 'day' | 'people' | 'alerts'
 
 function daysToKickoff(): string {
   const now = new Date()
-  const kickoff = new Date('2026-07-16T09:00:00+03:00')
+  const kickoff = new Date('2026-07-17T09:00:00+03:00')
   const wrap = new Date('2026-08-02T23:59:00+03:00')
   if (now > wrap) return 'Wrapped'
   if (now >= kickoff) return 'In production'
@@ -19,7 +19,7 @@ function daysToKickoff(): string {
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('overview')
-  const [day, setDay] = useState('2026-07-16')
+  const [day, setDay] = useState('2026-07-17')
 
   const openDay = (date: string) => {
     setDay(date)
@@ -46,7 +46,7 @@ export default function App() {
             Alerts ({CONFLICTS.length})
           </button>
         </nav>
-        <div className="mv-countdown">{daysToKickoff()} · First shoot 16 Jul</div>
+        <div className="mv-countdown">{daysToKickoff()} · First shoot 17 Jul</div>
       </header>
       <main className="mv-page">
         {tab === 'overview' && <Overview onOpenDay={openDay} />}
