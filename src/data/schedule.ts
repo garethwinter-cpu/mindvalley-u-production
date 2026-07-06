@@ -485,9 +485,9 @@ export const ACTIONS: ActionItem[] = [
     id: 'ch-locations',
     kind: 'chase',
     owner: 'production',
-    title: 'Lock locations: portraits + shoot rooms at Kultuurikatel',
+    title: 'Lock remaining locations: portraits + any on-venue capture rooms',
     detail:
-      'All 13 portrait sessions have no location, and the podcast/interview/masterclass rooms are unassigned. Needs venue answers from Still Frame / events team: which rooms are ours, which days.',
+      'RESOLVED for premium productions: podcasts, masterclasses and author interviews shoot at Energiakeskus Studio, Tallinn. Still open: locations for the 13 portrait sessions (venue-side, with Meng/Karen/Mardo) and any Kultuurikatel rooms needed for event-day pickups.',
     due: '2026-07-13',
   },
 ]

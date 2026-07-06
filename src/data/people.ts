@@ -19,7 +19,7 @@ export const PEOPLE: Person[] = [
   { id: 'karen', name: 'Karen', role: 'photographer', title: 'Photographer' },
   { id: 'mardo', name: 'Mardo', role: 'photographer', title: 'Photographer' },
   { id: 'still-frame', name: 'Still Frame', role: 'partner', title: 'Estonian production co — stage record & broadcast' },
-  { id: 'kaitlin', name: "Kaitlin O'Toole", role: 'crew', title: 'Author Interviews host' },
+  { id: 'kaitlin', name: "Kaitlin O'Toole", role: 'crew', title: 'Author Interviews host (backup: Gareth)' },
 
   // ---- Author relations (roster incomplete) ----
   { id: 'illiana', name: 'Illiana', role: 'author-relations', title: 'Author Relations' },

@@ -1,12 +1,18 @@
+import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
-import { StatusBadge, TypeBadge, fmtTime, requiredPeople } from '../ui'
+import { StatusBadge, TypeBadge, fmtTime, involvesPerson, requiredPeople } from '../ui'
 import { PersonLink } from '../profile'
+import { PEOPLE } from '../data/people'
 
 export default function DayView({ date, onPick }: { date: string; onPick: (d: string) => void }) {
+  const [who, setWho] = useState('all')
   const day = DAYS.find((d) => d.date === date) ?? DAYS[0]
-  const events = EVENTS.filter((e) => e.date === day.date).sort((a, b) =>
-    (a.start ?? '00:00').localeCompare(b.start ?? '00:00'),
-  )
+  const events = EVENTS.filter((e) => e.date === day.date)
+    .filter((e) => who === 'all' || involvesPerson(e, who))
+    .sort((a, b) => (a.start ?? '00:00').localeCompare(b.start ?? '00:00'))
+
+  const speakers = PEOPLE.filter((p) => p.role === 'speaker')
+  const team = PEOPLE.filter((p) => p.role !== 'speaker')
 
   return (
     <div>
@@ -28,8 +34,38 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
         ))}
       </div>
 
+      <div className="who-filter">
+        <label htmlFor="who">Filter by person</label>
+        <select id="who" value={who} onChange={(e) => setWho(e.target.value)}>
+          <option value="all">Everyone</option>
+          <optgroup label="Team">
+            {team.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+              </option>
+            ))}
+          </optgroup>
+          <optgroup label="Authors">
+            {speakers.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+              </option>
+            ))}
+          </optgroup>
+        </select>
+        {who !== 'all' && (
+          <button className="mv-btn-secondary" onClick={() => setWho('all')}>
+            Clear
+          </button>
+        )}
+      </div>
+
       <div className="evt-list">
-        {events.length === 0 && <div className="empty">Nothing scheduled. Recovery day — or an opportunity.</div>}
+        {events.length === 0 && (
+          <div className="empty">
+            {who === 'all' ? 'Nothing scheduled. Recovery day — or an opportunity.' : 'Nothing for this person today.'}
+          </div>
+        )}
         {events.map((e) => {
           const req = requiredPeople(e)
           return (

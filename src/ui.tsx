@@ -61,3 +61,8 @@ export function involvesPerson(e: ScheduleEvent, id: string): boolean {
   if (id === 'vishen' && e.vishen) return true
   return (e.speakers ?? []).includes(id) || (e.crew ?? []).includes(id)
 }
+
+/** Our content productions vs locked event commitments */
+export function isOurProduction(e: ScheduleEvent): boolean {
+  return e.type === 'production' || e.type === 'podcast' || (e.type === 'accelerator' && e.id.startsWith('accel-rec'))
+}
