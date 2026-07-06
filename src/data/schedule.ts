@@ -1,4 +1,4 @@
-import type { BacklogItem, Conflict, DayMeta, ScheduleEvent } from './types'
+import type { ActionItem, BacklogItem, Conflict, DayMeta, ScheduleEvent } from './types'
 import { PRODUCTION_EVENTS } from './productions'
 
 export const MAIN_STAGE = 'Main Stage (Black Box)'
@@ -367,6 +367,128 @@ export const CONFLICTS: Conflict[] = [
     severity: 'low',
     title: 'Author-relations roster incomplete',
     detail: 'Illiana and Mireille named; remaining team members to be added.',
+  },
+]
+
+export const ACTIONS: ActionItem[] = [
+  // ---- ⛔ Physically impossible as the data stands ----
+  {
+    id: 'a-sheleana',
+    kind: 'impossible',
+    owner: 'author-relations',
+    title: 'Sheleana Aiyana: 1-day window vs 2 stage days',
+    detail:
+      'Speaker DATES says she is in Tallinn 22 Jul ONLY. The locked event agenda has her on stage 27 + 28 Jul, and her interview is pencilled 28 Jul. Both cannot be true — confirm her real arrival/departure dates.',
+    due: '2026-07-09',
+    people: ['sheleana-aiyana'],
+  },
+  {
+    id: 'a-jade',
+    kind: 'impossible',
+    owner: 'author-relations',
+    title: 'Jade Shaw: 1-day window vs Cauldron session on 23 Jul',
+    detail:
+      'Speaker DATES lists 21 Jul only; agenda gives her a 90-min Cauldron session 23 Jul. Her interview + full asset suite are squeezed into 21 Jul on that basis. Confirm her true dates — if she stays to the 23rd, her shoots get room to breathe.',
+    due: '2026-07-09',
+    people: ['jade-shaw'],
+  },
+  {
+    id: 'a-regan-accel',
+    kind: 'impossible',
+    owner: 'author-relations',
+    title: 'Regan: accelerator to 9pm on 26 Jul vs departing 26 Jul',
+    detail:
+      'Her microsite sells day 2 as 5–9pm on 26 Jul; Speaker DATES has her departing that day; the detailed agenda says 9am–4pm. All three cannot be true. Confirm accelerator hours AND her departure. Crew scheduling for the weekend is blocked on this.',
+    due: '2026-07-10',
+    people: ['regan-hillyer'],
+  },
+
+  // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
+  {
+    id: 'p-priestley-cut',
+    kind: 'proposal',
+    owner: 'gareth',
+    title: 'Cut Priestley’s membership asset shoot to 45 min (or drop it)',
+    detail:
+      '22 Jul is his departure day and already carries his podcast + interview. The membership record has a “(?)” in its own title. Recommendation: keep podcast + interview sacred, shoot 45 min of membership essentials only if he offers the time.',
+    people: ['daniel-priestley'],
+  },
+  {
+    id: 'p-vishen-split',
+    kind: 'proposal',
+    owner: 'gareth',
+    title: 'Move Hal Elrod + Jamie Sea podcasts from 30 Jul to 2 Aug morning',
+    detail:
+      '30 Jul currently gives Vishen four podcasts back-to-back before the Kwik fireside, a stage slot and portraits. He will be flat by episode three. 2 Aug morning is free for him — contingent on Hal and Jamie still being in town (windows unknown, see chase list).',
+    people: ['vishen', 'hal-elrod', 'jamie-sea'],
+  },
+  {
+    id: 'p-marisa-move',
+    kind: 'proposal',
+    owner: 'gareth',
+    title: 'Move Marisa’s masterclass + assets from 2 Aug to 31 Jul',
+    detail:
+      'Wrap day carries seven shoots with zero slack. Marisa is in town on 31 Jul, Vishen is not needed for her masterclass, and the closing ceremony is Still Frame’s capture. Moving her to 31 Jul (10:00–13:00 + 14:00–15:30) takes wrap day to five shoots.',
+    people: ['marisa-peer'],
+  },
+
+  // ---- 📋 Author-relations chase list ----
+  {
+    id: 'ch-flights',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Flight times for the six departure-day shoots',
+    detail:
+      'Shoots are scheduled on the departure day of: Daniel Priestley + John Lee (22 Jul), John Wineland + Jeffrey Allen accel day 2 (26 Jul), Dr. Jolene Brighten (29 Jul), Rachel Pringle (1 Aug), Jim Kwik (2 Aug). Exact flight times decide whether each slot survives.',
+    due: '2026-07-11',
+    people: ['daniel-priestley', 'john-lee', 'john-wineland', 'jeffrey-allen', 'jolene-brighten', 'rachel-pringle', 'jim-kwik'],
+  },
+  {
+    id: 'ch-windows',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Arrival/departure dates for four scheduled authors',
+    detail:
+      'Hal Elrod, Maria Wendt, Jamie Sea and Jeremy Harbour are on the event agenda and have shoots scheduled — but are not on Speaker DATES at all. Their podcast/interview slots (29–30 Jul) are guesses until their travel is on file.',
+    due: '2026-07-11',
+    people: ['hal-elrod', 'maria-wendt', 'jamie-sea', 'jeremy-harbour'],
+  },
+  {
+    id: 'ch-regan-webinar-time',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Regan webinar start time — 17 Jul, FIRST SHOOT of the sprint',
+    detail:
+      'The Wealth Code masterclass (remote delivery) has a date but no start time. It is the production kickoff; the crew call, remote-capture setup and Slack pings all hang on this one number.',
+    due: '2026-07-08',
+    people: ['regan-hillyer'],
+  },
+  {
+    id: 'ch-shy-landing',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Shi Heng Yi landing time on 26 Jul',
+    detail: 'His podcast is 10:00 and interview 15:15 on his arrival day. If he lands after ~08:30, the podcast moves.',
+    due: '2026-07-11',
+    people: ['shi-heng-yi'],
+  },
+  {
+    id: 'ch-no-interviews',
+    kind: 'chase',
+    owner: 'production',
+    title: 'Confirm the NO INTERVIEWS rule scope',
+    detail:
+      'The event agenda marks 20, 23, 24, 27, 28, 31 Jul as NO INTERVIEWS. The schedule assumes it binds our podcasts/interviews too. If it only covers external press, four extra days open up and the 29–30 Jul crush relaxes.',
+    due: '2026-07-10',
+  },
+  {
+    id: 'ch-locations',
+    kind: 'chase',
+    owner: 'production',
+    title: 'Lock locations: portraits + shoot rooms at Kultuurikatel',
+    detail:
+      'All 13 portrait sessions have no location, and the podcast/interview/masterclass rooms are unassigned. Needs venue answers from Still Frame / events team: which rooms are ours, which days.',
+    due: '2026-07-13',
   },
 ]
 

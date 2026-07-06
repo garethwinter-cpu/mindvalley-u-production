@@ -3,7 +3,7 @@ import Overview from './views/Overview'
 import DayView from './views/DayView'
 import PeopleView from './views/PeopleView'
 import AlertsView from './views/AlertsView'
-import { CONFLICTS } from './data/schedule'
+import { ACTIONS, CONFLICTS } from './data/schedule'
 import { ProfileProvider } from './profile'
 
 type Tab = 'overview' | 'day' | 'people' | 'alerts'
@@ -52,7 +52,7 @@ export default function App() {
             People
           </button>
           <button className={tab === 'alerts' ? 'active' : ''} onClick={() => setTab('alerts')}>
-            Alerts ({CONFLICTS.length})
+            Actions ({ACTIONS.length + CONFLICTS.length})
           </button>
         </nav>
         <div className="mv-countdown">{daysToKickoff()} · First shoot 17 Jul</div>

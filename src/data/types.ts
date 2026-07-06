@@ -68,6 +68,19 @@ export interface Conflict {
   detail: string
 }
 
+export type ActionOwner = 'author-relations' | 'gareth' | 'production'
+export type ActionKind = 'impossible' | 'proposal' | 'chase'
+
+export interface ActionItem {
+  id: string
+  kind: ActionKind
+  owner: ActionOwner
+  title: string
+  detail: string
+  due?: string
+  people?: string[]
+}
+
 export interface BacklogItem {
   id: string
   title: string
