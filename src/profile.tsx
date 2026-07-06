@@ -11,12 +11,13 @@ export const useProfile = () => useContext(ProfileCtx)
 export function Headshot({ id, size = 40 }: { id: string; size?: number }) {
   const p = person(id)
   const profile = AUTHOR_PROFILES[id]
-  if (profile?.headshot) {
+  const shot = p.headshot ?? profile?.headshot
+  if (shot) {
     return (
       <img
         className="mv-headshot"
         style={{ width: size, height: size }}
-        src={`${import.meta.env.BASE_URL}${profile.headshot}`}
+        src={`${import.meta.env.BASE_URL}${shot}`}
         alt={p.name}
         loading="lazy"
       />

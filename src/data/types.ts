@@ -17,6 +17,8 @@ export interface Person {
   email?: string
   /** E.164, digits only after + */
   whatsapp?: string
+  /** Local headshot path (relative to base), for non-author people */
+  headshot?: string
 }
 
 export type EventType =

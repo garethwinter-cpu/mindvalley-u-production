@@ -9,6 +9,7 @@ export const PEOPLE: Person[] = [
     title: 'Mindvalley Creative Director & Head of Content',
     email: 'gareth.w@mindvalley.com',
     whatsapp: '+447414716933',
+    headshot: 'headshots/gareth.jpg',
   },
   { id: 'khairul', name: 'Khairul Johari', role: 'crew', title: 'Head of Film Production' },
   { id: 'nadir', name: 'Nadir Salam', role: 'crew', title: 'Production Lead' },
