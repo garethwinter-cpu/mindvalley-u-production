@@ -1,18 +1,10 @@
 import { DAYS, EVENTS } from '../data/schedule'
 import type { DayMeta } from '../data/types'
 
-const CHIP_PRIORITY = ['production', 'accelerator', 'stage-talk', 'portrait', 'podcast', 'social'] as const
-
 function DayCard({ day, onOpen }: { day: DayMeta; onOpen: (date: string) => void }) {
-  const events = EVENTS.filter((e) => e.date === day.date)
-  const sorted = [...events].sort(
-    (a, b) =>
-      CHIP_PRIORITY.indexOf(a.type as (typeof CHIP_PRIORITY)[number]) -
-      CHIP_PRIORITY.indexOf(b.type as (typeof CHIP_PRIORITY)[number]),
+  const events = EVENTS.filter((e) => e.date === day.date).sort((a, b) =>
+    (a.start ?? '99:99').localeCompare(b.start ?? '99:99'),
   )
-  const prioritized = sorted.filter((e) => (CHIP_PRIORITY as readonly string[]).includes(e.type))
-  const shown = (prioritized.length > 0 ? prioritized : sorted).slice(0, 5)
-  const hidden = events.length - shown.length
   const conflicts = events.filter((e) => e.status === 'conflict').length
   const isToday = day.date === new Date().toISOString().slice(0, 10)
 
@@ -24,14 +16,13 @@ function DayCard({ day, onOpen }: { day: DayMeta; onOpen: (date: string) => void
       </div>
       {conflicts > 0 && <span className="ov-flag">⚠ {conflicts} conflict{conflicts > 1 ? 's' : ''}</span>}
       {day.noInterviews && <span className="ov-flag" style={{ color: 'var(--text-subtle)' }}>No interviews</span>}
-      {shown.map((e) => (
+      {events.map((e) => (
         <span key={e.id} className={`ov-chip t-${e.type}`}>
           {e.start ? e.start + ' · ' : ''}
           {e.title}
         </span>
       ))}
       {events.length === 0 && <span className="empty">Clear</span>}
-      {hidden > 0 && <span className="ov-more">+{hidden} more</span>}
     </div>
   )
 }
