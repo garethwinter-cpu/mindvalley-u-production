@@ -14,6 +14,9 @@ export interface Person {
   /** In-Estonia window (speakers), YYYY-MM-DD inclusive */
   window?: { from: string; to: string }
   remote?: boolean
+  email?: string
+  /** E.164, digits only after + */
+  whatsapp?: string
 }
 
 export type EventType =

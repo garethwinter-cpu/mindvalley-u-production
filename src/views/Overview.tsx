@@ -49,6 +49,14 @@ export default function Overview({ onOpenDay }: { onOpenDay: (date: string) => v
       <p className="mv-sub">
         Every commitment from first shoot to wrap. Click a day for the full call sheet.
       </p>
+      <div className="legend">
+        <span><span className="dot t-stage-talk" /> Stage talk</span>
+        <span><span className="dot t-podcast" /> Podcast</span>
+        <span><span className="dot t-production" /> Our production</span>
+        <span><span className="dot t-portrait" /> Portraits</span>
+        <span><span className="dot t-accelerator" /> Accelerator</span>
+        <span><span className="dot" /> Event / social</span>
+      </div>
       {weeks.map((w) => (
         <div key={w.label}>
           <div className="ov-week-label">{w.label}</div>

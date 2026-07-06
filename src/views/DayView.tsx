@@ -1,6 +1,6 @@
 import { DAYS, EVENTS } from '../data/schedule'
-import { Avatar, StatusBadge, TypeBadge, fmtTime, requiredPeople } from '../ui'
-import { person } from '../data/people'
+import { StatusBadge, TypeBadge, fmtTime, requiredPeople } from '../ui'
+import { PersonLink } from '../profile'
 
 export default function DayView({ date, onPick }: { date: string; onPick: (d: string) => void }) {
   const day = DAYS.find((d) => d.date === date) ?? DAYS[0]
@@ -52,11 +52,16 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
                     <span className="evt-who-label">Who</span>
                     <span className="mv-people-row">
                       {req.map((id) => (
-                        <Avatar key={id} id={id} />
+                        <PersonLink key={id} id={id} avatar />
                       ))}
                     </span>
-                    <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>
-                      {req.map((id) => person(id).name).join(', ')}
+                    <span style={{ fontSize: 13, color: 'var(--text-muted)', display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      {req.map((id, i) => (
+                        <span key={id}>
+                          <PersonLink id={id} />
+                          {i < req.length - 1 ? ',' : ''}
+                        </span>
+                      ))}
                     </span>
                   </div>
                 )}

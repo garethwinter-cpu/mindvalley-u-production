@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { PEOPLE, person } from '../data/people'
+import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
-import { Avatar, StatusBadge, TypeBadge, fmtTime, involvesPerson } from '../ui'
+import { StatusBadge, TypeBadge, fmtTime, involvesPerson } from '../ui'
+import { Headshot } from '../profile'
 import type { PersonRole } from '../data/types'
 
 const GROUPS: { label: string; roles: PersonRole[] }[] = [
@@ -20,6 +22,8 @@ function fmtDate(d: string) {
 export default function PeopleView() {
   const [selected, setSelected] = useState('gareth')
   const p = person(selected)
+  const profile = AUTHOR_PROFILES[selected]
+  const wa = p.whatsapp?.replace(/[^0-9]/g, '')
   const events = EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
     (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')),
   )
@@ -28,7 +32,7 @@ export default function PeopleView() {
     <div>
       <div className="mv-overline">Who needs to be where</div>
       <h1 className="mv-h1">People</h1>
-      <p className="mv-sub">Pick anyone — author, crew, Gareth or Vishen — and see their full itinerary.</p>
+      <p className="mv-sub">Pick anyone — author, crew, Gareth or Vishen — for their profile and full itinerary.</p>
 
       <div className="pp-layout">
         <div className="mv-card pp-list">
@@ -41,7 +45,7 @@ export default function PeopleView() {
                   className={`pp-item${x.id === selected ? ' active' : ''}`}
                   onClick={() => setSelected(x.id)}
                 >
-                  <Avatar id={x.id} />
+                  <Headshot id={x.id} size={28} />
                   {x.name}
                 </button>
               ))}
@@ -51,8 +55,42 @@ export default function PeopleView() {
 
         <div>
           <div className="mv-card">
-            <h2 style={{ fontSize: 24, fontWeight: 500, marginBottom: 4 }}>{p.name}</h2>
-            <div style={{ color: 'var(--text-muted)', fontSize: 14, marginBottom: 12 }}>{p.title ?? 'Speaker'}</div>
+            <div className="modal-head">
+              <Headshot id={selected} size={72} />
+              <div>
+                <h2 style={{ fontSize: 24, fontWeight: 700, letterSpacing: '-0.02em' }}>{p.name}</h2>
+                <div style={{ color: 'var(--text-muted)', fontSize: 14 }}>
+                  {profile?.title ?? p.title ?? 'Speaker'}
+                </div>
+              </div>
+            </div>
+
+            <div className="modal-actions">
+              {p.email && (
+                <a className="mv-btn-secondary" href={`mailto:${p.email}`}>
+                  {p.email}
+                </a>
+              )}
+              {wa && (
+                <a className="mv-btn-secondary" href={`https://wa.me/${wa}`} target="_blank" rel="noreferrer">
+                  WhatsApp {p.whatsapp}
+                </a>
+              )}
+              {profile && (
+                <a
+                  className="mv-btn-secondary"
+                  href={`${AUTHORS_TABLE_URL}/${profile.airtableId}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Airtable record
+                </a>
+              )}
+            </div>
+            {!p.email && !wa && (
+              <div className="modal-nocontact">No contact details on file yet — send them to Claude to add.</div>
+            )}
+
             {p.window && (
               <div className="pp-window">
                 In Estonia: <strong>{fmtDate(p.window.from)} → {fmtDate(p.window.to)}</strong> (per Speaker DATES)
@@ -64,6 +102,7 @@ export default function PeopleView() {
               </div>
             )}
             {p.remote && <div className="pp-window">Working remotely — receives material for edit.</div>}
+            {profile?.bio && <p className="modal-bio">{profile.bio}</p>}
 
             <div className="evt-list">
               {events.length === 0 && <div className="empty">No scheduled commitments in the data yet.</div>}

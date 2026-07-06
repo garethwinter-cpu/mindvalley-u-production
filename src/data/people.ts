@@ -2,7 +2,14 @@ import type { Person } from './types'
 
 export const PEOPLE: Person[] = [
   // ---- Production team ----
-  { id: 'gareth', name: 'Gareth Winter', role: 'exec', title: 'Creative Director & Head of Content' },
+  {
+    id: 'gareth',
+    name: 'Gareth Winter',
+    role: 'exec',
+    title: 'Mindvalley Creative Director & Head of Content',
+    email: 'gareth.w@mindvalley.com',
+    whatsapp: '+447414716933',
+  },
   { id: 'khairul', name: 'Khairul Johari', role: 'crew', title: 'Head of Film Production' },
   { id: 'nadir', name: 'Nadir Salam', role: 'crew', title: 'Production Lead' },
   { id: 'kuhan', name: 'Kuhan Kunasegaran', role: 'crew', title: 'Senior Video Editor & Videographer' },

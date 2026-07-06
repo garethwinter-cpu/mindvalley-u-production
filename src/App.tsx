@@ -4,8 +4,17 @@ import DayView from './views/DayView'
 import PeopleView from './views/PeopleView'
 import AlertsView from './views/AlertsView'
 import { CONFLICTS } from './data/schedule'
+import { ProfileProvider } from './profile'
 
 type Tab = 'overview' | 'day' | 'people' | 'alerts'
+
+const SOURCES = [
+  { label: '📺 Shoots (production slate)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblcZ8OIxfgnlUowC/viwYl9ljifiEfE4a5' },
+  { label: 'Speaker DATES', url: 'https://airtable.com/app9UTVMuHPC8uTbx/shrCxxat2D62hM9pD/tblVLN5NGa6eaLJbd' },
+  { label: 'PHOTO ONLY Agenda', url: 'https://airtable.com/appAfQ2fXkHb5H9Cc/shrXMmbgBdmsbNzaE' },
+  { label: 'MVU 2026 Overview Agenda', url: 'https://docs.google.com/spreadsheets/d/1IHbxuFBnDIjKOdO43Oqx5_I6Cfcr7LoAwJ0UjDpaYXk/edit' },
+  { label: '✍🏻 Authors (bios)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblGecx2i4ge9KYmU' },
+]
 
 function daysToKickoff(): string {
   const now = new Date()
@@ -27,7 +36,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <ProfileProvider>
       <header className="mv-topbar">
         <div className="mv-wordmark">
           MVU 2026 <span>Production HQ</span>
@@ -54,6 +63,15 @@ export default function App() {
         {tab === 'people' && <PeopleView />}
         {tab === 'alerts' && <AlertsView />}
       </main>
-    </div>
+      <footer className="mv-footer">
+        <span>Sources of truth:</span>
+        {SOURCES.map((s) => (
+          <a key={s.url} href={s.url} target="_blank" rel="noreferrer">
+            {s.label}
+          </a>
+        ))}
+        <a href={`${import.meta.env.BASE_URL}calendar/all.ics`}>📅 Calendar feed (.ics)</a>
+      </footer>
+    </ProfileProvider>
   )
 }

@@ -60,6 +60,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: var(--bg-muted);
   color: var(--text);
   font-family: 'Google Sans', 'Google Sans Text', -apple-system, sans-serif;
@@ -242,6 +243,7 @@ body {
   gap: 12px;
 }
 .ov-day {
+  min-width: 0;
   background: var(--surface);
   border-radius: 16px;
   box-shadow: var(--shadow-light);
@@ -498,4 +500,266 @@ body {
   color: var(--text-subtle);
   font-size: 14px;
   padding: 24px 0;
+}
+
+/* ============ Type color system ============
+   stage talk = brand purple · podcast = blue · our productions = green
+   portraits = pink · accelerators = orange · social/logistics = grey */
+.ov-chip.t-podcast { background: var(--blue-light); color: var(--blue-content); }
+.ov-chip.t-embodiment, .ov-chip.t-community, .ov-chip.t-experience, .ov-chip.t-logistics {
+  background: var(--bg-subtle); color: var(--text-muted);
+}
+.mv-badge.type-production { background: var(--green-light); color: var(--green-content); }
+.ov-chip.t-production { background: var(--green-light); color: var(--green-content); }
+.mv-badge.type-social { background: var(--bg-subtle); color: var(--text-muted); }
+.ov-chip.t-social { background: var(--bg-subtle); color: var(--text-muted); }
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 128px;
+  flex: none;
+  background: var(--grey-300);
+}
+.dot.t-stage-talk { background: var(--brand); }
+.dot.t-podcast { background: var(--blue); }
+.dot.t-production { background: var(--green); }
+.dot.t-portrait { background: var(--pink); }
+.dot.t-accelerator { background: var(--orange); }
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -16px 0 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ============ Person links & headshots ============ */
+.pl-link {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--brand-content);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--brand-border);
+  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+}
+.pl-link:hover {
+  text-decoration-color: var(--brand);
+}
+
+.mv-headshot {
+  border-radius: 128px;
+  object-fit: cover;
+  border: 2px solid var(--white);
+  flex: none;
+  display: block;
+}
+.mv-people-row .pl-link + .pl-link {
+  margin-left: -8px;
+}
+
+/* ============ Profile modal ============ */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 19, 26, 0.55);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.modal {
+  background: var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow-strong);
+  max-width: 560px;
+  width: 100%;
+  max-height: 86vh;
+  overflow-y: auto;
+  padding: 28px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background: var(--bg-subtle);
+  border-radius: 128px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+.modal-head {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.modal-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.modal-title {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.modal-window {
+  font-size: 13px;
+  color: var(--brand-content);
+  background: var(--brand-light);
+  border-radius: 128px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-top: 6px;
+}
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.mv-btn-secondary {
+  background: var(--white);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 128px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-standard);
+}
+.mv-btn-secondary:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.modal-nocontact {
+  font-size: 13px;
+  color: var(--text-subtle);
+  margin-bottom: 12px;
+}
+.modal-bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  white-space: pre-line;
+}
+.modal-sched-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-bottom: 8px;
+}
+.modal-sched-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-muted);
+  font-size: 13px;
+}
+.modal-sched-when {
+  color: var(--text-muted);
+  flex: none;
+  width: 118px;
+}
+.modal-sched-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============ Footer / sources ============ */
+.mv-footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+  border-top: 1px solid var(--border-muted);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-subtle);
+}
+.mv-footer a {
+  color: var(--brand-content);
+  text-decoration: none;
+}
+.mv-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 768px) {
+  .mv-topbar {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .mv-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    height: 44px;
+  }
+  .mv-nav button {
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+  .mv-countdown {
+    margin-left: auto;
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+  .mv-page {
+    padding: 20px 12px 64px;
+  }
+  .mv-h1 {
+    font-size: 26px;
+  }
+  .evt {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 16px;
+  }
+  .evt-time small {
+    display: inline;
+    margin-left: 6px;
+  }
+  .ov-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal {
+    padding: 20px;
+    border-radius: 16px;
+    max-height: 92vh;
+  }
+}
+@media (max-width: 480px) {
+  .ov-grid {
+    grid-template-columns: 1fr;
+  }
 }
