@@ -1,4 +1,5 @@
 import type { BacklogItem, Conflict, DayMeta, ScheduleEvent } from './types'
+import { PRODUCTION_EVENTS } from './productions'
 
 export const MAIN_STAGE = 'Main Stage (Black Box)'
 export const COMMUNITY = 'Community Stage (Small Hall)'
@@ -30,7 +31,7 @@ export const DAYS: DayMeta[] = [
 
 const CREW_CORE = ['khairul', 'nadir', 'kuhan']
 
-export const EVENTS: ScheduleEvent[] = [
+const EVENT_ITEMS: ScheduleEvent[] = [
   // ================= PRE-EVENT =================
   {
     id: 'priestley-webinar',
@@ -278,6 +279,8 @@ export const EVENTS: ScheduleEvent[] = [
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
 ]
 
+export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...PRODUCTION_EVENTS]
+
 export const CONFLICTS: Conflict[] = [
   {
     id: 'c-regan-accel-time',
@@ -294,18 +297,39 @@ export const CONFLICTS: Conflict[] = [
       'Gareth says remote delivery, resolving the old window conflict (his Speaker DATES arrival is 20 Jul). Microsite still bills in-person — confirm final format and streaming setup for 18–19 Jul.',
   },
   {
-    id: 'c-podcast-none',
+    id: 'c-slate-proposed',
     severity: 'high',
-    title: 'No podcast schedule exists',
+    title: 'The whole production slate is a PROPOSAL — nothing confirmed with authors yet',
     detail:
-      '“Podcast?” column empty; “NO INTERVIEWS” marked on Jul 20, 23, 24, 27, 28, 31 — leaving only Jul 21, 22, 29, 30 viable for interview capture. Needs confirming and booking.',
+      '45 slate items scheduled 2 Jul against speaker windows and event commitments. Every one is tentative until author relations confirms each author’s time. Podcasts/interviews were kept off NO INTERVIEWS days (20, 23, 24, 27, 28, 31 Jul) where possible — confirm that rule actually applies to our own productions.',
   },
   {
-    id: 'c-slate-undocumented',
-    severity: 'high',
-    title: 'Gareth’s production slate undocumented',
+    id: 'c-two-units',
+    severity: 'medium',
+    title: 'Several days assume TWO crews shooting in parallel',
     detail:
-      'Accelerator recordings, masterclasses (Superbrain, Duality, Art of Manifesting) and social shoots appear in no source document. See Backlog.',
+      '22, 26, 29, 30 Jul and 1–2 Aug run unit 1 (Khairul + Kuhan) and unit 2 (Nadir) simultaneously. Confirm kit and staffing supports two units, or shoots must move.',
+  },
+  {
+    id: 'c-vishen-load',
+    severity: 'medium',
+    title: 'Vishen’s shoot load is heavy on 29–30 Jul',
+    detail:
+      '29 Jul: Superbrain masterclass (3h) + 2 podcasts + 16:15 stage slot. 30 Jul: 4 podcasts + Kwik fireside + swappable stage slot + portraits. Consider dropping 1–2 podcast episodes to Aug 2 or cutting runtime.',
+  },
+  {
+    id: 'c-departure-day-shoots',
+    severity: 'medium',
+    title: 'Six shoots sit on author departure days',
+    detail:
+      'Priestley + John Lee (22 Jul), Jeffrey Allen accel day 2 + Wineland (26 Jul), Jolene Brighten (29 Jul), Rachel Pringle (1 Aug), Jim Kwik (2 Aug). All need flight times confirmed before locking.',
+  },
+  {
+    id: 'c-aug2-crunch',
+    severity: 'medium',
+    title: '2 Aug is the densest production day of the sprint',
+    detail:
+      'Kwik upsell, Marisa masterclass + assets, Lee Holden interview + assets, Maya interview, Eric One Talk Workshop — 7 shoots on wrap day. It works only if both units run clean all day.',
   },
   {
     id: 'c-kwik-window',
@@ -347,12 +371,9 @@ export const CONFLICTS: Conflict[] = [
 ]
 
 export const BACKLOG: BacklogItem[] = [
-  { id: 'b-superbrain', title: 'Jim Kwik — Superbrain masterclass', format: 'masterclass', speakers: ['jim-kwik'], constraint: 'Must shoot Jul 28–Aug 2 (his window), avoiding Jul 30 (his stage day).' },
-  { id: 'b-duality', title: 'Jeffrey Allen — Duality masterclass', format: 'masterclass', speakers: ['jeffrey-allen'], constraint: 'Window Jul 19–26; his stage day is Jul 22.' },
-  { id: 'b-art-manifesting', title: 'Regan Hillyer — Art of Manifesting masterclass', format: 'masterclass', speakers: ['regan-hillyer'], constraint: 'Her Wealth Code masterclass is scheduled 17 Jul (remote). Confirm whether Art of Manifesting is the same deliverable or a separate shoot (window 19–26 Jul).' },
-  { id: 'b-accel-rec-priestley', title: 'Accelerator recording — Daniel Priestley', format: 'accelerator-recording', speakers: ['daniel-priestley'], constraint: 'Remote delivery 18–19 Jul — capture is stream-record; confirm who owns the recording chain.' },
-  { id: 'b-accel-rec-regan', title: 'Accelerator recording — Regan Hillyer', format: 'accelerator-recording', speakers: ['regan-hillyer'], constraint: 'Jul 25–26, 9am–4pm, Main Stage.' },
-  { id: 'b-accel-rec-vishen', title: 'Accelerator recording — Vishen AI Accelerator', format: 'accelerator-recording', speakers: ['vishen'], constraint: 'Aug 1, 11am–6pm, Main Stage.' },
-  { id: 'b-podcasts', title: 'Podcast episodes — Vishen + key authors', format: 'podcast', speakers: ['vishen'], constraint: 'Viable days (per NO INTERVIEWS markers): Jul 21, 22, 29, 30 only. Guest list TBD.' },
-  { id: 'b-social', title: 'Social media content — key authors', format: 'social', constraint: 'Shot list TBD. Opportunistic around stage days + portraits.' },
+  { id: 'b-accel-rec-priestley', title: 'Accelerator capture — Daniel Priestley (remote, 18–19 Jul)', format: 'accelerator-recording', speakers: ['daniel-priestley'], constraint: 'Remote delivery — capture is stream-record. Confirm who owns the recording chain (us vs Still Frame vs Zoom cloud).' },
+  { id: 'b-accel-rec-regan', title: 'Accelerator capture — Regan Wealth Code (25–26 Jul, live)', format: 'accelerator-recording', speakers: ['regan-hillyer'], constraint: 'Live capture with Still Frame. Timing conflict (evenings vs 9–4) must resolve first.' },
+  { id: 'b-accel-rec-vishen', title: 'Accelerator capture — Vishen AI Accelerator (1 Aug, 11–6)', format: 'accelerator-recording', speakers: ['vishen'], constraint: 'Live capture with Still Frame on the Main Stage.' },
+  { id: 'b-social', title: 'Social media content — key authors', format: 'social', constraint: 'Not yet itemised in the Shoots Airtable. Opportunistic capture around stage days, portraits and shoots — needs a shot list.' },
+  { id: 'b-no-items', title: 'No slate items exist for Cynthia Thurlow, Scott Lyon, Simon Ong, Lorin Krenn (interview), Natalie Ellis (interview), Kristina, Fumiko, Marisa (podcast)', format: 'social', constraint: 'Deliberate, or gaps? Cheap to add interviews while they are on site.' },
 ]

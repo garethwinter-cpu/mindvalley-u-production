@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/ui.tsx","./src/data/people.ts","./src/data/schedule.ts","./src/data/types.ts","./src/views/alertsview.tsx","./src/views/dayview.tsx","./src/views/overview.tsx","./src/views/peopleview.tsx"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/ui.tsx","./src/data/people.ts","./src/data/productions.ts","./src/data/schedule.ts","./src/data/types.ts","./src/views/alertsview.tsx","./src/views/dayview.tsx","./src/views/overview.tsx","./src/views/peopleview.tsx"],"version":"5.9.3"}
