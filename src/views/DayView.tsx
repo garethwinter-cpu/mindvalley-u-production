@@ -22,8 +22,9 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
       </h1>
       <p className="mv-sub">
         {day.noInterviews
-          ? 'Marked NO INTERVIEWS in the event agenda — no podcast/interview capture today.'
-          : 'Interview capture is viable today (not marked NO INTERVIEWS).'}
+          ? 'Marked NO INTERVIEWS in the event agenda — no podcast/interview capture today. '
+          : 'Interview capture is viable today (not marked NO INTERVIEWS). '}
+        Energiakeskus Studio ↔ Kultuurikatel is walkable — no travel buffers between venue and studio.
       </p>
 
       <div className="day-nav">

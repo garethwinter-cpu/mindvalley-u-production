@@ -14,7 +14,8 @@ const UNIT1 = ['khairul', 'kuhan']
 const UNIT2 = ['nadir']
 const FULL = ['khairul', 'nadir', 'kuhan']
 
-/** Premium studio for podcasts, masterclasses and author interviews */
+/** Premium studio for podcasts, masterclasses and author interviews.
+ *  Walkable from Kultuurikatel — no travel buffers needed between venue and studio. */
 export const STUDIO = 'Energiakeskus Studio, Tallinn'
 
 export const PRODUCTION_EVENTS: ScheduleEvent[] = [
@@ -515,7 +516,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     gareth: true,
     crew: UNIT1,
     status: 'tentative',
-    notes: 'Lorin departs today. Vishen goes straight to his 16:15 stage slot — tight.',
+    notes: 'Lorin departs today. Vishen walks straight to his 16:15 stage slot — studio is walkable, 30-min margin works.',
   },
   {
     id: 'int-zen-takai',
