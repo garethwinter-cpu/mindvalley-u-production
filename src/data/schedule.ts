@@ -325,11 +325,11 @@ export const CONFLICTS: Conflict[] = [
       'Priestley + John Lee (22 Jul), Jeffrey Allen accel day 2 + Wineland (26 Jul), Jolene Brighten (29 Jul), Rachel Pringle (1 Aug), Jim Kwik (2 Aug). All need flight times confirmed before locking.',
   },
   {
-    id: 'c-aug2-crunch',
+    id: 'c-jul31-crunch',
     severity: 'medium',
-    title: '2 Aug is the densest production day of the sprint',
+    title: '31 Jul is now the heaviest studio day (2 Aug cleared for pack/travel)',
     detail:
-      'Kwik upsell, Marisa masterclass + assets, Lee Holden interview + assets, Maya interview, Eric One Talk Workshop — 7 shoots on wrap day. It works only if both units run clean all day.',
+      'To keep the studio empty on 2 Aug (pack day), the wrap-day slate moved onto 31 Jul + 1 Aug. 31 Jul now runs both units ~10:00–17:00 (Marisa masterclass + Eric workshop on unit 1; Lee interview + assets + Marisa assets on unit 2) — on Closing Ceremony day. None need Vishen (he is on stage). The pinch: Eric’s 3h full-crew workshop (14:00–17:00) overlaps the 15:00 Closing Ceremony, so Gareth can’t attend both. If tight, pull Eric earlier in week 2.',
   },
   {
     id: 'c-kwik-window',
