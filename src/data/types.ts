@@ -81,6 +81,25 @@ export interface ActionItem {
   people?: string[]
 }
 
+export type FitVerdict = 'STRONG' | 'MEDIUM' | 'NICHE'
+
+export interface PodcastBriefing {
+  personId: string
+  episodeId: string
+  date: string
+  start?: string
+  who: string
+  reach: string
+  topics: string[]
+  credentials: string
+  interviewPresence: string
+  audienceOverlap: string
+  fit: FitVerdict
+  fitReason: string
+  angle: string
+  flag: string
+}
+
 export interface BacklogItem {
   id: string
   title: string
