@@ -482,6 +482,15 @@ export const ACTIONS: ActionItem[] = [
     due: '2026-07-10',
   },
   {
+    id: 'ch-social-crew',
+    kind: 'chase',
+    owner: 'production',
+    title: 'Dedicated social/roving shooter needed — daily capture is unstaffed',
+    detail:
+      'Marketing added 13 Social/Engagement items — 8 ad-hoc concepts filmed daily + daily stage-talk snippets + weekly recaps. The two production units (Khairul+Kuhan / Nadir) are fully booked on podcasts, masterclasses and interviews and cannot also cover always-on social. Assign a dedicated roving shooter/editor (marketing’s own, or an added crew member) or the social slate will not get shot. Requesters: Ishaan Jaiswal, Glen Jason Chittur.',
+    due: '2026-07-11',
+  },
+  {
     id: 'ch-locations',
     kind: 'chase',
     owner: 'production',

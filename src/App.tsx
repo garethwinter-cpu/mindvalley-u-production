@@ -4,11 +4,13 @@ import DayView from './views/DayView'
 import PeopleView from './views/PeopleView'
 import AlertsView from './views/AlertsView'
 import PodcastBriefingsView from './views/PodcastBriefingsView'
+import SocialView from './views/SocialView'
 import { ACTIONS, CONFLICTS } from './data/schedule'
 import { PODCAST_BRIEFINGS } from './data/podcastBriefings'
+import { SOCIAL_CONTENT } from './data/social'
 import { ProfileProvider } from './profile'
 
-type Tab = 'overview' | 'day' | 'people' | 'alerts' | 'podcast'
+type Tab = 'overview' | 'day' | 'people' | 'alerts' | 'podcast' | 'social'
 
 const SOURCES = [
   { label: '📺 Shoots (production slate)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblcZ8OIxfgnlUowC/viwYl9ljifiEfE4a5' },
@@ -56,6 +58,9 @@ export default function App() {
           <button className={tab === 'podcast' ? 'active' : ''} onClick={() => setTab('podcast')}>
             Podcast ({PODCAST_BRIEFINGS.length})
           </button>
+          <button className={tab === 'social' ? 'active' : ''} onClick={() => setTab('social')}>
+            Social ({SOCIAL_CONTENT.length})
+          </button>
           <button className={tab === 'alerts' ? 'active' : ''} onClick={() => setTab('alerts')}>
             Actions ({ACTIONS.length + CONFLICTS.length})
           </button>
@@ -67,6 +72,7 @@ export default function App() {
         {tab === 'day' && <DayView date={day} onPick={setDay} />}
         {tab === 'people' && <PeopleView />}
         {tab === 'podcast' && <PodcastBriefingsView />}
+        {tab === 'social' && <SocialView />}
         {tab === 'alerts' && <AlertsView />}
       </main>
       <footer className="mv-footer">

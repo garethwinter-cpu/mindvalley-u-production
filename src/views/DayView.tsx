@@ -61,6 +61,14 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
         )}
       </div>
 
+      {(day.week === 1 || day.week === 2) && who === 'all' && (
+        <div className="day-social-banner">
+          🎥 <strong>Ad-hoc social capture runs all day</strong> — roving shooter collecting toward the daily social
+          concepts (Reels, "What brought you here?", kids interviews, ASMR, Ray-Ban day-in-life) + daily stage-talk
+          snippets. See the Social tab.
+        </div>
+      )}
+
       <div className="evt-list">
         {events.length === 0 && (
           <div className="empty">
