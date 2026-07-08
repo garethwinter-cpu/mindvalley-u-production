@@ -403,7 +403,27 @@ export const ACTIONS: ActionItem[] = [
     people: ['regan-hillyer'],
   },
 
+  {
+    id: 'a-chiara-paul',
+    kind: 'impossible',
+    owner: 'author-relations',
+    title: 'Chiara King’s podcast with Paul McKenna — no date overlap',
+    detail:
+      'Chiara arrives 21 Jul, leaves 25/26 Jul (hoping to move to the 20th). Paul McKenna arrives 27 Jul. They are never in Tallinn on the same day, so we cannot film Chiara + Paul at our studio. Options: Chiara extends to 27+, Paul arrives earlier, or that episode is recorded remotely / elsewhere. Her Marisa Peer episode IS fine (proposed 23 Jul).',
+    due: '2026-07-11',
+    people: ['chiara-king', 'paul-mckenna', 'marisa-peer'],
+  },
+
   // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
+  {
+    id: 'p-marisa-podcast-count',
+    kind: 'proposal',
+    owner: 'gareth',
+    title: 'Marisa Peer’s book podcast — recommend 3 episodes in-house (stretch 4), else external studio',
+    detail:
+      'Marisa’s team (Elise McDonald) wants studio time for her "Your Mind, Your Rules" book podcast. Realist capacity: the studio is one room and both crew units are heavily booked. Marisa is free 21–23, 26–30 Jul, but studio+crew gaps are thin. We can comfortably facilitate 3 episodes (stretch 4) — best batched on Mon 27 Jul (the most open studio day) plus one late-afternoon slot on 23 or 28 Jul. If she wants 5+ episodes, there is a real gap → recommend an external Tallinn studio (we have contacts). Reply to her team with the number once confirmed.',
+    people: ['marisa-peer'],
+  },
   {
     id: 'p-priestley-cut',
     kind: 'proposal',

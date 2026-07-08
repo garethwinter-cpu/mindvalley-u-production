@@ -216,6 +216,20 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Straight after the masterclass while hair/makeup holds. 8-item suite.',
   },
+  {
+    id: 'pod-chiara-marisa',
+    date: '2026-07-23',
+    start: '16:30',
+    end: '17:30',
+    title: 'Chiara King podcast — guest Marisa Peer (we facilitate)',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['chiara-king', 'marisa-peer'],
+    gareth: true,
+    crew: UNIT1,
+    status: 'tentative',
+    notes: 'Chiara’s own podcast, we facilitate (FX3 + Rode). Slotted while Chiara (21–25) and Marisa both in town, studio free after Regan assets. Her Paul McKenna episode is NOT possible — see Actions.',
+  },
 
   // ---------- FRI 24 JUL ----------
   {

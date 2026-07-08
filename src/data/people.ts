@@ -20,6 +20,13 @@ export const PEOPLE: Person[] = [
   { id: 'mardo', name: 'Mardo', role: 'photographer', title: 'Photographer' },
   { id: 'still-frame', name: 'Still Frame', role: 'partner', title: 'Estonian production co — stage record & broadcast' },
   { id: 'kaitlin', name: "Kaitlin O'Toole", role: 'crew', title: 'Author Interviews host (backup: Gareth)' },
+  {
+    id: 'chiara-king',
+    name: 'Chiara King',
+    role: 'speaker',
+    title: 'Podcast host — guest collaboration (we facilitate her filming)',
+    window: { from: '2026-07-21', to: '2026-07-25' },
+  },
 
   // ---- Author relations (roster incomplete) ----
   { id: 'illiana', name: 'Illiana', role: 'author-relations', title: 'Author Relations' },
