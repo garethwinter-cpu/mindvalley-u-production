@@ -25,7 +25,7 @@ export const PEOPLE: Person[] = [
     name: 'Chiara King',
     role: 'speaker',
     title: 'Podcast host — guest collaboration (we facilitate her filming)',
-    window: { from: '2026-07-21', to: '2026-07-25' },
+    window: { from: '2026-07-20', to: '2026-07-25' },
   },
 
   // ---- Author relations (roster incomplete) ----

@@ -228,7 +228,21 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     gareth: true,
     crew: UNIT1,
     status: 'tentative',
-    notes: 'Chiara’s own podcast, we facilitate (FX3 + Rode). Slotted while Chiara (21–25) and Marisa both in town, studio free after Regan assets. Her Paul McKenna episode is NOT possible — see Actions.',
+    notes: 'Chiara’s own podcast, we facilitate (FX3 + Rode). Slotted while Chiara (20–25) and Marisa both in town, studio free after Regan assets. Her Paul McKenna episode is NOT possible — see Actions.',
+  },
+  {
+    id: 'pod-chiara-lorin',
+    date: '2026-07-23',
+    start: '17:45',
+    end: '18:45',
+    title: 'Chiara King podcast — guest Lorin Krenn (we facilitate)',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['chiara-king', 'lorin-krenn'],
+    gareth: true,
+    crew: UNIT1,
+    status: 'tentative',
+    notes: 'Back-to-back with her Marisa episode — one studio setup, both her guests in a row. Lorin (window 22–29) freshly arrived; Chiara leaves 25/26. FLAG: makes 23 Jul a long studio day (Regan MC + assets 10–4, then two Chiara episodes to 6:45pm) — confirm crew + Gareth can carry it, or shift one Chiara episode to a 25 Jul evening slot.',
   },
 
   // ---------- FRI 24 JUL ----------
