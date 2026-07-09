@@ -403,17 +403,6 @@ export const ACTIONS: ActionItem[] = [
     people: ['regan-hillyer'],
   },
 
-  {
-    id: 'a-chiara-paul',
-    kind: 'impossible',
-    owner: 'author-relations',
-    title: 'Chiara King’s podcast with Paul McKenna — no date overlap',
-    detail:
-      'Chiara arrives 21 Jul, leaves 25/26 Jul (hoping to move to the 20th). Paul McKenna arrives 27 Jul. They are never in Tallinn on the same day, so we cannot film Chiara + Paul at our studio. Options: Chiara extends to 27+, Paul arrives earlier, or that episode is recorded remotely / elsewhere. Her Marisa Peer episode IS fine (proposed 23 Jul).',
-    due: '2026-07-11',
-    people: ['chiara-king', 'paul-mckenna', 'marisa-peer'],
-  },
-
   // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
   {
     id: 'p-marisa-podcast-count',
