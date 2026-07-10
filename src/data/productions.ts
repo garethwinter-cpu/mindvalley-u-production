@@ -701,6 +701,19 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
 
   // (2 Aug is studio pack/travel — no shoots)
+
+  // ---------- POST-EVENT: 3–5 AUG ----------
+  {
+    id: 'shoot-iris-vishen-parents',
+    date: '2026-08-03',
+    title: 'Legacy shoot — Iris Wagner with Vishen’s parents',
+    type: 'production',
+    location: 'TBC (Tallinn)',
+    speakers: ['iris-wagner'],
+    gareth: true,
+    status: 'tentative',
+    notes: 'PENCILLED — flexible window 3–5 Aug (exact day/time TBC). Legacy/memoir documentary of Vishen’s parents, led by Iris Wagner (Memoirs Productions). Post-event, after the studio packs on 2 Aug — confirm crew stay-on, kit availability, and the parents’ availability.',
+  },
   {
     id: 'accel-upsell-kwik',
     date: '2026-08-01',

@@ -26,7 +26,10 @@ export const DAYS: DayMeta[] = [
   { date: '2026-07-30', label: 'Thu 30 Jul', theme: 'Reinvention', week: 2 },
   { date: '2026-07-31', label: 'Fri 31 Jul', theme: 'Closing Ceremony', week: 2, noInterviews: true },
   { date: '2026-08-01', label: 'Sat 1 Aug', theme: 'Vishen AI Accelerator', week: 2 },
-  { date: '2026-08-02', label: 'Sun 2 Aug', theme: 'Wrap', week: 2 },
+  { date: '2026-08-02', label: 'Sun 2 Aug', theme: 'Wrap — studio pack/travel', week: 2 },
+  { date: '2026-08-03', label: 'Mon 3 Aug', theme: 'Post-event', week: 2 },
+  { date: '2026-08-04', label: 'Tue 4 Aug', theme: 'Post-event', week: 2 },
+  { date: '2026-08-05', label: 'Wed 5 Aug', theme: 'Post-event', week: 2 },
 ]
 
 const CREW_CORE = ['khairul', 'nadir', 'kuhan']
