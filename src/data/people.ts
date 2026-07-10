@@ -63,6 +63,13 @@ export const PEOPLE: Person[] = [
   { id: 'sheleana-aiyana', name: 'Sheleana Aiyana', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-22' } },
   { id: 'shi-heng-yi', name: 'Shi Heng Yi', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-28' } },
   { id: 'simon-ong', name: 'Simon Alexander Ong', role: 'speaker', window: { from: '2026-07-18', to: '2026-07-23' } },
+  {
+    id: 'iris-wagner',
+    name: 'Iris Wagner',
+    role: 'speaker',
+    title: 'Founder & CEO, Memoirs Productions — legacy preservation; host of "Speaking of Legacy"',
+    window: { from: '2026-07-30', to: '2026-07-31' },
+  },
   // On the agenda but NOT on Speaker DATES (window unknown):
   { id: 'hal-elrod', name: 'Hal Elrod', role: 'speaker' },
   { id: 'maria-wendt', name: 'Maria Wendt', role: 'speaker' },

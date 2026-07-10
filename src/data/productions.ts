@@ -561,6 +561,19 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
 
   // ---------- THU 30 JUL ----------
   {
+    id: 'shoot-iris-wagner',
+    date: '2026-07-30',
+    start: '11:00',
+    end: '11:45',
+    title: 'Iris Wagner — session (format to confirm)',
+    type: 'production',
+    location: STUDIO,
+    speakers: ['iris-wagner'],
+    crew: UNIT2,
+    status: 'tentative',
+    notes: 'Added at Gareth’s request — fixed 11am Thu 30 Jul. Iris Wagner: founder/CEO Memoirs Productions (legacy preservation), forthcoming podcast "Speaking of Legacy". Fits on unit 2 (free until the noon McKenna interview) — no clash, though 30 Jul is the heaviest day. Confirm format: her podcast, an interview, or a talking-head piece?',
+  },
+  {
     id: 'pod-hal-elrod',
     date: '2026-07-30',
     start: '10:00',
