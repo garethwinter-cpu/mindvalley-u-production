@@ -68,8 +68,15 @@ export const PEOPLE: Person[] = [
     name: 'Iris Wagner',
     role: 'speaker',
     title: 'Founder & CEO, Memoirs Productions — legacy preservation; host of "Speaking of Legacy"',
-    window: { from: '2026-07-30', to: '2026-07-31' },
+    window: { from: '2026-07-27', to: '2026-08-06' },
   },
+  // Vishen's parents — subjects of the Memoirs Productions legacy shoot, 3–5 Aug.
+  // Local Tallinn residents (own apartment is the shoot location) — no travel window.
+  { id: 'mohan-lakhiani', name: 'Mohan Lakhiani', role: 'speaker', title: "Vishen's father" },
+  { id: 'roopi-lakhiani', name: 'Roopi Lakhiani', role: 'speaker', title: "Vishen's mother" },
+  // Vishen's kids — join Day 3 only, for the grandparents AMA segment.
+  { id: 'hayden-lakhiani', name: 'Hayden Lakhiani', role: 'speaker', title: "Vishen's son" },
+  { id: 'eve-lakhiani', name: 'Eve Lakhiani', role: 'speaker', title: "Vishen's daughter" },
   // On the agenda but NOT on Speaker DATES (window unknown):
   { id: 'hal-elrod', name: 'Hal Elrod', role: 'speaker', window: { from: '2026-07-24', to: '2026-07-29' } },
   { id: 'maria-wendt', name: 'Maria Wendt', role: 'speaker', window: { from: '2026-07-27', to: '2026-07-30' } },
