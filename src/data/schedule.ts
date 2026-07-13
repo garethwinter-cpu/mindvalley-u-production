@@ -379,7 +379,7 @@ export const CONFLICTS: Conflict[] = [
     severity: 'medium',
     title: '31 Jul is now the heaviest studio day (2 Aug cleared for pack/travel)',
     detail:
-      'To keep the studio empty on 2 Aug (pack day), the wrap-day slate moved onto 31 Jul + 1 Aug. 31 Jul now runs both units ~10:00–17:00 (Marisa masterclass + Eric workshop on unit 1; Lee interview + assets + Marisa assets on unit 2) — on Closing Ceremony day. None need Vishen (he is on stage). The pinch: Eric’s 3h full-crew workshop (14:00–17:00) overlaps the 15:00 Closing Ceremony, so Gareth can’t attend both. If tight, pull Eric earlier in week 2.',
+      'To keep the studio empty on 2 Aug (pack day), the wrap-day slate moved onto 31 Jul + 1 Aug. 31 Jul now runs both units ~10:00–15:15 (Marisa masterclass on unit 1; Lee interview + assets + Marisa assets on unit 2) — on Closing Ceremony day, but nothing now runs into it. None need Vishen (he is on stage). Eric Edmeades\' "One Talk Workshop" was pulled from this day entirely (13 Jul) — it\'s actually 7 Aug, outside the MVU sprint, and had been scheduled here in error.',
   },
   {
     id: 'c-kwik-window',
@@ -648,16 +648,6 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
     due: '2026-07-20',
-  },
-  {
-    id: 'ch-eric-landing-page',
-    kind: 'chase',
-    owner: 'production',
-    title: 'Does Eric Edmeades\' One Talk Workshop need an Upsell Landing Page Video too?',
-    detail:
-      'Gareth\'s Airtable Upsell/Landing-Page split (13 Jul) paired all 4 other accelerators/intensives (Priestley, Jeffrey Allen, Regan, Jim Kwik, Vishen) with a matching "Upsell Landing Page Video" record, sandwiched into the same shoot. No matching record exists yet for Eric\'s workshop — confirm whether that\'s deliberate or just not created yet.',
-    due: '2026-07-18',
-    people: ['eric-edmeades'],
   },
 ]
 
