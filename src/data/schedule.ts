@@ -99,7 +99,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Slot is “11–12:30 OR 12–1:30” in the detailed agenda — confirm.',
   },
-  { id: 'jul20-community', date: '2026-07-20', start: '15:00', end: '16:00', title: 'Community Connections', type: 'community', location: MAIN_STAGE },
+  { id: 'jul20-community', date: '2026-07-20', start: '15:00', end: '16:00', title: 'Community Connections with Eric Edmeades', type: 'community', location: MAIN_STAGE, speakers: ['eric-edmeades'], notes: 'Author now attributed per 13 Jul sheet check (was unattributed).' },
   {
     id: 'jul20-fuckup',
     date: '2026-07-20',
@@ -175,6 +175,17 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul24-peer-photo', date: '2026-07-24', start: '16:10', end: '16:30', title: 'Portraits — Marisa Peer', type: 'portrait', crew: ['karen'], speakers: ['marisa-peer'], notes: 'Location TBD' },
   { id: 'jul24-krenn-1', date: '2026-07-24', start: '15:00', end: '16:00', title: 'Lorin Krenn', type: 'stage-talk', location: MAIN_STAGE, speakers: ['lorin-krenn'] },
   { id: 'jul24-krenn-2', date: '2026-07-24', start: '16:15', end: '17:00', title: 'Lorin Krenn', type: 'stage-talk', location: MAIN_STAGE, speakers: ['lorin-krenn'] },
+  {
+    id: 'jul24-awards',
+    date: '2026-07-24',
+    start: '18:00',
+    end: '19:00',
+    title: 'Mindvalley Awards (NEW — timing TBC)',
+    type: 'social',
+    location: MAIN_STAGE,
+    status: 'tentative',
+    notes: 'NEW event, added to sheet since last check (13 Jul) — timing itself marked TBC on the source. Worth confirming whether this needs any capture.',
+  },
   { id: 'jul24-party', date: '2026-07-24', start: '19:00', end: '23:00', title: 'Black Block Party', type: 'social' },
 
   // ================= SAT 25 / SUN 26 JUL — WEEKEND =================
@@ -189,11 +200,23 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
-    status: 'conflict',
+    status: 'tentative',
     notes:
-      'TIME CONFLICT: microsite says 5–8pm; detailed agenda says 9AM–4PM. Microsite session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling. Confirm which timing is real.',
+      'CONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul), matches the microsite; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling.',
   },
-  { id: 'jul25-eric', date: '2026-07-25', start: '11:00', end: '12:00', title: 'Eric Edmeades', type: 'stage-talk', location: MAIN_STAGE, speakers: ['eric-edmeades'], status: 'tentative' },
+  {
+    id: 'jul25-eric-allday',
+    date: '2026-07-25',
+    start: '09:00',
+    end: '16:00',
+    title: 'Eric Edmeades — all-day stage commitment (NEW, 9am–4pm)',
+    type: 'stage-talk',
+    location: MAIN_STAGE,
+    speakers: ['eric-edmeades'],
+    status: 'tentative',
+    notes:
+      'NEW as of 13 Jul sheet check — replaces the old single-hour tentative slot. Runs parallel to Regan’s accelerator. No studio shoots are booked against Eric this day, so no clash — but he is unavailable for anything else on the 25th.',
+  },
   { id: 'jul25-opening-party', date: '2026-07-25', start: '20:30', end: '02:00', title: 'Opening Party — Marvelous Wonderland', type: 'social' },
   {
     id: 'regan-accel-2',
@@ -206,9 +229,9 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
-    status: 'conflict',
+    status: 'tentative',
     notes:
-      'TIME CONFLICT: microsite says 5–9pm; detailed agenda says 9AM–4PM. She departs Estonia this day per Speaker DATES — an evening run to 9pm makes that departure impossible. Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
+      'CONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). She departs Estonia this day per Speaker DATES — evening finish to 9pm is tight against any departure flight; confirm her flight time. Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
   },
 
   // ================= MON 27 JUL — HEALING =================
@@ -405,17 +428,6 @@ export const ACTIONS: ActionItem[] = [
     due: '2026-07-14',
     people: ['hal-elrod', 'vishen'],
   },
-  {
-    id: 'a-regan-accel',
-    kind: 'impossible',
-    owner: 'author-relations',
-    title: 'Regan accelerator timing — microsite (evenings) vs agenda (9am–4pm)',
-    detail:
-      'UPDATE: the departure clash is GONE — Speaker DATES now has Regan 19–27 Jul (was 19–26), so a day-2 evening on the 26th no longer collides with her leaving. STILL OPEN: microsite sells 5–8pm / 5–9pm, internal agenda says 9am–4pm. Confirm the real hours before locking crew.',
-    due: '2026-07-10',
-    people: ['regan-hillyer'],
-  },
-
   // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
   {
     id: 'p-marisa-podcast-count',
@@ -493,6 +505,24 @@ export const ACTIONS: ActionItem[] = [
     detail: 'His podcast is 10:00 and interview 15:15 on his arrival day. If he lands after ~08:30, the podcast moves.',
     due: '2026-07-11',
     people: ['shi-heng-yi'],
+  },
+  {
+    id: 'ch-regan-flight',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Regan’s departure flight on 26 Jul — accelerator now confirmed to run 5–9pm',
+    detail:
+      'Main Stage sheet confirms her accelerator day 2 is 5–9pm on her departure day. Confirm her actual flight time — a 9pm finish only works if she flies very late or the next morning.',
+    due: '2026-07-14',
+    people: ['regan-hillyer'],
+  },
+  {
+    id: 'ch-mv-awards',
+    kind: 'chase',
+    owner: 'production',
+    title: 'Mindvalley Awards (NEW, Fri 24 Jul, ~6–7pm) — does this need capture?',
+    detail: 'New event added to the Main Stage sheet since last check, timing itself marked TBC on the source. Confirm whether it needs any of our crew, or Still Frame covers it.',
+    due: '2026-07-16',
   },
   {
     id: 'ch-no-interviews',
