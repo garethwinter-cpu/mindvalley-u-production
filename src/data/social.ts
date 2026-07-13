@@ -9,6 +9,8 @@ export interface SocialItem {
   mode: SocialMode
   /** for scheduled items: publish/deliver cadence or date */
   when?: string
+  /** person id of the editor/owner producing this deliverable, when assigned */
+  editor?: string
 }
 
 /**
@@ -133,8 +135,9 @@ export const SOCIAL_CONTENT: SocialItem[] = [
     id: 's-snippets',
     airtableId: 'reccPkWCHofNTu1NM',
     title: 'Daily Stage Talk Snippets (highlights)',
-    brief: 'Pull the strongest 1–3 moments from each day’s stage talks and cut short-form highlights. Feeds daily posting cadence and the weekly recaps.',
+    brief: 'Pull the strongest 1–3 moments from each day’s stage talks and cut short-form highlights (2 per keynote — one Airtable record per author). Feeds daily posting cadence and the weekly recaps.',
     requester: 'Glen Jason Chittur',
+    editor: 'miguel',
     mode: 'scheduled',
     when: 'Every event day (20 Jul – 1 Aug) — same-day or next-morning',
   },

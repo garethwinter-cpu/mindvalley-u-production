@@ -1,5 +1,6 @@
 import { AD_HOC_SOCIAL, SCHEDULED_SOCIAL } from '../data/social'
 import type { SocialItem } from '../data/social'
+import { person } from '../data/people'
 
 const SHOOTS_URL = 'https://airtable.com/appFEFygXo2pRc8AR/tblcZ8OIxfgnlUowC/viwYl9ljifiEfE4a5'
 
@@ -9,6 +10,7 @@ function Card({ s }: { s: SocialItem }) {
       <div className="soc-title">{s.title}</div>
       {s.when && <div className="soc-when">{s.mode === 'ad-hoc' ? '📹 ' : '🗓️ '}{s.when}</div>}
       <div className="soc-brief">{s.brief}</div>
+      {s.editor && <div className="soc-editor">✂️ Edited by {person(s.editor).name}</div>}
       <a className="soc-req" href={`${SHOOTS_URL}/${s.airtableId}`} target="_blank" rel="noreferrer">
         {s.requester} · Airtable →
       </a>

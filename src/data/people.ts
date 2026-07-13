@@ -15,6 +15,7 @@ export const PEOPLE: Person[] = [
   { id: 'nadir', name: 'Nadir Salam', role: 'crew', title: 'Production Lead' },
   { id: 'kuhan', name: 'Kuhan Kunasegaran', role: 'crew', title: 'Senior Video Editor & Videographer' },
   { id: 'jason', name: 'Jason Roper', role: 'crew', title: 'Video Editor (remote)', remote: true },
+  { id: 'miguel', name: 'Miguel Angel Vazquez Alvarez', role: 'crew', title: 'Senior Video Content Producer — edits/creates the daily stage-talk snippets' },
   { id: 'meng', name: 'Meng', role: 'photographer', title: 'Photographer' },
   { id: 'karen', name: 'Karen', role: 'photographer', title: 'Photographer' },
   { id: 'mardo', name: 'Mardo', role: 'photographer', title: 'Photographer' },
