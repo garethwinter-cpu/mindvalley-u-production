@@ -43,9 +43,11 @@ const SOURCES = [
   { label: '✍🏻 Authors (bios)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblGecx2i4ge9KYmU' },
 ]
 
+// Regan's 16 Jul webinar is fully remote and needs no crew — the first commitment
+// actually requiring Gareth's team on the ground is the Dawn Hoang interview, 18 Jul.
 function daysToKickoff(): string {
   const now = new Date()
-  const kickoff = new Date('2026-07-17T09:00:00+03:00')
+  const kickoff = new Date('2026-07-18T14:00:00+03:00')
   const wrap = new Date('2026-08-02T23:59:00+03:00')
   if (now > wrap) return 'Wrapped'
   if (now >= kickoff) return 'In production'
@@ -100,7 +102,7 @@ export default function App() {
             Actions ({ACTIONS.length + CONFLICTS.length})
           </button>
         </nav>
-        <div className="mv-countdown">{daysToKickoff()} · First shoot 17 Jul</div>
+        <div className="mv-countdown">{daysToKickoff()} · First crewed shoot 18 Jul</div>
       </header>
       <main className="mv-page">
         {tab === 'overview' && <Overview onOpenDay={openDay} />}

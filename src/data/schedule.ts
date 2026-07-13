@@ -50,16 +50,17 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   },
   {
     id: 'regan-webinar',
-    date: '2026-07-17',
-    title: 'Regan Hillyer — The Wealth Code masterclass (remote delivery)',
-    type: 'production',
-    location: 'Remote — Regan delivers remotely',
-    speakers: ['regan-hillyer'],
-    crew: CREW_CORE,
-    gareth: true,
-    status: 'tentative',
+    date: '2026-07-16',
+    start: '19:00',
+    end: '20:00',
+    title: 'Regan Hillyer + Vishen — "Break Through Your Money Block" (free live webinar)',
+    type: 'logistics',
+    location: 'Remote — Regan + Vishen deliver remotely',
+    speakers: ['regan-hillyer', 'vishen'],
+    vishen: true,
+    status: 'confirmed',
     notes:
-      'First production of the sprint. 1 hour: 40 min teaching + 20 min Q&A. Start time TBD — confirm and lock the remote-capture setup.',
+      'CONFIRMED via promo (13 Jul) — moved from 17 to 16 Jul. Fully remote, self-produced — Gareth’s team NOT needed. Times: 9am LA / 12pm NY / 5pm London = 7pm Tallinn. Funnel webinar for the Wealth Code Accelerator (25–26 Jul).',
   },
   {
     id: 'priestley-accel-1',
@@ -486,16 +487,6 @@ export const ACTIONS: ActionItem[] = [
       'UPDATE: Speaker DATES now has Hal Elrod (24–29), Maria Wendt (27–30) and Jamie Sea (25–30) — Maria & Jamie confirm their 30 Jul slots work; Hal creates a new conflict (see above). Still missing: Jeremy Harbour (Priestley’s 21 Jul stage co-presenter) — no window on file.',
     due: '2026-07-11',
     people: ['jeremy-harbour'],
-  },
-  {
-    id: 'ch-regan-webinar-time',
-    kind: 'chase',
-    owner: 'author-relations',
-    title: 'Regan webinar start time — 17 Jul, FIRST SHOOT of the sprint',
-    detail:
-      'The Wealth Code masterclass (remote delivery) has a date but no start time. It is the production kickoff; the crew call, remote-capture setup and Slack pings all hang on this one number.',
-    due: '2026-07-08',
-    people: ['regan-hillyer'],
   },
   {
     id: 'ch-shy-landing',
