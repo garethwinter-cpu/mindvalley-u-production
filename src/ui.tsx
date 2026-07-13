@@ -9,7 +9,7 @@ export const TYPE_LABEL: Record<EventType, string> = {
   experience: 'Experience',
   portrait: 'Portraits',
   accelerator: 'Accelerator',
-  production: 'Production',
+  production: 'Studio production',
   podcast: 'Podcast',
   social: 'Parties',
   'social-media': 'Social media (daily)',
@@ -83,7 +83,7 @@ export type ChipFilter = 'all' | EventType | 'small-hall'
 export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[] = [
   { key: 'stage-talk', label: 'Stage talk', dotClass: 't-stage-talk' },
   { key: 'podcast', label: 'Podcast', dotClass: 't-podcast' },
-  { key: 'production', label: 'Our production', dotClass: 't-production' },
+  { key: 'production', label: 'Studio production', dotClass: 't-production' },
   { key: 'portrait', label: 'Portraits', dotClass: 't-portrait' },
   { key: 'accelerator', label: 'Accelerator', dotClass: 't-accelerator' },
   { key: 'small-hall', label: 'Small Hall', dotClass: 'loc-small-hall' },
