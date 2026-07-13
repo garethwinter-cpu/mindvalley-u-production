@@ -603,7 +603,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'Day after he lands; his stage day is the 30th. This is the front of one continuous 10:00–13:00 studio block: teaching with Vishen runs to ~12:15 (the Quest teaching-audio time-saver keeps it tight), then Vishen wraps and Jim stays on solo for his accelerator promo (see accel-upsell-kwik) in the same session. The studio flips to the Jolene podcast at 13:30.',
+    notes: 'Day after he lands; his stage day is the 30th (where his accelerator is delivered live). This is the front of one continuous 10:00–13:00 studio block: teaching with Vishen runs to ~12:15 (the Quest teaching-audio time-saver keeps it tight), then Vishen wraps and Jim stays on solo for the accelerator landing-page video (see accel-upsell-kwik) in the same session. The studio flips to the Jolene podcast at 13:30.',
   },
   {
     id: 'med-zen-samurai',
@@ -862,7 +862,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-29',
     start: '12:15',
     end: '13:00',
-    title: 'Jim Kwik — Accelerator Upsell shoot + Upsell Landing Page Video',
+    title: 'Jim Kwik — Accelerator Landing Page Video',
     type: 'production',
     location: STUDIO,
     speakers: ['jim-kwik'],
@@ -871,7 +871,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'MOVED into the masterclass session per Gareth (13 Jul): captured in the tail of Jim\'s 10:00–13:00 Superbrain block (see mc-kwik-superbrain), after Vishen wraps ~12:15 and Jim stays on solo. Product upsell + Upsell Landing Page Video shot together while he is already lit and mic\'d — no extra studio slot, and it frees his whole departure-eve (was a standalone 1 Aug 9am shoot).',
+    notes: 'The accelerator itself is delivered LIVE on the Main Stage on 30 Jul (per the Google Sheet) — this is just the sales/landing-page video for it. Folded into the tail of Jim\'s 29 Jul masterclass session (after Vishen wraps ~12:15, Jim stays on solo), since his 30th is stage-packed all day. No extra studio slot; frees his departure-eve.',
   },
   {
     id: 'mc-marisa',

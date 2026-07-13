@@ -280,9 +280,9 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul29-author-dinner', date: '2026-07-29', start: '21:00', end: '00:30', title: 'Author Dinner', type: 'social' },
 
   // ================= THU 30 JUL — REINVENTION =================
-  { id: 'jul30-kwik-1', date: '2026-07-30', start: '10:00', end: '11:00', title: 'Jim Kwik', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'] },
+  { id: 'jul30-kwik-1', date: '2026-07-30', start: '10:00', end: '11:00', title: 'Jim Kwik — Accelerator (stage, part 1)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'], notes: 'Jim\'s accelerator is delivered live on the Main Stage on the 30th (per the Google Sheet) — this and part 2 are the accelerator itself, captured live by the stage team. The Vishen fireside at 15:00 is separate.' },
   { id: 'jul30-pringle', date: '2026-07-30', start: '10:00', end: '11:30', title: 'Rachel Pringle (Embodiment, 90 min)', type: 'embodiment', location: EMBODIMENT, speakers: ['rachel-pringle'] },
-  { id: 'jul30-kwik-2', date: '2026-07-30', start: '11:00', end: '12:00', title: 'Jim Kwik', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'] },
+  { id: 'jul30-kwik-2', date: '2026-07-30', start: '11:00', end: '12:00', title: 'Jim Kwik — Accelerator (stage, part 2)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'] },
   { id: 'jul30-kwik-3', date: '2026-07-30', start: '14:00', end: '15:00', title: 'Jim Kwik (Maya 25min + Kristina? 25min)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik', 'maya-raichoora', 'kristina'], status: 'tentative' },
   { id: 'jul30-kwik-fireside', date: '2026-07-30', start: '15:00', end: '16:00', title: 'Vishen + Jim Kwik Fireside', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik', 'vishen'], vishen: true },
   { id: 'jul30-vishen', date: '2026-07-30', start: '16:15', end: '17:00', title: 'Vishen (swappable)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true, status: 'tentative' },
