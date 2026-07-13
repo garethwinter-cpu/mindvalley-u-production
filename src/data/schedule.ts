@@ -428,15 +428,6 @@ export const ACTIONS: ActionItem[] = [
       'Marisa’s team (Elise McDonald) wants studio time for her "Your Mind, Your Rules" book podcast. Realist capacity: the studio is one room and both crew units are heavily booked. Marisa is free 21–23, 26–30 Jul, but studio+crew gaps are thin. We can comfortably facilitate 3 episodes (stretch 4). PENCILLED IN (13 Jul) as placeholders: 27 Jul 11–12 + 2–3 (most open studio day), plus 28 Jul 5:30–6:30pm — see pod-marisa-own-1/2/3. No guest/topic confirmed yet. If she wants 5+ episodes, there is a real gap → recommend an external Tallinn studio (we have contacts). Reply to her team with the number once confirmed.',
     people: ['marisa-peer'],
   },
-  {
-    id: 'p-marisa-move',
-    kind: 'proposal',
-    owner: 'gareth',
-    title: 'Move Marisa’s masterclass + assets from 2 Aug to 31 Jul',
-    detail:
-      'Wrap day carries seven shoots with zero slack. Marisa is in town on 31 Jul, Vishen is not needed for her masterclass, and the closing ceremony is Still Frame’s capture. Moving her to 31 Jul (10:00–13:00 + 14:00–15:30) takes wrap day to five shoots.',
-    people: ['marisa-peer'],
-  },
 
   // ---- 📋 Author-relations chase list ----
   {
