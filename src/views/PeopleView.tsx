@@ -4,7 +4,7 @@ import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
 import { EDITORIAL_EVENTS } from '../data/editorial'
-import { StatusBadge, TypeBadge, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
+import { StatusBadge, TypeBadge, TYPE_ICON, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
 import type { ScheduleEvent } from '../data/types'
 import { Headshot } from '../profile'
 import type { PersonRole } from '../data/types'
@@ -74,6 +74,7 @@ function DayCard({ day }: { day: DaySchedule }) {
     rows.push(
       <div key={e.id} className={`sch-block${e.status === 'conflict' ? ' conflict' : ''}`}>
         <span className="sch-time">{fmtClock(s)}–{fmtClock(en)}</span>
+        <span className="sch-icon" title={e.type} aria-hidden>{TYPE_ICON[e.type]}</span>
         <span className="sch-what">
           {e.title}
           {loc(e) && <span className="sch-loc"> · {loc(e)}</span>}
@@ -117,6 +118,7 @@ function DayCard({ day }: { day: DaySchedule }) {
       {day.untimed.map((e) => (
         <div key={e.id} className="sch-block untimed">
           <span className="sch-time">All day</span>
+          <span className="sch-icon" title={e.type} aria-hidden>{TYPE_ICON[e.type]}</span>
           <span className="sch-what">{e.title}</span>
         </div>
       ))}

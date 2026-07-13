@@ -972,6 +972,13 @@ body {
   color: var(--text);
   font-variant-numeric: tabular-nums;
 }
+.sch-icon {
+  flex: none;
+  width: 1.3em;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1;
+}
 .sch-what {
   color: var(--text);
 }

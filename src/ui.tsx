@@ -16,6 +16,22 @@ export const TYPE_LABEL: Record<EventType, string> = {
   logistics: 'Logistics',
 }
 
+/** Signposting icon per type — used on scheduler blocks and anywhere a quick
+ *  visual cue helps. Podcast = mic, studio content = clapper, stage/event = tent. */
+export const TYPE_ICON: Record<EventType, string> = {
+  'stage-talk': '🎪',
+  embodiment: '🧘',
+  community: '🤝',
+  experience: '✨',
+  portrait: '📸',
+  accelerator: '🎓',
+  production: '🎬',
+  podcast: '🎙️',
+  social: '🎉',
+  'social-media': '📱',
+  logistics: '🚚',
+}
+
 export const STATUS_LABEL: Record<EventStatus, string> = {
   confirmed: 'Confirmed',
   tentative: 'To confirm',
