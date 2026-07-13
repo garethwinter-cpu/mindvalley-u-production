@@ -11,7 +11,8 @@ export const TYPE_LABEL: Record<EventType, string> = {
   accelerator: 'Accelerator',
   production: 'Production',
   podcast: 'Podcast',
-  social: 'Social',
+  social: 'Parties',
+  'social-media': 'Social media (daily)',
   logistics: 'Logistics',
 }
 
@@ -78,7 +79,8 @@ export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[]
   { key: 'portrait', label: 'Portraits', dotClass: 't-portrait' },
   { key: 'accelerator', label: 'Accelerator', dotClass: 't-accelerator' },
   { key: 'small-hall', label: 'Small Hall', dotClass: 'loc-small-hall' },
-  { key: 'social', label: 'Event / social', dotClass: '' },
+  { key: 'social-media', label: 'Social media (daily)', dotClass: 't-social-media' },
+  { key: 'social', label: 'Parties', dotClass: '' },
 ]
 
 export function matchesChipFilter(e: ScheduleEvent, filter: ChipFilter): boolean {

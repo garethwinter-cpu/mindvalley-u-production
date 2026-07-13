@@ -31,6 +31,7 @@ export type EventType =
   | 'production'
   | 'podcast'
   | 'social'
+  | 'social-media'
   | 'logistics'
 
 export type EventStatus = 'confirmed' | 'tentative' | 'placeholder' | 'conflict'

@@ -513,6 +513,8 @@ body {
 .ov-chip.t-production { background: var(--green-light); color: var(--green-content); }
 .mv-badge.type-social { background: var(--bg-subtle); color: var(--text-muted); }
 .ov-chip.t-social { background: var(--bg-subtle); color: var(--text-muted); }
+.mv-badge.type-social-media { background: var(--brand-bright); color: var(--white); }
+.ov-chip.t-social-media { background: var(--brand-bright); color: var(--white); }
 
 .dot {
   width: 8px;
@@ -527,6 +529,7 @@ body {
 .dot.t-portrait { background: var(--pink); }
 .dot.t-accelerator { background: var(--orange); }
 .dot.loc-small-hall { background: var(--brand-dark); }
+.dot.t-social-media { background: var(--brand-bright); }
 
 /* Small Hall (Community Stage) gets its own distinct shade — dark purple,
    layered over whatever type color the chip/badge already carries. */
@@ -900,8 +903,7 @@ body {
 }
 
 /* ============ Social tab ============ */
-.soc-banner,
-.day-social-banner {
+.soc-banner {
   background: var(--green-light);
   color: var(--green-content);
   border-radius: 12px;
@@ -909,9 +911,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
-}
-.day-social-banner {
-  margin: 0 0 16px;
 }
 .soc-grid {
   display: grid;

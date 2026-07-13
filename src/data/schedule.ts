@@ -306,7 +306,20 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
 ]
 
-export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...PRODUCTION_EVENTS]
+// One entry per event day (20 Jul – 1 Aug) for the roving ad-hoc social capture +
+// daily stage-talk snippets — see src/data/social.ts for the full brief list.
+const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
+  (d) => d.date >= '2026-07-20' && d.date <= '2026-08-01',
+).map((d) => ({
+  id: `social-media-${d.date}`,
+  date: d.date,
+  title: 'Daily social media capture (ad-hoc + stage snippets)',
+  type: 'social-media',
+  location: 'Roaming — across venue',
+  notes: 'Roving shooter collecting toward the daily ad-hoc social concepts + daily stage-talk snippets. See the Social tab.',
+}))
+
+export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]
 
 export const CONFLICTS: Conflict[] = [
   {
