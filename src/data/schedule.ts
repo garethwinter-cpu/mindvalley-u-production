@@ -436,16 +436,6 @@ export const ACTIONS: ActionItem[] = [
     people: ['sheleana-aiyana'],
   },
   {
-    id: 'a-priestley-window',
-    kind: 'impossible',
-    owner: 'author-relations',
-    title: 'Daniel Priestley now departs 21 Jul — 2 shoots still booked for the 22nd',
-    detail:
-      'Speaker DATES changed to 16–21 Jul (was 20–22). His podcast is REMOVED per Gareth (13 Jul) — he’ll capture that separately at a later date, outside the sprint. Still blocked: the Kaitlin interview and membership assets are both on 22 Jul — after he leaves. Move both to ≤21 (tight: 20 is opening/NO INTERVIEWS, 21 is his packed stage day) or drop.',
-    due: '2026-07-14',
-    people: ['daniel-priestley'],
-  },
-  {
     id: 'a-hal-window',
     kind: 'impossible',
     owner: 'author-relations',
@@ -464,15 +454,6 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Marisa’s team (Elise McDonald) wants studio time for her "Your Mind, Your Rules" book podcast. Realist capacity: the studio is one room and both crew units are heavily booked. Marisa is free 21–23, 26–30 Jul, but studio+crew gaps are thin. We can comfortably facilitate 3 episodes (stretch 4). PENCILLED IN (13 Jul) as placeholders: 27 Jul 11–12 + 2–3 (most open studio day), plus 28 Jul 5:30–6:30pm — see pod-marisa-own-1/2/3. No guest/topic confirmed yet. If she wants 5+ episodes, there is a real gap → recommend an external Tallinn studio (we have contacts). Reply to her team with the number once confirmed.',
     people: ['marisa-peer'],
-  },
-  {
-    id: 'p-priestley-cut',
-    kind: 'proposal',
-    owner: 'gareth',
-    title: 'Cut Priestley’s membership asset shoot to 45 min (or drop it)',
-    detail:
-      '22 Jul is his departure day and already carries his podcast + interview. The membership record has a “(?)” in its own title. Recommendation: keep podcast + interview sacred, shoot 45 min of membership essentials only if he offers the time.',
-    people: ['daniel-priestley'],
   },
   {
     id: 'p-vishen-split',
