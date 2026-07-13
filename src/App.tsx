@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Overview from './views/Overview'
 import DayView from './views/DayView'
 import PeopleView from './views/PeopleView'
@@ -11,6 +11,29 @@ import { SOCIAL_CONTENT } from './data/social'
 import { ProfileProvider } from './profile'
 
 type Tab = 'overview' | 'day' | 'people' | 'alerts' | 'podcast' | 'social'
+
+// Public, shareable hash names (#podcast etc.) <-> internal tab keys.
+const HASH_TO_TAB: Record<string, Tab> = {
+  overview: 'overview',
+  day: 'day',
+  people: 'people',
+  podcast: 'podcast',
+  social: 'social',
+  actions: 'alerts',
+}
+const TAB_TO_HASH: Record<Tab, string> = {
+  overview: 'overview',
+  day: 'day',
+  people: 'people',
+  podcast: 'podcast',
+  social: 'social',
+  alerts: 'actions',
+}
+
+function tabFromHash(): Tab {
+  const h = window.location.hash.replace(/^#\/?/, '').split(/[?&]/)[0]
+  return HASH_TO_TAB[h] ?? 'overview'
+}
 
 const SOURCES = [
   { label: '📺 Shoots (production slate)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblcZ8OIxfgnlUowC/viwYl9ljifiEfE4a5' },
@@ -31,8 +54,20 @@ function daysToKickoff(): string {
 }
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>('overview')
+  const [tab, setTabState] = useState<Tab>(tabFromHash)
   const [day, setDay] = useState('2026-07-17')
+
+  const setTab = (t: Tab) => {
+    setTabState(t)
+    const newHash = '#' + TAB_TO_HASH[t]
+    if (window.location.hash !== newHash) window.location.hash = newHash
+  }
+
+  useEffect(() => {
+    const onHashChange = () => setTabState(tabFromHash())
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
 
   const openDay = (date: string) => {
     setDay(date)

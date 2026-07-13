@@ -89,21 +89,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
 
   // ---------- WED 22 JUL ----------
-  {
-    id: 'pod-priestley',
-    date: '2026-07-22',
-    start: '10:00',
-    end: '11:00',
-    title: 'Scaling Wisdom Podcast: Daniel Priestley & Vishen',
-    type: 'podcast',
-    location: STUDIO,
-    speakers: ['daniel-priestley', 'vishen'],
-    vishen: true,
-    gareth: true,
-    crew: UNIT1,
-    status: 'conflict',
-    notes: '⚠ WINDOW CHANGE: Priestley now departs 21 Jul (Speaker DATES updated 16–21) — this 22 Jul podcast is AFTER he leaves. Must move to ≤21 or record remote. His last day in Estonia. (Airtable has this episode twice — recs rec0iuCJ… and recF5syZ… — dedupe.)',
-  },
+  // NOTE: Daniel Priestley podcast REMOVED per Gareth (13 Jul) — he'll capture it at a later date, outside the MVU sprint.
   {
     id: 'pod-john-lee',
     date: '2026-07-22',
@@ -584,20 +570,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     location: 'Community Stage (Small Hall)',
     speakers: ['iris-wagner'],
     status: 'confirmed',
-    notes: 'CONFIRMED via 2026 SMALL HALL Overview sheet — she has an official 20-min Tribe slot, Thu 30 Jul, 11–12 block. Not a studio production; this is her event stage talk. If Gareth still wants a separate content piece (podcast/interview) with her, that would need its own studio slot — currently NOT scheduled.',
-  },
-  {
-    id: 'shoot-iris-wagner-content',
-    date: '2026-07-30',
-    start: '12:00',
-    end: '12:45',
-    title: 'Iris Wagner — content shoot (format to confirm)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['iris-wagner'],
-    crew: UNIT2,
-    status: 'tentative',
-    notes: 'PROPOSED slot straight after her Community Stage talk. Iris Wagner: founder/CEO Memoirs Productions (legacy preservation), forthcoming podcast "Speaking of Legacy". Confirm: does Gareth want a separate podcast/interview/talking-head piece, and if so, host + format? Placed right after her stage talk so she doesn’t need a second trip to Kultuurikatel.',
+    notes: 'CONFIRMED via 2026 SMALL HALL Overview sheet — 20-min Tribe slot, Thu 30 Jul, 11–12 block. Sticking to this stage slot only — no separate studio content shoot (decided 13 Jul).',
   },
   {
     id: 'pod-hal-elrod',
@@ -728,17 +701,39 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
 
   // (2 Aug is studio pack/travel — no shoots)
 
-  // ---------- POST-EVENT: 3–5 AUG ----------
+  // ---------- POST-EVENT: 3–5 AUG (blocked out, 3-day shoot) ----------
   {
-    id: 'shoot-iris-vishen-parents',
+    id: 'shoot-iris-vishen-parents-d1',
     date: '2026-08-03',
-    title: 'Legacy shoot — Iris Wagner with Vishen’s parents',
+    title: 'Legacy shoot — Iris Wagner with Vishen’s parents (Day 1 of 3)',
     type: 'production',
     location: 'TBC (Tallinn)',
     speakers: ['iris-wagner'],
     gareth: true,
     status: 'tentative',
-    notes: 'PENCILLED — flexible window 3–5 Aug (exact day/time TBC). Legacy/memoir documentary of Vishen’s parents, led by Iris Wagner (Memoirs Productions). Post-event, after the studio packs on 2 Aug — confirm crew stay-on, kit availability, and the parents’ availability.',
+    notes: 'BLOCKED OUT — full 3-day shoot, 3–5 Aug. Legacy/memoir documentary of Vishen’s parents, led by Iris Wagner (Memoirs Productions). Post-event, after the studio packs on 2 Aug — confirm crew stay-on, kit availability, exact daily times, and the parents’ availability.',
+  },
+  {
+    id: 'shoot-iris-vishen-parents-d2',
+    date: '2026-08-04',
+    title: 'Legacy shoot — Iris Wagner with Vishen’s parents (Day 2 of 3)',
+    type: 'production',
+    location: 'TBC (Tallinn)',
+    speakers: ['iris-wagner'],
+    gareth: true,
+    status: 'tentative',
+    notes: 'BLOCKED OUT — day 2 of the 3–5 Aug legacy shoot.',
+  },
+  {
+    id: 'shoot-iris-vishen-parents-d3',
+    date: '2026-08-05',
+    title: 'Legacy shoot — Iris Wagner with Vishen’s parents (Day 3 of 3)',
+    type: 'production',
+    location: 'TBC (Tallinn)',
+    speakers: ['iris-wagner'],
+    gareth: true,
+    status: 'tentative',
+    notes: 'BLOCKED OUT — final day of the 3–5 Aug legacy shoot.',
   },
   {
     id: 'accel-upsell-kwik',

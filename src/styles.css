@@ -526,20 +526,55 @@ body {
 .dot.t-production { background: var(--green); }
 .dot.t-portrait { background: var(--pink); }
 .dot.t-accelerator { background: var(--orange); }
+.dot.loc-small-hall { background: var(--brand-dark); }
+
+/* Small Hall (Community Stage) gets its own distinct shade — dark purple,
+   layered over whatever type color the chip/badge already carries. */
+.ov-chip.loc-small-hall { background: var(--brand-dark); color: var(--white); }
+.mv-badge.loc-small-hall { background: var(--brand-dark); color: var(--white); }
 
 .legend {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
   align-items: center;
-  margin: -16px 0 24px;
-  font-size: 13px;
-  color: var(--text-muted);
+  margin: -8px 0 24px;
 }
-.legend span {
+.legend-item {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  border: 1px solid transparent;
+  background: none;
+  border-radius: 128px;
+  padding: 5px 12px 5px 8px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-standard);
+}
+.legend-item:hover {
+  background: var(--bg-subtle);
+}
+.legend-item.active {
+  background: var(--brand-light);
+  border-color: var(--brand-border);
+  color: var(--brand-content);
+  font-weight: 500;
+}
+.legend-clear {
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-subtle);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+.legend-clear:hover {
+  color: var(--text);
 }
 
 /* ============ Person links & headshots ============ */

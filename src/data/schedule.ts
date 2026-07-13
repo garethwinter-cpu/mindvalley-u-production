@@ -412,11 +412,11 @@ export const ACTIONS: ActionItem[] = [
     id: 'a-priestley-window',
     kind: 'impossible',
     owner: 'author-relations',
-    title: 'Daniel Priestley now departs 21 Jul — 3 shoots booked for the 22nd (NEW)',
+    title: 'Daniel Priestley now departs 21 Jul — 2 shoots still booked for the 22nd',
     detail:
-      'Speaker DATES changed to 16–21 Jul (was 20–22). His podcast, Kaitlin interview and membership assets are all on 22 Jul — after he leaves. Move all three to ≤21 (tight: 20 is opening/NO INTERVIEWS, 21 is his packed stage day) or record the podcast remotely.',
+      'Speaker DATES changed to 16–21 Jul (was 20–22). His podcast is REMOVED per Gareth (13 Jul) — he’ll capture that separately at a later date, outside the sprint. Still blocked: the Kaitlin interview and membership assets are both on 22 Jul — after he leaves. Move both to ≤21 (tight: 20 is opening/NO INTERVIEWS, 21 is his packed stage day) or drop.',
     due: '2026-07-14',
-    people: ['daniel-priestley', 'vishen'],
+    people: ['daniel-priestley'],
   },
   {
     id: 'a-hal-window',

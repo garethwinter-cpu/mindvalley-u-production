@@ -1,5 +1,6 @@
 import type { EventStatus, EventType, ScheduleEvent } from './data/types'
 import { initials, person } from './data/people'
+import { COMMUNITY } from './data/schedule'
 
 export const TYPE_LABEL: Record<EventType, string> = {
   'stage-talk': 'Stage talk',
@@ -65,4 +66,49 @@ export function involvesPerson(e: ScheduleEvent, id: string): boolean {
 /** Our content productions vs locked event commitments */
 export function isOurProduction(e: ScheduleEvent): boolean {
   return e.type === 'production' || e.type === 'podcast' || (e.type === 'accelerator' && e.id.startsWith('accel-rec'))
+}
+
+/** Clickable Key/legend — filters by type, or by the Small Hall location (a cross-cutting filter) */
+export type ChipFilter = 'all' | EventType | 'small-hall'
+
+export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[] = [
+  { key: 'stage-talk', label: 'Stage talk', dotClass: 't-stage-talk' },
+  { key: 'podcast', label: 'Podcast', dotClass: 't-podcast' },
+  { key: 'production', label: 'Our production', dotClass: 't-production' },
+  { key: 'portrait', label: 'Portraits', dotClass: 't-portrait' },
+  { key: 'accelerator', label: 'Accelerator', dotClass: 't-accelerator' },
+  { key: 'small-hall', label: 'Small Hall', dotClass: 'loc-small-hall' },
+  { key: 'social', label: 'Event / social', dotClass: '' },
+]
+
+export function matchesChipFilter(e: ScheduleEvent, filter: ChipFilter): boolean {
+  if (filter === 'all') return true
+  if (filter === 'small-hall') return e.location === COMMUNITY
+  return e.type === filter
+}
+
+export function isSmallHall(e: ScheduleEvent): boolean {
+  return e.location === COMMUNITY
+}
+
+export function Legend({ active, onSelect }: { active: ChipFilter; onSelect: (f: ChipFilter) => void }) {
+  return (
+    <div className="legend">
+      {FILTER_META.map((m) => (
+        <button
+          key={m.key}
+          className={`legend-item${active === m.key ? ' active' : ''}`}
+          onClick={() => onSelect(active === m.key ? 'all' : m.key)}
+        >
+          <span className={`dot ${m.dotClass}`} />
+          {m.label}
+        </button>
+      ))}
+      {active !== 'all' && (
+        <button className="legend-clear" onClick={() => onSelect('all')}>
+          Clear filter
+        </button>
+      )}
+    </div>
+  )
 }

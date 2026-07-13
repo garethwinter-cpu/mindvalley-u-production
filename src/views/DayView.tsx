@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
-import { StatusBadge, TypeBadge, fmtTime, involvesPerson, requiredPeople } from '../ui'
+import { ChipFilter, Legend, StatusBadge, TypeBadge, fmtTime, involvesPerson, isSmallHall, matchesChipFilter, requiredPeople } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
 
 export default function DayView({ date, onPick }: { date: string; onPick: (d: string) => void }) {
   const [who, setWho] = useState('all')
+  const [filter, setFilter] = useState<ChipFilter>('all')
   const day = DAYS.find((d) => d.date === date) ?? DAYS[0]
   const events = EVENTS.filter((e) => e.date === day.date)
     .filter((e) => who === 'all' || involvesPerson(e, who))
+    .filter((e) => matchesChipFilter(e, filter))
     .sort((a, b) => (a.start ?? '00:00').localeCompare(b.start ?? '00:00'))
 
   const speakers = PEOPLE.filter((p) => p.role === 'speaker')
@@ -61,7 +63,9 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
         )}
       </div>
 
-      {(day.week === 1 || day.week === 2) && who === 'all' && (
+      <Legend active={filter} onSelect={setFilter} />
+
+      {(day.week === 1 || day.week === 2) && who === 'all' && filter === 'all' && (
         <div className="day-social-banner">
           🎥 <strong>Ad-hoc social capture runs all day</strong> — roving shooter collecting toward the daily social
           concepts (Reels, "What brought you here?", kids interviews, ASMR, Ray-Ban day-in-life) + daily stage-talk
@@ -72,7 +76,9 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
       <div className="evt-list">
         {events.length === 0 && (
           <div className="empty">
-            {who === 'all' ? 'Nothing scheduled. Recovery day — or an opportunity.' : 'Nothing for this person today.'}
+            {who === 'all' && filter === 'all'
+              ? 'Nothing scheduled. Recovery day — or an opportunity.'
+              : 'Nothing matches this filter today.'}
           </div>
         )}
         {events.map((e) => {
@@ -87,6 +93,7 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
                 <div className="evt-title">
                   {e.title}
                   <TypeBadge type={e.type} />
+                  {isSmallHall(e) && <span className="mv-badge loc-small-hall">Small Hall</span>}
                   <StatusBadge status={e.status} />
                   {e.vishen && <span className="mv-badge">Vishen required</span>}
                   {e.gareth && <span className="mv-badge">Gareth on set</span>}
