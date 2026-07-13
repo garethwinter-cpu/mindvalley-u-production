@@ -63,6 +63,9 @@ export interface ScheduleEvent {
   /** From the Shoots Airtable "Priority Ranking (Manual)" field, 1-10. Provisional —
    *  the author wishlist rankings are still being finalized. */
   priority?: number
+  /** Cross-cutting Parties tag — set on non-'social' events (e.g. a production
+   *  that's also a party/ceremony) so they still show up under the Parties filter. */
+  party?: boolean
 }
 
 export interface DayMeta {

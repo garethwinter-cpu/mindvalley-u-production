@@ -187,10 +187,12 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     title: 'Mindvalley Awards Ceremony — FULL VIDEO TEAM (timing still TBC on source)',
     type: 'production',
     location: MAIN_STAGE,
+    speakers: ['kaitlin'],
     gareth: true,
     crew: CREW_CORE,
+    party: true,
     status: 'tentative',
-    notes: 'Per Fisher (voice note, 13 Jul): this needs the full production team\'s focus, not passive coverage — many speakers fly in specifically for the video/photo opportunity here, and a strong asset can lift a speaker\'s fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). Timing itself still marked TBC on the source sheet.',
+    notes: 'Per Fisher (voice note, 13 Jul): this needs the full production team\'s focus, not passive coverage — many speakers fly in specifically for the video/photo opportunity here, and a strong asset can lift a speaker\'s fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). Timing itself still marked TBC on the source sheet. Kaitlin O\'Toole confirmed hosting (13 Jul). Added to the Shoots Airtable as its own record (13 Jul) — crew is our proposed default (Nadir + Khairul) but Gareth hasn\'t actually assigned/confirmed production resource for it yet, see a-mv-awards-crew.',
   },
   { id: 'jul24-party', date: '2026-07-24', start: '19:00', end: '23:00', title: 'Black Block Party', type: 'social' },
 
@@ -648,6 +650,16 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
     due: '2026-07-20',
+  },
+  {
+    id: 'a-mv-awards-crew',
+    kind: 'proposal',
+    owner: 'production',
+    title: 'Confirm production resource for the Mindvalley Awards Ceremony (24 Jul)',
+    detail:
+      'Now formally in the Shoots Airtable (13 Jul), with Kaitlin O\'Toole confirmed hosting. The app carries Nadir + Khairul as a proposed default crew (they\'re free from 4pm that day), but Gareth hasn\'t actually assigned/confirmed who\'s covering it — needed given the full-team requirement Fisher flagged.',
+    due: '2026-07-20',
+    people: ['kaitlin'],
   },
 ]
 

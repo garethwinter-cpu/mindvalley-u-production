@@ -560,6 +560,9 @@ body {
 .ov-chip.loc-small-hall { background: var(--brand-dark); color: var(--white); }
 .mv-badge.loc-small-hall { background: var(--brand-dark); color: var(--white); }
 
+/* Cross-cutting Parties tag on a non-'social' event (e.g. a production that's also a party) */
+.mv-badge.tag-party { background: var(--bg-subtle); color: var(--text-muted); }
+
 .legend {
   display: flex;
   gap: 8px;

@@ -101,11 +101,17 @@ export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[]
 export function matchesChipFilter(e: ScheduleEvent, filter: ChipFilter): boolean {
   if (filter === 'all') return true
   if (filter === 'small-hall') return e.location === COMMUNITY
+  if (filter === 'social') return e.type === 'social' || !!e.party
   return e.type === filter
 }
 
 export function isSmallHall(e: ScheduleEvent): boolean {
   return e.location === COMMUNITY
+}
+
+/** True when this event carries the cross-cutting Parties tag but isn't itself type 'social' */
+export function isPartyTagged(e: ScheduleEvent): boolean {
+  return !!e.party && e.type !== 'social'
 }
 
 /** Director/Camera/Editor credits from the Shoots Airtable "Creative" column, grouped for display */
