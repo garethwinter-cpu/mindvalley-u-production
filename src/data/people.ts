@@ -19,7 +19,7 @@ export const PEOPLE: Person[] = [
   { id: 'karen', name: 'Karen', role: 'photographer', title: 'Photographer' },
   { id: 'mardo', name: 'Mardo', role: 'photographer', title: 'Photographer' },
   { id: 'still-frame', name: 'Still Frame', role: 'partner', title: 'Estonian production co — stage record & broadcast' },
-  { id: 'eni', name: 'Eni', role: 'author-relations', title: "Manages Kaitlin's hosting schedule; interviewing Sheleana Aiyana" },
+  { id: 'eni', name: 'Eni Selfo', role: 'author-relations', title: "Head of Content, Social Media & Accelerators — manages Kaitlin's hosting schedule; interviewing Sheleana Aiyana" },
   {
     id: 'kaitlin',
     name: "Kaitlin O'Toole",
@@ -71,7 +71,7 @@ export const PEOPLE: Person[] = [
     id: 'sheleana-aiyana',
     name: 'Sheleana Aiyana',
     role: 'speaker',
-    title: 'Arrival confirmed 22 Jul on Speaker DATES — Departure Date field is blank, not "22 Jul only" (audit, 13 Jul)',
+    window: { from: '2026-07-22', to: '2026-07-29' },
   },
   { id: 'shi-heng-yi', name: 'Shi Heng Yi', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-28' } },
   { id: 'simon-ong', name: 'Simon Alexander Ong', role: 'speaker', window: { from: '2026-07-18', to: '2026-07-23' } },

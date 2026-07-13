@@ -23,9 +23,8 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
         {day.label} — {day.theme}
       </h1>
       <p className="mv-sub">
-        {day.noInterviews
-          ? 'Marked NO INTERVIEWS in the event agenda — no podcast/interview capture today. '
-          : 'Interview capture is viable today (not marked NO INTERVIEWS). '}
+        {day.noInterviews &&
+          'Marked NO INTERVIEWS in the event agenda — that means no stage/press interviews, not our studio capture (confirmed via Eni, 13 Jul). '}
         Energiakeskus Studio ↔ Kultuurikatel is walkable — no travel buffers between venue and studio.
       </p>
 

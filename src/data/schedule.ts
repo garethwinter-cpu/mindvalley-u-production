@@ -253,15 +253,15 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul27-newbie', date: '2026-07-27', start: '13:00', end: '14:00', title: 'Newbie Orientation', type: 'logistics', location: MAIN_STAGE },
   { id: 'jul27-shy-fireside', date: '2026-07-27', start: '14:00', end: '15:00', title: 'Shi Heng Yi Fireside with Vishen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['shi-heng-yi', 'vishen'], vishen: true },
   { id: 'jul27-krenn-women', date: '2026-07-27', start: '14:00', end: '15:00', title: 'Lorin Krenn (women only)', type: 'experience', location: EXPERIENCE, speakers: ['lorin-krenn'] },
-  { id: 'jul27-elrod', date: '2026-07-27', start: '15:00', end: '16:00', title: 'Hal Elrod', type: 'stage-talk', location: MAIN_STAGE, speakers: ['hal-elrod'], notes: 'Not on Speaker DATES — window unknown.' },
-  { id: 'jul27-sheleana-wineland', date: '2026-07-27', start: '16:15', end: '17:00', title: 'Sheleana Aiyana & John Wineland', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana', 'john-wineland'], status: 'tentative', notes: 'Speaker DATES confirms her 22 Jul arrival but Departure Date is blank (audit, 13 Jul) — not proven impossible, just needs author-relations to confirm she\'s actually still around.' },
+  { id: 'jul27-elrod', date: '2026-07-27', start: '15:00', end: '16:00', title: 'Hal Elrod', type: 'stage-talk', location: MAIN_STAGE, speakers: ['hal-elrod'] },
+  { id: 'jul27-sheleana-wineland', date: '2026-07-27', start: '16:15', end: '17:00', title: 'Sheleana Aiyana & John Wineland', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana', 'john-wineland'] },
   { id: 'jul27-party', date: '2026-07-27', start: '19:00', end: '23:00', title: 'White Block Party', type: 'social' },
 
   // ================= TUE 28 JUL — EMBODIMENT =================
   { id: 'jul28-zen', date: '2026-07-28', start: '10:00', end: '11:00', title: 'Zen Samurai (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['zen-samurai'] },
   { id: 'jul28-dawn', date: '2026-07-28', start: '11:00', end: '12:00', title: 'Dawn Hoang (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dawn-hoang'] },
   { id: 'jul28-dawn-photo', date: '2026-07-28', start: '12:10', end: '12:30', title: 'Portraits — Dawn Hoang', type: 'portrait', crew: ['mardo'], speakers: ['dawn-hoang'], notes: 'Location TBD' },
-  { id: 'jul28-sheleana', date: '2026-07-28', start: '14:00', end: '15:00', title: 'Sheleana Aiyana', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana'], status: 'tentative', notes: 'Speaker DATES confirms her 22 Jul arrival but Departure Date is blank (audit, 13 Jul) — not proven impossible, just needs author-relations to confirm she\'s actually still around.' },
+  { id: 'jul28-sheleana', date: '2026-07-28', start: '14:00', end: '15:00', title: 'Sheleana Aiyana', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana'] },
   { id: 'jul28-sheleana-photo', date: '2026-07-28', start: '15:10', end: '15:30', title: 'Portraits — Sheleana Aiyana', type: 'portrait', crew: ['mardo'], speakers: ['sheleana-aiyana'], notes: 'Location TBD' },
   { id: 'jul28-brighten', date: '2026-07-28', start: '15:00', end: '16:00', title: 'Dr. Jolene Brighten', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jolene-brighten'] },
   { id: 'jul28-jamie', date: '2026-07-28', start: '16:15', end: '17:00', title: 'Jamie Sea', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jamie-sea'], notes: 'Not on Speaker DATES — window unknown.' },
@@ -353,7 +353,7 @@ export const CONFLICTS: Conflict[] = [
     severity: 'high',
     title: 'The whole production slate is a PROPOSAL — nothing confirmed with authors yet',
     detail:
-      '45 slate items scheduled 2 Jul against speaker windows and event commitments. Every one is tentative until author relations confirms each author’s time. Podcasts/interviews were kept off NO INTERVIEWS days (20, 23, 24, 27, 28, 31 Jul) where possible — confirm that rule actually applies to our own productions.',
+      '45 slate items scheduled 2 Jul against speaker windows and event commitments. Every one is tentative until author relations confirms each author’s time. Podcasts/interviews were originally kept off NO INTERVIEWS days (20, 23, 24, 27, 28, 31 Jul) — confirmed via Eni (13 Jul) that rule only means no stage/press interviews, so those days are open for our studio capture too.',
   },
   {
     id: 'c-two-units',
@@ -391,13 +391,6 @@ export const CONFLICTS: Conflict[] = [
       'On the ground Jul 28–Aug 2 only. Speaks 3 blocks + fireside + portraits on Jul 30. Superbrain masterclass + accelerator recording must fit around it.',
   },
   {
-    id: 'c-sheleana',
-    severity: 'low',
-    title: 'Sheleana Aiyana: Departure Date blank on Speaker DATES, not confirmed for 27/28 Jul',
-    detail:
-      'AUDITED (13 Jul): opened her actual Speaker DATES record — Arrival Date is 22/7/2026, but Departure Date is genuinely empty, not "22 Jul" as the app previously assumed. So this isn\'t a proven contradiction, just a data gap: she may well still be around for her 27/28 Jul stage slots. Downgraded from "impossible" — needs author-relations to fill in her actual departure.',
-  },
-  {
     id: 'c-jade',
     severity: 'medium',
     title: 'Jade Shaw window (Jul 21) vs 90-min session Jul 23',
@@ -426,24 +419,14 @@ export const CONFLICTS: Conflict[] = [
 export const ACTIONS: ActionItem[] = [
   // ---- ⛔ Physically impossible as the data stands ----
   {
-    id: 'a-sheleana',
+    id: 'a-sheleana-morning',
     kind: 'chase',
     owner: 'author-relations',
-    title: 'Sheleana Aiyana: confirm her actual departure date',
+    title: 'Confirm Sheleana wants her interview 28 Jul morning',
     detail:
-      'RECLASSIFIED after auditing the actual Speaker DATES record (13 Jul): Arrival Date is confirmed 22 Jul, but Departure Date was never filled in — it\'s not "22 Jul only" as previously assumed, just unconfirmed. Her 27 Jul panel, 28 Jul talk, portrait, and interview are all still tentative until author-relations gets her real departure date.',
+      'Per Eni (WhatsApp, 13 Jul): her real departure is 29 Jul (not blank/unknown as the earlier audit found — Eni has since confirmed it directly). She prefers mornings, not too late in the afternoon. Pencilled the interview 9:00-9:45am on 28 Jul, before her 2pm talk — still need to actually ask her if that works, per Eni\'s own note ("we need to ask her if she wants to do the morning before her talk").',
     due: '2026-07-16',
-    people: ['sheleana-aiyana'],
-  },
-  {
-    id: 'a-hal-window',
-    kind: 'impossible',
-    owner: 'author-relations',
-    title: 'Hal Elrod now dated 24–29 Jul — his podcast is booked for the 30th (NEW)',
-    detail:
-      'Hal was just added to Speaker DATES as 24–29 Jul. His Scaling Wisdom podcast with Vishen is on 30 Jul — after he departs. Move to ≤29 Jul (already heavy) or record remote.',
-    due: '2026-07-14',
-    people: ['hal-elrod', 'vishen'],
+    people: ['sheleana-aiyana', 'eni'],
   },
   // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
   {
@@ -459,10 +442,10 @@ export const ACTIONS: ActionItem[] = [
     id: 'p-vishen-split',
     kind: 'proposal',
     owner: 'gareth',
-    title: 'Move Hal Elrod + Jamie Sea podcasts from 30 Jul to 2 Aug morning',
+    title: 'Jamie Sea podcast still stacks on Vishen\'s heaviest day (30 Jul)',
     detail:
-      '30 Jul currently gives Vishen four podcasts back-to-back before the Kwik fireside, a stage slot and portraits. He will be flat by episode three. 2 Aug morning is free for him — contingent on Hal and Jamie still being in town (windows unknown, see chase list).',
-    people: ['vishen', 'hal-elrod', 'jamie-sea'],
+      'PARTIALLY RESOLVED (13 Jul): Hal\'s podcast moved to 27 Jul, so 30 Jul is down to 3 back-to-back podcasts (Maria Wendt, Nick Santonastasso, Jamie Sea) before the Kwik fireside, a stage slot and portraits — lighter, but still a lot. Consider moving Jamie\'s too if he\'s flat by episode two; her window (25-30 Jul) makes 27/28 Jul viable now that NO INTERVIEWS doesn\'t block studio work.',
+    people: ['vishen', 'jamie-sea'],
   },
   {
     id: 'p-marisa-move',
@@ -521,15 +504,6 @@ export const ACTIONS: ActionItem[] = [
     title: 'Mindvalley Awards timing still TBC on the source sheet',
     detail: 'Answered by Fisher (13 Jul): yes, needs our full crew — timing itself just hasn\'t been locked on the Main Stage sheet yet. Confirm the actual 6–7pm slot once the source updates.',
     due: '2026-07-20',
-  },
-  {
-    id: 'ch-no-interviews',
-    kind: 'chase',
-    owner: 'production',
-    title: 'Confirm the NO INTERVIEWS rule scope',
-    detail:
-      'The event agenda marks 20, 23, 24, 27, 28, 31 Jul as NO INTERVIEWS. The schedule assumes it binds our podcasts/interviews too. If it only covers external press, four extra days open up and the 29–30 Jul crush relaxes.',
-    due: '2026-07-10',
   },
   {
     id: 'ch-social-crew',

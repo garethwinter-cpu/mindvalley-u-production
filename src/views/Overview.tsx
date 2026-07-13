@@ -17,7 +17,7 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
         <span className="ov-day-theme">{day.theme}</span>
       </div>
       {conflicts > 0 && <span className="ov-flag">⚠ {conflicts} conflict{conflicts > 1 ? 's' : ''}</span>}
-      {day.noInterviews && <span className="ov-flag" style={{ color: 'var(--text-subtle)' }}>No interviews</span>}
+      {day.noInterviews && <span className="ov-flag" style={{ color: 'var(--text-subtle)' }}>No stage interviews</span>}
       {events.map((e) => (
         <span key={e.id} className={`ov-chip t-${e.type}${isSmallHall(e) ? ' loc-small-hall' : ''}`}>
           {e.start ? e.start + ' · ' : e.type === 'social-media' ? 'All day · ' : ''}

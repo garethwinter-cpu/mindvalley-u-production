@@ -73,6 +73,8 @@ export interface DayMeta {
   label: string
   theme?: string
   week: 0 | 1 | 2
+  /** Event agenda marks this day "NO INTERVIEWS" — confirmed via Eni (13 Jul) that this
+   *  means no STAGE/press interviews, not our studio podcast/interview capture. Informational only. */
   noInterviews?: boolean
 }
 

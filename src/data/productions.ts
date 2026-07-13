@@ -2,9 +2,11 @@ import type { ScheduleEvent } from './types'
 
 /**
  * Gareth's production slate — from the 📺 Shoots Airtable (MVU 2026 view),
- * scheduled 2 Jul against speaker windows, stage commitments, portraits and
- * NO INTERVIEWS days. Everything here is a PROPOSAL (status: tentative)
- * until confirmed with authors and author relations.
+ * scheduled 2 Jul against speaker windows and stage commitments. NO INTERVIEWS
+ * days (per the event agenda) turned out to mean no stage/press interviews —
+ * confirmed via Eni (13 Jul) that it doesn't restrict our studio capture, so
+ * those days are fair game for podcasts/interviews too. Everything here is a
+ * PROPOSAL (status: tentative) until confirmed with authors and author relations.
  *
  * Crew shorthand: unit 1 (khairul + kuhan) carries big shoots;
  * unit 2 (nadir) carries parallel interviews/assets. Adjust as needed.
@@ -464,7 +466,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
-    notes: 'Arrival day — keep light. Alternative: 28 Jul, but that is a NO INTERVIEWS day.',
+    notes: 'Arrival day — keep light. 28 Jul is also open now (NO INTERVIEWS confirmed to mean stage/press only, 13 Jul) if this needs to move.',
   },
 
   // ---------- MON 27 JUL ----------
@@ -494,6 +496,24 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     status: 'placeholder',
     notes: 'PENCILLED placeholder — see Episode 1 (pod-marisa-own-1) for the full brief.',
+  },
+  {
+    id: 'pod-hal-elrod',
+    date: '2026-07-27',
+    start: '16:15',
+    end: '17:00',
+    title: 'Scaling Wisdom Podcast: Hal Elrod & Vishen',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['hal-elrod', 'vishen'],
+    vishen: true,
+    gareth: true,
+    crew: UNIT1,
+    director: 'gareth',
+    cameraOps: CAMERA_CREW,
+    status: 'tentative',
+    notes:
+      'MOVED from 30 Jul (10:00-10:45) — Hal departs 29 Jul, so that no longer worked. Right after his own 3-4pm stage talk wraps, and right after Vishen\'s 2-3pm fireside with Shi Heng Yi — both free, studio free (NO INTERVIEWS on the 27th confirmed to mean stage/press only, 13 Jul). Also lightens Vishen\'s 30 Jul podcast stack from 4 down to 3.',
   },
 
   // ---------- TUE 28 JUL ----------
@@ -548,8 +568,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-sheleana',
     date: '2026-07-28',
-    start: '15:45',
-    end: '16:30',
+    start: '09:00',
+    end: '09:45',
     title: 'Author Interview: Eni & Sheleana Aiyana',
     type: 'production',
     location: STUDIO,
@@ -558,9 +578,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     priority: 5,
-    status: 'conflict',
+    status: 'placeholder',
     notes:
-      'Right after her 2–3pm talk. 28 Jul is a NO INTERVIEWS day — that\'s the real, standing conflict. (Her Speaker DATES window was previously read as "22 Jul only," but the audit on 13 Jul found her Departure Date field is actually blank, not set to the 22nd — so that part is just unconfirmed, not a proven contradiction; see a-sheleana.) Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
+      'PENCILLED per Eni (WhatsApp, 13 Jul): she departs 29 Jul (confirmed) and prefers mornings, not too late in the afternoon. Set to 9-9:45am — before McKenna\'s masterclass ties up the rest of the crew at 10am, and well ahead of her own 2pm talk. Still needs Sheleana\'s actual confirmation (see a-sheleana-morning); NO INTERVIEWS on the 28th doesn\'t block this — confirmed to mean stage/press only. Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
   },
   {
     id: 'pod-marisa-own-3',
@@ -690,23 +710,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['iris-wagner'],
     status: 'confirmed',
     notes: 'CONFIRMED via 2026 SMALL HALL Overview sheet — 20-min Tribe slot, Thu 30 Jul, 11–12 block. Sticking to this stage slot only — no separate studio content shoot (decided 13 Jul). Per Iris\'s 13 Jul brief: venue not yet confirmed to her by Mirell Sork (we have it as Community Stage) — she\'s asked Vishen to attend and, if appropriate, introduce her; awaiting his confirmation.',
-  },
-  {
-    id: 'pod-hal-elrod',
-    date: '2026-07-30',
-    start: '10:00',
-    end: '10:45',
-    title: 'Scaling Wisdom Podcast: Hal Elrod & Vishen',
-    type: 'podcast',
-    location: STUDIO,
-    speakers: ['hal-elrod', 'vishen'],
-    vishen: true,
-    gareth: true,
-    crew: UNIT1,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    status: 'conflict',
-    notes: '⚠ WINDOW CHANGE: Hal Elrod now on Speaker DATES as 24–29 Jul — he departs before this 30 Jul podcast. Move to ≤29 or record remote. Hal is not on Speaker DATES — confirm he is still in Tallinn on the 30th.',
   },
   {
     id: 'pod-maria-wendt',
