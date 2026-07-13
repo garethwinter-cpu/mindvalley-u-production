@@ -66,14 +66,14 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   {
     id: 'priestley-accel-1',
     date: '2026-07-18',
-    title: 'Daniel Priestley Accelerator — day 1: Getting Oversubscribed (4h)',
+    title: 'Daniel Priestley Accelerator — day 1: Getting Oversubscribed (4h) + Upsell Landing Page Video',
     type: 'accelerator',
     location: 'Remote + streamed',
     speakers: ['daniel-priestley'],
     director: 'gareth',
     status: 'tentative',
     notes:
-      'Per Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales. Matches the Airtable "Science of Growing Customers" Shoots record, split Day 1/Day 2 (13 Jul).',
+      'Per Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales. Matches the Airtable "Science of Growing Customers" Shoots record, split Day 1/Day 2 (13 Jul). SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this intensive in this same session — the product recording and the sales video for it, shot together with the same resource while Priestley is in this environment. Only one landing-page record exists (dated Day 1), so that’s the priority day for it.',
   },
   {
     id: 'priestley-accel-2',
@@ -200,7 +200,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     date: '2026-07-25',
     start: '17:00',
     end: '20:00',
-    title: 'Regan Wealth Code Accelerator — day 1: See It & Clear It (3h)',
+    title: 'Regan Wealth Code Accelerator — day 1: See It & Clear It (3h) + Upsell Landing Page Video',
     type: 'accelerator',
     location: MAIN_STAGE,
     speakers: ['regan-hillyer'],
@@ -209,7 +209,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     director: 'gareth',
     status: 'tentative',
     notes:
-      'CONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul), matches the microsite; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling.',
+      'CONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul), matches the microsite; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling. SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for the Wealth Code Accelerator in this same session — product + sales video shot together while Regan and the crew are already set up. Only one landing-page record exists (dated Day 1).',
   },
   {
     id: 'jul25-eric-allday',
@@ -301,7 +301,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     date: '2026-08-01',
     start: '11:00',
     end: '18:00',
-    title: 'Vishen AI Accelerator — “Become a World Class Expert and Authority”',
+    title: 'Vishen AI Accelerator — “Become a World Class Expert and Authority” + Upsell Landing Page Video',
     type: 'accelerator',
     location: MAIN_STAGE,
     speakers: ['vishen'],
@@ -309,6 +309,8 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     gareth: true,
     crew: CREW_CORE,
     director: 'gareth',
+    notes:
+      'SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame\'s live capture covers the product recording, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up.',
   },
   { id: 'aug1-closing-party', date: '2026-08-01', start: '20:30', end: '02:00', title: 'Closing Party', type: 'social' },
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
@@ -646,6 +648,16 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
     due: '2026-07-20',
+  },
+  {
+    id: 'ch-eric-landing-page',
+    kind: 'chase',
+    owner: 'production',
+    title: 'Does Eric Edmeades\' One Talk Workshop need an Upsell Landing Page Video too?',
+    detail:
+      'Gareth\'s Airtable Upsell/Landing-Page split (13 Jul) paired all 4 other accelerators/intensives (Priestley, Jeffrey Allen, Regan, Jim Kwik, Vishen) with a matching "Upsell Landing Page Video" record, sandwiched into the same shoot. No matching record exists yet for Eric\'s workshop — confirm whether that\'s deliberate or just not created yet.',
+    due: '2026-07-18',
+    people: ['eric-edmeades'],
   },
 ]
 
