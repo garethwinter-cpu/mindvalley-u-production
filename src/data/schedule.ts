@@ -254,14 +254,14 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul27-shy-fireside', date: '2026-07-27', start: '14:00', end: '15:00', title: 'Shi Heng Yi Fireside with Vishen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['shi-heng-yi', 'vishen'], vishen: true },
   { id: 'jul27-krenn-women', date: '2026-07-27', start: '14:00', end: '15:00', title: 'Lorin Krenn (women only)', type: 'experience', location: EXPERIENCE, speakers: ['lorin-krenn'] },
   { id: 'jul27-elrod', date: '2026-07-27', start: '15:00', end: '16:00', title: 'Hal Elrod', type: 'stage-talk', location: MAIN_STAGE, speakers: ['hal-elrod'], notes: 'Not on Speaker DATES — window unknown.' },
-  { id: 'jul27-sheleana-wineland', date: '2026-07-27', start: '16:15', end: '17:00', title: 'Sheleana Aiyana & John Wineland', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana', 'john-wineland'], status: 'conflict', notes: 'Sheleana’s Speaker DATES window is Jul 22 only.' },
+  { id: 'jul27-sheleana-wineland', date: '2026-07-27', start: '16:15', end: '17:00', title: 'Sheleana Aiyana & John Wineland', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana', 'john-wineland'], status: 'tentative', notes: 'Speaker DATES confirms her 22 Jul arrival but Departure Date is blank (audit, 13 Jul) — not proven impossible, just needs author-relations to confirm she\'s actually still around.' },
   { id: 'jul27-party', date: '2026-07-27', start: '19:00', end: '23:00', title: 'White Block Party', type: 'social' },
 
   // ================= TUE 28 JUL — EMBODIMENT =================
   { id: 'jul28-zen', date: '2026-07-28', start: '10:00', end: '11:00', title: 'Zen Samurai (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['zen-samurai'] },
   { id: 'jul28-dawn', date: '2026-07-28', start: '11:00', end: '12:00', title: 'Dawn Hoang (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dawn-hoang'] },
   { id: 'jul28-dawn-photo', date: '2026-07-28', start: '12:10', end: '12:30', title: 'Portraits — Dawn Hoang', type: 'portrait', crew: ['mardo'], speakers: ['dawn-hoang'], notes: 'Location TBD' },
-  { id: 'jul28-sheleana', date: '2026-07-28', start: '14:00', end: '15:00', title: 'Sheleana Aiyana', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana'], status: 'conflict', notes: 'Window conflict — Speaker DATES says Jul 22 only.' },
+  { id: 'jul28-sheleana', date: '2026-07-28', start: '14:00', end: '15:00', title: 'Sheleana Aiyana', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana'], status: 'tentative', notes: 'Speaker DATES confirms her 22 Jul arrival but Departure Date is blank (audit, 13 Jul) — not proven impossible, just needs author-relations to confirm she\'s actually still around.' },
   { id: 'jul28-sheleana-photo', date: '2026-07-28', start: '15:10', end: '15:30', title: 'Portraits — Sheleana Aiyana', type: 'portrait', crew: ['mardo'], speakers: ['sheleana-aiyana'], notes: 'Location TBD' },
   { id: 'jul28-brighten', date: '2026-07-28', start: '15:00', end: '16:00', title: 'Dr. Jolene Brighten', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jolene-brighten'] },
   { id: 'jul28-jamie', date: '2026-07-28', start: '16:15', end: '17:00', title: 'Jamie Sea', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jamie-sea'], notes: 'Not on Speaker DATES — window unknown.' },
@@ -392,9 +392,10 @@ export const CONFLICTS: Conflict[] = [
   },
   {
     id: 'c-sheleana',
-    severity: 'medium',
-    title: 'Sheleana Aiyana window (Jul 22) vs talks on Jul 27 & 28',
-    detail: 'Speaker DATES lists her for one day; agenda uses her three times across both weeks.',
+    severity: 'low',
+    title: 'Sheleana Aiyana: Departure Date blank on Speaker DATES, not confirmed for 27/28 Jul',
+    detail:
+      'AUDITED (13 Jul): opened her actual Speaker DATES record — Arrival Date is 22/7/2026, but Departure Date is genuinely empty, not "22 Jul" as the app previously assumed. So this isn\'t a proven contradiction, just a data gap: she may well still be around for her 27/28 Jul stage slots. Downgraded from "impossible" — needs author-relations to fill in her actual departure.',
   },
   {
     id: 'c-jade',
@@ -426,12 +427,12 @@ export const ACTIONS: ActionItem[] = [
   // ---- ⛔ Physically impossible as the data stands ----
   {
     id: 'a-sheleana',
-    kind: 'impossible',
+    kind: 'chase',
     owner: 'author-relations',
-    title: 'Sheleana Aiyana: 1-day window vs 2 stage days',
+    title: 'Sheleana Aiyana: confirm her actual departure date',
     detail:
-      'Speaker DATES says she is in Tallinn 22 Jul ONLY. The locked event agenda has her on stage 27 + 28 Jul, and her interview is pencilled 28 Jul. Both cannot be true — confirm her real arrival/departure dates.',
-    due: '2026-07-09',
+      'RECLASSIFIED after auditing the actual Speaker DATES record (13 Jul): Arrival Date is confirmed 22 Jul, but Departure Date was never filled in — it\'s not "22 Jul only" as previously assumed, just unconfirmed. Her 27 Jul panel, 28 Jul talk, portrait, and interview are all still tentative until author-relations gets her real departure date.',
+    due: '2026-07-16',
     people: ['sheleana-aiyana'],
   },
   {

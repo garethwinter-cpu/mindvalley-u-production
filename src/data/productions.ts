@@ -573,7 +573,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 5,
     status: 'conflict',
     notes:
-      'Right after her 2–3pm talk. 28 Jul is a NO INTERVIEWS day and her Speaker DATES window says 22 Jul only — double conflict, needs author-relations confirmation. Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
+      'Right after her 2–3pm talk. 28 Jul is a NO INTERVIEWS day — that\'s the real, standing conflict. (Her Speaker DATES window was previously read as "22 Jul only," but the audit on 13 Jul found her Departure Date field is actually blank, not set to the 22nd — so that part is just unconfirmed, not a proven contradiction; see a-sheleana.) Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
   },
   {
     id: 'pod-marisa-own-3',

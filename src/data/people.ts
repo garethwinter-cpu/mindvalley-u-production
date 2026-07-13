@@ -57,7 +57,7 @@ export const PEOPLE: Person[] = [
   { id: 'john-lee', name: 'John Lee', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-22' } },
   { id: 'john-wineland', name: 'John Wineland', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-26' } },
   { id: 'kristina', name: 'Kristina Mand-Lakhiani', role: 'speaker', window: { from: '2026-07-20', to: '2026-08-02' } },
-  { id: 'lee-holden', name: 'Lee Holden', role: 'speaker', window: { from: '2026-07-23', to: '2026-08-02' } },
+  { id: 'lee-holden', name: 'Lee Holden', role: 'speaker', window: { from: '2026-07-22', to: '2026-08-02' } },
   { id: 'lorin-krenn', name: 'Lorin Krenn', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-29' } },
   { id: 'marisa-peer', name: 'Marisa Peer', role: 'speaker', window: { from: '2026-07-21', to: '2026-08-02' } },
   { id: 'maya-raichoora', name: 'Maya Raichoora', role: 'speaker', window: { from: '2026-07-27', to: '2026-08-01' } },
@@ -67,7 +67,12 @@ export const PEOPLE: Person[] = [
   { id: 'rachel-pringle', name: 'Rachel Pringle', role: 'speaker', window: { from: '2026-07-29', to: '2026-08-01' } },
   { id: 'regan-hillyer', name: 'Regan Hillyer', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-27' } },
   { id: 'zen-takai', name: 'Sensei Zen Takai', role: 'speaker', window: { from: '2026-07-26', to: '2026-08-01' } },
-  { id: 'sheleana-aiyana', name: 'Sheleana Aiyana', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-22' } },
+  {
+    id: 'sheleana-aiyana',
+    name: 'Sheleana Aiyana',
+    role: 'speaker',
+    title: 'Arrival confirmed 22 Jul on Speaker DATES — Departure Date field is blank, not "22 Jul only" (audit, 13 Jul)',
+  },
   { id: 'shi-heng-yi', name: 'Shi Heng Yi', role: 'speaker', window: { from: '2026-07-26', to: '2026-07-28' } },
   { id: 'simon-ong', name: 'Simon Alexander Ong', role: 'speaker', window: { from: '2026-07-18', to: '2026-07-23' } },
   {
