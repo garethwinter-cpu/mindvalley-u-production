@@ -575,17 +575,29 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
 
   // ---------- THU 30 JUL ----------
   {
-    id: 'shoot-iris-wagner',
+    id: 'talk-iris-wagner',
     date: '2026-07-30',
     start: '11:00',
-    end: '11:45',
-    title: 'Iris Wagner — session (format to confirm)',
+    end: '11:20',
+    title: 'Iris Wagner — Community Stage talk (20 min)',
+    type: 'stage-talk',
+    location: 'Community Stage (Small Hall)',
+    speakers: ['iris-wagner'],
+    status: 'confirmed',
+    notes: 'CONFIRMED via 2026 SMALL HALL Overview sheet — she has an official 20-min Tribe slot, Thu 30 Jul, 11–12 block. Not a studio production; this is her event stage talk. If Gareth still wants a separate content piece (podcast/interview) with her, that would need its own studio slot — currently NOT scheduled.',
+  },
+  {
+    id: 'shoot-iris-wagner-content',
+    date: '2026-07-30',
+    start: '12:00',
+    end: '12:45',
+    title: 'Iris Wagner — content shoot (format to confirm)',
     type: 'production',
     location: STUDIO,
     speakers: ['iris-wagner'],
     crew: UNIT2,
     status: 'tentative',
-    notes: 'Added at Gareth’s request — fixed 11am Thu 30 Jul. Iris Wagner: founder/CEO Memoirs Productions (legacy preservation), forthcoming podcast "Speaking of Legacy". Fits on unit 2 (free until the noon McKenna interview) — no clash, though 30 Jul is the heaviest day. Confirm format: her podcast, an interview, or a talking-head piece?',
+    notes: 'PROPOSED slot straight after her Community Stage talk. Iris Wagner: founder/CEO Memoirs Productions (legacy preservation), forthcoming podcast "Speaking of Legacy". Confirm: does Gareth want a separate podcast/interview/talking-head piece, and if so, host + format? Placed right after her stage talk so she doesn’t need a second trip to Kultuurikatel.',
   },
   {
     id: 'pod-hal-elrod',
