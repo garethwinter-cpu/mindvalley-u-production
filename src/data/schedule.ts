@@ -241,7 +241,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     director: 'gareth',
     status: 'tentative',
     notes:
-      'CONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). She departs Estonia this day per Speaker DATES — evening finish to 9pm is tight against any departure flight; confirm her flight time. Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
+      'CONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). Regan departs 27 Jul per Speaker DATES, so this 9pm finish sits safely inside her window (the previous note saying she left on the 26th was wrong). Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
   },
 
   // ================= MON 27 JUL — HEALING =================
