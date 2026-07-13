@@ -14,7 +14,7 @@ function fmtDate(d: string) {
 
 export default function PodcastBriefingsView() {
   const briefings = [...PODCAST_BRIEFINGS].sort(
-    (a, b) => FIT_ORDER[a.fit] - FIT_ORDER[b.fit] || a.date.localeCompare(b.date),
+    (a, b) => FIT_ORDER[a.fit] - FIT_ORDER[b.fit] || (a.date ?? '9999').localeCompare(b.date ?? '9999'),
   )
   const counts = {
     STRONG: briefings.filter((b) => b.fit === 'STRONG').length,
@@ -55,7 +55,11 @@ export default function PodcastBriefingsView() {
               </div>
 
               <div className="pod-ep">
-                🎙️ {fmtDate(b.date)} · {fmtTime(b.start)} · with Vishen
+                {b.date ? (
+                  <>🎙️ {fmtDate(b.date)} · {fmtTime(b.start)} · with Vishen</>
+                ) : (
+                  <>🎙️ Record in {b.recordLocation ?? 'TBC'} · date TBC · with Vishen</>
+                )}
               </div>
 
               <div className="pod-fitline">{b.fitReason}</div>

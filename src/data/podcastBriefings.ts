@@ -161,8 +161,7 @@ export const PODCAST_BRIEFINGS: PodcastBriefing[] = [
   {
     personId: 'daniel-priestley',
     episodeId: 'pod-priestley',
-    date: '2026-07-22',
-    start: '10:00',
+    recordLocation: 'London',
     who: 'Australian-British serial entrepreneur and business-growth author; founder of Dent Global, co-founder of ScoreApp.',
     reach: 'Instagram ~296K; LinkedIn ~78K (top 1% UK); YouTube fast-rising (~150K, +36K in <2 months); self-reports content growth 7K→7M views/month (2022→25). Combined footprint larger than Vishen’s channel, and an aggressive self-clipping cross-promoter. High cross-promo value.',
     topics: ['entrepreneurship & scaling', 'personal branding / influence', 'lead generation', 'AI in business', 'pitching & storytelling'],

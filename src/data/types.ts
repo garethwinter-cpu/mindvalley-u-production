@@ -86,8 +86,11 @@ export type FitVerdict = 'STRONG' | 'MEDIUM' | 'NICHE'
 export interface PodcastBriefing {
   personId: string
   episodeId: string
-  date: string
+  /** Omit when the episode has no fixed date yet — pair with recordLocation */
+  date?: string
   start?: string
+  /** Where it'll be recorded, when that's known but the date isn't (e.g. "London") */
+  recordLocation?: string
   who: string
   reach: string
   topics: string[]

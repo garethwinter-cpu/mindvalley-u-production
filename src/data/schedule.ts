@@ -545,6 +545,7 @@ export const ACTIONS: ActionItem[] = [
 ]
 
 export const BACKLOG: BacklogItem[] = [
+  { id: 'b-priestley-podcast', title: 'Scaling Wisdom Podcast: Daniel Priestley & Vishen', format: 'podcast', speakers: ['daniel-priestley', 'vishen'], constraint: 'RECORD IN LONDON — date TBC. Pulled off the Tallinn sprint (13 Jul) so it no longer collides with his 21 Jul departure; book once a London date is set.' },
   { id: 'b-accel-rec-priestley', title: 'Accelerator capture — Daniel Priestley (remote, 18–19 Jul)', format: 'accelerator-recording', speakers: ['daniel-priestley'], constraint: 'Remote delivery — capture is stream-record. Confirm who owns the recording chain (us vs Still Frame vs Zoom cloud).' },
   { id: 'b-accel-rec-regan', title: 'Accelerator capture — Regan Wealth Code (25–26 Jul, live)', format: 'accelerator-recording', speakers: ['regan-hillyer'], constraint: 'Live capture with Still Frame. Timing conflict (evenings vs 9–4) must resolve first.' },
   { id: 'b-accel-rec-vishen', title: 'Accelerator capture — Vishen AI Accelerator (1 Aug, 11–6)', format: 'accelerator-recording', speakers: ['vishen'], constraint: 'Live capture with Still Frame on the Main Stage.' },
