@@ -797,6 +797,118 @@ body {
   border-top: 1px solid var(--border-muted);
 }
 
+/* ============ Scheduler (People view) ============ */
+.sch-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.sch-tile {
+  background: var(--brand-light);
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.sch-tile-n {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--brand-content);
+}
+.sch-tile-l {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.sch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.sch-day {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.sch-day.has-overlap {
+  border-color: var(--orange);
+}
+.sch-day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  background: var(--bg-subtle);
+}
+.sch-day-date {
+  font-size: 14px;
+  font-weight: 700;
+}
+.sch-day-span {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.sch-day-hrs {
+  color: var(--brand-content);
+  font-weight: 500;
+}
+.sch-blocks {
+  display: flex;
+  flex-direction: column;
+}
+.sch-block {
+  display: flex;
+  gap: 12px;
+  padding: 9px 14px;
+  border-top: 1px solid var(--border-muted);
+  font-size: 13.5px;
+  align-items: baseline;
+}
+.sch-block:first-child {
+  border-top: none;
+}
+.sch-block.conflict {
+  background: var(--orange-light);
+}
+.sch-block.untimed {
+  color: var(--text-muted);
+  font-style: italic;
+}
+.sch-time {
+  flex: none;
+  width: 128px;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.sch-what {
+  color: var(--text);
+}
+.sch-loc {
+  color: var(--text-subtle);
+}
+.sch-gap {
+  padding: 6px 14px 6px 154px;
+  font-size: 12px;
+  color: var(--green-content);
+  background: var(--green-light);
+}
+.sch-overlap {
+  padding: 6px 14px 6px 154px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange-content);
+  background: var(--orange-light);
+}
+@media (max-width: 600px) {
+  .sch-block { flex-direction: column; gap: 2px; }
+  .sch-time { width: auto; }
+  .sch-gap, .sch-overlap { padding-left: 14px; }
+}
+
 /* ============ Podcast briefings ============ */
 .fit-dot {
   width: 10px;
