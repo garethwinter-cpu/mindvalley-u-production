@@ -454,9 +454,9 @@ export const ACTIONS: ActionItem[] = [
     id: 'ch-shy-landing',
     kind: 'chase',
     owner: 'author-relations',
-    title: 'Shi Heng Yi landing time on 26 Jul',
-    detail: 'His podcast is 10:00 and interview 15:15 on his arrival day. If he lands after ~08:30, the podcast moves.',
-    due: '2026-07-11',
+    title: 'Shi Heng Yi landing time on 26 Jul (low risk now)',
+    detail: 'His podcast moved to 27 Jul, so the arrival-day risk is largely gone. Only his Kaitlin interview stays on arrival day (26 Jul, 15:15) — an afternoon slot, so almost certainly fine, but worth a glance at his landing time.',
+    due: '2026-07-16',
     people: ['shi-heng-yi'],
   },
   {
@@ -551,16 +551,6 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
     due: '2026-07-20',
-  },
-  {
-    id: 'a-gareth-shy-ja2-clash',
-    kind: 'proposal',
-    owner: 'gareth',
-    title: 'Gareth double-booked 26 Jul, 10-11am: Shi Heng Yi\'s podcast vs Jeffrey Allen accel recording day 2',
-    detail:
-      'Found in the 13 Jul conflict audit. pod-shy and accel-rec-ja-2 both need Gareth on set at the same time — the "runs parallel on two units" framing covers the camera crew split but not Gareth himself, who can\'t be in both rooms. Options: hand the Shi Heng Yi podcast to someone else, or shift JA\'s recording start past 11am.',
-    due: '2026-07-18',
-    people: ['gareth', 'shi-heng-yi', 'jeffrey-allen'],
   },
 ]
 
