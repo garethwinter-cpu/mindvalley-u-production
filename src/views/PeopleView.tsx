@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
+import { EDITORIAL_EVENTS } from '../data/editorial'
 import { StatusBadge, TypeBadge, fmtTime, involvesPerson, isOurProduction } from '../ui'
 import type { ScheduleEvent } from '../data/types'
 import { Headshot } from '../profile'
@@ -122,11 +123,18 @@ export default function PeopleView() {
   const p = person(selected)
   const profile = AUTHOR_PROFILES[selected]
   const wa = p.whatsapp?.replace(/[^0-9]/g, '')
-  const events = EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
-    (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')),
+  const sortKey = (e: ScheduleEvent) => e.date + (e.start ?? '')
+  // Venue + production commitments (shown in the categorized lists below)
+  const venueEvents = EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
+    sortKey(a).localeCompare(sortKey(b)),
   )
-  const content = events.filter(isOurProduction)
-  const eventCommitments = events.filter((e) => !isOurProduction(e))
+  // Post-production / edit deliverables (Creative column, kept off the venue Overview)
+  const editorial = EDITORIAL_EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
+    sortKey(a).localeCompare(sortKey(b)),
+  )
+  const events = [...venueEvents, ...editorial].sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
+  const content = venueEvents.filter(isOurProduction)
+  const eventCommitments = venueEvents.filter((e) => !isOurProduction(e))
   const sched = buildSchedule(events)
 
   return (
@@ -207,22 +215,26 @@ export default function PeopleView() {
 
             {events.length === 0 && <div className="empty">No scheduled commitments in the data yet.</div>}
 
-            {sched.activeDays > 0 && (
+            {sched.committedDays > 0 && (
               <>
                 <div className="pp-commit-label">📅 Scheduler — where {p.name.split(' ')[0]} needs to be</div>
                 <div className="sch-tiles">
                   <div className="sch-tile">
-                    <div className="sch-tile-n">{sched.activeDays}</div>
-                    <div className="sch-tile-l">active days</div>
+                    <div className="sch-tile-n">{sched.committedDays}</div>
+                    <div className="sch-tile-l">committed days</div>
                   </div>
-                  <div className="sch-tile">
-                    <div className="sch-tile-n">{fmtDur(sched.totalWorkMin)}</div>
-                    <div className="sch-tile-l">on camera / set</div>
-                  </div>
-                  <div className="sch-tile">
-                    <div className="sch-tile-n">{fmtDur(sched.totalBreakMin)}</div>
-                    <div className="sch-tile-l">break time</div>
-                  </div>
+                  {sched.activeDays > 0 && (
+                    <div className="sch-tile">
+                      <div className="sch-tile-n">{fmtDur(sched.totalWorkMin)}</div>
+                      <div className="sch-tile-l">on camera / set</div>
+                    </div>
+                  )}
+                  {sched.activeDays > 0 && (
+                    <div className="sch-tile">
+                      <div className="sch-tile-n">{fmtDur(sched.totalBreakMin)}</div>
+                      <div className="sch-tile-l">break time</div>
+                    </div>
+                  )}
                   {sched.busiest && (
                     <div className="sch-tile">
                       <div className="sch-tile-n">{fmtDayShort(sched.busiest.date).replace(/^\w+ /, '')}</div>
@@ -260,6 +272,12 @@ export default function PeopleView() {
               <>
                 <div className="pp-commit-label">🎪 Event commitments — locked agenda ({eventCommitments.length})</div>
                 <EventList events={eventCommitments} />
+              </>
+            )}
+            {editorial.length > 0 && (
+              <>
+                <div className="pp-commit-label">✂️ Edit deliverables — Creative column ({editorial.length})</div>
+                <EventList events={editorial} />
               </>
             )}
           </div>

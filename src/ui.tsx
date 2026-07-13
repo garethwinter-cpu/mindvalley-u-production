@@ -76,7 +76,14 @@ export function requiredPeople(e: ScheduleEvent): string[] {
 export function involvesPerson(e: ScheduleEvent, id: string): boolean {
   if (id === 'gareth' && e.gareth) return true
   if (id === 'vishen' && e.vishen) return true
-  return (e.speakers ?? []).includes(id) || (e.crew ?? []).includes(id)
+  return (
+    (e.speakers ?? []).includes(id) ||
+    (e.crew ?? []).includes(id) ||
+    // Creative-column responsibilities (Shoots Airtable) — director/camera/editor block the day too
+    e.director === id ||
+    (e.cameraOps ?? []).includes(id) ||
+    (e.editors ?? []).includes(id)
+  )
 }
 
 /** Our content productions vs locked event commitments */

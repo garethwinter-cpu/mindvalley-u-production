@@ -358,9 +358,9 @@ export const CONFLICTS: Conflict[] = [
   {
     id: 'c-two-units',
     severity: 'medium',
-    title: 'Several days assume TWO crews shooting in parallel',
+    title: 'Two-unit model vs the Creative column — is Kuhan on studio camera or purely editorial?',
     detail:
-      '22, 26, 29, 30 Jul and 1–2 Aug run unit 1 (Khairul + Kuhan) and unit 2 (Nadir) simultaneously. Confirm kit and staffing supports two units, or shoots must move.',
+      'The app runs a two-unit model (unit 1 = Khairul + Kuhan, unit 2 = Nadir) so shoots can run in parallel on 22, 26, 29, 30 Jul + 1–2 Aug. BUT the Shoots Airtable "Creative" column (audited 13 Jul) lists only Gareth + Nadir + Khairul on the studio shoots — Kuhan appears there as an EDITOR (recaps + social), not a studio camera op. These disagree. If Kuhan is editorial-only, the two-unit parallelism needs a different second shooter (or shoots go sequential). If he does shoot, add him to the Creative column. Decide before locking — it changes both crew blocking and whether parallel days are staffable. His scheduler currently still shows the studio shoots via the crew model, pending this call.',
   },
   {
     id: 'c-vishen-load',

@@ -44,6 +44,7 @@ export interface DaySchedule {
 
 export interface PersonSchedule {
   days: DaySchedule[]
+  committedDays: number
   activeDays: number
   totalWorkMin: number
   totalSpanMin: number
@@ -124,6 +125,7 @@ export function buildSchedule(events: ScheduleEvent[]): PersonSchedule {
 
   return {
     days,
+    committedDays: days.filter((d) => d.timed.length || d.untimed.length).length,
     activeDays: timedDays.length,
     totalWorkMin,
     totalSpanMin,

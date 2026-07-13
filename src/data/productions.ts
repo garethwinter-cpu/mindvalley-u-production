@@ -914,8 +914,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    editors: ['matthew'],
     status: 'tentative',
-    notes: 'MC DNA 2.0. Time-saver per brief: use one of Marisa’s hypnosis audios from the Quest (limiting beliefs) for the teaching segment.',
+    notes: 'MC DNA 2.0. Time-saver per brief: use one of Marisa’s hypnosis audios from the Quest (limiting beliefs) for the teaching segment. Matthew Coates tagged Creative (marketing assets) per the Shoots Airtable.',
   },
   {
     id: 'int-lee-holden',
