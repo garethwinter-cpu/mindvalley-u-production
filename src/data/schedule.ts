@@ -367,7 +367,21 @@ export const CONFLICTS: Conflict[] = [
     severity: 'medium',
     title: 'Vishen’s shoot load is heavy on 29–30 Jul',
     detail:
-      '29 Jul: Superbrain masterclass (3h) + 2 podcasts + 16:15 stage slot. 30 Jul: 4 podcasts + Kwik fireside + swappable stage slot + portraits. Consider dropping 1–2 podcast episodes to Aug 2 or cutting runtime.',
+      '29 Jul: Superbrain masterclass (3h) + 2 podcasts + 16:15 stage slot. 30 Jul: 3 podcasts + Kwik fireside + swappable stage slot + portraits. Consider dropping a podcast episode to Aug 2 or cutting runtime.',
+  },
+  {
+    id: 'c-gareth-interview-load',
+    severity: 'high',
+    title: 'Gareth double-booked on 25, 29 + 1 Aug — his reassigned interviews collide with shoots he directs',
+    detail:
+      'AUDIT (13 Jul): the prioritization pass handed Gareth 9 of Kaitlin\'s interviews, and four now overlap big shoots he\'s also on. 25 Jul: Dan Brulé interview (11:30) sits inside the Jeffrey Allen accelerator recording (10-2). 29 Jul: Jolene interview (14:30) and Zen Takai interview (15:30) chain-overlap the Lorin podcast (15:00), on top of the Kwik masterclass + Jolene podcast — five Gareth commitments 10am-4:15pm. 1 Aug: Maya interview (12:45) falls inside the Vishen AI Accelerator (11-6, Main Stage) — different venue, so impossible. Needs Gareth\'s call per interview: hand it back to Kaitlin/Eni, or step out of the big shoot. Recommendation: hand these four back to a host, since that\'s what freed his time in the first place.',
+  },
+  {
+    id: 'c-wineland-27',
+    severity: 'medium',
+    title: 'John Wineland on the 27 Jul stage panel — but his window ends 26 Jul',
+    detail:
+      'AUDIT (13 Jul): the app has a "Sheleana Aiyana & John Wineland" panel on 27 Jul (16:15), but Wineland\'s Speaker DATES window is 20-26 Jul — he departs before it. His only other stage day is 24 Jul (Embodiment), so the 27 Jul pairing looks like an authoring error (likely Sheleana-only, or a wrong date/partner). Confirm with author relations before it locks; don\'t assume he\'s on it.',
   },
   {
     id: 'c-departure-day-shoots',

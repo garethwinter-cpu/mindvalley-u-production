@@ -75,10 +75,10 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     location: STUDIO,
     speakers: ['jade-shaw'],
     crew: UNIT1,
-    gareth: true,
+    director: 'gareth',
     status: 'tentative',
     notes:
-      'POSSIBLE — keep. The old "conflict" was based on a wrong window (thought she was here 21 Jul only). Speaker DATES audit (13 Jul) confirms she\'s in town 21–30 Jul, so no crunch. Unit 1 is otherwise light this slot, and it flows into her 2:15pm interview while she\'s already made up. Full 8-item Astral Projection suite. If the 8 items feel rushed in 2h, her wide window means we can give it a longer block on a calmer day (22 Jul morning, unit 1 free) — optional.',
+      'POSSIBLE — keep. The old "conflict" was based on a wrong window (thought she was here 21 Jul only). Speaker DATES audit (13 Jul) confirms she\'s in town 21–30 Jul, so no crunch. Full 8-item Astral Projection suite, run by unit 1 (Khairul). AUDIT FIX (13 Jul): dropped the "Gareth on set" flag here — this is a b-roll asset shoot Khairul\'s unit runs, and marking Gareth required created a phantom clash with the Priestley interview he\'s conducting 12:45 the same day. He directs/oversees but isn\'t hands-on-required, freeing him for Priestley. If the 8 items feel rushed in 2h, her wide window lets us give it a longer block on a calmer day (22 Jul am) — optional.',
   },
   {
     id: 'int-priestley',
@@ -96,7 +96,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 2,
     status: 'tentative',
     notes:
-      'MOVED from 22 Jul (his departure day, no longer works) to his last day in town instead. He\'s free after his 12:10-12:30 portrait wraps; Nadir is free in the studio 10am-2:15pm this same window. Membership Marketing Assets shoot cancelled — removed from Airtable (13 Jul).',
+      'MOVED from 22 Jul (his departure day, no longer works) to his last day in town. He\'s free after his 12:10-12:30 portrait; Nadir free in the studio 10am-2:15pm. Membership assets shoot cancelled (removed from Airtable 13 Jul). AUDIT (13 Jul): this 12:45 slot overlapped Jade\'s asset shoot (12-14) which was flagging Gareth double-booked — resolved by dropping the redundant "Gareth on set" flag off that b-roll shoot (Khairul\'s unit runs it), so Gareth is free to conduct this.',
   },
   {
     id: 'int-jade-shaw',
