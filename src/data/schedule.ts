@@ -313,10 +313,11 @@ const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
 ).map((d) => ({
   id: `social-media-${d.date}`,
   date: d.date,
+  start: '08:00',
   title: 'Daily social media capture (ad-hoc + stage snippets)',
   type: 'social-media',
   location: 'Roaming — across venue',
-  notes: 'Roving shooter collecting toward the daily ad-hoc social concepts + daily stage-talk snippets. See the Social tab.',
+  notes: 'Roving shooter collecting toward the daily ad-hoc social concepts + daily stage-talk snippets. Runs all day. See the Social tab.',
 }))
 
 export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]
