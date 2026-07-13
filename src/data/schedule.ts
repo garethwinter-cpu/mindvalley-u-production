@@ -459,9 +459,9 @@ export const ACTIONS: ActionItem[] = [
     id: 'p-marisa-podcast-count',
     kind: 'proposal',
     owner: 'gareth',
-    title: 'Marisa Peer’s book podcast — recommend 3 episodes in-house (stretch 4), else external studio',
+    title: 'Marisa Peer’s book podcast — 3 episodes pencilled in-house (stretch 4), else external studio',
     detail:
-      'Marisa’s team (Elise McDonald) wants studio time for her "Your Mind, Your Rules" book podcast. Realist capacity: the studio is one room and both crew units are heavily booked. Marisa is free 21–23, 26–30 Jul, but studio+crew gaps are thin. We can comfortably facilitate 3 episodes (stretch 4) — best batched on Mon 27 Jul (the most open studio day) plus one late-afternoon slot on 23 or 28 Jul. If she wants 5+ episodes, there is a real gap → recommend an external Tallinn studio (we have contacts). Reply to her team with the number once confirmed.',
+      'Marisa’s team (Elise McDonald) wants studio time for her "Your Mind, Your Rules" book podcast. Realist capacity: the studio is one room and both crew units are heavily booked. Marisa is free 21–23, 26–30 Jul, but studio+crew gaps are thin. We can comfortably facilitate 3 episodes (stretch 4). PENCILLED IN (13 Jul) as placeholders: 27 Jul 11–12 + 2–3 (most open studio day), plus 28 Jul 5:30–6:30pm — see pod-marisa-own-1/2/3. No guest/topic confirmed yet. If she wants 5+ episodes, there is a real gap → recommend an external Tallinn studio (we have contacts). Reply to her team with the number once confirmed.',
     people: ['marisa-peer'],
   },
   {
@@ -670,5 +670,5 @@ export const BACKLOG: BacklogItem[] = [
   { id: 'b-accel-rec-regan', title: 'Accelerator capture — Regan Wealth Code (25–26 Jul, live)', format: 'accelerator-recording', speakers: ['regan-hillyer'], constraint: 'Live capture with Still Frame. Timing conflict (evenings vs 9–4) must resolve first.' },
   { id: 'b-accel-rec-vishen', title: 'Accelerator capture — Vishen AI Accelerator (1 Aug, 11–6)', format: 'accelerator-recording', speakers: ['vishen'], constraint: 'Live capture with Still Frame on the Main Stage.' },
   { id: 'b-social', title: 'Social media content — key authors', format: 'social', constraint: 'Not yet itemised in the Shoots Airtable. Opportunistic capture around stage days, portraits and shoots — needs a shot list.' },
-  { id: 'b-no-items', title: 'No slate items exist for Cynthia Thurlow, Scott Lyon, Simon Ong, Lorin Krenn (interview), Natalie Ellis (interview), Kristina, Fumiko, Marisa (podcast)', format: 'social', constraint: 'Deliberate, or gaps? Cheap to add interviews while they are on site.' },
+  { id: 'b-no-items', title: 'No slate items exist for Cynthia Thurlow, Scott Lyon, Simon Ong, Lorin Krenn (interview), Natalie Ellis (interview), Kristina, Fumiko', format: 'social', constraint: 'Deliberate, or gaps? Cheap to add interviews while they are on site.' },
 ]

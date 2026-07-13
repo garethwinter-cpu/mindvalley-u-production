@@ -480,6 +480,35 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     notes: 'Arrival day — keep light. Alternative: 28 Jul, but that is a NO INTERVIEWS day.',
   },
 
+  // ---------- MON 27 JUL ----------
+  {
+    id: 'pod-marisa-own-1',
+    date: '2026-07-27',
+    start: '11:00',
+    end: '12:00',
+    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 1, PENCILLED)',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['marisa-peer'],
+    crew: UNIT1,
+    status: 'placeholder',
+    notes:
+      'PENCILLED placeholder — Marisa\'s own book podcast (facilitated by us; not the Scaling Wisdom episode with Vishen). Per our capacity proposal (p-marisa-podcast-count, 13 Jul): recommended max 3 episodes in-house, best batched on Mon 27 Jul (the most open studio day). No guest/topic confirmed yet — reply to Elise McDonald (Marisa\'s team) to lock in.',
+  },
+  {
+    id: 'pod-marisa-own-2',
+    date: '2026-07-27',
+    start: '14:00',
+    end: '15:00',
+    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 2, PENCILLED)',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['marisa-peer'],
+    crew: UNIT1,
+    status: 'placeholder',
+    notes: 'PENCILLED placeholder — see Episode 1 (pod-marisa-own-1) for the full brief.',
+  },
+
   // ---------- TUE 28 JUL ----------
   {
     id: 'mc-mckenna',
@@ -545,6 +574,20 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'conflict',
     notes:
       'Right after her 2–3pm talk. 28 Jul is a NO INTERVIEWS day and her Speaker DATES window says 22 Jul only — double conflict, needs author-relations confirmation. Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
+  },
+  {
+    id: 'pod-marisa-own-3',
+    date: '2026-07-28',
+    start: '17:30',
+    end: '18:30',
+    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 3, PENCILLED)',
+    type: 'podcast',
+    location: STUDIO,
+    speakers: ['marisa-peer'],
+    crew: UNIT1,
+    status: 'placeholder',
+    notes:
+      'PENCILLED placeholder — the late-afternoon slot from our capacity proposal (p-marisa-podcast-count, 13 Jul), stacked right after unit 1 wraps McKenna\'s cert assets (5:15pm). See Episode 1 (pod-marisa-own-1) for the full brief.',
   },
 
   // ---------- WED 29 JUL ----------
