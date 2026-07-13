@@ -76,9 +76,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['jade-shaw'],
     crew: UNIT1,
     gareth: true,
-    status: 'conflict',
+    status: 'tentative',
     notes:
-      'Her ONLY listed day in Estonia (21 Jul) — full 8-item asset suite must land today. Note: agenda also has her in the Cauldron on 23 Jul, which contradicts her window.',
+      'POSSIBLE — keep. The old "conflict" was based on a wrong window (thought she was here 21 Jul only). Speaker DATES audit (13 Jul) confirms she\'s in town 21–30 Jul, so no crunch. Unit 1 is otherwise light this slot, and it flows into her 2:15pm interview while she\'s already made up. Full 8-item Astral Projection suite. If the 8 items feel rushed in 2h, her wide window means we can give it a longer block on a calmer day (22 Jul morning, unit 1 free) — optional.',
   },
   {
     id: 'int-priestley',

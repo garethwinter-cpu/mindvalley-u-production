@@ -166,7 +166,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     notes: 'Marked “to confirm” in agenda.',
   },
   { id: 'jul23-thurlow', date: '2026-07-23', start: '11:00', end: '12:00', title: 'Cynthia Thurlow', type: 'stage-talk', location: MAIN_STAGE, speakers: ['cynthia-thurlow'] },
-  { id: 'jul23-jade', date: '2026-07-23', start: '14:00', end: '15:30', title: 'Jade Shaw (90 min)', type: 'embodiment', location: EMBODIMENT, speakers: ['jade-shaw'], status: 'conflict', notes: 'Her Speaker DATES window is Jul 21 only — agenda has her Jul 23.' },
+  { id: 'jul23-jade', date: '2026-07-23', start: '14:00', end: '15:30', title: 'Jade Shaw (90 min)', type: 'embodiment', location: EMBODIMENT, speakers: ['jade-shaw'] },
   { id: 'jul23-brule-1', date: '2026-07-23', start: '14:00', end: '15:00', title: 'Dan Brulé (embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dan-brule'] },
   { id: 'jul23-brule-2', date: '2026-07-23', start: '15:00', end: '16:00', title: 'Dan Brulé (embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dan-brule'] },
   { id: 'jul23-lyon', date: '2026-07-23', start: '16:15', end: '17:00', title: 'Dr. Scott Lyon', type: 'stage-talk', location: MAIN_STAGE, speakers: ['scott-lyon'] },
@@ -389,12 +389,6 @@ export const CONFLICTS: Conflict[] = [
     title: 'Jim Kwik compression',
     detail:
       'On the ground Jul 28–Aug 2 only. Speaks 3 blocks + fireside + portraits on Jul 30. Superbrain masterclass + accelerator recording must fit around it.',
-  },
-  {
-    id: 'c-jade',
-    severity: 'medium',
-    title: 'Jade Shaw window (Jul 21) vs 90-min session Jul 23',
-    detail: 'Cauldron session sits outside her listed day.',
   },
   {
     id: 'c-photo-locations',
