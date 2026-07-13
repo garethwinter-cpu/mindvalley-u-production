@@ -204,6 +204,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
+    director: 'gareth',
     status: 'tentative',
     notes:
       'CONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul), matches the microsite; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling.',
@@ -233,6 +234,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['regan-hillyer'],
     gareth: true,
     crew: CREW_CORE,
+    director: 'gareth',
     status: 'tentative',
     notes:
       'CONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). She departs Estonia this day per Speaker DATES — evening finish to 9pm is tight against any departure flight; confirm her flight time. Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.',
@@ -304,6 +306,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     vishen: true,
     gareth: true,
     crew: CREW_CORE,
+    director: 'gareth',
   },
   { id: 'aug1-closing-party', date: '2026-08-01', start: '20:30', end: '02:00', title: 'Closing Party', type: 'social' },
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
