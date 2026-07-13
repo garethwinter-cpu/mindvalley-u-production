@@ -164,9 +164,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-john-lee',
-    date: '2026-07-22',
-    start: '15:15',
-    end: '16:00',
+    date: '2026-07-21',
+    start: '10:30',
+    end: '11:15',
     title: 'Author Interview: Kaitlin & John Lee',
     type: 'production',
     location: STUDIO,
@@ -176,6 +176,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
+    notes: 'BATCHED to 21 Jul (from 22, his departure day) — pairs with Kaitlin\'s Jeffrey Allen interview in a morning block, and gets him in the day before his packed departure. John Lee free this slot (his stage talk is 3pm); unit 1 free until Jade\'s noon assets. Kaitlin batching plan (13 Jul).',
   },
   {
     id: 'assets-john-lee',
@@ -323,9 +324,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-marisa',
-    date: '2026-07-25',
-    start: '12:30',
-    end: '13:15',
+    date: '2026-07-26',
+    start: '13:15',
+    end: '14:00',
     title: 'Author Interview: Kaitlin & Marisa Peer',
     type: 'production',
     location: STUDIO,
@@ -335,6 +336,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
+    notes: 'BATCHED to 26 Jul (from 25) — clusters with Kaitlin\'s Eric Edmeades + Shi Heng Yi interviews into one afternoon block, freeing 25 Jul. Marisa\'s window (21 Jul–2 Aug) covers it; slots into Nadir\'s 13:00–14:00 gap. Kaitlin batching plan (13 Jul).',
   },
   {
     id: 'pod-ja',

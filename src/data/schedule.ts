@@ -537,9 +537,9 @@ export const ACTIONS: ActionItem[] = [
     id: 'p-kaitlin-batching',
     kind: 'proposal',
     owner: 'production',
-    title: 'Batch Kaitlin\'s 20 author interviews onto her hosting days, high-priority first',
+    title: 'Kaitlin\'s interviews batched into dense days (v1 — nudge to hosting days once Eni confirms)',
     detail:
-      'Kaitlin is happy to batch 3-4 interviews per day right after she wraps hosting (already hair/makeup ready), plus 1-2 dedicated shoot days if needed — a big improvement on today\'s schedule, which spreads her 20 interviews across almost every single day. Her only ask: lock the plan in early since she\'s running her own business alongside this. Sequence: the 7 interviews ranked 10/10 (Jeffrey Allen, Shi Heng Yi, John Lee, Eric Edmeades, Regan Hillyer, Paul McKenna, Marisa Peer) first, then the 11 ranked 4/10, then Nick Santonastasso + Daniel Priestley (2/10) last. Blocked on Eni\'s hosting schedule (see a-kaitlin-hosting-schedule) before we can actually remap the days.',
+      'SCHEDULED (13 Jul) per Gareth\'s go-ahead, using author windows + Kaitlin\'s stated preference (batch 3-4/day, right after she wraps, already hair/makeup ready). Her 10 interviews now sit across 5 days instead of 7: WEEK 1 consolidated to two batch days — 21 Jul (Jeffrey Allen, John Lee, Jade Shaw, Regan Hillyer) and 26 Jul (Eric Edmeades, Marisa Peer, Shi Heng Yi); moves: John Lee 22→21, Marisa 25→26. WEEK 2 left one-per-day (Paul McKenna 30, Lee Holden 31, Rachel Pringle 1 Aug) — consolidating those would overload Nadir (sole unit-2 operator) on already-dense days. Two open caveats: (1) the John Lee + Marisa moves assume they\'re free on the new day (their windows cover it, no clashing events) — confirm with author relations; (2) final slot times will nudge to sit right after Kaitlin\'s actual hosting blocks once Eni sends her hosting-day schedule (a-kaitlin-hosting-schedule).',
     due: '2026-07-18',
     people: ['kaitlin'],
   },
