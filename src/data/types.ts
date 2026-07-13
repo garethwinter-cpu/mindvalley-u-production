@@ -34,7 +34,7 @@ export type EventType =
   | 'social-media'
   | 'logistics'
 
-export type EventStatus = 'confirmed' | 'tentative' | 'placeholder' | 'conflict'
+export type EventStatus = 'confirmed' | 'tentative' | 'placeholder' | 'conflict' | 'done'
 
 export interface ScheduleEvent {
   id: string

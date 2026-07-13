@@ -10,6 +10,7 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
   const events = all.filter((e) => matchesChipFilter(e, filter))
   const conflicts = all.filter((e) => e.status === 'conflict').length
   const isToday = day.date === new Date().toISOString().slice(0, 10)
+  const allDone = all.length > 0 && all.every((e) => e.status === 'done')
 
   return (
     <div className={`ov-day${isToday ? ' today' : ''}`} onClick={() => onOpen(day.date)}>
@@ -26,6 +27,7 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
         </span>
       ))}
       {events.length === 0 && <span className="empty">{filter === 'all' ? 'Clear' : '—'}</span>}
+      {allDone && <span className="ov-day-done">Done</span>}
     </div>
   )
 }

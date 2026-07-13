@@ -45,6 +45,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     type: 'logistics',
     location: 'Remote — Zoom',
     speakers: ['daniel-priestley'],
+    status: 'done',
     notes:
       'Handled — no crew required. 5pm London = 7pm Tallinn, 90 min. Funnel webinar driving signups to the 18–19 Jul intensive.',
   },

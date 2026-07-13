@@ -21,6 +21,7 @@ export const STATUS_LABEL: Record<EventStatus, string> = {
   tentative: 'To confirm',
   placeholder: 'Placeholder',
   conflict: 'Conflict',
+  done: 'Done',
 }
 
 export function TypeBadge({ type }: { type: EventType }) {
