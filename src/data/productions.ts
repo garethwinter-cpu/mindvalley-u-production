@@ -291,21 +291,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
 
   // ---------- SAT 25 JUL ----------
   {
-    id: 'accel-rec-ja-1',
-    date: '2026-07-25',
-    start: '10:00',
-    end: '14:00',
-    title: 'Jeffrey Allen Accelerator — recording day 1 + Upsell Landing Page Video',
-    type: 'accelerator',
-    location: STUDIO,
-    speakers: ['jeffrey-allen'],
-    gareth: true,
-    crew: UNIT1,
-    director: 'gareth',
-    status: 'tentative',
-    notes: '7-day virtual accelerator content. Daytime, before Regan’s live accelerator evening. SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator across both recording days — product + sales video shot together while Jeffrey and the crew are already set up.',
-  },
-  {
     id: 'int-dan-brule',
     date: '2026-07-25',
     start: '11:30',
@@ -319,8 +304,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     priority: 4,
-    status: 'conflict',
-    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). ⚠ CONFLICT: overlaps Gareth\'s own accel-rec-ja-1 (10am-2pm, same day) — he can\'t direct that AND interview Dan simultaneously. Needs a time move or hand back to Kaitlin/Eni.',
+    status: 'tentative',
+    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). CONFLICT CLEARED: the clash was with Jeffrey Allen\'s studio accelerator recording, which was removed (his accelerator is captured on his 22 Jul stage day) — so Gareth\'s 25 Jul morning is now free.',
   },
   {
     id: 'int-marisa',
@@ -374,21 +359,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
 
   // ---------- SUN 26 JUL ----------
-  {
-    id: 'accel-rec-ja-2',
-    date: '2026-07-26',
-    start: '10:00',
-    end: '14:00',
-    title: 'Jeffrey Allen Accelerator — recording day 2 + Upsell Landing Page Video',
-    type: 'accelerator',
-    location: STUDIO,
-    speakers: ['jeffrey-allen'],
-    gareth: true,
-    crew: UNIT1,
-    director: 'gareth',
-    status: 'conflict',
-    notes: 'His listed departure day — confirm he flies late or extend. Regan accel follows at 17:00 (same crew). SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator (single Airtable record spans both recording days).',
-  },
   {
     id: 'pod-shy',
     date: '2026-07-27',

@@ -142,7 +142,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul21-sazerac', date: '2026-07-21', start: '19:30', end: '23:30', title: 'Sazerac', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
 
   // ================= WED 22 JUL — MANIFESTING =================
-  { id: 'jul22-ja-1', date: '2026-07-22', start: '10:00', end: '11:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
+  { id: 'jul22-ja-1', date: '2026-07-22', start: '10:00', end: '11:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'], notes: 'Jeffrey\'s accelerator material is captured live across his four stage sessions today (per the Overview agenda) — the separate studio accelerator recording days (25/26 Jul) were removed as redundant (13 Jul).' },
   { id: 'jul22-ja-2', date: '2026-07-22', start: '11:00', end: '12:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
   { id: 'jul22-fce-dawn', date: '2026-07-22', start: '12:45', end: '13:45', title: 'First Class Experience — Dawn Hoang', type: 'experience', location: EXPERIENCE, speakers: ['dawn-hoang'] },
   { id: 'jul22-ja-3', date: '2026-07-22', start: '14:00', end: '15:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
@@ -379,10 +379,10 @@ export const CONFLICTS: Conflict[] = [
   },
   {
     id: 'c-gareth-interview-load',
-    severity: 'high',
-    title: 'Gareth double-booked on 25, 29 + 1 Aug — his reassigned interviews collide with shoots he directs',
+    severity: 'medium',
+    title: 'Gareth double-booked on 29 Jul — his reassigned interviews collide with shoots he directs',
     detail:
-      'AUDIT (13 Jul): the prioritization pass handed Gareth 9 of Kaitlin\'s interviews, and four now overlap big shoots he\'s also on. 25 Jul: Dan Brulé interview (11:30) sits inside the Jeffrey Allen accelerator recording (10-2). 29 Jul: Jolene interview (14:30) and Zen Takai interview (15:30) chain-overlap the Lorin podcast (15:00), on top of the Kwik masterclass + Jolene podcast — five Gareth commitments 10am-4:15pm. 1 Aug: Maya interview (12:45) falls inside the Vishen AI Accelerator (11-6, Main Stage) — different venue, so impossible. Needs Gareth\'s call per interview: hand it back to Kaitlin/Eni, or step out of the big shoot. Recommendation: hand these four back to a host, since that\'s what freed his time in the first place.',
+      'AUDIT (13 Jul): the prioritization pass handed Gareth 9 of Kaitlin\'s interviews; some overlapped big shoots he\'s also on. RESOLVED since: 25 Jul (Dan Brulé) cleared when Jeffrey\'s studio accelerator was removed; 1 Aug (Maya) moved to 27 Jul. STILL OPEN — 29 Jul: Jolene interview (14:30) and Zen Takai interview (15:30) chain-overlap the Lorin podcast (15:00), on top of the Kwik masterclass + Jolene podcast (five Gareth commitments 10am-4:15pm). Needs Gareth\'s call: hand Jolene/Zen back to Kaitlin/Eni, or re-space. Recommendation: hand them to a host, since that\'s what freed his time in the first place.',
   },
   {
     id: 'c-wineland-27',
