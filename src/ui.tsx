@@ -50,6 +50,13 @@ export function fmtTime(t?: string) {
   return `${hh}:${String(m).padStart(2, '0')}${am ? 'am' : 'pm'}`
 }
 
+/** All-day events (no fixed start — genuinely ongoing) sort first; other undated
+ *  events (start truly TBD) still sort last. */
+export function sortKey(e: ScheduleEvent): string {
+  if (e.start) return e.start
+  return e.type === 'social-media' ? '00:00' : '99:99'
+}
+
 /** Everyone required at an event, deduped, in display order */
 export function requiredPeople(e: ScheduleEvent): string[] {
   const ids: string[] = []

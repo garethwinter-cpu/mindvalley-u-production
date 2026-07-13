@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
 import type { DayMeta } from '../data/types'
-import { ChipFilter, Legend, isSmallHall, matchesChipFilter } from '../ui'
+import { ChipFilter, Legend, isSmallHall, matchesChipFilter, sortKey } from '../ui'
 
 function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; onOpen: (date: string) => void }) {
-  const all = EVENTS.filter((e) => e.date === day.date).sort((a, b) =>
-    (a.start ?? '99:99').localeCompare(b.start ?? '99:99'),
-  )
+  const all = EVENTS.filter((e) => e.date === day.date).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
   const events = all.filter((e) => matchesChipFilter(e, filter))
   const conflicts = all.filter((e) => e.status === 'conflict').length
   const isToday = day.date === new Date().toISOString().slice(0, 10)
@@ -22,7 +20,7 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
       {day.noInterviews && <span className="ov-flag" style={{ color: 'var(--text-subtle)' }}>No interviews</span>}
       {events.map((e) => (
         <span key={e.id} className={`ov-chip t-${e.type}${isSmallHall(e) ? ' loc-small-hall' : ''}`}>
-          {e.start ? e.start + ' · ' : ''}
+          {e.start ? e.start + ' · ' : e.type === 'social-media' ? 'All day · ' : ''}
           {e.title}
         </span>
       ))}

@@ -40,28 +40,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Dawn is in Tallinn from 17 Jul — early win before the event starts.',
   },
-  {
-    id: 'accel-priestley-remote-d1',
-    date: '2026-07-18',
-    title: 'Daniel Priestley — "The Science of Growing Customers" Accelerator (Day 1 of 2, remote)',
-    type: 'accelerator',
-    location: 'Remote — Zoom',
-    speakers: ['daniel-priestley'],
-    director: 'gareth',
-    status: 'tentative',
-    notes: 'NEW in Airtable (split into Day 1/Day 2, 13 Jul) — remote delivery, ~4h, times TBC. Feeds off the 6 Jul funnel webinar. See accel-priestley-remote-d2 for Day 2.',
-  },
-  {
-    id: 'accel-priestley-remote-d2',
-    date: '2026-07-19',
-    title: 'Daniel Priestley — "The Science of Growing Customers" Accelerator (Day 2 of 2, remote)',
-    type: 'accelerator',
-    location: 'Remote — Zoom',
-    speakers: ['daniel-priestley'],
-    director: 'gareth',
-    status: 'tentative',
-    notes: 'Day 2 of 2 — remote delivery, ~4h, times TBC.',
-  },
 
   // ---------- TUE 21 JUL ----------
   {

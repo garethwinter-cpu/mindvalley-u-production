@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
-import { ChipFilter, Legend, StatusBadge, TypeBadge, creativeCredits, fmtTime, involvesPerson, isSmallHall, matchesChipFilter, requiredPeople } from '../ui'
+import { ChipFilter, Legend, StatusBadge, TypeBadge, creativeCredits, fmtTime, involvesPerson, isSmallHall, matchesChipFilter, requiredPeople, sortKey } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
 
@@ -11,7 +11,7 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
   const events = EVENTS.filter((e) => e.date === day.date)
     .filter((e) => who === 'all' || involvesPerson(e, who))
     .filter((e) => matchesChipFilter(e, filter))
-    .sort((a, b) => (a.start ?? '00:00').localeCompare(b.start ?? '00:00'))
+    .sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
 
   const speakers = PEOPLE.filter((p) => p.role === 'speaker')
   const team = PEOPLE.filter((p) => p.role !== 'speaker')
@@ -78,7 +78,7 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
           return (
             <div key={e.id} className={`evt${e.status === 'conflict' ? ' conflict' : ''}`}>
               <div className="evt-time">
-                {fmtTime(e.start)}
+                {!e.start && e.type === 'social-media' ? 'All day' : fmtTime(e.start)}
                 {e.end && <small>– {fmtTime(e.end)}</small>}
               </div>
               <div>

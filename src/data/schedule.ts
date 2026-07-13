@@ -70,9 +70,10 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     type: 'accelerator',
     location: 'Remote + streamed',
     speakers: ['daniel-priestley'],
+    director: 'gareth',
     status: 'tentative',
     notes:
-      'Per Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales.',
+      'Per Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales. Matches the Airtable "Science of Growing Customers" Shoots record, split Day 1/Day 2 (13 Jul).',
   },
   {
     id: 'priestley-accel-2',
@@ -81,9 +82,10 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     type: 'accelerator',
     location: 'Remote + streamed',
     speakers: ['daniel-priestley'],
+    director: 'gareth',
     status: 'tentative',
     notes:
-      'Remote delivery per Gareth. Sessions: Three-Part Year / Short-Long-Lead Form / Telegraph Capacity / Build 12-Month Calendar live. Start time TBD.',
+      'Remote delivery per Gareth. Sessions: Three-Part Year / Short-Long-Lead Form / Telegraph Capacity / Build 12-Month Calendar live. Start time TBD. Day 2 of the Airtable "Science of Growing Customers" record split (13 Jul).',
   },
 
   // ================= MON 20 JUL — OPENING =================
@@ -319,7 +321,6 @@ const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
 ).map((d) => ({
   id: `social-media-${d.date}`,
   date: d.date,
-  start: '09:00',
   title: 'Daily social media capture (ad-hoc + stage snippets)',
   type: 'social-media',
   location: 'Roaming — across venue',
