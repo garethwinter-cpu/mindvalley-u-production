@@ -578,9 +578,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     priority: 5,
-    status: 'placeholder',
+    status: 'confirmed',
     notes:
-      'PENCILLED per Eni (WhatsApp, 13 Jul): she departs 29 Jul (confirmed) and prefers mornings, not too late in the afternoon. Set to 9-9:45am — before McKenna\'s masterclass ties up the rest of the crew at 10am, and well ahead of her own 2pm talk. Still needs Sheleana\'s actual confirmation (see a-sheleana-morning); NO INTERVIEWS on the 28th doesn\'t block this — confirmed to mean stage/press only. Reassigned from Kaitlin to Eni per Gareth\'s prioritization pass (13 Jul).',
+      'CONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot (she departs 29 Jul, prefers mornings). Before McKenna\'s masterclass ties up the crew at 10am, well ahead of her own 2pm talk. Eni interviews (feminine-energy call, per her chat with Gareth). NO INTERVIEWS on the 28th doesn\'t block this — stage/press only.',
   },
   {
     id: 'pod-jamie-sea',
@@ -857,7 +857,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['iris-wagner', 'mohan-lakhiani', 'roopi-lakhiani'],
     director: 'iris-wagner',
     status: 'tentative',
-    notes: 'Per Iris\'s brief (13 Jul): 9:30am–4:30pm, flexible around Mohan & Roopi\'s energy. Iris conducts all interviews, directs off her own shooting script, and coordinates who\'s on camera — her assistant is with her throughout. Vishen is welcome to join any session; some segments are a closed set for his parents\' privacy. Needs: min. 1 camera (2 preferred) from Gareth\'s crew — Gareth told Iris (12 Jul call) it\'s "no problem" for 2 to stay on after the MVU wrap (2 Aug), but hasn\'t yet picked who — plus a basic lighting package, 2–3 wireless mics + boom if available, and simple catering (coffee/tea, light lunches, refreshments). Makeup artist optional — see a-legacy-crew-stay.',
+    notes: 'IRIS-RUN — Gareth decided (13 Jul) no MV crew stays on for this; Iris resources it entirely herself (crew, kit, catering all her side). On the calendar for awareness only (Vishen\'s parents, post-event). 9:30am–4:30pm, flexible around Mohan & Roopi\'s energy; some segments a closed set for privacy. Vishen welcome to join.',
   },
   {
     id: 'shoot-iris-vishen-parents-d2',
@@ -870,7 +870,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['iris-wagner', 'mohan-lakhiani', 'roopi-lakhiani'],
     director: 'iris-wagner',
     status: 'tentative',
-    notes: 'Day 2 of 3 — same crew/kit/timing as Day 1. See Day 1 notes for the full brief.',
+    notes: 'Day 2 of 3 — Iris-run, no MV crew. See Day 1 notes.',
   },
   {
     id: 'shoot-iris-vishen-parents-d3',
@@ -883,7 +883,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['iris-wagner', 'mohan-lakhiani', 'roopi-lakhiani', 'hayden-lakhiani', 'eve-lakhiani'],
     director: 'iris-wagner',
     status: 'tentative',
-    notes: 'Final day — same crew/kit/timing as Days 1–2, plus Iris wants Hayden & Eve in for an "Ask Me Anything" with their grandparents, which she calls one of the most meaningful segments for the family. Needs Vishen to confirm the kids\' availability — his tracked window currently ends 2 Aug (MVU wrap); see a-vishen-window-legacy.',
+    notes: 'Day 3 of 3 — Iris-run, no MV crew. Iris wants Hayden & Eve in for a grandparents "Ask Me Anything" (needs Vishen to confirm the kids\' availability — his tracked window ends 2 Aug; see a-vishen-window-legacy).',
   },
   {
     id: 'accel-upsell-kwik',

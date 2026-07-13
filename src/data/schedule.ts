@@ -192,7 +192,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     crew: CREW_CORE,
     party: true,
     status: 'tentative',
-    notes: 'Per Fisher (voice note, 13 Jul): this needs the full production team\'s focus, not passive coverage — many speakers fly in specifically for the video/photo opportunity here, and a strong asset can lift a speaker\'s fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). Timing itself still marked TBC on the source sheet. Kaitlin O\'Toole confirmed hosting (13 Jul). Added to the Shoots Airtable as its own record (13 Jul) — crew is our proposed default (Nadir + Khairul) but Gareth hasn\'t actually assigned/confirmed production resource for it yet, see a-mv-awards-crew.',
+    notes: 'Per Fisher (voice note, 13 Jul): this needs the full production team\'s focus, not passive coverage — many speakers fly in specifically for the video/photo opportunity here, and a strong asset can lift a speaker\'s fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul, Nadir, Kuhan) + Gareth — they\'re all already on-site for the awards, working together, so no separate resourcing needed. Kaitlin O\'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).',
   },
   { id: 'jul24-party', date: '2026-07-24', start: '19:00', end: '23:00', title: 'Black Block Party', type: 'social' },
 
@@ -418,16 +418,6 @@ export const CONFLICTS: Conflict[] = [
 
 export const ACTIONS: ActionItem[] = [
   // ---- ⛔ Physically impossible as the data stands ----
-  {
-    id: 'a-sheleana-morning',
-    kind: 'chase',
-    owner: 'author-relations',
-    title: 'Confirm Sheleana wants her interview 28 Jul morning',
-    detail:
-      'Per Eni (WhatsApp, 13 Jul): her real departure is 29 Jul (not blank/unknown as the earlier audit found — Eni has since confirmed it directly). She prefers mornings, not too late in the afternoon. Pencilled the interview 9:00-9:45am on 28 Jul, before her 2pm talk — still need to actually ask her if that works, per Eni\'s own note ("we need to ask her if she wants to do the morning before her talk").',
-    due: '2026-07-16',
-    people: ['sheleana-aiyana', 'eni'],
-  },
   // ---- ⚠️ Producer proposals awaiting Gareth's yes/no ----
   {
     id: 'p-marisa-podcast-count',
@@ -497,15 +487,6 @@ export const ACTIONS: ActionItem[] = [
     due: '2026-07-20',
   },
   {
-    id: 'ch-social-crew',
-    kind: 'chase',
-    owner: 'production',
-    title: 'Dedicated social/roving shooter needed — daily capture is unstaffed',
-    detail:
-      'Marketing added 13 Social/Engagement items — 8 ad-hoc concepts filmed daily + daily stage-talk snippets + weekly recaps. The two production units (Khairul+Kuhan / Nadir) are fully booked on podcasts, masterclasses and interviews and cannot also cover always-on social. Assign a dedicated roving shooter/editor (marketing’s own, or an added crew member) or the social slate will not get shot. Requesters: Ishaan Jaiswal, Glen Jason Chittur.',
-    due: '2026-07-11',
-  },
-  {
     id: 'ch-locations',
     kind: 'chase',
     owner: 'production',
@@ -513,24 +494,6 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'RESOLVED for premium productions: podcasts, masterclasses and author interviews shoot at Energiakeskus Studio, Tallinn. Still open: locations for the 13 portrait sessions (venue-side, with Meng/Karen/Mardo) and any Kultuurikatel rooms needed for event-day pickups.',
     due: '2026-07-13',
-  },
-  {
-    id: 'a-legacy-crew-stay',
-    kind: 'proposal',
-    owner: 'production',
-    title: 'Pick which 2 camera crew stay on for the Memoirs Productions shoot (3–5 Aug)',
-    detail:
-      'Iris\'s 13 Jul brief: Gareth told her (12 Jul call, before he\'d been briefed on the project) it\'s "no problem" for 2 of the camera team to stay in Tallinn after the MVU wrap (2 Aug) to support 3–5 Aug at Mohan & Roopi\'s apartment. Still need to: pick which 2 of Khairul/Nadir/Kuhan, extend their travel, and confirm kit — min. 1 camera (2 preferred), basic lighting package, 2–3 wireless mics + boom if available. Iris\'s assistant is on set throughout; makeup artist is optional (Roopi may self-do, Iris can powder Mohan).',
-    due: '2026-07-20',
-    people: ['iris-wagner', 'mohan-lakhiani', 'roopi-lakhiani'],
-  },
-  {
-    id: 'a-legacy-catering',
-    kind: 'chase',
-    owner: 'production',
-    title: 'Arrange catering for the 3-day legacy shoot (3–5 Aug)',
-    detail: 'Simple catering needed each day at Mohan & Roopi\'s apartment — coffee/tea, light lunches, refreshments — for crew, Iris and her assistant.',
-    due: '2026-07-27',
   },
   {
     id: 'a-iris-vip-passes',
@@ -597,16 +560,6 @@ export const ACTIONS: ActionItem[] = [
     detail:
       'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
     due: '2026-07-20',
-  },
-  {
-    id: 'a-mv-awards-crew',
-    kind: 'proposal',
-    owner: 'production',
-    title: 'Confirm production resource for the Mindvalley Awards Ceremony (24 Jul)',
-    detail:
-      'Now formally in the Shoots Airtable (13 Jul), with Kaitlin O\'Toole confirmed hosting. The app carries Nadir + Khairul as a proposed default crew (they\'re free from 4pm that day), but Gareth hasn\'t actually assigned/confirmed who\'s covering it — needed given the full-team requirement Fisher flagged.',
-    due: '2026-07-20',
-    people: ['kaitlin'],
   },
   {
     id: 'a-gareth-shy-ja2-clash',
