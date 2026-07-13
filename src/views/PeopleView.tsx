@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import type { ReactNode } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
@@ -119,6 +120,36 @@ function DayCard({ day }: { day: DaySchedule }) {
           <span className="sch-what">{e.title}</span>
         </div>
       ))}
+    </div>
+  )
+}
+
+/** Collapsible commitment section — the scheduler above already gives the day-by-day
+ *  view, so the detailed event lists start collapsed to keep the profile scannable. */
+function CollapsibleSection({
+  label,
+  count,
+  children,
+  defaultOpen = false,
+}: {
+  label: string
+  count: number
+  children: ReactNode
+  defaultOpen?: boolean
+}) {
+  const [open, setOpen] = useState(defaultOpen)
+  return (
+    <div className={`pp-collapse${open ? ' open' : ''}`}>
+      <button className="pp-collapse-head" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
+        <span>{label}</span>
+        <span className="pp-collapse-toggle">
+          {open ? 'Hide' : `Show ${count}`}
+          <span className="pp-chev" aria-hidden>
+            ▾
+          </span>
+        </span>
+      </button>
+      {open && <div className="pp-collapse-body">{children}</div>}
     </div>
   )
 }
@@ -287,23 +318,25 @@ export default function PeopleView() {
               </>
             )}
 
+            {(content.length > 0 || eventCommitments.length > 0 || editorial.length > 0) && (
+              <div className="pp-commit-divider">
+                <span>Full commitment detail</span>
+              </div>
+            )}
             {content.length > 0 && (
-              <>
-                <div className="pp-commit-label">🎬 Content commitments — our productions ({content.length})</div>
+              <CollapsibleSection label={`🎬 Content commitments — our productions`} count={content.length}>
                 <EventList events={content} />
-              </>
+              </CollapsibleSection>
             )}
             {eventCommitments.length > 0 && (
-              <>
-                <div className="pp-commit-label">🎪 Event commitments — locked agenda ({eventCommitments.length})</div>
+              <CollapsibleSection label={`🎪 Event commitments — locked agenda`} count={eventCommitments.length}>
                 <EventList events={eventCommitments} />
-              </>
+              </CollapsibleSection>
             )}
             {editorial.length > 0 && (
-              <>
-                <div className="pp-commit-label">✂️ Edit deliverables — Creative column ({editorial.length})</div>
+              <CollapsibleSection label={`✂️ Edit deliverables — Creative column`} count={editorial.length}>
                 <EventList events={editorial} />
-              </>
+              </CollapsibleSection>
             )}
           </div>
         </div>

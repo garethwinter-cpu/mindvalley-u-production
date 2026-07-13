@@ -816,6 +816,75 @@ body {
   border-top: 1px solid var(--border-muted);
 }
 
+/* Divider separating the scheduler above from the collapsible detail below */
+.pp-commit-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+.pp-commit-divider::before,
+.pp-commit-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-muted);
+}
+
+/* Collapsible commitment sections */
+.pp-collapse {
+  margin-top: 8px;
+}
+.pp-collapse-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-muted);
+  border: 1px solid var(--border-muted);
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-content);
+  transition: background 0.12s ease;
+}
+.pp-collapse-head:hover {
+  background: var(--bg-subtle);
+}
+.pp-collapse.open .pp-collapse-head {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pp-collapse-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.pp-chev {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+.pp-collapse.open .pp-chev {
+  transform: rotate(180deg);
+}
+.pp-collapse-body {
+  padding-top: 16px;
+}
+
 /* ============ Scheduler (People view) ============ */
 .sch-tiles {
   display: grid;
