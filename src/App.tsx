@@ -43,6 +43,18 @@ const SOURCES = [
   { label: '✍🏻 Authors (bios)', url: 'https://airtable.com/appFEFygXo2pRc8AR/tblGecx2i4ge9KYmU' },
 ]
 
+function tallinnTime(d: Date): string {
+  return new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Europe/Tallinn',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  })
+    .format(d)
+    .replace(' ', '')
+    .toLowerCase()
+}
+
 // Regan's 16 Jul webinar is fully remote and needs no crew — the first commitment
 // actually requiring Gareth's team on the ground is the Dawn Hoang interview, 18 Jul.
 function daysToKickoff(): string {
@@ -58,6 +70,12 @@ function daysToKickoff(): string {
 export default function App() {
   const [tab, setTabState] = useState<Tab>(tabFromHash)
   const [day, setDay] = useState('2026-07-17')
+  const [now, setNow] = useState(() => new Date())
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 30_000)
+    return () => clearInterval(id)
+  }, [])
 
   const setTab = (t: Tab) => {
     setTabState(t)
@@ -102,6 +120,9 @@ export default function App() {
             Actions ({ACTIONS.length + CONFLICTS.length})
           </button>
         </nav>
+        <div className="mv-clock" title="Local time in Tallinn (EEST, UTC+3)">
+          🕒 {tallinnTime(now)} Tallinn
+        </div>
         <div className="mv-countdown">{daysToKickoff()} · First crewed shoot 18 Jul</div>
       </header>
       <main className="mv-page">

@@ -123,8 +123,15 @@ body {
   border-bottom-color: var(--brand);
 }
 
-.mv-countdown {
+.mv-clock {
   margin-left: auto;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.mv-countdown {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
