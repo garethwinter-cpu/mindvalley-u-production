@@ -391,7 +391,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 2,
     status: 'tentative',
-    notes: 'MOVED to 9:00 (from 11:15) — clears Gareth\'s overlap with the Jeffrey Allen accelerator recording he directs 10am–2pm. First thing in the morning, before the accelerator; Nadir free. His departure day so morning-only anyway — confirm his flight isn\'t super-early (see ch-flights). Reassigned from Kaitlin to Gareth (13 Jul).',
+    notes: 'At 9:00, first thing in the morning; Nadir free. His departure day, so morning-only anyway — confirm his flight isn\'t super-early (see ch-flights). Reassigned from Kaitlin to Gareth (13 Jul). (Originally moved earlier to dodge the Jeffrey Allen studio accelerator, since removed — the 9:00 slot still works well.)',
   },
   {
     id: 'int-eric',

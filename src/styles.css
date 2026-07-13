@@ -20,6 +20,8 @@
   --pink: #df1a6f;
   --pink-light: #feeaf3;
   --red: #f34747;
+  --red-content: #c11919;
+  --red-light: #fdeaea;
   /* neutral (cool grey) */
   --grey-100: #f9f9f9;
   --grey-200: #f3f4f6;
@@ -413,6 +415,23 @@ body {
   border-radius: 8px;
   padding: 8px 12px;
   margin-top: 8px;
+}
+.evt-avail {
+  font-size: 13px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.evt-avail.avail-departure-day,
+.evt-avail.avail-arrival-day {
+  color: var(--orange-content);
+  background: var(--orange-light);
+}
+.evt-avail.avail-before,
+.evt-avail.avail-after {
+  color: var(--red-content);
+  background: var(--red-light);
 }
 .evt-who {
   display: flex;

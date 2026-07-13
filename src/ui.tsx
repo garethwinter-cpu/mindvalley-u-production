@@ -86,6 +86,45 @@ export function involvesPerson(e: ScheduleEvent, id: string): boolean {
   )
 }
 
+/** Availability guard — flags any shoot that lands on the edge of, or outside,
+ *  a speaker's in-Estonia window (per Speaker DATES). Catches the "scheduled
+ *  when they're not really available" class of error (e.g. Jeffrey Allen, whose
+ *  window includes his stage + prep days that aren't filmable). Only checks
+ *  speakers we hold windows for; stage-talk agenda items are checked too so a
+ *  locked-agenda clash still shows. */
+export interface AvailabilityWarning {
+  personId: string
+  name: string
+  kind: 'before' | 'after' | 'arrival-day' | 'departure-day'
+  message: string
+}
+
+export function availabilityWarnings(e: ScheduleEvent): AvailabilityWarning[] {
+  const out: AvailabilityWarning[] = []
+  const ids = [...(e.speakers ?? []), ...(e.vishen ? ['vishen'] : [])]
+  for (const id of ids) {
+    let p
+    try {
+      p = person(id)
+    } catch {
+      continue
+    }
+    const w = p.window
+    if (!w || p.remote) continue
+    const first = p.name.split(' ')[0]
+    if (w.from && e.date < w.from) {
+      out.push({ personId: id, name: p.name, kind: 'before', message: `${first} arrives ${w.from} — this is before they land` })
+    } else if (w.to && e.date > w.to) {
+      out.push({ personId: id, name: p.name, kind: 'after', message: `${first} departs ${w.to} — this is after they leave` })
+    } else if (w.to && e.date === w.to) {
+      out.push({ personId: id, name: p.name, kind: 'departure-day', message: `${first} departs today — confirm flight time before locking` })
+    } else if (w.from && e.date === w.from) {
+      out.push({ personId: id, name: p.name, kind: 'arrival-day', message: `${first} arrives today — confirm they land in time` })
+    }
+  }
+  return out
+}
+
 /** Our content productions vs locked event commitments */
 export function isOurProduction(e: ScheduleEvent): boolean {
   return e.type === 'production' || e.type === 'podcast' || (e.type === 'accelerator' && e.id.startsWith('accel-rec'))
