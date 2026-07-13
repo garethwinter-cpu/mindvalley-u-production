@@ -33,6 +33,13 @@ export function StatusBadge({ status }: { status?: EventStatus }) {
   return <span className={`mv-badge status-${status}`}>{STATUS_LABEL[status]}</span>
 }
 
+/** Priority Ranking (Manual) from the Shoots Airtable, 1-10 */
+export function PriorityBadge({ priority }: { priority?: number }) {
+  if (!priority) return null
+  const tier = priority >= 8 ? 'high' : priority >= 4 ? 'med' : 'low'
+  return <span className={`mv-badge priority-${tier}`}>Priority {priority}</span>
+}
+
 export function Avatar({ id }: { id: string }) {
   const p = person(id)
   return (

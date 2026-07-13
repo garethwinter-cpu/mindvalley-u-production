@@ -618,6 +618,35 @@ export const ACTIONS: ActionItem[] = [
     due: '2026-07-27',
     people: ['vishen', 'hayden-lakhiani', 'eve-lakhiani'],
   },
+  {
+    id: 'a-kaitlin-hosting-schedule',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Waiting on Eni for Kaitlin\'s hosting-day schedule',
+    detail:
+      'Per Eni\'s briefing (13 Jul): Kaitlin is at MVU 18 Jul-3 Aug, hosting ~6 days (roughly 3/week, 9:30am-5pm + some author dinners). Eni manages that schedule and hasn\'t shared it yet — it\'s the anchor everything else maps onto. Once we have it, batch interviews right after she wraps hosting (she\'s already hair/makeup ready) instead of the current one-per-day spread across the sprint.',
+    due: '2026-07-16',
+    people: ['kaitlin'],
+  },
+  {
+    id: 'p-kaitlin-batching',
+    kind: 'proposal',
+    owner: 'production',
+    title: 'Batch Kaitlin\'s 20 author interviews onto her hosting days, high-priority first',
+    detail:
+      'Kaitlin is happy to batch 3-4 interviews per day right after she wraps hosting (already hair/makeup ready), plus 1-2 dedicated shoot days if needed — a big improvement on today\'s schedule, which spreads her 20 interviews across almost every single day. Her only ask: lock the plan in early since she\'s running her own business alongside this. Sequence: the 7 interviews ranked 10/10 (Jeffrey Allen, Shi Heng Yi, John Lee, Eric Edmeades, Regan Hillyer, Paul McKenna, Marisa Peer) first, then the 11 ranked 4/10, then Nick Santonastasso + Daniel Priestley (2/10) last. Blocked on Eni\'s hosting schedule (see a-kaitlin-hosting-schedule) before we can actually remap the days.',
+    due: '2026-07-18',
+    people: ['kaitlin'],
+  },
+  {
+    id: 'ch-marisha-priority-final',
+    kind: 'chase',
+    owner: 'author-relations',
+    title: 'Author wishlist priority rankings still being finalized with Marisha',
+    detail:
+      'Per Eni (13 Jul): the Priority Ranking field on Kaitlin\'s interviews (used to sequence the batching plan) is provisional — Marisha is still finalizing the author wishlist. Re-check before locking the final batched schedule.',
+    due: '2026-07-20',
+  },
 ]
 
 export const BACKLOG: BacklogItem[] = [

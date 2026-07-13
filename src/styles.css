@@ -208,6 +208,9 @@ body {
 .mv-badge.status-placeholder { background: var(--bg-subtle); color: var(--text-subtle); }
 .mv-badge.status-tentative { background: var(--blue-light); color: var(--blue-content); }
 .mv-badge.status-done { background: var(--green-light); color: var(--green-content); }
+.mv-badge.priority-high { background: var(--orange); color: var(--white); }
+.mv-badge.priority-med { background: var(--orange-light); color: var(--orange-content); }
+.mv-badge.priority-low { background: var(--bg-subtle); color: var(--text-subtle); }
 .mv-badge.sev-high { background: var(--orange-light); color: var(--orange-content); }
 .mv-badge.sev-medium { background: var(--blue-light); color: var(--blue-content); }
 .mv-badge.sev-low { background: var(--bg-subtle); color: var(--text-muted); }

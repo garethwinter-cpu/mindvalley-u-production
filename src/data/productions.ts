@@ -12,6 +12,10 @@ import type { ScheduleEvent } from './types'
  * director/cameraOps are synced from the Shoots Airtable "Creative" column
  * (checked 13 Jul) — Gareth tagged = director, named camera crew = cameraOps.
  * Kuhan isn't tagged as Creative on anything yet, only Khairul + Nadir.
+ *
+ * Kaitlin's author-interview priority (1-10) is synced from the Shoots
+ * Airtable "Priority Ranking (Manual)" field (checked 13 Jul, per Eni's
+ * briefing) — provisional until Marisha finalizes the author wishlist.
  */
 
 const UNIT1 = ['khairul', 'kuhan']
@@ -37,6 +41,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
     notes: 'Dawn is in Tallinn from 17 Jul — early win before the event starts.',
   },
@@ -53,6 +58,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['jeffrey-allen', 'kaitlin'],
     crew: UNIT2,
     director: 'gareth',
+    priority: 10,
     status: 'tentative',
     notes: 'Day before his 4-block stage day.',
   },
@@ -82,6 +88,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['jade-shaw', 'kaitlin'],
     crew: UNIT2,
     director: 'gareth',
+    priority: 4,
     status: 'tentative',
   },
   {
@@ -95,6 +102,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['regan-hillyer', 'kaitlin'],
     crew: UNIT2,
     director: 'gareth',
+    priority: 10,
     status: 'tentative',
   },
 
@@ -129,6 +137,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 2,
     status: 'conflict',
     notes: '⚠ WINDOW CHANGE: Priestley departs 21 Jul — 22 Jul interview no longer works. Move to ≤21.',
   },
@@ -174,6 +183,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 10,
     status: 'tentative',
   },
   {
@@ -315,6 +325,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
   },
   {
@@ -329,6 +340,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 10,
     status: 'tentative',
   },
   {
@@ -411,6 +423,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'conflict',
     notes: 'His departure day — morning only. Confirm flight time.',
   },
@@ -426,6 +439,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 10,
     status: 'tentative',
   },
   {
@@ -456,6 +470,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 10,
     status: 'tentative',
     notes: 'Arrival day — keep light. Alternative: 28 Jul, but that is a NO INTERVIEWS day.',
   },
@@ -521,6 +536,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'conflict',
     notes:
       'Right after her 2–3pm talk. 28 Jul is a NO INTERVIEWS day and her Speaker DATES window says 22 Jul only — double conflict, needs author-relations confirmation.',
@@ -587,6 +603,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'conflict',
     notes: 'Departure day, back-to-back with her podcast.',
   },
@@ -619,6 +636,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
   },
 
@@ -697,6 +715,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 10,
     status: 'tentative',
   },
   {
@@ -711,6 +730,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 2,
     status: 'tentative',
     notes: 'Straight after his podcast.',
   },
@@ -744,6 +764,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'conflict',
     notes: 'Window unknown — pairs with her podcast slot.',
   },
@@ -761,6 +782,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
     notes: 'Her last day.',
   },
@@ -862,6 +884,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
   },
   {
@@ -891,6 +914,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
+    priority: 4,
     status: 'tentative',
     notes: 'Last studio shoot of the sprint. Unit 2 (Nadir) runs 4 short shoots back-to-back today. Studio wraps here; 2 Aug is pack/travel, no shoots.',
   },

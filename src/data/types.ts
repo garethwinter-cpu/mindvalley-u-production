@@ -60,6 +60,9 @@ export interface ScheduleEvent {
   director?: string
   cameraOps?: string[]
   editors?: string[]
+  /** From the Shoots Airtable "Priority Ranking (Manual)" field, 1-10. Provisional —
+   *  the author wishlist rankings are still being finalized. */
+  priority?: number
 }
 
 export interface DayMeta {
