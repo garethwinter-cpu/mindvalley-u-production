@@ -413,7 +413,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'conflict',
-    notes: 'His arrival day — confirm landing time. Runs parallel to JA accel recording (two units).',
+    notes: 'His arrival day — confirm landing time. Runs parallel to JA accel recording (two units) — but both need Gareth on set at the same time (10-11am), which the "two units" framing glosses over. Found in the 13 Jul conflict audit — needs a call: skip this podcast personally (hand to someone else) or shift JA\'s recording start.',
   },
   {
     id: 'int-wineland',

@@ -309,10 +309,10 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['vishen'],
     vishen: true,
     gareth: true,
-    crew: CREW_CORE,
+    crew: ['khairul', 'kuhan'],
     director: 'gareth',
     notes:
-      'SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame\'s live capture covers the product recording, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up.',
+      'SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame\'s live capture covers the product recording, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up. FIXED (data audit, 13 Jul): crew was all 3 (khairul+nadir+kuhan), which silently conflicted with Nadir\'s parallel unit-2 studio shoots this same window (assets-rachel-membership, int-maya) — narrowed to unit 1 (khairul+kuhan) so Nadir stays free for the studio, matching those events\' existing notes.',
   },
   { id: 'aug1-closing-party', date: '2026-08-01', start: '20:30', end: '02:00', title: 'Closing Party', type: 'social' },
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
@@ -660,6 +660,16 @@ export const ACTIONS: ActionItem[] = [
       'Now formally in the Shoots Airtable (13 Jul), with Kaitlin O\'Toole confirmed hosting. The app carries Nadir + Khairul as a proposed default crew (they\'re free from 4pm that day), but Gareth hasn\'t actually assigned/confirmed who\'s covering it — needed given the full-team requirement Fisher flagged.',
     due: '2026-07-20',
     people: ['kaitlin'],
+  },
+  {
+    id: 'a-gareth-shy-ja2-clash',
+    kind: 'proposal',
+    owner: 'gareth',
+    title: 'Gareth double-booked 26 Jul, 10-11am: Shi Heng Yi\'s podcast vs Jeffrey Allen accel recording day 2',
+    detail:
+      'Found in the 13 Jul conflict audit. pod-shy and accel-rec-ja-2 both need Gareth on set at the same time — the "runs parallel on two units" framing covers the camera crew split but not Gareth himself, who can\'t be in both rooms. Options: hand the Shi Heng Yi podcast to someone else, or shift JA\'s recording start past 11am.',
+    due: '2026-07-18',
+    people: ['gareth', 'shi-heng-yi', 'jeffrey-allen'],
   },
 ]
 
