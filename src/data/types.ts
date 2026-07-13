@@ -52,6 +52,14 @@ export interface ScheduleEvent {
   vishen?: boolean
   status?: EventStatus
   notes?: string
+  /**
+   * From the 📺 Shoots Airtable "Creative" column — who's tagged to direct/film/edit
+   * this production. Gareth tagged there = director. Not yet populated in Airtable;
+   * fill in as Gareth tags people, one production at a time.
+   */
+  director?: string
+  cameraOps?: string[]
+  editors?: string[]
 }
 
 export interface DayMeta {

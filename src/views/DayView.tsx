@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
-import { ChipFilter, Legend, StatusBadge, TypeBadge, fmtTime, involvesPerson, isSmallHall, matchesChipFilter, requiredPeople } from '../ui'
+import { ChipFilter, Legend, StatusBadge, TypeBadge, creativeCredits, fmtTime, involvesPerson, isSmallHall, matchesChipFilter, requiredPeople } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
 
@@ -109,6 +109,19 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
                     </span>
                   </div>
                 )}
+                {creativeCredits(e).map((c) => (
+                  <div className="evt-who" key={c.label}>
+                    <span className="evt-who-label">{c.label}</span>
+                    <span style={{ fontSize: 13, color: 'var(--text-muted)', display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                      {c.ids.map((id, i) => (
+                        <span key={id}>
+                          <PersonLink id={id} />
+                          {i < c.ids.length - 1 ? ',' : ''}
+                        </span>
+                      ))}
+                    </span>
+                  </div>
+                ))}
                 {e.notes && <div className="evt-notes">{e.notes}</div>}
               </div>
             </div>

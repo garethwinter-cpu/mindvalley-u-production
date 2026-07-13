@@ -94,6 +94,15 @@ export function isSmallHall(e: ScheduleEvent): boolean {
   return e.location === COMMUNITY
 }
 
+/** Director/Camera/Editor credits from the Shoots Airtable "Creative" column, grouped for display */
+export function creativeCredits(e: ScheduleEvent): { label: string; ids: string[] }[] {
+  const out: { label: string; ids: string[] }[] = []
+  if (e.director) out.push({ label: 'Director', ids: [e.director] })
+  if (e.cameraOps?.length) out.push({ label: 'Camera', ids: e.cameraOps })
+  if (e.editors?.length) out.push({ label: 'Editor', ids: e.editors })
+  return out
+}
+
 export function Legend({ active, onSelect }: { active: ChipFilter; onSelect: (f: ChipFilter) => void }) {
   return (
     <div className="legend">
