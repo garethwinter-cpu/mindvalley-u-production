@@ -439,15 +439,6 @@ export const ACTIONS: ActionItem[] = [
     people: ['marisa-peer'],
   },
   {
-    id: 'p-vishen-split',
-    kind: 'proposal',
-    owner: 'gareth',
-    title: 'Jamie Sea podcast still stacks on Vishen\'s heaviest day (30 Jul)',
-    detail:
-      'PARTIALLY RESOLVED (13 Jul): Hal\'s podcast moved to 27 Jul, so 30 Jul is down to 3 back-to-back podcasts (Maria Wendt, Nick Santonastasso, Jamie Sea) before the Kwik fireside, a stage slot and portraits — lighter, but still a lot. Consider moving Jamie\'s too if he\'s flat by episode two; her window (25-30 Jul) makes 27/28 Jul viable now that NO INTERVIEWS doesn\'t block studio work.',
-    people: ['vishen', 'jamie-sea'],
-  },
-  {
     id: 'p-marisa-move',
     kind: 'proposal',
     owner: 'gareth',
