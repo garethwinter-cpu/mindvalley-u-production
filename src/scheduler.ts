@@ -16,8 +16,9 @@ export function fmtDur(min: number): string {
 }
 
 export function fmtClock(min: number): string {
-  const h24 = Math.floor(min / 60)
-  const m = min % 60
+  const wrapped = ((min % 1440) + 1440) % 1440 // handle post-midnight (e.g. 1560 → 2:00am)
+  const h24 = Math.floor(wrapped / 60)
+  const m = wrapped % 60
   const am = h24 < 12
   const hh = h24 % 12 === 0 ? 12 : h24 % 12
   return `${hh}:${String(m).padStart(2, '0')}${am ? 'am' : 'pm'}`
@@ -88,7 +89,8 @@ export function buildSchedule(events: ScheduleEvent[]): PersonSchedule {
 
       const intervals: [number, number][] = timed.map((e) => {
         const s = toMin(e.start)!
-        const en = toMin(e.end) ?? s + 30
+        let en = toMin(e.end) ?? s + 30
+        if (en < s) en += 1440 // event runs past midnight (e.g. party 21:00–01:00)
         return [s, en]
       })
 

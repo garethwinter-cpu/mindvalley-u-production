@@ -118,7 +118,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     notes: 'Line-up “Daniel, Vishen, John Lee?” — confirm.',
   },
   { id: 'jul20-tribe', date: '2026-07-20', start: '17:15', end: '17:45', title: 'LEARNLIFE Parent Meeting / Tribe Meeting', type: 'community', location: `${COMMUNITY} + ${EXPERIENCE}` },
-  { id: 'jul20-party', date: '2026-07-20', start: '19:00', end: '23:00', title: 'Blue Block Party', type: 'social', location: VENUE },
+  { id: 'jul20-party', date: '2026-07-20', start: '19:00', end: '23:00', title: 'Blue Block Party', type: 'social', location: VENUE, crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social). Alternating with Kuhan across the parties so each gets rest nights.' },
 
   // ================= TUE 21 JUL — ENTREPRENEURSHIP =================
   { id: 'jul21-priestley-1', date: '2026-07-21', start: '10:00', end: '11:00', title: 'Daniel Priestley', type: 'stage-talk', location: MAIN_STAGE, speakers: ['daniel-priestley'] },
@@ -139,7 +139,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul21-vishen-photo', date: '2026-07-21', start: '15:15', end: '15:35', title: 'Portraits — Vishen', type: 'portrait', crew: ['meng'], speakers: ['vishen'], vishen: true, notes: 'Location TBD' },
   { id: 'jul21-johnlee-photo', date: '2026-07-21', start: '16:10', end: '16:30', title: 'Portraits — John Lee', type: 'portrait', crew: ['meng'], speakers: ['john-lee'], notes: 'Location TBD' },
   { id: 'jul21-natalie', date: '2026-07-21', start: '16:15', end: '17:00', title: 'Natalie Ellis', type: 'stage-talk', location: MAIN_STAGE, speakers: ['natalie-ellis'] },
-  { id: 'jul21-sazerac', date: '2026-07-21', start: '19:30', end: '23:30', title: 'Sazerac', type: 'social' },
+  { id: 'jul21-sazerac', date: '2026-07-21', start: '19:30', end: '23:30', title: 'Sazerac', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
 
   // ================= WED 22 JUL — MANIFESTING =================
   { id: 'jul22-ja-1', date: '2026-07-22', start: '10:00', end: '11:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
@@ -170,7 +170,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul23-brule-1', date: '2026-07-23', start: '14:00', end: '15:00', title: 'Dan Brulé (embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dan-brule'] },
   { id: 'jul23-brule-2', date: '2026-07-23', start: '15:00', end: '16:00', title: 'Dan Brulé (embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dan-brule'] },
   { id: 'jul23-lyon', date: '2026-07-23', start: '16:15', end: '17:00', title: 'Dr. Scott Lyon', type: 'stage-talk', location: MAIN_STAGE, speakers: ['scott-lyon'] },
-  { id: 'jul23-cabaret', date: '2026-07-23', start: '21:00', end: '01:00', title: 'Midnight Cabaret VIP Party', type: 'social' },
+  { id: 'jul23-cabaret', date: '2026-07-23', start: '21:00', end: '01:00', title: 'Midnight Cabaret VIP Party', type: 'social', crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social).' },
 
   // ================= FRI 24 JUL — RELATIONSHIPS =================
   { id: 'jul24-wineland-1', date: '2026-07-24', start: '10:00', end: '11:00', title: 'John Wineland (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['john-wineland'] },
@@ -194,7 +194,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Per Fisher (voice note, 13 Jul): this needs the full production team\'s focus, not passive coverage — many speakers fly in specifically for the video/photo opportunity here, and a strong asset can lift a speaker\'s fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul, Nadir, Kuhan) + Gareth — they\'re all already on-site for the awards, working together, so no separate resourcing needed. Kaitlin O\'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).',
   },
-  { id: 'jul24-party', date: '2026-07-24', start: '19:00', end: '23:00', title: 'Black Block Party', type: 'social' },
+  { id: 'jul24-party', date: '2026-07-24', start: '19:00', end: '23:00', title: 'Black Block Party', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
 
   // ================= SAT 25 / SUN 26 JUL — WEEKEND =================
   {
@@ -226,7 +226,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     notes:
       'NEW as of 13 Jul sheet check — replaces the old single-hour tentative slot. Runs parallel to Regan’s accelerator. No studio shoots are booked against Eric this day, so no clash — but he is unavailable for anything else on the 25th.',
   },
-  { id: 'jul25-opening-party', date: '2026-07-25', start: '20:30', end: '02:00', title: 'Opening Party — Marvelous Wonderland', type: 'social' },
+  { id: 'jul25-opening-party', date: '2026-07-25', start: '20:30', end: '02:00', title: 'Opening Party — Marvelous Wonderland', type: 'social', crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social).' },
   {
     id: 'regan-accel-2',
     date: '2026-07-26',
@@ -255,7 +255,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul27-krenn-women', date: '2026-07-27', start: '14:00', end: '15:00', title: 'Lorin Krenn (women only)', type: 'experience', location: EXPERIENCE, speakers: ['lorin-krenn'] },
   { id: 'jul27-elrod', date: '2026-07-27', start: '15:00', end: '16:00', title: 'Hal Elrod', type: 'stage-talk', location: MAIN_STAGE, speakers: ['hal-elrod'] },
   { id: 'jul27-sheleana-wineland', date: '2026-07-27', start: '16:15', end: '17:00', title: 'Sheleana Aiyana & John Wineland', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana', 'john-wineland'] },
-  { id: 'jul27-party', date: '2026-07-27', start: '19:00', end: '23:00', title: 'White Block Party', type: 'social' },
+  { id: 'jul27-party', date: '2026-07-27', start: '19:00', end: '23:00', title: 'White Block Party', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
 
   // ================= TUE 28 JUL — EMBODIMENT =================
   { id: 'jul28-zen', date: '2026-07-28', start: '10:00', end: '11:00', title: 'Zen Samurai (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['zen-samurai'] },
@@ -265,7 +265,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul28-sheleana-photo', date: '2026-07-28', start: '15:10', end: '15:30', title: 'Portraits — Sheleana Aiyana', type: 'portrait', crew: ['mardo'], speakers: ['sheleana-aiyana'], notes: 'Location TBD' },
   { id: 'jul28-brighten', date: '2026-07-28', start: '15:00', end: '16:00', title: 'Dr. Jolene Brighten', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jolene-brighten'] },
   { id: 'jul28-jamie', date: '2026-07-28', start: '16:15', end: '17:00', title: 'Jamie Sea', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jamie-sea'], notes: 'Not on Speaker DATES — window unknown.' },
-  { id: 'jul28-sazerac', date: '2026-07-28', start: '19:30', end: '00:00', title: 'Sazerac', type: 'social' },
+  { id: 'jul28-sazerac', date: '2026-07-28', start: '19:30', end: '00:00', title: 'Sazerac', type: 'social', crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social).' },
 
   // ================= WED 29 JUL — INFLUENCE & WEALTH =================
   { id: 'jul29-eric', date: '2026-07-29', start: '10:00', end: '11:00', title: 'Eric Edmeades', type: 'stage-talk', location: MAIN_STAGE, speakers: ['eric-edmeades'] },
@@ -287,7 +287,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul30-kwik-fireside', date: '2026-07-30', start: '15:00', end: '16:00', title: 'Vishen + Jim Kwik Fireside', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik', 'vishen'], vishen: true },
   { id: 'jul30-vishen', date: '2026-07-30', start: '16:15', end: '17:00', title: 'Vishen (swappable)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true, status: 'tentative' },
   { id: 'jul30-vishen-photo', date: '2026-07-30', start: '17:15', end: '17:35', title: 'Portraits — Vishen', type: 'portrait', crew: ['mardo'], speakers: ['vishen'], vishen: true, notes: 'Location TBD' },
-  { id: 'jul30-vip', date: '2026-07-30', start: '21:00', end: '01:00', title: 'Summer By The Bay VIP Party', type: 'social' },
+  { id: 'jul30-vip', date: '2026-07-30', start: '21:00', end: '01:00', title: 'Summer By The Bay VIP Party', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
 
   // ================= FRI 31 JUL — CLOSING =================
   { id: 'jul31-grant', date: '2026-07-31', start: '10:00', end: '11:00', title: 'Robert Grant', type: 'stage-talk', location: MAIN_STAGE, speakers: ['robert-grant'], status: 'placeholder', notes: 'Marked “Robert Grant?” in agenda.' },
@@ -295,7 +295,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul31-vishen-sales', date: '2026-07-31', start: '14:00', end: '15:00', title: 'Vishen (potential sales)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true, status: 'tentative' },
   { id: 'jul31-closing', date: '2026-07-31', start: '15:00', end: '16:00', title: 'Closing Ceremony — Youth Performances + Valerija Ribbon Workshop', type: 'stage-talk', location: MAIN_STAGE, vishen: true },
   { id: 'jul31-sanctum', date: '2026-07-31', start: '16:15', end: '19:00', title: 'Sanctum?', type: 'experience', status: 'placeholder' },
-  { id: 'jul31-party', date: '2026-07-31', start: '19:00', end: '23:00', title: 'Estonia Block Party', type: 'social' },
+  { id: 'jul31-party', date: '2026-07-31', start: '19:00', end: '23:00', title: 'Estonia Block Party', type: 'social', crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social).' },
 
   // ================= SAT 1 AUG =================
   {
@@ -314,7 +314,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     notes:
       'SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame\'s live capture covers the product recording, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up. FIXED (data audit, 13 Jul): crew was all 3 (khairul+nadir+kuhan), which silently conflicted with Nadir\'s parallel unit-2 studio shoots this same window (assets-rachel-membership, int-maya) — narrowed to unit 1 (khairul+kuhan) so Nadir stays free for the studio, matching those events\' existing notes.',
   },
-  { id: 'aug1-closing-party', date: '2026-08-01', start: '20:30', end: '02:00', title: 'Closing Party', type: 'social' },
+  { id: 'aug1-closing-party', date: '2026-08-01', start: '20:30', end: '02:00', title: 'Closing Party', type: 'social', crew: ['kuhan'], notes: 'Ad-hoc party filming — Kuhan (roving social).' },
   { id: 'aug1-soiree', date: '2026-08-01', start: '19:00', end: '23:00', title: 'Nordic Summer Soiree', type: 'social', status: 'tentative', notes: 'From overview tab — may be the same event as Closing Party. Confirm.' },
 ]
 
@@ -328,7 +328,8 @@ const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
   title: 'Daily social media capture (ad-hoc + stage snippets)',
   type: 'social-media',
   location: 'Roaming — across venue',
-  notes: 'Roving shooter collecting toward the daily ad-hoc social concepts + daily stage-talk snippets. Runs all day. See the Social tab.',
+  cameraOps: ['jason', 'kuhan'],
+  notes: 'Roving social team = Jason + Kuhan (ad-hoc, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.',
 }))
 
 export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]

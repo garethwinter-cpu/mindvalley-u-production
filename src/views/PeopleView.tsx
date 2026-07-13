@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
@@ -118,8 +118,28 @@ function DayCard({ day }: { day: DaySchedule }) {
   )
 }
 
+/** Read a valid person id from the hash (#people/<id>), else default to Gareth. */
+function personFromHash(): string {
+  const seg = window.location.hash.replace(/^#\/?/, '').split(/[?&]/)[0].split('/')[1]
+  return seg && PEOPLE.some((x) => x.id === seg) ? seg : 'gareth'
+}
+
 export default function PeopleView() {
-  const [selected, setSelected] = useState('gareth')
+  const [selected, setSelectedState] = useState(personFromHash)
+
+  // Clicking a person writes a shareable hash (#people/vishen); the hash is the source of truth.
+  const setSelected = (id: string) => {
+    setSelectedState(id)
+    const target = `#people/${id}`
+    if (window.location.hash !== target) window.location.hash = target
+  }
+
+  useEffect(() => {
+    const onHash = () => setSelectedState(personFromHash())
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
   const p = person(selected)
   const profile = AUTHOR_PROFILES[selected]
   const wa = p.whatsapp?.replace(/[^0-9]/g, '')

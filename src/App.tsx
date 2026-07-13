@@ -31,7 +31,8 @@ const TAB_TO_HASH: Record<Tab, string> = {
 }
 
 function tabFromHash(): Tab {
-  const h = window.location.hash.replace(/^#\/?/, '').split(/[?&]/)[0]
+  // first path segment — so #people/vishen still resolves to the People tab
+  const h = window.location.hash.replace(/^#\/?/, '').split(/[/?&]/)[0]
   return HASH_TO_TAB[h] ?? 'overview'
 }
 
