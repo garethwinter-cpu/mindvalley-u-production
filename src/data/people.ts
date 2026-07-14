@@ -38,7 +38,7 @@ export const PEOPLE: Person[] = [
 
   // ---- Author relations (roster incomplete) ----
   { id: 'illiana', name: 'Illiana', role: 'author-relations', title: 'Author Relations' },
-  { id: 'mireille', name: 'Mireille', role: 'author-relations', title: 'Author Relations' },
+  { id: 'mireille', name: 'Mirell Sork', role: 'author-relations', title: 'Speaker Coordinator' },
 
   // ---- Speakers (window = in-Estonia dates from Speaker DATES) ----
   { id: 'vishen', name: 'Vishen Lakhiani', role: 'speaker', title: 'CEO, Mindvalley', window: { from: '2026-07-20', to: '2026-08-02' } },
