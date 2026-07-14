@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
@@ -194,16 +194,30 @@ function personFromHash(): string {
 
 export default function PeopleView() {
   const [selected, setSelectedState] = useState(personFromHash)
+  const detailRef = useRef<HTMLDivElement>(null)
+
+  // On mobile the roster stacks above the content, so jump to the selected
+  // person's detail instead of making the user scroll past every name.
+  const scrollToDetailOnMobile = () => {
+    if (window.innerWidth > 900) return
+    // The detail wrapper is always mounted, so scroll straight to it (its top is
+    // stable below the fixed-height roster). setTimeout lets React commit first.
+    setTimeout(() => detailRef.current?.scrollIntoView({ block: 'start' }), 0)
+  }
 
   // Clicking a person writes a shareable hash (#people/vishen); the hash is the source of truth.
   const setSelected = (id: string) => {
     setSelectedState(id)
     const target = `#people/${id}`
     if (window.location.hash !== target) window.location.hash = target
+    scrollToDetailOnMobile()
   }
 
   useEffect(() => {
-    const onHash = () => setSelectedState(personFromHash())
+    const onHash = () => {
+      setSelectedState(personFromHash())
+      scrollToDetailOnMobile()
+    }
     window.addEventListener('hashchange', onHash)
     return () => window.removeEventListener('hashchange', onHash)
   }, [])
@@ -259,7 +273,7 @@ export default function PeopleView() {
           ))}
         </div>
 
-        <div>
+        <div className="pp-detail" ref={detailRef}>
           <div className="mv-card">
             <div className="modal-head">
               <Headshot id={selected} size={72} />

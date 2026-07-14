@@ -460,6 +460,16 @@ body {
   .pp-layout {
     grid-template-columns: 1fr;
   }
+  /* Roster stacks above the content on mobile, so keep it a compact scroller
+     (not a full-height wall) and jump to the detail on selection (see PeopleView).
+     Extra specificity so this beats the base .pp-list max-height. */
+  .pp-layout .pp-list {
+    max-height: 42vh;
+  }
+}
+/* Offset so a jumped-to profile clears the sticky topbar */
+.pp-detail {
+  scroll-margin-top: 96px;
 }
 .pp-list {
   display: flex;
