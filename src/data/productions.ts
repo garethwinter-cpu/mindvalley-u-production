@@ -181,22 +181,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'BATCHED to 21 Jul (from 22, his departure day) — pairs with Kaitlin\'s Jeffrey Allen interview in a morning block. Nudged from 10:30 to 11:00 (14 Jul) after Jeffrey\'s interview moved to 10:00–10:45 at his request, so the two no longer overlap. John Lee free this slot (his stage talk is 3pm); before Jade\'s noon assets. Kaitlin batching plan (13 Jul).',
   },
-  {
-    id: 'assets-john-lee',
-    date: '2026-07-20',
-    start: '14:45',
-    end: '15:45',
-    title: 'John Lee — Masterclass Marketing Assets (The 7 Figure Creator + Speaking & Authorship pathway)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['john-lee'],
-    crew: UNIT1,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: ['khairul'],
-    status: 'tentative',
-    notes: 'MOVED off 22 Jul (14 Jul): John flies the morning of the 22nd. Placed on the 20th (arrival day — he lands 11am), which is the day he suggested. Studio + crew free after the Priestley interview (14:45) and before his 4pm open mic; a compressed 60-min session — prioritise Straight Up Invite + Technique Demo + Hooks. FALLBACK if his landing runs late: give it a full 90 min on the 21st at 18:00 (right after the podcast).',
-  },
+  // John Lee marketing assets CUT (14 Jul): priority is podcast > Kaitlin interview > ads,
+  // and the ads were the only piece that didn't fit realistically in his tight arrival-day-
+  // only window (lands 20th 11am, flies 22nd am). Podcast (21 Jul) + interview (21 Jul) kept.
 
   // ---------- THU 23 JUL ----------
   {
