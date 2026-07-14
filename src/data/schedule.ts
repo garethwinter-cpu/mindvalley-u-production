@@ -355,9 +355,9 @@ export const CONFLICTS: Conflict[] = [
   {
     id: 'c-wineland-27',
     severity: 'medium',
-    title: 'John Wineland on the 27 Jul stage panel — but his window ends 26 Jul',
+    title: 'Source conflict: agenda has Wineland on the 27 Jul panel, but Speaker DATES has him gone the 26th',
     detail:
-      'AUDIT (13 Jul): the app has a "Sheleana Aiyana & John Wineland" panel on 27 Jul (16:15), but Wineland\'s Speaker DATES window is 20-26 Jul — he departs before it. His only other stage day is 24 Jul (Embodiment), so the 27 Jul pairing looks like an authoring error (likely Sheleana-only, or a wrong date/partner). Confirm with author relations before it locks; don\'t assume he\'s on it.',
+      'SOURCES RE-CHECKED (14 Jul): NOT an app error — the app mirrors the agenda. The MVU Overview Google Sheet (Main Stage tab, cell D32) lists "Sheleana Aiyana & John Wineland" on Mon 27 Jul, 4:15–5:00pm. But the Speaker DATES Airtable has John Wineland arriving 20 Jul and departing 26 Jul. The two Mindvalley sources contradict each other: either his travel dates are stale (he\'s staying to the 27th) or the 27 Jul panel is wrong (he\'s flown; should be Sheleana-only or a different partner). Can\'t be resolved from the data — needs Mirell Sork (Speaker Coordinator) / events to confirm Wineland\'s actual departure and whether he\'s on the 27th panel. App keeps the panel as-is (faithful to the agenda) with an availability warning until confirmed.',
   },
   {
     id: 'c-departure-day-shoots',
