@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { DAYS, EVENTS } from '../data/schedule'
-import { ChipFilter, Legend, PriorityBadge, StatusBadge, TypeBadge, creativeCredits, fmtTime, involvesPerson, isPartyTagged, isSmallHall, matchesChipFilter, requiredPeople, sortKey } from '../ui'
+import { ChipFilter, Legend, PriorityBadge, StatusBadge, TypeBadge, AuthorBadge, creativeCredits, fmtTime, involvesPerson, isPartyTagged, isSmallHall, matchesChipFilter, requiredPeople, sortKey } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
 
@@ -88,6 +88,7 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
                   {isPartyTagged(e) && <span className="mv-badge tag-party">Parties</span>}
                   <PriorityBadge priority={e.priority} />
                   <StatusBadge status={e.status} />
+                  <AuthorBadge event={e} />
                   {e.vishen && <span className="mv-badge">Vishen required</span>}
                   {e.gareth && <span className="mv-badge">Gareth on set</span>}
                 </div>

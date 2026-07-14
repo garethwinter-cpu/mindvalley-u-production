@@ -276,7 +276,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul29-nick-photo', date: '2026-07-29', start: '12:10', end: '12:30', title: 'Portraits — Nick Santonastasso', type: 'portrait', crew: ['mardo'], speakers: ['nick-santonastasso'], notes: 'Location TBD' },
   { id: 'jul29-wendt', date: '2026-07-29', start: '14:00', end: '15:00', title: 'Maria Wendt', type: 'stage-talk', location: MAIN_STAGE, speakers: ['maria-wendt'], notes: 'Not on Speaker DATES — window unknown.' },
   { id: 'jul29-mckenna', date: '2026-07-29', start: '15:00', end: '16:00', title: 'Paul McKenna', type: 'stage-talk', location: MAIN_STAGE, speakers: ['paul-mckenna'] },
-  { id: 'jul29-mckenna-photo', date: '2026-07-29', start: '16:10', end: '16:30', title: 'Portraits — Paul McKenna', type: 'portrait', crew: ['mardo'], speakers: ['paul-mckenna'], notes: 'Location TBD' },
+  { id: 'jul29-mckenna-photo', date: '2026-07-29', start: '16:10', end: '16:30', title: 'Portraits — Paul McKenna', type: 'portrait', crew: ['mardo'], speakers: ['paul-mckenna'], authorConfirmed: true, notes: 'Location TBD. Confirmed by author (Paul McKenna, email 14 Jul).' },
   { id: 'jul29-vishen', date: '2026-07-29', start: '16:15', end: '17:00', title: 'Vishen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true },
   { id: 'jul29-fce-dawn', date: '2026-07-29', start: '16:15', end: '17:15', title: 'First Class Experience — Dawn Hoang', type: 'experience', location: EXPERIENCE, speakers: ['dawn-hoang'] },
   { id: 'jul29-author-dinner', date: '2026-07-29', start: '21:00', end: '00:30', title: 'Author Dinner', type: 'social' },

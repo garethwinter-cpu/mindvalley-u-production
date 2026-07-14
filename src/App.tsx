@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Overview from './views/Overview'
 import DayView from './views/DayView'
 import PeopleView from './views/PeopleView'
+import ShootsView from './views/ShootsView'
 import AlertsView from './views/AlertsView'
 import PodcastBriefingsView from './views/PodcastBriefingsView'
 import SocialView from './views/SocialView'
@@ -10,12 +11,13 @@ import { PODCAST_BRIEFINGS } from './data/podcastBriefings'
 import { SOCIAL_CONTENT } from './data/social'
 import { ProfileProvider } from './profile'
 
-type Tab = 'overview' | 'day' | 'people' | 'alerts' | 'podcast' | 'social'
+type Tab = 'overview' | 'day' | 'shoots' | 'people' | 'alerts' | 'podcast' | 'social'
 
 // Public, shareable hash names (#podcast etc.) <-> internal tab keys.
 const HASH_TO_TAB: Record<string, Tab> = {
   overview: 'overview',
   day: 'day',
+  shoots: 'shoots',
   people: 'people',
   podcast: 'podcast',
   social: 'social',
@@ -24,6 +26,7 @@ const HASH_TO_TAB: Record<string, Tab> = {
 const TAB_TO_HASH: Record<Tab, string> = {
   overview: 'overview',
   day: 'day',
+  shoots: 'shoots',
   people: 'people',
   podcast: 'podcast',
   social: 'social',
@@ -108,6 +111,9 @@ export default function App() {
           <button className={tab === 'day' ? 'active' : ''} onClick={() => setTab('day')}>
             Day
           </button>
+          <button className={tab === 'shoots' ? 'active' : ''} onClick={() => setTab('shoots')}>
+            Shoots
+          </button>
           <button className={tab === 'people' ? 'active' : ''} onClick={() => setTab('people')}>
             People
           </button>
@@ -129,6 +135,7 @@ export default function App() {
       <main className="mv-page">
         {tab === 'overview' && <Overview onOpenDay={openDay} />}
         {tab === 'day' && <DayView date={day} onPick={setDay} />}
+        {tab === 'shoots' && <ShootsView onOpenDay={openDay} />}
         {tab === 'people' && <PeopleView />}
         {tab === 'podcast' && <PodcastBriefingsView />}
         {tab === 'social' && <SocialView />}

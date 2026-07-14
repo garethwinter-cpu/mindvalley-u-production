@@ -4,7 +4,7 @@ import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS } from '../data/schedule'
 import { EDITORIAL_EVENTS } from '../data/editorial'
-import { StatusBadge, TypeBadge, TYPE_ICON, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
+import { StatusBadge, TypeBadge, TYPE_ICON, AuthorBadge, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
 import type { ScheduleEvent } from '../data/types'
 import { Headshot } from '../profile'
 import type { PersonRole } from '../data/types'
@@ -70,6 +70,7 @@ function EventList({ events }: { events: ScheduleEvent[] }) {
               {e.title}
               <TypeBadge type={e.type} />
               <StatusBadge status={e.status} />
+              <AuthorBadge event={e} />
             </div>
             {e.location && <div className="evt-loc">{e.location}</div>}
             {availabilityWarnings(e).map((w) => (

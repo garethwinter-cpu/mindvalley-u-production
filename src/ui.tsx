@@ -49,6 +49,16 @@ export function StatusBadge({ status }: { status?: EventStatus }) {
   return <span className={`mv-badge status-${status}`}>{STATUS_LABEL[status]}</span>
 }
 
+/** Author has personally signed off on this slot by email — a stronger signal than status:confirmed */
+export function AuthorBadge({ event }: { event: ScheduleEvent }) {
+  if (!event.authorConfirmed) return null
+  return (
+    <span className="mv-badge author-confirmed" title="The author has personally confirmed this slot by email">
+      ✓ Author confirmed
+    </span>
+  )
+}
+
 /** Priority Ranking (Manual) from the Shoots Airtable, 1-10 */
 export function PriorityBadge({ priority }: { priority?: number }) {
   if (!priority) return null

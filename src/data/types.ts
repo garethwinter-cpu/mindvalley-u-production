@@ -51,6 +51,9 @@ export interface ScheduleEvent {
   gareth?: boolean
   vishen?: boolean
   status?: EventStatus
+  /** The author has personally signed off on this slot by email — shows a
+   *  distinct "Confirmed by author" badge, a stronger signal than status:confirmed. */
+  authorConfirmed?: boolean
   notes?: string
   /**
    * From the 📺 Shoots Airtable "Creative" column — who's tagged to direct/film/edit
