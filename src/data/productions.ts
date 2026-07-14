@@ -170,22 +170,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'BATCHED to 21 Jul (from 22, his departure day) — pairs with Kaitlin\'s Jeffrey Allen interview in a morning block. Nudged from 10:30 to 11:00 (14 Jul) after Jeffrey\'s interview moved to 10:00–10:45 at his request, so the two no longer overlap. John Lee free this slot (his stage talk is 3pm); before Jade\'s noon assets. Kaitlin batching plan (13 Jul).',
   },
-  {
-    id: 'assets-john-lee',
-    date: '2026-07-20',
-    start: '13:00',
-    end: '14:00',
-    title: 'John Lee — Masterclass Marketing Assets (The 7 Figure Creator + Speaking & Authorship pathway)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['john-lee'],
-    crew: UNIT1,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: ['khairul'],
-    status: 'tentative',
-    notes: 'RESTORED 14 Jul — John offered the slot himself (WhatsApp): he lands 20th 11am and can do 1pm Monday for an hour. Compressed 60-min suite (Invite + Technique Demo + Hooks), before the Priestley interview (14:00) and his 4pm open mic. So all three now fit: this + his 21 Jul interview + 21 Jul podcast.',
-  },
+  // John Lee marketing assets NOT scheduled (per Gareth, 14 Jul): his diary is just the
+  // Scaling Wisdom podcast (21 Jul) + the Kaitlin interview (21 Jul). Ads dropped even
+  // though he offered a Mon 1pm slot — keeping his week light.
 
   // ---------- THU 23 JUL ----------
   {
