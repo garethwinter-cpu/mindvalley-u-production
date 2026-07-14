@@ -339,13 +339,6 @@ export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, 
 
 export const CONFLICTS: Conflict[] = [
   {
-    id: 'c-priestley-format',
-    severity: 'low',
-    title: 'Priestley Accelerator format: remote (per Gareth) vs “live in-person + streamed” (microsite)',
-    detail:
-      'Gareth says remote delivery, resolving the old window conflict (his Speaker DATES arrival is 20 Jul). Microsite still bills in-person — confirm final format and streaming setup for 18–19 Jul.',
-  },
-  {
     id: 'c-slate-proposed',
     severity: 'high',
     title: 'The whole production slate is a PROPOSAL — nothing confirmed with authors yet',
