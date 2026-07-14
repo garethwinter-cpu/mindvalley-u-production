@@ -30,8 +30,8 @@ const CAMERA_CREW = ['khairul', 'nadir']
 export const STUDIO = 'Energiakeskus Studio, Tallinn'
 
 export const PRODUCTION_EVENTS: ScheduleEvent[] = [
-  // Dawn Hoang removed from the schedule entirely (14 Jul) — interview, portraits
-  // and her agenda pieces (2× First Class Experience, Embodiment) all pulled.
+  // Dawn Hoang's studio interview with Gareth removed (14 Jul, per Gareth) — she stays
+  // on the schedule for her agenda pieces (2× First Class Experience, Embodiment) + portraits.
 
   // ---------- TUE 21 JUL ----------
   {

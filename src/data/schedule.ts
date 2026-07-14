@@ -151,6 +151,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul22-ja-photo', date: '2026-07-22', start: '16:15', end: '16:35', title: 'Portraits — Jeffrey Allen', type: 'portrait', crew: ['mardo'], speakers: ['jeffrey-allen'], notes: 'Location TBD' },
   { id: 'jul22-regan', date: '2026-07-22', start: '16:15', end: '17:00', title: 'Regan Hillyer', type: 'stage-talk', location: MAIN_STAGE, speakers: ['regan-hillyer'] },
   { id: 'jul22-regan-photo', date: '2026-07-22', start: '17:10', end: '17:30', title: 'Portraits — Regan Hillyer', type: 'portrait', crew: ['mardo'], speakers: ['regan-hillyer'], notes: 'Location TBD. Straight after her talk.' },
+  { id: 'jul22-fce-dawn', date: '2026-07-22', start: '12:45', end: '13:45', title: 'First Class Experience — Dawn Hoang', type: 'experience', location: EXPERIENCE, speakers: ['dawn-hoang'] },
   { id: 'jul22-author-dinner', date: '2026-07-22', start: '21:00', end: '00:30', title: 'Author Dinner', type: 'social' },
 
   // ================= THU 23 JUL — LONGEVITY =================
@@ -260,6 +261,8 @@ const EVENT_ITEMS: ScheduleEvent[] = [
 
   // ================= TUE 28 JUL — EMBODIMENT =================
   { id: 'jul28-zen', date: '2026-07-28', start: '10:00', end: '11:00', title: 'Zen Samurai (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['zen-samurai'] },
+  { id: 'jul28-dawn', date: '2026-07-28', start: '11:00', end: '12:00', title: 'Dawn Hoang (Embodiment)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['dawn-hoang'] },
+  { id: 'jul28-dawn-photo', date: '2026-07-28', start: '12:10', end: '12:30', title: 'Portraits — Dawn Hoang', type: 'portrait', crew: ['mardo'], speakers: ['dawn-hoang'], notes: 'Location TBD' },
   { id: 'jul28-sheleana', date: '2026-07-28', start: '14:00', end: '15:00', title: 'Sheleana Aiyana', type: 'stage-talk', location: MAIN_STAGE, speakers: ['sheleana-aiyana'] },
   { id: 'jul28-sheleana-photo', date: '2026-07-28', start: '15:10', end: '15:30', title: 'Portraits — Sheleana Aiyana', type: 'portrait', crew: ['mardo'], speakers: ['sheleana-aiyana'], notes: 'Location TBD' },
   { id: 'jul28-brighten', date: '2026-07-28', start: '15:00', end: '16:00', title: 'Dr. Jolene Brighten', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jolene-brighten'] },
@@ -275,6 +278,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul29-mckenna', date: '2026-07-29', start: '15:00', end: '16:00', title: 'Paul McKenna', type: 'stage-talk', location: MAIN_STAGE, speakers: ['paul-mckenna'] },
   { id: 'jul29-mckenna-photo', date: '2026-07-29', start: '16:10', end: '16:30', title: 'Portraits — Paul McKenna', type: 'portrait', crew: ['mardo'], speakers: ['paul-mckenna'], authorConfirmed: true, notes: 'Location TBD. Confirmed by author (Paul McKenna, email 14 Jul).' },
   { id: 'jul29-vishen', date: '2026-07-29', start: '16:15', end: '17:00', title: 'Vishen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true },
+  { id: 'jul29-fce-dawn', date: '2026-07-29', start: '16:15', end: '17:15', title: 'First Class Experience — Dawn Hoang', type: 'experience', location: EXPERIENCE, speakers: ['dawn-hoang'] },
   { id: 'jul29-author-dinner', date: '2026-07-29', start: '21:00', end: '00:30', title: 'Author Dinner', type: 'social' },
 
   // ================= THU 30 JUL — REINVENTION =================

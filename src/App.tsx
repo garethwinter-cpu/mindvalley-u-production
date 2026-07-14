@@ -61,7 +61,7 @@ function tallinnTime(d: Date): string {
 
 // Regan's 16 Jul webinar is remote and the Priestley accelerator (18-19 Jul) is
 // remote too — the first commitment requiring Gareth's team on the ground is now
-// the Daniel Priestley interview, 20 Jul (Dawn Hoang's 18 Jul interview was removed).
+// the Daniel Priestley interview, 20 Jul (Dawn Hoang's 18 Jul studio interview was removed).
 function daysToKickoff(): string {
   const now = new Date()
   const kickoff = new Date('2026-07-20T14:00:00+03:00')
