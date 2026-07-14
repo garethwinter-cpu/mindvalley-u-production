@@ -245,8 +245,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     vishen: true,
     gareth: true,
     crew: FULL,
-    status: 'tentative',
-    notes: 'MC DNA 2.0. Suggested teaching: The Mental Noise Dial / Energetic Grounding Technique.',
+    status: 'confirmed',
+    authorConfirmed: true,
+    notes: 'CONFIRMED BY AUTHOR (Jeffrey Allen, email 14 Jul — "this is great planning... everything else looks great"). MC DNA 2.0, a refresh in the new format (not a straight reshoot). Suggested teaching: The Mental Noise Dial / Energetic Grounding Technique.',
   },
   {
     id: 'assets-ja',
@@ -259,8 +260,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['jeffrey-allen'],
     crew: UNIT1,
     gareth: true,
-    status: 'tentative',
-    notes: '8-item suite: Tips on the Move, Straight Up Invite, Story Ad, Technique Demo, Hooks/CTAs, Email PLC, 2× retargeting.',
+    status: 'confirmed',
+    authorConfirmed: true,
+    notes: 'CONFIRMED BY AUTHOR (Jeffrey Allen, email 14 Jul). 8-item suite: Tips on the Move, Straight Up Invite, Story Ad, Technique Demo, Hooks/CTAs, Email PLC, 2× retargeting.',
   },
 
   // ---------- SAT 25 JUL ----------
@@ -311,8 +313,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
-    status: 'tentative',
-    notes: 'After his accelerator recording wraps.',
+    status: 'confirmed',
+    authorConfirmed: true,
+    notes: 'CONFIRMED BY AUTHOR (Jeffrey Allen, email 14 Jul).',
   },
   {
     id: 'pod-wineland',

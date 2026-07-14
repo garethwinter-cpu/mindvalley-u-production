@@ -148,7 +148,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul22-ja-2', date: '2026-07-22', start: '11:00', end: '12:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
   { id: 'jul22-ja-3', date: '2026-07-22', start: '14:00', end: '15:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
   { id: 'jul22-ja-4', date: '2026-07-22', start: '15:00', end: '16:00', title: 'Jeffrey Allen', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jeffrey-allen'] },
-  { id: 'jul22-ja-photo', date: '2026-07-22', start: '16:15', end: '16:35', title: 'Portraits — Jeffrey Allen', type: 'portrait', crew: ['mardo'], speakers: ['jeffrey-allen'], notes: 'Location TBD' },
+  { id: 'jul22-ja-photo', date: '2026-07-22', start: '16:15', end: '16:35', title: 'Portraits — Jeffrey Allen', type: 'portrait', crew: ['mardo'], speakers: ['jeffrey-allen'], authorConfirmed: true, notes: 'Location TBD. Confirmed by author (Jeffrey Allen, email 14 Jul).' },
   { id: 'jul22-regan', date: '2026-07-22', start: '16:15', end: '17:00', title: 'Regan Hillyer', type: 'stage-talk', location: MAIN_STAGE, speakers: ['regan-hillyer'] },
   { id: 'jul22-regan-photo', date: '2026-07-22', start: '17:10', end: '17:30', title: 'Portraits — Regan Hillyer', type: 'portrait', crew: ['mardo'], speakers: ['regan-hillyer'], notes: 'Location TBD. Straight after her talk.' },
   { id: 'jul22-fce-dawn', date: '2026-07-22', start: '12:45', end: '13:45', title: 'First Class Experience — Dawn Hoang', type: 'experience', location: EXPERIENCE, speakers: ['dawn-hoang'] },
@@ -340,10 +340,10 @@ export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, 
 export const CONFLICTS: Conflict[] = [
   {
     id: 'c-slate-proposed',
-    severity: 'high',
-    title: 'The whole production slate is a PROPOSAL — nothing confirmed with authors yet',
+    severity: 'medium',
+    title: 'Author confirmation drive underway — most authors still tentative',
     detail:
-      '45 slate items scheduled 2 Jul against speaker windows and event commitments. Every one is tentative until author relations confirms each author’s time. Podcasts/interviews were originally kept off NO INTERVIEWS days (20, 23, 24, 27, 28, 31 Jul) — confirmed via Eni (13 Jul) that rule only means no stage/press interviews, so those days are open for our studio capture too.',
+      'The slate was scheduled against speaker windows + event commitments; each shoot needs the author to confirm their time. CONFIRMED BY AUTHOR so far: Paul McKenna (all shoots) and Jeffrey Allen (all shoots). In progress: Regan (replied, reworked), John Lee (reworked to window, ads cut), Marisa / Jim (emails drafted), Sheleana (9am confirmed via Kaitlin/Eni). Everyone else is still "To confirm" — see the per-shoot badges. (NO INTERVIEWS days resolved: Eni confirmed it means stage/press only, so studio capture is fine on those days.)',
   },
   {
     id: 'c-two-units',
