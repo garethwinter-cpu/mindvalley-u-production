@@ -353,13 +353,6 @@ export const CONFLICTS: Conflict[] = [
       'New policy (13 Jul): book podcasts for 1h30 (wrap early if it flows). Applied to the 10 that fit — John Lee, Natalie, both Chiara episodes, Dan Brulé (pushed Shi\'s interview 15 min), Hal Elrod, Jamie Sea + Marisa Ep3 (run to ~8pm on 28), Marisa Ep1. CAN\'T fit at 90 (kept shorter): 25 Jul (Jeffrey Allen + Wineland stacked before Regan\'s 5pm accelerator); 27 Jul (Shi + Marisa Ep2 + Maya interview + Hal); 29 Jul (Jolene + Lorin — already the broken Gareth chain); 30 Jul (Maria + Nick, back-to-back before Nick\'s interview). Root cause: those guests are only in town that day, so their episodes can\'t spread out. To give them 90 too, decide per day: fewer episodes, or accept 60, or Vishen does fewer.',
   },
   {
-    id: 'c-vishen-load',
-    severity: 'medium',
-    title: 'Vishen’s shoot load is heavy on 29–30 Jul',
-    detail:
-      '29 Jul: Superbrain masterclass (3h) + 2 podcasts + 16:15 stage slot. 30 Jul: 3 podcasts + Kwik fireside + swappable stage slot + portraits. Consider dropping a podcast episode to Aug 2 or cutting runtime.',
-  },
-  {
     id: 'c-gareth-interview-load',
     severity: 'medium',
     title: 'Gareth double-booked on 29 Jul — his reassigned interviews collide with shoots he directs',
