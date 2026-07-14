@@ -67,21 +67,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     notes: 'MOVED to 10:00 at Jeffrey\'s request (email 14 Jul): he collects Hisami from TLL (lands 7:30am), so a 9am start was too tight. Pushed John Lee\'s interview to 11:00 to clear the slot. Day before his 4-block stage day.',
   },
   {
-    id: 'assets-jade-shaw',
-    date: '2026-07-21',
-    start: '12:00',
-    end: '14:00',
-    title: 'Jade Shaw — Masterclass Marketing Assets (Astral Projection)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['jade-shaw'],
-    crew: UNIT1,
-    director: 'gareth',
-    status: 'tentative',
-    notes:
-      'POSSIBLE — keep. The old "conflict" was based on a wrong window (thought she was here 21 Jul only). Speaker DATES audit (13 Jul) confirms she\'s in town 21–30 Jul, so no crunch. Full 8-item Astral Projection suite, run by unit 1 (Khairul). AUDIT FIX (13 Jul): dropped the "Gareth on set" flag here — this is a b-roll asset shoot Khairul\'s unit runs, and marking Gareth required created a phantom clash with the Priestley interview he\'s conducting 12:45 the same day. He directs/oversees but isn\'t hands-on-required, freeing him for Priestley. If the 8 items feel rushed in 2h, her wide window lets us give it a longer block on a calmer day (22 Jul am) — optional.',
-  },
-  {
     id: 'int-priestley',
     date: '2026-07-20',
     start: '14:00',
@@ -98,20 +83,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes:
       'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day. The studio is otherwise empty on the 20th, and this takes his interview OFF his packed departure day (21 Jul: stage talk 10-11, Jeremy Harbour panel 11-12, portraits 12:10). 14:00 sits after Vishen\'s Welcome (ends 13:30) and before his only 20 Jul commitment, the possible "Fuck Up" open mic at 16:00. Studio crew (Gareth + unit 2) are free — opening-day stage is on Still Frame + roving social. Portraits stay on the 21st with his stage appearance (movable to the 20th too if preferred). INTERVIEW THREAD: Daniel is a DJ by passion — worth a personal question here, since he closes the 4pm "Fuck Up" open mic with a DJ set (great callback/tease for the same-day social cut).',
-  },
-  {
-    id: 'int-jade-shaw',
-    date: '2026-07-21',
-    start: '14:15',
-    end: '15:00',
-    title: 'Author Interview: Kaitlin & Jade Shaw',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['jade-shaw', 'kaitlin'],
-    crew: UNIT2,
-    director: 'gareth',
-    priority: 1,
-    status: 'tentative',
   },
   {
     id: 'int-regan',
