@@ -114,11 +114,13 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     location: MAIN_STAGE,
     speakers: ['daniel-priestley', 'vishen', 'john-lee'],
     vishen: true,
-    status: 'tentative',
-    notes: 'Line-up “Daniel, Vishen, John Lee?” — confirm.',
+    party: true,
+    cameraOps: ['jason', 'kuhan'],
+    status: 'confirmed',
+    notes: 'CONFIRMED happening — line-up Daniel, Vishen, John Lee. CONTENT ANGLE: Daniel Priestley is a DJ by passion (serial entrepreneur who secretly spins) — have him close the session with a short DJ set. The roving social team (Jason + Kuhan) grab it: the "the growth guy is also a DJ" reveal is a strong personal/social piece, and it sets up a lovely thread in his 14:00 interview earlier the same day. His only 20 Jul commitment before this is that interview, so he is free to lean in.',
   },
   { id: 'jul20-tribe', date: '2026-07-20', start: '17:15', end: '17:45', title: 'LEARNLIFE Parent Meeting / Tribe Meeting', type: 'community', location: `${COMMUNITY} + ${EXPERIENCE}` },
-  { id: 'jul20-party', date: '2026-07-20', start: '19:00', end: '23:00', title: 'Blue Block Party', type: 'social', location: VENUE, crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social). Alternating with Kuhan across the parties so each gets rest nights.' },
+  { id: 'jul20-party', date: '2026-07-20', start: '19:00', end: '23:00', title: 'Blue Block Party', type: 'social', location: VENUE, crew: ['jason'], notes: 'Ad-hoc party filming — Jason (roving social). Alternating with Kuhan across the parties so each gets rest nights. OPPORTUNITY: Daniel Priestley (a hobby DJ, and it is his last night — he departs the 21st) is a natural fit to DJ this party; if he is up for it, it extends the afternoon open-mic DJ moment into a bigger evening social piece.' },
 
   // ================= TUE 21 JUL — ENTREPRENEURSHIP =================
   { id: 'jul21-priestley-1', date: '2026-07-21', start: '10:00', end: '11:00', title: 'Daniel Priestley', type: 'stage-talk', location: MAIN_STAGE, speakers: ['daniel-priestley'] },

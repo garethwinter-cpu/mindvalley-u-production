@@ -96,7 +96,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 2,
     status: 'tentative',
     notes:
-      'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day. The studio is otherwise empty on the 20th, and this takes his interview OFF his packed departure day (21 Jul: stage talk 10-11, Jeremy Harbour panel 11-12, portraits 12:10). 14:00 sits after Vishen\'s Welcome (ends 13:30) and before his only 20 Jul commitment, the possible "Fuck Up" open mic at 16:00. Studio crew (Gareth + unit 2) are free — opening-day stage is on Still Frame + roving social. Portraits stay on the 21st with his stage appearance (movable to the 20th too if preferred).',
+      'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day. The studio is otherwise empty on the 20th, and this takes his interview OFF his packed departure day (21 Jul: stage talk 10-11, Jeremy Harbour panel 11-12, portraits 12:10). 14:00 sits after Vishen\'s Welcome (ends 13:30) and before his only 20 Jul commitment, the possible "Fuck Up" open mic at 16:00. Studio crew (Gareth + unit 2) are free — opening-day stage is on Still Frame + roving social. Portraits stay on the 21st with his stage appearance (movable to the 20th too if preferred). INTERVIEW THREAD: Daniel is a DJ by passion — worth a personal question here, since he closes the 4pm "Fuck Up" open mic with a DJ set (great callback/tease for the same-day social cut).',
   },
   {
     id: 'int-jade-shaw',
