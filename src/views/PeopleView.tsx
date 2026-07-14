@@ -11,11 +11,40 @@ import type { PersonRole } from '../data/types'
 import { buildSchedule, fmtClock, fmtDur, toMin } from '../scheduler'
 import type { DaySchedule } from '../scheduler'
 
-const GROUPS: { label: string; roles: PersonRole[] }[] = [
-  { label: 'Production team', roles: ['exec', 'crew', 'photographer', 'partner'] },
-  { label: 'Author relations', roles: ['author-relations'] },
-  { label: 'Speakers', roles: ['speaker'] },
+// Iris Wagner's Memoirs Productions legacy shoot: Iris + the Lakhiani family (its subjects).
+const MEMOIR_IDS = ['iris-wagner', 'mohan-lakhiani', 'roopi-lakhiani', 'hayden-lakhiani', 'eve-lakhiani']
+
+type SubGroup = { label?: string; roles?: PersonRole[]; ids?: string[]; excludeIds?: string[] }
+type Section = { label: string; groups: SubGroup[] }
+
+// Two-level People roster: top-level sections, each with sub-categories.
+const SECTIONS: Section[] = [
+  {
+    label: 'Mindvalley Team',
+    groups: [
+      { label: 'Production', roles: ['exec', 'crew'], excludeIds: ['kaitlin'] },
+      { label: 'Host', ids: ['kaitlin'] },
+      { label: 'Photography', roles: ['photographer'] },
+      { label: 'Author relations', roles: ['author-relations'] },
+      { label: 'Partners', roles: ['partner'] },
+    ],
+  },
+  {
+    label: 'Speakers',
+    groups: [{ roles: ['speaker'], excludeIds: MEMOIR_IDS }],
+  },
+  {
+    label: 'Memoir',
+    groups: [{ ids: MEMOIR_IDS }],
+  },
 ]
+
+/** People for a sub-group. `ids` selects explicitly (in listed order); otherwise
+ *  filter by role, minus any excludeIds. */
+function peopleForGroup(g: SubGroup) {
+  if (g.ids) return g.ids.map((id) => PEOPLE.find((p) => p.id === id)).filter((p): p is (typeof PEOPLE)[number] => !!p)
+  return PEOPLE.filter((p) => g.roles?.includes(p.role) && !g.excludeIds?.includes(p.id))
+}
 
 function fmtDate(d: string) {
   const day = DAYS.find((x) => x.date === d)
@@ -203,19 +232,28 @@ export default function PeopleView() {
 
       <div className="pp-layout">
         <div className="mv-card pp-list">
-          {GROUPS.map((g) => (
-            <div key={g.label}>
-              <div className="pp-group">{g.label}</div>
-              {PEOPLE.filter((x) => g.roles.includes(x.role)).map((x) => (
-                <button
-                  key={x.id}
-                  className={`pp-item${x.id === selected ? ' active' : ''}`}
-                  onClick={() => setSelected(x.id)}
-                >
-                  <Headshot id={x.id} size={28} />
-                  {x.name}
-                </button>
-              ))}
+          {SECTIONS.map((section) => (
+            <div key={section.label}>
+              <div className="pp-section">{section.label}</div>
+              {section.groups.map((g, i) => {
+                const ppl = peopleForGroup(g)
+                if (!ppl.length) return null
+                return (
+                  <div key={g.label ?? i}>
+                    {g.label && <div className="pp-group">{g.label}</div>}
+                    {ppl.map((x) => (
+                      <button
+                        key={x.id}
+                        className={`pp-item${x.id === selected ? ' active' : ''}`}
+                        onClick={() => setSelected(x.id)}
+                      >
+                        <Headshot id={x.id} size={28} />
+                        {x.name}
+                      </button>
+                    ))}
+                  </div>
+                )
+              })}
             </div>
           ))}
         </div>

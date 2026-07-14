@@ -467,13 +467,26 @@ body {
   max-height: 70vh;
   overflow-y: auto;
 }
+.pp-section {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--brand-content);
+  padding: 18px 12px 4px;
+  border-top: 1px solid var(--border-muted);
+  margin-top: 6px;
+}
+.pp-section:first-child {
+  border-top: none;
+  margin-top: 0;
+}
 .pp-group {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-subtle);
-  padding: 16px 12px 6px;
+  padding: 10px 12px 4px 20px;
 }
 .pp-item {
   display: flex;
