@@ -339,13 +339,6 @@ export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, 
 
 export const CONFLICTS: Conflict[] = [
   {
-    id: 'c-regan-accel-time',
-    severity: 'high',
-    title: 'Regan Accelerator timing: microsite (5–8pm / 5–9pm) vs detailed agenda (9am–4pm)',
-    detail:
-      'Customer-facing microsite sells evenings; internal detailed agenda says daytime. Day 2 running to 9pm also collides with her listed departure day (26 Jul). Resolve before crew scheduling.',
-  },
-  {
     id: 'c-priestley-format',
     severity: 'low',
     title: 'Priestley Accelerator format: remote (per Gareth) vs “live in-person + streamed” (microsite)',
