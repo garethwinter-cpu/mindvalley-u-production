@@ -134,9 +134,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   // NOTE: Daniel Priestley podcast REMOVED per Gareth (13 Jul) — he'll capture it at a later date, outside the MVU sprint.
   {
     id: 'pod-john-lee',
-    date: '2026-07-22',
-    start: '11:30',
-    end: '13:00',
+    date: '2026-07-21',
+    start: '16:30',
+    end: '18:00',
     title: 'Scaling Wisdom Podcast: John Lee & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -147,7 +147,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'His last day in Estonia.',
+    notes: 'MOVED off 22 Jul (14 Jul): John flies the morning of the 22nd, so his usable window is the 20th (lands 11am) and the 21st. This is the ONLY window all four are free: John after his 16:30 portrait, Vishen after his 15:35 portrait, studio + unit 1 after the Regan interview (16:15). Wraps by 6pm, before the 7:30 Sazerac. Audited against team + other speakers — clean.',
   },
   {
     id: 'pod-natalie',
@@ -183,9 +183,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'assets-john-lee',
-    date: '2026-07-22',
-    start: '16:30',
-    end: '18:00',
+    date: '2026-07-20',
+    start: '14:45',
+    end: '15:45',
     title: 'John Lee — Masterclass Marketing Assets (The 7 Figure Creator + Speaking & Authorship pathway)',
     type: 'production',
     location: STUDIO,
@@ -194,8 +194,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     gareth: true,
     director: 'gareth',
     cameraOps: ['khairul'],
-    status: 'conflict',
-    notes: 'His last day — compressed 90-min version of the 8-item suite. Prioritise Straight Up Invite + Technique Demo + Hooks.',
+    status: 'tentative',
+    notes: 'MOVED off 22 Jul (14 Jul): John flies the morning of the 22nd. Placed on the 20th (arrival day — he lands 11am), which is the day he suggested. Studio + crew free after the Priestley interview (14:45) and before his 4pm open mic; a compressed 60-min session — prioritise Straight Up Invite + Technique Demo + Hooks. FALLBACK if his landing runs late: give it a full 90 min on the 21st at 18:00 (right after the podcast).',
   },
 
   // ---------- THU 23 JUL ----------
