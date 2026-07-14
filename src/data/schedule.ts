@@ -368,10 +368,10 @@ export const CONFLICTS: Conflict[] = [
   },
   {
     id: 'c-jul31-crunch',
-    severity: 'medium',
-    title: '31 Jul is now the heaviest studio day (2 Aug cleared for pack/travel)',
+    severity: 'low',
+    title: '31 Jul is the heaviest studio day — now cleanly staffed as two units',
     detail:
-      'To keep the studio empty on 2 Aug (pack day), the wrap-day slate moved onto 31 Jul + 1 Aug. 31 Jul now runs both units ~10:00–15:15 (Marisa masterclass on unit 1; Lee interview + assets + Marisa assets on unit 2) — on Closing Ceremony day, but nothing now runs into it. None need Vishen (he is on stage). Eric Edmeades\' "One Talk Workshop" was pulled from this day entirely (13 Jul) — it\'s actually 7 Aug, outside the MVU sprint, and had been scheduled here in error.',
+      'To keep 2 Aug empty (pack day), the wrap-day slate sits on 31 Jul + 1 Aug. 31 Jul runs two units ~10:00–15:15: UNIT 1 (Gareth + Khairul) = Marisa masterclass in the main studio; UNIT 2 (Nadir) = Lee Holden interview + assets in a separate space (Kaitlin hosts the interview). Then Vishen Talking Heads #2 (16:00–18:00) after the Closing Ceremony. AUDIT FIX (14 Jul): resolved the double-booking — Nadir was wrongly a camera op on the masterclass AND running unit 2; masterclass camera is now Khairul only. No overlaps remain. OPEN: confirm the unit-2 space is available on 31 Jul (main studio can\'t host both). Eric Edmeades\' One Talk Workshop correctly pulled (it\'s 7 Aug).',
   },
   {
     id: 'c-kwik-window',
