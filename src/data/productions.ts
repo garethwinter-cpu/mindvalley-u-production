@@ -30,24 +30,8 @@ const CAMERA_CREW = ['khairul', 'nadir']
 export const STUDIO = 'Energiakeskus Studio, Tallinn'
 
 export const PRODUCTION_EVENTS: ScheduleEvent[] = [
-  // ---------- PRE-EVENT ----------
-  {
-    id: 'int-dawn-hoang',
-    date: '2026-07-18',
-    start: '14:00',
-    end: '15:00',
-    title: 'Author Interview: Gareth & Dawn Hoang',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['dawn-hoang', 'gareth'],
-    crew: UNIT2,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 2,
-    status: 'tentative',
-    notes: 'Dawn is in Tallinn from 17 Jul — early win before the event starts. Reassigned from Kaitlin to Gareth per his own prioritization pass (13 Jul) — lower-priority interviews he takes himself.',
-  },
+  // Dawn Hoang removed from the schedule entirely (14 Jul) — interview, portraits
+  // and her agenda pieces (2× First Class Experience, Embodiment) all pulled.
 
   // ---------- TUE 21 JUL ----------
   {

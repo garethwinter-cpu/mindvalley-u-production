@@ -59,11 +59,12 @@ function tallinnTime(d: Date): string {
     .toLowerCase()
 }
 
-// Regan's 16 Jul webinar is fully remote and needs no crew — the first commitment
-// actually requiring Gareth's team on the ground is the Dawn Hoang interview, 18 Jul.
+// Regan's 16 Jul webinar is remote and the Priestley accelerator (18-19 Jul) is
+// remote too — the first commitment requiring Gareth's team on the ground is now
+// the Daniel Priestley interview, 20 Jul (Dawn Hoang's 18 Jul interview was removed).
 function daysToKickoff(): string {
   const now = new Date()
-  const kickoff = new Date('2026-07-18T14:00:00+03:00')
+  const kickoff = new Date('2026-07-20T14:00:00+03:00')
   const wrap = new Date('2026-08-02T23:59:00+03:00')
   if (now > wrap) return 'Wrapped'
   if (now >= kickoff) return 'In production'
@@ -130,7 +131,7 @@ export default function App() {
         <div className="mv-clock" title="Local time in Tallinn (EEST, UTC+3)">
           🕒 {tallinnTime(now)} Tallinn
         </div>
-        <div className="mv-countdown">{daysToKickoff()} · First crewed shoot 18 Jul</div>
+        <div className="mv-countdown">{daysToKickoff()} · First crewed shoot 20 Jul</div>
       </header>
       <main className="mv-page">
         {tab === 'overview' && <Overview onOpenDay={openDay} />}
