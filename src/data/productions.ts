@@ -186,7 +186,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-22',
     start: '16:30',
     end: '18:00',
-    title: 'John Lee — Masterclass Marketing Assets (Duality/Manifesting collection)',
+    title: 'John Lee — Masterclass Marketing Assets (The 7 Figure Creator + Speaking & Authorship pathway)',
     type: 'production',
     location: STUDIO,
     speakers: ['john-lee'],
