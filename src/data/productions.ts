@@ -20,9 +20,14 @@ import type { ScheduleEvent } from './types'
  * briefing) — provisional until Marisha finalizes the author wishlist.
  */
 
-const UNIT1 = ['khairul', 'kuhan']
+// Crew model (confirmed 14 Jul). STUDIO unit = Gareth (director) + Khairul + Nadir,
+// recording the formal captures (podcasts, masterclasses, author interviews). Kuhan is
+// NOT studio camera — he roams with Jason (social/soul capture across stage, event spaces,
+// parties and breakouts, plus a small studio for off-the-cuff vox pops). Parallel studio
+// days split Khairul (unit 1) and Nadir (unit 2) with Gareth floating.
+const UNIT1 = ['khairul']
 const UNIT2 = ['nadir']
-const FULL = ['khairul', 'nadir', 'kuhan']
+const FULL = ['khairul', 'nadir']
 const CAMERA_CREW = ['khairul', 'nadir']
 
 /** Premium studio for podcasts, masterclasses and author interviews.

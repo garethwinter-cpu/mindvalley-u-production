@@ -346,13 +346,6 @@ export const CONFLICTS: Conflict[] = [
       'The slate was scheduled against speaker windows + event commitments; each shoot needs the author to confirm their time. CONFIRMED BY AUTHOR so far: Paul McKenna (all shoots) and Jeffrey Allen (all shoots). In progress: Regan (replied, reworked), John Lee (reworked to window, ads cut), Marisa / Jim (emails drafted), Sheleana (9am confirmed via Kaitlin/Eni). Everyone else is still "To confirm" — see the per-shoot badges. (NO INTERVIEWS days resolved: Eni confirmed it means stage/press only, so studio capture is fine on those days.)',
   },
   {
-    id: 'c-two-units',
-    severity: 'medium',
-    title: 'Two-unit model vs the Creative column — is Kuhan on studio camera or purely editorial?',
-    detail:
-      'The app runs a two-unit model (unit 1 = Khairul + Kuhan, unit 2 = Nadir) so shoots can run in parallel on 22, 26, 29, 30 Jul + 1–2 Aug. BUT the Shoots Airtable "Creative" column (audited 13 Jul) lists only Gareth + Nadir + Khairul on the studio shoots — Kuhan appears there as an EDITOR (recaps + social), not a studio camera op. These disagree. If Kuhan is editorial-only, the two-unit parallelism needs a different second shooter (or shoots go sequential). If he does shoot, add him to the Creative column. Decide before locking — it changes both crew blocking and whether parallel days are staffable. His scheduler currently still shows the studio shoots via the crew model, pending this call.',
-  },
-  {
     id: 'c-podcast-90',
     severity: 'medium',
     title: 'Podcasts now booked at 90 min — 8 don\'t fit on the stacked days',
