@@ -1,18 +1,42 @@
+import { useEffect, useState } from 'react'
 import { PODCAST_BRIEFINGS } from '../data/podcastBriefings'
+import { PODCAST_GUEST_BRIEFS } from '../data/podcastGuestBriefs'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { person } from '../data/people'
 import { DAYS } from '../data/schedule'
 import { Headshot } from '../profile'
 import { fmtTime } from '../ui'
 import type { FitVerdict } from '../data/types'
+import PodcastGuestView from './PodcastGuestView'
 
 const FIT_ORDER: Record<FitVerdict, number> = { STRONG: 0, MEDIUM: 1, NICHE: 2 }
+const HAS_BRIEF = new Set(PODCAST_GUEST_BRIEFS.map((b) => b.id))
 
 function fmtDate(d: string) {
   return DAYS.find((x) => x.date === d)?.label ?? d.slice(5)
 }
 
+/** Guest id from the hash (#podcast/<id>), else null. */
+function guestFromHash(): string | null {
+  const seg = window.location.hash.replace(/^#\/?/, '').split(/[?&]/)[0].split('/')[1]
+  return seg && HAS_BRIEF.has(seg) ? seg : null
+}
+
 export default function PodcastBriefingsView() {
+  const [guest, setGuest] = useState<string | null>(guestFromHash)
+  useEffect(() => {
+    const onHash = () => setGuest(guestFromHash())
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
+  if (guest) {
+    return <PodcastGuestView id={guest} onBack={() => (window.location.hash = '#podcast')} />
+  }
+  return <PodcastList />
+}
+
+function PodcastList() {
   const briefings = [...PODCAST_BRIEFINGS].sort(
     (a, b) => FIT_ORDER[a.fit] - FIT_ORDER[b.fit] || (a.date ?? '9999').localeCompare(b.date ?? '9999'),
   )
@@ -61,6 +85,12 @@ export default function PodcastBriefingsView() {
                   <>🎙️ Record in {b.recordLocation ?? 'TBC'} · date TBC · with Vishen</>
                 )}
               </div>
+
+              {HAS_BRIEF.has(b.personId) && (
+                <a className="pod-briefing-link" href={`#podcast/${b.personId}`}>
+                  📋 Full briefing &amp; Vishen's questions →
+                </a>
+              )}
 
               <div className="pod-fitline">{b.fitReason}</div>
 

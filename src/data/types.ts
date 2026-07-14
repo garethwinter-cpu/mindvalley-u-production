@@ -120,6 +120,30 @@ export interface PodcastBriefing {
   flag: string
 }
 
+/** Deep, per-guest briefing for Vishen — built on the Scaling Wisdom 3-Act format. */
+export interface GuestQuestions {
+  coldOpen: string[]
+  act1_origin: string[]
+  act2_blueprint: string[]
+  act3_paperwall: string[]
+  curveball: string[]
+}
+export interface PodcastGuestBrief {
+  id: string
+  name: string
+  oneLiner: string
+  movementFrame: string
+  hasLocalContent: boolean
+  sources: string[]
+  background: string
+  originStory: string
+  framework: { name: string; summary: string }
+  paperWall: string
+  clipMoments: string[]
+  questions: GuestQuestions
+  vishenNotes: string
+}
+
 export interface BacklogItem {
   id: string
   title: string
