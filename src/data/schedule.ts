@@ -353,13 +353,6 @@ export const CONFLICTS: Conflict[] = [
       'New policy (13 Jul): book podcasts for 1h30 (wrap early if it flows). Applied to the 10 that fit — John Lee, Natalie, both Chiara episodes, Dan Brulé (pushed Shi\'s interview 15 min), Hal Elrod, Jamie Sea + Marisa Ep3 (run to ~8pm on 28), Marisa Ep1. CAN\'T fit at 90 (kept shorter): 25 Jul (Jeffrey Allen + Wineland stacked before Regan\'s 5pm accelerator); 27 Jul (Shi + Marisa Ep2 + Maya interview + Hal); 29 Jul (Jolene + Lorin — already the broken Gareth chain); 30 Jul (Maria + Nick, back-to-back before Nick\'s interview). Root cause: those guests are only in town that day, so their episodes can\'t spread out. To give them 90 too, decide per day: fewer episodes, or accept 60, or Vishen does fewer.',
   },
   {
-    id: 'c-gareth-interview-load',
-    severity: 'medium',
-    title: 'Gareth double-booked on 29 Jul — his reassigned interviews collide with shoots he directs',
-    detail:
-      'AUDIT (13 Jul): the prioritization pass handed Gareth 9 of Kaitlin\'s interviews; some overlapped big shoots he\'s also on. RESOLVED since: 25 Jul (Dan Brulé) cleared when Jeffrey\'s studio accelerator was removed; 1 Aug (Maya) moved to 27 Jul. STILL OPEN — 29 Jul: Jolene interview (14:30) and Zen Takai interview (15:30) chain-overlap the Lorin podcast (15:00), on top of the Kwik masterclass + Jolene podcast (five Gareth commitments 10am-4:15pm). Needs Gareth\'s call: hand Jolene/Zen back to Kaitlin/Eni, or re-space. Recommendation: hand them to a host, since that\'s what freed his time in the first place.',
-  },
-  {
     id: 'c-wineland-27',
     severity: 'medium',
     title: 'John Wineland on the 27 Jul stage panel — but his window ends 26 Jul',
