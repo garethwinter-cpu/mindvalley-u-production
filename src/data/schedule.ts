@@ -362,9 +362,9 @@ export const CONFLICTS: Conflict[] = [
   {
     id: 'c-departure-day-shoots',
     severity: 'medium',
-    title: 'Six shoots sit on author departure days',
+    title: 'Shoots on author departure days — pending flight times',
     detail:
-      'Priestley + John Lee (22 Jul), Jeffrey Allen accel day 2 + Wineland (26 Jul), Jolene Brighten (29 Jul), Rachel Pringle (1 Aug), Jim Kwik (2 Aug). All need flight times confirmed before locking.',
+      'REFRESHED 14 Jul (the old list was stale — Priestley, John Lee, Jeffrey and Jim all moved/resolved). Current departure-day shoots: John Wineland interview (26 Jul 09:00); Jolene Brighten podcast + interview (29 Jul 13:30/14:15); Lorin Krenn podcast (29 Jul 15:00); Maria Wendt podcast (30 Jul 11:00); Jamie Sea interview (30 Jul 14:15); Rachel Pringle interview + assets (1 Aug 10:00/11:00). These are inherent — each guest is only in town until that day, so the shoot has to be on it. Mitigated with early-in-day slots where possible; each carries a ⚠ availability warning. Dependency = flight times (tracked by ch-flights); locks once those confirm.',
   },
   {
     id: 'c-jul31-crunch',
