@@ -528,9 +528,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'assets-mckenna-cert',
-    date: '2026-07-30',
-    start: '14:00',
-    end: '15:00',
+    date: '2026-07-28',
+    start: '16:00',
+    end: '17:00',
     title: 'Paul McKenna — Hypnotherapy Cert Marketing Assets',
     type: 'production',
     location: STUDIO,
@@ -540,7 +540,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     status: 'confirmed',
     authorConfirmed: true,
-    notes: 'CONFIRMED BY AUTHOR (Paul McKenna, email 14 Jul). MOVED to 30 Jul (13 Jul). Was pencilled at 14:00 on the 28th in Airtable, which collided head-on with the Masterclass Marketing Assets (also 14:00–16:00). Rather than stack a 3rd content block onto his already-heavy 28th (masterclass 10–1 + MC assets 2–4), moved it to the 30th afternoon after his 12:00 interview — a light day for him. He’s in town 27–31, so this sits comfortably in window.',
+    notes: 'PULLED into the 28th per Gareth (14 Jul), directly after his MC assets (ends 16:00) and before the Jamie Sea podcast (17:15) — Paul is already in studio and glam\'d, so it tacks onto his content block. This consolidates all Paul\'s content onto the 28th (masterclass 10–1, MC assets 2–4, cert assets 4–5) and frees his 30th to just his 12:00 interview. NOTE: he confirmed the plan when this sat on the 30th, so worth a courtesy heads-up that his 28th now runs three content blocks back-to-back.',
   },
   {
     id: 'int-sheleana',
