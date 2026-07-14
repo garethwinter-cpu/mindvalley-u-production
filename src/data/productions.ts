@@ -82,9 +82,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-priestley',
-    date: '2026-07-21',
-    start: '12:45',
-    end: '13:30',
+    date: '2026-07-20',
+    start: '14:00',
+    end: '14:45',
     title: 'Author Interview: Gareth & Daniel Priestley',
     type: 'production',
     location: STUDIO,
@@ -96,7 +96,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 2,
     status: 'tentative',
     notes:
-      'MOVED from 22 Jul (his departure day, no longer works) to his last day in town. He\'s free after his 12:10-12:30 portrait; Nadir free in the studio 10am-2:15pm. Membership assets shoot cancelled (removed from Airtable 13 Jul). AUDIT (13 Jul): this 12:45 slot overlapped Jade\'s asset shoot (12-14) which was flagging Gareth double-booked — resolved by dropping the redundant "Gareth on set" flag off that b-roll shoot (Khairul\'s unit runs it), so Gareth is free to conduct this.',
+      'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day. The studio is otherwise empty on the 20th, and this takes his interview OFF his packed departure day (21 Jul: stage talk 10-11, Jeremy Harbour panel 11-12, portraits 12:10). 14:00 sits after Vishen\'s Welcome (ends 13:30) and before his only 20 Jul commitment, the possible "Fuck Up" open mic at 16:00. Studio crew (Gareth + unit 2) are free — opening-day stage is on Still Frame + roving social. Portraits stay on the 21st with his stage appearance (movable to the 20th too if preferred).',
   },
   {
     id: 'int-jade-shaw',
