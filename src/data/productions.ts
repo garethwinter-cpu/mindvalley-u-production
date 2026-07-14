@@ -726,8 +726,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-nick',
     date: '2026-07-30',
-    start: '12:00',
-    end: '12:45',
+    start: '10:00',
+    end: '10:45',
     title: 'Scaling Wisdom Podcast: Nick Santonastasso & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -738,6 +738,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
+    notes: 'MOVED to 10:00 (14 Jul): it collided with Paul McKenna\'s Kaitlin interview at 12:00 — same studio, same crew, Gareth directing both, impossible. Paul\'s interview is author-confirmed at 12:00, so this shifts earlier. Checked everyone: studio empty before 11:00, and Vishen is free before his 11:00 Maria Wendt podcast, so Nick + Vishen + Gareth + unit 1 all clear at 10:00.',
   },
   {
     id: 'int-mckenna',
