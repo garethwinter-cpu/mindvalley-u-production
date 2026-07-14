@@ -357,8 +357,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-shy',
     date: '2026-07-27',
-    start: '12:45',
-    end: '13:30',
+    start: '12:35',
+    end: '13:45',
     title: 'Scaling Wisdom Podcast: Shi Heng Yi & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -369,7 +369,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'MOVED from 26 Jul 10am (resolves Gareth\'s double-booking with the Jeffrey Allen accelerator recording, which is pinned to JA\'s 26 Jul departure day and can\'t move). Now 27 Jul 12:45 — right after Shi\'s portrait (12:30) and just before his 2pm fireside with Vishen, so Shi + Vishen are already paired; Gareth\'s 27 is otherwise clear, Nadir free all day. Bonus: no longer on Shi\'s arrival day, so the landing-time risk drops away too.',
+    notes: 'EXTENDED to 70 min (12:35–13:45) on 14 Jul — he\'s the marquee podcast guest, so bumped from 45 min now that Marisa\'s Ep1 frees the studio at 12:30. Sits right after his 12:10–12:30 portrait, with a ~15-min buffer to walk to his 2pm fireside with Vishen. Verified clear: studio, Vishen and Gareth all free 12:35–13:45.',
   },
   {
     id: 'int-wineland',
