@@ -557,7 +557,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 5,
     status: 'confirmed',
     notes:
-      'CONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot (she departs 29 Jul, prefers mornings). Before McKenna\'s masterclass ties up the crew at 10am, well ahead of her own 2pm talk. Eni interviews (feminine-energy call, per her chat with Gareth). NO INTERVIEWS on the 28th doesn\'t block this — stage/press only.',
+      'CONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot. Per Kaitlin (14 Jul): Sheleana prefers MORNINGS, not too late in the afternoon, and departs 29 Jul, so this morning slot on her talk day is ideal. Deliberately the morning OF her 2pm stage talk so her hair and makeup carry through the day (glam once, touch up before the talk). It is the only studio morning window that day — McKenna\'s masterclass ties up the crew 10am-1pm. Eni interviews (feminine-energy call). ACTION: author relations to confirm with Sheleana she is happy doing the 9am interview the morning of her talk (per Kaitlin).',
   },
   {
     id: 'pod-jamie-sea',
