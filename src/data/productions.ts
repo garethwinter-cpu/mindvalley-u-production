@@ -157,6 +157,23 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   // John Lee marketing assets NOT scheduled (per Gareth, 14 Jul): his diary is just the
   // Scaling Wisdom podcast (21 Jul) + the Kaitlin interview (21 Jul). Ads dropped even
   // though he offered a Mon 1pm slot — keeping his week light.
+  {
+    id: 'vishen-tribe-training',
+    date: '2026-07-21',
+    start: '13:15',
+    end: '14:00',
+    title: 'Vishen — Tribe Speaker storytelling training (run-and-gun capture)',
+    type: 'production',
+    location: 'MVU venue — Tribe Speaker Training room (TBC)',
+    speakers: ['vishen'],
+    vishen: true,
+    crew: ['kuhan'],
+    cameraOps: ['kuhan'],
+    priority: 9,
+    status: 'confirmed',
+    notes:
+      'Vishen request (WhatsApp, 16 Jul): "Tues 1:15pm to 2pm I need someone with me at MVU as I\'m doing live training with Tribe Speakers on storytelling. I want this filmed. One cam, Hormozi style interacting w students. Can be filmed w one human, iPhone and two lapel mics." ROAMING-UNIT job, not a studio shoot: Kuhan is primary shooter (Jason backup) with a light kit (iPhone + 2 lapel mics) — no draw on the studio unit or the studio room. Sits cleanly between the 11:00 Kaitlin/John Lee interview and the 16:30 John Lee podcast; Kuhan is otherwise roaming until the 19:30 Sazerac, so pulling him for 45 min is the low-cost option. Kit + one-cam spec logged in the Shoots Airtable "Capture Brief / Kit" field so it does not get lost among the studio slate.',
+  },
 
   // ---------- THU 23 JUL ----------
   {
@@ -509,7 +526,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 4,
     status: 'tentative',
-    notes: 'Departure day. Now straight after her podcast (14:15, one glam) and before the Lorin podcast at 15:00 — re-spaced 14 Jul to clear the old overlap. Stays with Gareth (Kaitlin is capped at 9 interviews per her commercial agreement).',
+    notes: 'Departure day. Sits at 14:15, before the Lorin podcast at 15:00. (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild — this Gareth-hosted author interview is a separate deliverable and stands alone; confirm we still want it.) Stays with Gareth (Kaitlin is capped at 9 interviews per her commercial agreement).',
   },
   {
     id: 'pod-lorin',
@@ -608,7 +625,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 2,
     status: 'tentative',
-    notes: 'Straight after his podcast. Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). Previously overlapped Gareth\'s own pod-jamie-sea — resolved by moving that podcast to 28 Jul.',
+    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). (His Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild; this author interview stands alone — confirm we still want it.)',
   },
   {
     id: 'int-jamie-sea',
@@ -625,7 +642,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 4,
     status: 'tentative',
-    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). Her podcast moved to 28 Jul, so this stands alone now — no more conflict.',
+    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild; this author interview stands alone — confirm we still want it.)',
   },
 
   // ---------- SAT 1 AUG ----------
