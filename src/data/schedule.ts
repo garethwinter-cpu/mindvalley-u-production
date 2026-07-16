@@ -93,15 +93,15 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   {
     id: 'jul20-welcome',
     date: '2026-07-20',
-    start: '11:00',
-    end: '13:30',
+    start: '13:15',
+    end: '14:45',
     title: 'Welcome / Orientation by Vishen',
     type: 'stage-talk',
     location: MAIN_STAGE,
     speakers: ['vishen'],
     vishen: true,
     status: 'tentative',
-    notes: 'Slot is “11–12:30 OR 12–1:30” in the detailed agenda — confirm.',
+    notes: 'Time corrected to 13:15–14:45 on 16 Jul to match the new Speaker Agenda Airtable (was 11:00–13:30). Daniel Priestley\'s interview was moved to 15:00 so he can attend this opening.',
   },
   { id: 'jul20-community', date: '2026-07-20', start: '15:00', end: '16:00', title: 'Community Connections with Eric Edmeades', type: 'community', location: MAIN_STAGE, speakers: ['eric-edmeades'], notes: 'Author now attributed per 13 Jul sheet check (was unattributed).' },
   {
