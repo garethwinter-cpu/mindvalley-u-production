@@ -64,7 +64,7 @@ function tallinnTime(d: Date): string {
 // the Daniel Priestley interview, 20 Jul (Dawn Hoang's 18 Jul studio interview was removed).
 function daysToKickoff(): string {
   const now = new Date()
-  const kickoff = new Date('2026-07-20T15:00:00+03:00')
+  const kickoff = new Date('2026-07-20T12:00:00+03:00')
   const wrap = new Date('2026-08-02T23:59:00+03:00')
   if (now > wrap) return 'Wrapped'
   if (now >= kickoff) return 'In production'

@@ -73,8 +73,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-priestley',
     date: '2026-07-20',
-    start: '15:00',
-    end: '15:45',
+    start: '12:00',
+    end: '12:30',
     title: 'Author Interview: Gareth & Daniel Priestley',
     type: 'production',
     location: STUDIO,
@@ -86,7 +86,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 2,
     status: 'tentative',
     notes:
-      'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day. The studio is otherwise empty on the 20th, and this takes his interview OFF his packed departure day (21 Jul: stage talk 10-11, Jeremy Harbour panel 11-12, portraits 12:10). NUDGED 14:00→15:00 (16 Jul) per Gareth so Daniel can attend Vishen\'s opening — the new Speaker Agenda puts the opening at 13:15–14:45, so the interview now sits cleanly in the 14:45–16:00 gap, before his 16:00 "Fuck Up" open mic. Studio crew (Gareth + unit 2) are free. Portraits stay on the 21st with his stage appearance (movable to the 20th too if preferred). INTERVIEW THREAD: Daniel is a DJ by passion — worth a personal question here, since he closes the 4pm "Fuck Up" open mic with a DJ set (great callback/tease for the same-day social cut).',
+      'MOVED to 20 Jul per Gareth (13 Jul). Daniel has been in town since the 16th (accelerator 18-19), so unlike the arrival cohort he is settled and free on opening day, and this keeps the interview OFF his packed departure day (21 Jul: stage 10-11:30, portraits 12:10, then flies). TRIMMED to 30 min + moved to a CALM LATE-MORNING slot, 12:00–12:30 (16 Jul, per Gareth) — the earlier 15:00 slot sat right before his 16:00 stage talk. Now he does the interview fresh, then lunch, then Vishen\'s 13:15 opening, then his 16:00 talk with no rush. Studio + Gareth + unit 2 free all morning; registration (ends 12:00) uses no crew. INTERVIEW THREAD: Daniel is a DJ by passion — worth a personal question, since he closes the 4pm "Fuck Up" open mic with a DJ set (a nice tease for the same-day social cut).',
   },
   {
     id: 'int-jade-shaw',
