@@ -286,7 +286,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
   { id: 'jul30-pringle', date: '2026-07-30', start: '10:00', end: '11:30', title: 'Rachel Pringle (Embodiment, 90 min)', type: 'embodiment', location: EMBODIMENT, speakers: ['rachel-pringle'] },
   { id: 'jul30-kwik-2', date: '2026-07-30', start: '11:00', end: '12:00', title: 'Jim Kwik — Accelerator (stage, part 2)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'] },
   { id: 'jul30-kwik-3', date: '2026-07-30', start: '14:00', end: '15:00', title: 'Jim Kwik (stage)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik'], notes: 'Per the MVU Overview sheet, the 2–3pm Main Stage slot is Jim Kwik solo. Corrected 14 Jul — the old "Maya 25min + Kristina? 25min" was wrong: Maya is in the Small Hall at this time (see jul30-maya-smallhall), and Kristina is not listed in this slot.' },
-  { id: 'jul30-maya-smallhall', date: '2026-07-30', start: '14:00', end: '15:00', title: 'Maya Raichoora — Small Hall talk (20 min)', type: 'stage-talk', location: COMMUNITY, speakers: ['maya-raichoora'], notes: 'From the MVU Overview sheet (Small Hall tab, per Gareth): the 2–3pm slot is Maya Raichoora 20 min + Maha Rouabhia 20 min (shared hour). Added to Maya\'s schedule 14 Jul.' },
+  { id: 'jul30-maya-smallhall', date: '2026-07-30', start: '14:00', end: '14:30', title: 'Maya Raichoora — Small Hall talk', type: 'stage-talk', location: COMMUNITY, speakers: ['maya-raichoora'], notes: 'From the MVU Overview sheet (Small Hall tab, per Gareth): the 2–3pm slot is Maya Raichoora + Maha Rouabhia (shared hour). End trimmed to 14:30 on 16 Jul to match the new Speaker Agenda Airtable (Maya 14:00–14:30).' },
   { id: 'jul30-kwik-fireside', date: '2026-07-30', start: '15:00', end: '16:00', title: 'Vishen + Jim Kwik Fireside', type: 'stage-talk', location: MAIN_STAGE, speakers: ['jim-kwik', 'vishen'], vishen: true, notes: 'Part of Jim\'s stage event on the 30th — separate from his Superbrain masterclass (the standalone studio session with Vishen on the 29th). Both feature Vishen but they are different deliverables.' },
   { id: 'jul30-vishen', date: '2026-07-30', start: '16:15', end: '17:00', title: 'Vishen (swappable)', type: 'stage-talk', location: MAIN_STAGE, speakers: ['vishen'], vishen: true, status: 'tentative' },
   { id: 'jul30-vishen-photo', date: '2026-07-30', start: '17:15', end: '17:35', title: 'Portraits — Vishen', type: 'portrait', crew: ['mardo'], speakers: ['vishen'], vishen: true, notes: 'Location TBD' },
@@ -354,10 +354,10 @@ export const CONFLICTS: Conflict[] = [
   },
   {
     id: 'c-wineland-27',
-    severity: 'medium',
-    title: 'Source conflict: agenda has Wineland on the 27 Jul panel, but Speaker DATES has him gone the 26th',
+    severity: 'low',
+    title: 'Confirm Wineland travel dates — two agendas say he performs 27 Jul, Speaker DATES still says gone the 26th',
     detail:
-      'SOURCES RE-CHECKED (14 Jul): NOT an app error — the app mirrors the agenda. The MVU Overview Google Sheet (Main Stage tab, cell D32) lists "Sheleana Aiyana & John Wineland" on Mon 27 Jul, 4:15–5:00pm. But the Speaker DATES Airtable has John Wineland arriving 20 Jul and departing 26 Jul. The two Mindvalley sources contradict each other: either his travel dates are stale (he\'s staying to the 27th) or the 27 Jul panel is wrong (he\'s flown; should be Sheleana-only or a different partner). Can\'t be resolved from the data — needs Mirell Sork (Speaker Coordinator) / events to confirm Wineland\'s actual departure and whether he\'s on the 27th panel. App keeps the panel as-is (faithful to the agenda) with an availability warning until confirmed.',
+      'UPDATED 16 Jul: the new Speaker Agenda Airtable (appAfQ2fXkHb5H9Cc) is now a SECOND source placing John Wineland on the 27 Jul 16:15 panel with Sheleana — matching the MVU Overview Google Sheet (cell D32). Two agendas now agree on the 27th, so the app treats it as confirmed: his window has been extended to 27 Jul and the false departure-day warning cleared. RESIDUAL (low): the Speaker DATES travel Airtable still lists departure 26 Jul. If his flight is genuinely booked for the 26th he cannot be on the 27th panel — so this needs a one-line confirm from Mirell Sork that his travel now runs to the 27th. Scheduling-wise nothing else depends on it (his interview is 26 Jul 09:00).',
   },
   {
     id: 'c-departure-day-shoots',

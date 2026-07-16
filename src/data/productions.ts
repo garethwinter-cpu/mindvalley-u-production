@@ -164,7 +164,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     end: '14:00',
     title: 'Vishen — Tribe Speaker storytelling training (run-and-gun capture)',
     type: 'production',
-    location: 'MVU venue — Tribe Speaker Training room (TBC)',
+    location: 'Black Box (Main Stage), Kultuurikatel',
     speakers: ['vishen'],
     vishen: true,
     crew: ['kuhan'],
