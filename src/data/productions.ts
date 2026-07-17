@@ -195,9 +195,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'assets-regan',
-    date: '2026-07-25',
-    start: '09:00',
-    end: '11:00',
+    date: '2026-07-23',
+    start: '11:30',
+    end: '12:00',
     title: 'Regan Hillyer — Masterclass Marketing Assets',
     type: 'production',
     location: STUDIO,
@@ -207,7 +207,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'MOVED to 25 Jul AM (14 Jul) to accommodate Regan: she replied she is NOT available Thursday 23 Jul afternoon (her masterclass stays Thursday morning). 24 Jul studio is full with Jeffrey Allen all day, so this lands on the 25th morning (studio free until Dan Brulé at 11:30); her only 25 Jul commitment is the accelerator that evening. Trade-off: separate glam from the masterclass. Regan also said "some of these times I\'m booked already" without specifics — her assistant Nhezel is putting everything in her calendar, so treat all Regan slots as pending Nhezel\'s confirmation. 8-item suite.',
+    notes: 'CONSOLIDATED into the masterclass session per Gareth (16 Jul): captured in the last 30 min of a 2h Regan block (masterclass 10:00–11:30, assets 11:30–12:00), while she is already lit, mic\'d and in makeup — no separate glam, and the standalone 25 Jul morning shoot is dropped, cutting her total studio time. Stays in the Thursday MORNING (ends noon), which respects her "not available Thu afternoon" note. SCOPE: 30 min fits a TRIMMED asset set (the priority 2–3 items), not the full 8-item suite — confirm which assets matter most. Pending Nhezel confirming Regan can stay to 12:00.',
   },
   {
     id: 'pod-chiara-marisa',
