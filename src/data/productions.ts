@@ -308,7 +308,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'pod-ja',
     date: '2026-07-25',
     start: '14:30',
-    end: '15:30',
+    end: '16:00',
     title: 'Scaling Wisdom Podcast: Jeffrey Allen & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -320,7 +320,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     status: 'confirmed',
     authorConfirmed: true,
-    notes: 'CONFIRMED BY AUTHOR (Jeffrey Allen, email 14 Jul).',
+    notes: 'CONFIRMED BY AUTHOR (Jeffrey Allen, email 14 Jul). Extended to 1h30 (14:30–16:00) per Gareth (16 Jul) for a fuller conversation — fits cleanly: studio, Vishen, Jeffrey and unit 1 all free until Regan\'s 17:00 accelerator, and it\'s a non-stage day for both. Jeffrey departs 26 Jul.',
   },
 
   // ---------- SUN 26 JUL ----------
