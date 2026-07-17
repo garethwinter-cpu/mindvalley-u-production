@@ -203,6 +203,7 @@ body {
 .mv-badge.type-podcast { background: var(--blue-light); color: var(--blue-content); }
 .mv-badge.type-social { background: var(--green-light); color: var(--green-content); }
 .mv-badge.type-logistics { background: var(--bg-subtle); color: var(--text-muted); }
+.mv-badge.type-makeup { background: var(--pink-light); color: var(--pink); }
 .mv-badge.type-embodiment,
 .mv-badge.type-community,
 .mv-badge.type-experience { background: var(--bg-subtle); color: var(--text-muted); }

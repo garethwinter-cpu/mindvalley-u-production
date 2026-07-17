@@ -1,5 +1,6 @@
 import type { ActionItem, BacklogItem, Conflict, DayMeta, ScheduleEvent } from './types'
 import { PRODUCTION_EVENTS } from './productions'
+import { buildMakeupEvents } from './makeup'
 
 export const MAIN_STAGE = 'Main Stage (Black Box)'
 export const COMMUNITY = 'Community Stage (Small Hall)'
@@ -335,7 +336,11 @@ const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
   notes: 'Roving social team = Jason + Kuhan (ad-hoc, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.',
 }))
 
-export const EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]
+const BASE_EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]
+
+// Makeup & wardrobe buffers are derived from the studio shoots (see makeup.ts),
+// so they stay in sync automatically as shoots move.
+export const EVENTS: ScheduleEvent[] = [...BASE_EVENTS, ...buildMakeupEvents(BASE_EVENTS)]
 
 export const CONFLICTS: Conflict[] = [
   {

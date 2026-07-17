@@ -14,6 +14,7 @@ export const TYPE_LABEL: Record<EventType, string> = {
   social: 'Parties',
   'social-media': 'Social media (daily)',
   logistics: 'Logistics',
+  makeup: 'Makeup & wardrobe',
 }
 
 /** Signposting icon per type — used on scheduler blocks and anywhere a quick
@@ -30,6 +31,7 @@ export const TYPE_ICON: Record<EventType, string> = {
   social: '🎉',
   'social-media': '📱',
   logistics: '🚚',
+  makeup: '💄',
 }
 
 export const STATUS_LABEL: Record<EventStatus, string> = {

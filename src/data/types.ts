@@ -33,6 +33,7 @@ export type EventType =
   | 'social'
   | 'social-media'
   | 'logistics'
+  | 'makeup'
 
 export type EventStatus = 'confirmed' | 'tentative' | 'placeholder' | 'conflict' | 'done'
 
