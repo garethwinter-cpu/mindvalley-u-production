@@ -21,8 +21,11 @@ import { person } from './people'
  * as shoots move.
  */
 
-// On-camera guest talent who are women — 60-min buffer. Everyone else in a
-// studio shoot gets 30. (Hosts are handled separately, see HOSTS.)
+// On-camera talent who are women — 60-min buffer. Everyone else in a studio
+// shoot gets 30. Kaitlin is our interview host but she's on camera and needs her
+// own hair/makeup (per Gareth, 16 Jul), so she's treated as talent here — the
+// "already camera-ready" check below skips it when she runs back-to-back
+// interviews, so she isn't re-made-up needlessly.
 const FEMALE_TALENT = new Set([
   'regan-hillyer',
   'marisa-peer',
@@ -34,10 +37,12 @@ const FEMALE_TALENT = new Set([
   'rachel-pringle',
   'sheleana-aiyana',
   'chiara-king',
+  'kaitlin',
 ])
 
 // Made up once in a morning call, not per shoot — so they don't drive a buffer.
-const HOSTS = new Set(['gareth', 'kaitlin', 'vishen', 'eni'])
+// (Kaitlin was here but is now treated as talent — she's on camera interviewing.)
+const HOSTS = new Set(['gareth', 'vishen', 'eni'])
 
 // Types that mean a person is already in hair/makeup (so a following studio
 // shoot needs a touch-up, not a fresh buffer).
