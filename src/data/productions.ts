@@ -267,7 +267,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     gareth: true,
     status: 'tentative',
-    notes: 'CONSOLIDATED into the masterclass session per Gareth (16 Jul): captured in the last 30 min of a 2h Jeffrey block (masterclass 10:00–11:30, assets 11:30–12:00) while he is still lit, mic\'d and in makeup, dropping the separate 14:00–16:00 shoot. SCOPE FLAG: Jeffrey CONFIRMED the full 8-item suite (email 14 Jul — Tips on the Move, Straight Up Invite, Story Ad, Technique Demo, Hooks/CTAs, Email PLC, 2× retargeting), which needs ~2h; 30 min only fits ~2–3 hero items. So either grab the top 2–3 here and defer the rest (re-confirm with Jeffrey, since he approved the fuller set), or keep a separate top-up block. authorConfirmed cleared pending that call.',
+    notes: 'CONSOLIDATED into the masterclass session per Gareth (16 Jul, Option A): last 30 min of a 2h Jeffrey block (masterclass 10:00–11:30, assets 11:30–12:00) while he\'s still lit, mic\'d and in makeup; the separate 14:00–16:00 shoot is dropped. SCOPE: capture the THREE hero items live — Straight Up Invite, Story Ad, Technique Demo (the biggest enrolment drivers). The other 5 from Jeffrey\'s confirmed 8-item suite (Tips on the Move, Hooks/CTAs, Email PLC, 2× retargeting) are deferred. Jeffrey to be given a heads-up (he approved the fuller set); stays tentative until he\'s acknowledged.',
   },
 
   // ---------- SAT 25 JUL ----------
