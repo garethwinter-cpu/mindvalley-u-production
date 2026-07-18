@@ -336,7 +336,27 @@ const SOCIAL_MEDIA_EVENTS: ScheduleEvent[] = DAYS.filter(
   notes: 'Roving social team = Jason + Kuhan (ad-hoc, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.',
 }))
 
-const BASE_EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS]
+// Kaitlin O'Toole's Black Box main-stage HOSTING duties, from the Speaker Agenda
+// Airtable (Host field), added 16 Jul so the app protects her time — she can't be
+// pulled into a studio interview while she's MC'ing the stage. Consolidated into
+// contiguous runs per day. The 24 Jul Mindvalley Awards she hosts is already in
+// the schedule (jul24-awards), so it's not duplicated here.
+const KAITLIN_HOSTING: ScheduleEvent[] = [
+  { id: 'host-kaitlin-jul20-am', date: '2026-07-20', start: '11:00', end: '12:15', title: 'Main stage hosting — Kaitlin (soundcheck)', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'SADU sound check / stage prep. From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul20-pm', date: '2026-07-20', start: '13:15', end: '17:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for the Vishen opening + afternoon stage block. From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul22-am', date: '2026-07-22', start: '10:00', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Jeffrey Allen (AM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul22-pm', date: '2026-07-22', start: '14:00', end: '17:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Jeffrey Allen + Regan (PM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul23-am', date: '2026-07-23', start: '09:40', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Lee Holden / Simon Ong / Cynthia Thurlow (AM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul23-pm', date: '2026-07-23', start: '14:00', end: '17:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Dan Brulé / Scott Lyon (PM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul27-am', date: '2026-07-27', start: '10:00', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Shi Heng Yi (AM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul27-pm', date: '2026-07-27', start: '14:00', end: '17:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Shi+Vishen / Hal / Sheleana+Wineland (PM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul28-am', date: '2026-07-28', start: '10:00', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Zen Takai / Dawn Hoang (AM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul28-pm', date: '2026-07-28', start: '14:00', end: '17:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Sheleana / Jolene / Jamie Sea (PM). From the Speaker Agenda (Host = Kaitlin).' },
+  { id: 'host-kaitlin-jul30', date: '2026-07-30', start: '09:40', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Lee Holden intro + Jim Kwik (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The McKenna interview was moved to 12:15 to clear this.' },
+  { id: 'host-kaitlin-jul31', date: '2026-07-31', start: '10:00', end: '12:00', title: 'Main stage hosting — Kaitlin', type: 'hosting', location: MAIN_STAGE, speakers: ['kaitlin'], notes: 'MC for Rola Diab + Vishen (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The Lee Holden interview was moved to 13:00 to clear this.' },
+]
+
+const BASE_EVENTS: ScheduleEvent[] = [...EVENT_ITEMS, ...SOCIAL_MEDIA_EVENTS, ...PRODUCTION_EVENTS, ...KAITLIN_HOSTING]
 
 // Makeup & wardrobe buffers are derived from the studio shoots (see makeup.ts),
 // so they stay in sync automatically as shoots move.

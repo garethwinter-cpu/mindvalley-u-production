@@ -46,7 +46,7 @@ const HOSTS = new Set(['gareth', 'vishen', 'eni'])
 
 // Types that mean a person is already in hair/makeup (so a following studio
 // shoot needs a touch-up, not a fresh buffer).
-const ON_CAMERA: ReadonlySet<string> = new Set(['production', 'podcast', 'portrait', 'stage-talk'])
+const ON_CAMERA: ReadonlySet<string> = new Set(['production', 'podcast', 'portrait', 'stage-talk', 'hosting'])
 
 const isStudioShoot = (e: ScheduleEvent) =>
   !!e.start && (e.id.startsWith('mc-') || e.id.startsWith('int-') || e.type === 'podcast')

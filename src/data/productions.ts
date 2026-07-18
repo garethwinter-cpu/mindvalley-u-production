@@ -595,8 +595,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-mckenna',
     date: '2026-07-30',
-    start: '12:00',
-    end: '12:45',
+    start: '12:15',
+    end: '13:00',
     title: 'Author Interview: Kaitlin & Paul McKenna',
     type: 'production',
     location: STUDIO,
@@ -607,7 +607,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 10,
     status: 'confirmed',
     authorConfirmed: true,
-    notes: 'CONFIRMED BY AUTHOR (Paul McKenna, email 14 Jul).',
+    notes: 'CONFIRMED BY AUTHOR (Paul McKenna, email 14 Jul). NUDGED 12:00→12:15 (16 Jul): Kaitlin is MC\'ing the main stage until 12:00 (Jim Kwik session), so she can\'t start at 12:00. Now straight after she comes off stage — she\'s already in hair/makeup from hosting (no separate glam), just Paul gets a touch-up. Keeps Kaitlin as interviewer per Gareth.',
   },
   {
     id: 'int-nick',
@@ -752,8 +752,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-lee-holden',
     date: '2026-07-31',
-    start: '10:00',
-    end: '10:45',
+    start: '13:00',
+    end: '13:45',
     title: 'Author Interview: Kaitlin & Lee Holden',
     type: 'production',
     location: 'Studio — Unit 2',
@@ -762,7 +762,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'nadir',
     priority: 6,
     status: 'tentative',
-    notes: 'UNIT 2 (Nadir), parallel to Marisa\'s masterclass on unit 1. Kaitlin hosts; director set to Nadir 14 Jul (Gareth is on the masterclass). CONFIRM unit-2 space on 31 Jul.',
+    notes: 'MOVED 10:00→13:00 (16 Jul): Kaitlin is MC\'ing the main stage 10:00–12:00, so she couldn\'t do a 10am interview. 13:00 works for everyone — Kaitlin is off stage after 12:00, and Lee finishes his 11:00–13:00 assets right before, so he stays camera-ready and rolls straight in. Unit 2 (Nadir) is free by then (assets wrap 13:00). Kept with Kaitlin per Gareth (his fallback was to take Lee himself, not needed).',
   },
   {
     id: 'assets-lee-holden',
