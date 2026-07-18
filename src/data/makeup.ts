@@ -56,6 +56,11 @@ const fromMin = (m: number) =>
   `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`
 const bufferFor = (id: string) => (FEMALE_TALENT.has(id) ? 60 : 30)
 
+// Coming off a main-stage HOSTING block, the host is fully done up and stays
+// camera-ready for a good while (per Gareth) — so a following interview needs a
+// touch-up, not a fresh call, even with a modest gap. Grace window in minutes.
+const STILL_CAMERA_READY_AFTER_HOSTING = 150
+
 /**
  * Derive the makeup/wardrobe blocks from the base schedule. Returns one block
  * per studio shoot that has at least one "cold" guest (not already camera-ready).
@@ -66,8 +71,9 @@ export function buildMakeupEvents(base: ScheduleEvent[]): ScheduleEvent[] {
     const call = toMin(shoot.start!)
     const guests = (shoot.speakers ?? []).filter((p) => !HOSTS.has(p))
 
-    // A guest is "cold" unless they finished an on-camera slot within their own
-    // buffer window before this call time (then they're already made up).
+    // A guest is "cold" unless they finished an on-camera slot shortly before this
+    // call time (then they're already made up). The grace window is their buffer,
+    // except off a hosting block it's longer — a host fresh off stage is camera-ready.
     const cold = guests.filter((g) => {
       const buf = bufferFor(g)
       const alreadyMadeUp = base.some(
@@ -78,7 +84,7 @@ export function buildMakeupEvents(base: ScheduleEvent[]): ScheduleEvent[] {
           ON_CAMERA.has(o.type) &&
           (o.speakers ?? []).includes(g) &&
           toMin(o.end) <= call &&
-          call - toMin(o.end) < buf,
+          call - toMin(o.end) < (o.type === 'hosting' ? STILL_CAMERA_READY_AFTER_HOSTING : buf),
       )
       return !alreadyMadeUp
     })
