@@ -102,7 +102,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     speakers: ['vishen'],
     vishen: true,
     status: 'tentative',
-    notes: 'Time corrected to 13:15–14:45 on 16 Jul to match the new Speaker Agenda Airtable (was 11:00–13:30). Daniel Priestley attends this opening; his interview sits earlier at 12:00–12:30.',
+    notes: 'Time corrected to 13:15–14:45 on 16 Jul to match the new Speaker Agenda Airtable (was 11:00–13:30).',
   },
   { id: 'jul20-community', date: '2026-07-20', start: '15:00', end: '16:00', title: 'Community Connections with Eric Edmeades', type: 'community', location: MAIN_STAGE, speakers: ['eric-edmeades'], notes: 'Author now attributed per 13 Jul sheet check (was unattributed).' },
   {

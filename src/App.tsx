@@ -60,11 +60,13 @@ function tallinnTime(d: Date): string {
 }
 
 // Regan's 16 Jul webinar is remote and the Priestley accelerator (18-19 Jul) is
-// remote too — the first commitment requiring Gareth's team on the ground is now
-// the Daniel Priestley interview, 20 Jul (Dawn Hoang's 18 Jul studio interview was removed).
+// remote too. The team's first day on the ground is 20 Jul — the roaming unit
+// captures Vishen's opening ceremony (13:15); the first studio shoot is 21 Jul.
+// (Daniel Priestley's 20 Jul studio interview was removed 16 Jul — he's filming
+// heavily at the event that day and won't have time for it.)
 function daysToKickoff(): string {
   const now = new Date()
-  const kickoff = new Date('2026-07-20T12:00:00+03:00')
+  const kickoff = new Date('2026-07-20T13:15:00+03:00')
   const wrap = new Date('2026-08-02T23:59:00+03:00')
   if (now > wrap) return 'Wrapped'
   if (now >= kickoff) return 'In production'
