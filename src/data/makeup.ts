@@ -101,6 +101,9 @@ export function buildMakeupEvents(base: ScheduleEvent[]): ScheduleEvent[] {
       type: 'makeup',
       location: 'Makeup / Green Room',
       speakers: cold,
+      // Attach the makeup artist so all these blocks roll up into the "Makeup"
+      // person page — a shareable call sheet of every time the MUA is needed.
+      crew: ['makeup'],
       notes: `${buf}-min pre-shoot buffer (${
         buf === 60 ? 'includes a female author — up to 1h' : 'men — 30 min'
       }) so talent is camera-ready for ${shoot.title} at ${shoot.start}. Hair, makeup & wardrobe.`,

@@ -22,8 +22,9 @@ const SECTIONS: Section[] = [
   {
     label: 'Mindvalley Team',
     groups: [
-      { label: 'Production', roles: ['exec', 'crew'], excludeIds: ['kaitlin'] },
+      { label: 'Production', roles: ['exec', 'crew'], excludeIds: ['kaitlin', 'makeup'] },
       { label: 'Host', ids: ['kaitlin'] },
+      { label: 'Makeup', ids: ['makeup'] },
       { label: 'Photography', roles: ['photographer'] },
       { label: 'Author relations', roles: ['author-relations'] },
       { label: 'Partners', roles: ['partner'] },
