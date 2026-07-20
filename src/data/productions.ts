@@ -126,6 +126,25 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
       'Vishen request (WhatsApp, 16 Jul): "Tues 1:15pm to 2pm I need someone with me at MVU as I\'m doing live training with Tribe Speakers on storytelling. I want this filmed. One cam, Hormozi style interacting w students. Can be filmed w one human, iPhone and two lapel mics." ROAMING-UNIT job, not a studio shoot: Kuhan is primary shooter (Jason backup) with a light kit (iPhone + 2 lapel mics) — no draw on the studio unit or the studio room. Sits cleanly between the 11:00 Kaitlin/John Lee interview and the 16:30 John Lee podcast; Kuhan is otherwise roaming until the 19:30 Sazerac, so pulling him for 45 min is the low-cost option. Kit + one-cam spec logged in the Shoots Airtable "Capture Brief / Kit" field so it does not get lost among the studio slate.',
   },
 
+  {
+    id: 'int-daniel-combined',
+    date: '2026-07-21',
+    start: '12:30',
+    end: '13:45',
+    title: 'Daniel Priestley — combined block: Gareth interview + Eric’s-daughter podcast',
+    type: 'production',
+    location: STUDIO,
+    speakers: ['daniel-priestley', 'gareth'],
+    gareth: true,
+    crew: FULL,
+    director: 'gareth',
+    cameraOps: CAMERA_CREW,
+    priority: 3,
+    status: 'tentative',
+    notes:
+      'COMBINED per Gareth (16 Jul): one ~75-min premium-studio block straight off Daniel’s 12:10–12:30 portrait, so he arrives already in hair/makeup (no separate glam). Two deliverables in ~1h of his time: (1) Eric Edmeades’s daughter interviews Daniel for her podcast (~35–40 min — a favour; Daniel and Eric are close friends), then (2) Gareth’s own short segment with Daniel (~15–20 min). Pulled EARLY (off the portrait) rather than the 3pm slot because 3pm is his departure edge. Replaces the standalone Woodblock favour shoot AND supersedes the events team’s 3pm "Author Interview: Gareth & Daniel Priestley" filming slot on their Speaker Agenda (15:00–15:20, record recznJLe2Kzvnnts8) — that 3pm entry should be dropped. Studio + Gareth + both units free; verified clean.',
+  },
+
   // ---------- THU 23 JUL ----------
   {
     id: 'mc-regan-aom',
