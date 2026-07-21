@@ -61,7 +61,7 @@ export const PEOPLE: Person[] = [
   { id: 'john-wineland', name: 'John Wineland', role: 'speaker', window: { from: '2026-07-20', to: '2026-07-27' } },
   { id: 'kristina', name: 'Kristina Mand-Lakhiani', role: 'speaker', window: { from: '2026-07-20', to: '2026-08-02' } },
   { id: 'lee-holden', name: 'Lee Holden', role: 'speaker', window: { from: '2026-07-22', to: '2026-08-02' } },
-  { id: 'lorin-krenn', name: 'Lorin Krenn', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-29' } },
+  { id: 'lorin-krenn', name: 'Lorin Krenn', role: 'speaker', window: { from: '2026-07-22', to: '2026-07-28' } },
   { id: 'marisa-peer', name: 'Marisa Peer', role: 'speaker', window: { from: '2026-07-21', to: '2026-08-02' } },
   { id: 'maya-raichoora', name: 'Maya Raichoora', role: 'speaker', window: { from: '2026-07-27', to: '2026-08-01' } },
   { id: 'natalie-ellis', name: 'Natalie Ellis', role: 'speaker', window: { from: '2026-07-19', to: '2026-07-24' } },
