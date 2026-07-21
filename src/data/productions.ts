@@ -132,12 +132,12 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   // Woodblock (Studio 2) with the roaming social team (Kuhan primary, Jason backup) — NO draw
   // on the Energiakeskus studio or the studio unit. Each is anchored right after that author's
   // existing on-site slot so they're already camera-ready (worked backwards from author time).
-  // ~30-min quick captures, easy to trim. All tentative — movable per author.
+  // 20-min quick captures per Gareth (21 Jul). All tentative — movable per author.
   {
     id: 'tom-dan',
     date: '2026-07-22',
     start: '11:30',
-    end: '12:00',
+    end: '11:50',
     title: 'Tom Kirby funny interview — Dan Brulé on breathwork',
     type: 'social-media',
     location: 'Woodblock (Studio 2)',
@@ -151,7 +151,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'tom-regan',
     date: '2026-07-23',
     start: '12:15',
-    end: '12:45',
+    end: '12:35',
     title: 'Tom Kirby funny interview — Regan Hillyer on manifesting',
     type: 'social-media',
     location: 'Woodblock (Studio 2)',
@@ -165,7 +165,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'tom-jade',
     date: '2026-07-23',
     start: '15:45',
-    end: '16:15',
+    end: '16:05',
     title: 'Tom Kirby funny interview — Jade Shaw on astral projection & OOB',
     type: 'social-media',
     location: 'Woodblock (Studio 2)',
@@ -179,7 +179,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'tom-vishen',
     date: '2026-07-27',
     start: '15:15',
-    end: '15:45',
+    end: '15:35',
     title: 'Tom Kirby funny interview — Vishen on bending reality',
     type: 'social-media',
     location: 'Woodblock (Studio 2)',
@@ -194,7 +194,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'tom-dawn',
     date: '2026-07-28',
     start: '12:30',
-    end: '13:00',
+    end: '12:50',
     title: 'Tom Kirby funny interview — Dawn Hoang on Kundalini',
     type: 'social-media',
     location: 'Woodblock (Studio 2)',
