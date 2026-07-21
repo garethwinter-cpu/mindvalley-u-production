@@ -269,8 +269,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     speakers: ['chiara-king', 'marisa-peer'],
     gareth: true,
     crew: UNIT1,
-    status: 'tentative',
-    notes: 'Chiara’s own podcast, we facilitate (FX3 + Rode). Chiara (20–25) and Marisa both in town; both free this afternoon (no stage). PULLED from 16:30 to 13:00 (16 Jul optimisation) after the Regan masterclass shortened to 2h — closes the long idle studio gap and ends the 23 Jul studio day at 16:00 instead of 19:30. Confirmed in Airtable.',
+    status: 'confirmed',
+    notes: 'LOCKED (Gareth, 21 Jul). Chiara’s own podcast, we facilitate (FX3 + Rode). Chiara (20–25) and Marisa both in town; both free this afternoon (no stage). Thu 23 Jul 13:00–14:30, right after Regan’s assets and before Chiara’s Lorin episode (14:30). PULLED from 16:30 to 13:00 (16 Jul) after the Regan masterclass shortened to 2h.',
   },
   {
     id: 'pod-chiara-lorin',
