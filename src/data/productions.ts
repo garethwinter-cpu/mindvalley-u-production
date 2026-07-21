@@ -480,13 +480,13 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-27',
     start: '14:00',
     end: '15:30',
-    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 2, PENCILLED)',
+    title: 'Marisa Peer podcast (YMYR) — guest Sabrina Stocker',
     type: 'podcast',
     location: STUDIO,
     speakers: ['marisa-peer'],
     crew: UNIT1,
-    status: 'tentative',
-    notes: 'EXTENDED to 90 min (14:00–15:30) per Marisa\'s team (21 Jul) — she felt 1h was too short for the 2pm episode. Maya Raichoora\'s interview nudged 15:15→15:45 to give the studio a reset after this. Kept the 2pm start they referenced. Guest/topic still TBC with Elise/Nicola. See Episode 1 (pod-marisa-own-1) for the full brief.',
+    status: 'confirmed',
+    notes: 'GUEST CONFIRMED: Sabrina Stocker (Marisa\'s team, 21 Jul). 90 min (14:00–15:30) — extended from 1h at Marisa\'s request. Maya Raichoora\'s interview nudged 15:15→15:45 for a studio reset after this. Kept the 2pm start they referenced. Sabrina is an external YMYR guest (not an MVU author), so she\'s named in the title rather than added to the speaker roster.',
   },
 
   // ---------- TUE 28 JUL ----------
