@@ -480,13 +480,13 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-27',
     start: '14:00',
     end: '15:30',
-    title: 'Marisa Peer podcast (YMYR) — guest Sabrina Stocker',
+    title: 'Marisa Peer podcast (YMYR) — 90-min slot, guest TBC',
     type: 'podcast',
     location: STUDIO,
     speakers: ['marisa-peer'],
     crew: UNIT1,
-    status: 'confirmed',
-    notes: 'GUEST CONFIRMED: Sabrina Stocker (Marisa\'s team, 21 Jul). 90 min (14:00–15:30) — extended from 1h at Marisa\'s request. Maya Raichoora\'s interview nudged 15:15→15:45 for a studio reset after this. Kept the 2pm start they referenced. Sabrina is an external YMYR guest (not an MVU author), so she\'s named in the title rather than added to the speaker roster.',
+    status: 'tentative',
+    notes: 'HELD 90-min YMYR booking (14:00–15:30) — Marisa\'s team asked to extend this Monday 2pm slot from 1h to 90 min (21 Jul); guest still TBC (Sabrina Stocker is on Tue 28th, not here — corrected 21 Jul). Maya Raichoora\'s interview nudged 15:15→15:45 for a studio reset after this. Confirm guest with Elise/Nicola.',
   },
 
   // ---------- TUE 28 JUL ----------
@@ -564,14 +564,14 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-28',
     start: '13:00',
     end: '14:30',
-    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 3, PENCILLED)',
+    title: 'Marisa Peer podcast (YMYR) — guest Sabrina Stocker',
     type: 'podcast',
     location: STUDIO,
     speakers: ['marisa-peer'],
     crew: UNIT1,
-    status: 'placeholder',
+    status: 'confirmed',
     notes:
-      'PENCILLED placeholder (p-marisa-podcast-count, 13 Jul). PULLED from 18:45 to 13:00 (16 Jul optimisation) after the McKenna masterclass shortened to 2h — sits before Paul\'s 15:00 cert assets on unit 1 and ends Marisa\'s (and the studio\'s) day far earlier. See Episode 1 (pod-marisa-own-1) for the full brief.',
+      'GUEST CONFIRMED: Sabrina Stocker, Tue 28 Jul 13:00–14:30 (Matt, 21 Jul). Sits before Paul McKenna\'s 15:00 cert assets on unit 1. Sabrina is an external YMYR guest (not an MVU author), so named in the title rather than the speaker roster.',
   },
 
   // ---------- WED 29 JUL ----------
