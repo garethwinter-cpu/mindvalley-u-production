@@ -22,6 +22,7 @@ export const PEOPLE: Person[] = [
   { id: 'makeup', name: 'Makeup', role: 'crew', title: 'Hair, makeup & wardrobe — call sheet across all studio shoots' },
   { id: 'still-frame', name: 'Still Frame', role: 'partner', title: 'Estonian production co — stage record & broadcast' },
   { id: 'eni', name: 'Eni Selfo', role: 'author-relations', title: "Head of Content, Social Media & Accelerators — manages Kaitlin's hosting schedule; interviewing Sheleana Aiyana" },
+  { id: 'tom-kirby', name: 'Tom Kirby', role: 'exec', title: 'Mindvalley Head of Customer Experience' },
   {
     id: 'kaitlin',
     name: "Kaitlin O'Toole",
