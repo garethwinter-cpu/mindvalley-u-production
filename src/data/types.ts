@@ -137,6 +137,12 @@ export interface PodcastGuestBrief {
   id: string
   name: string
   oneLiner: string
+  /** The single spine of the episode — the perspective shift the whole conversation
+   *  serves. Rendered as a hero band so Vishen sees it first. */
+  oneBigIdea?: string
+  /** One line on why this guest earns a new-founder audience — the podcast's mission
+   *  (reach + value for founders) comes before any Mindvalley angle. */
+  founderValue?: string
   movementFrame: string
   hasLocalContent: boolean
   sources: string[]
@@ -147,6 +153,9 @@ export interface PodcastGuestBrief {
   clipMoments: string[]
   questions: GuestQuestions
   vishenNotes: string
+  /** Sensitive / verify-before-air flags, shown in a distinct warning box rather
+   *  than buried in the prose notes. */
+  watchOuts?: string[]
 }
 
 export interface BacklogItem {

@@ -36,49 +36,24 @@ export default function PodcastGuestView({ id, onBack }: { id: string; onBack: (
           <h1 className="pg-name">{brief.name}</h1>
           <div className="pg-title">{profile?.title ?? p.title ?? ''}</div>
           <p className="pg-oneliner">{brief.oneLiner}</p>
-          <span className={`pg-src-badge${brief.hasLocalContent ? ' local' : ''}`}>
-            {brief.hasLocalContent ? '📚 Mined from Mindvalley Quest content' : '🔎 Deep web research'}
-          </span>
         </div>
       </div>
 
-      <div className="pg-movement">
-        <div className="pg-movement-label">The movement frame</div>
-        <p>{brief.movementFrame}</p>
+      {/* Mission strip — the podcast comes first: reach new founders, deliver value. */}
+      <div className="pg-mission">
+        <span className="pg-mission-tag">Why this episode</span>
+        <p>{brief.founderValue ?? 'Reach a new founder audience and give them something they can use. Audience growth and founder value come first — any Mindvalley angle is secondary.'}</p>
       </div>
 
-      <div className="pg-grid2">
-        <section className="pg-block">
-          <h2 className="pg-h2">Background</h2>
-          <p>{brief.background}</p>
-        </section>
-        <section className="pg-block">
-          <h2 className="pg-h2">Origin story</h2>
-          <p>{brief.originStory}</p>
-        </section>
-      </div>
+      {brief.oneBigIdea && (
+        <div className="pg-bigidea">
+          <div className="pg-bigidea-tag">★ The one big idea — build the whole episode on this</div>
+          <p>{brief.oneBigIdea}</p>
+        </div>
+      )}
 
-      <section className="pg-framework">
-        <div className="pg-framework-tag">Their framework</div>
-        <h2 className="pg-framework-name">{brief.framework.name}</h2>
-        <p>{brief.framework.summary}</p>
-      </section>
-
-      <section className="pg-block pg-paperwall">
-        <h2 className="pg-h2">🧱 The paper wall they tear down</h2>
-        <p>{brief.paperWall}</p>
-      </section>
-
-      <section className="pg-block">
-        <h2 className="pg-h2">✂️ Clip-worthy moments</h2>
-        <ul className="pg-clips">
-          {brief.clipMoments.map((c, i) => (
-            <li key={i}>{c}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="pg-block">
+      {/* The centrepiece: the question set Vishen runs live. */}
+      <section className="pg-block pg-interview">
         <h2 className="pg-h2">🎙️ The interview — question set</h2>
         <div className="pg-acts">
           {ACTS.map((act) => (
@@ -97,6 +72,55 @@ export default function PodcastGuestView({ id, onBack }: { id: string; onBack: (
         </div>
       </section>
 
+      <section className="pg-block">
+        <h2 className="pg-h2">✂️ Clip-worthy moments — what to land</h2>
+        <ul className="pg-clips">
+          {brief.clipMoments.map((c, i) => (
+            <li key={i}>{c}</li>
+          ))}
+        </ul>
+      </section>
+
+      {brief.watchOuts && brief.watchOuts.length > 0 && (
+        <section className="pg-watchouts">
+          <div className="pg-watchouts-label">⚠️ Watch-outs — verify / handle with care before air</div>
+          <ul>
+            {brief.watchOuts.map((w, i) => (
+              <li key={i}>{w}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <div className="pg-ref-head">Reference — read before the record</div>
+
+      <section className="pg-framework">
+        <div className="pg-framework-tag">Their framework</div>
+        <h2 className="pg-framework-name">{brief.framework.name}</h2>
+        <p>{brief.framework.summary}</p>
+      </section>
+
+      <section className="pg-block pg-paperwall">
+        <h2 className="pg-h2">🧱 The paper wall they tear down</h2>
+        <p>{brief.paperWall}</p>
+      </section>
+
+      <div className="pg-movement">
+        <div className="pg-movement-label">The movement frame</div>
+        <p>{brief.movementFrame}</p>
+      </div>
+
+      <div className="pg-grid2">
+        <section className="pg-block">
+          <h2 className="pg-h2">Background</h2>
+          <p>{brief.background}</p>
+        </section>
+        <section className="pg-block">
+          <h2 className="pg-h2">Origin story</h2>
+          <p>{brief.originStory}</p>
+        </section>
+      </div>
+
       <section className="pg-notes">
         <h2 className="pg-h2">📝 Notes for Vishen</h2>
         <p>{brief.vishenNotes}</p>
@@ -104,7 +128,7 @@ export default function PodcastGuestView({ id, onBack }: { id: string; onBack: (
 
       {brief.sources.length > 0 && (
         <section className="pg-sources">
-          <div className="pg-sources-label">Sources</div>
+          <div className="pg-sources-label">Sources {brief.hasLocalContent ? '· grounded in his own teaching' : '· deep research'}</div>
           <ul>
             {brief.sources.map((s, i) => (
               <li key={i}>
