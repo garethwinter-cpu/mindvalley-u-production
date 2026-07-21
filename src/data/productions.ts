@@ -350,8 +350,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-shy',
     date: '2026-07-26',
-    start: '15:30',
-    end: '16:15',
+    start: '15:45',
+    end: '16:30',
     title: 'Author Interview: Kaitlin & Shi Heng Yi',
     type: 'production',
     location: STUDIO,
@@ -361,7 +361,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
-    notes: 'Arrival day — keep light. 28 Jul is also open now (NO INTERVIEWS confirmed to mean stage/press only, 13 Jul) if this needs to move.',
+    notes: 'Arrival day — keep light. NUDGED 15:30→15:45 (16 Jul) to leave a studio reset after the Lorin×Vishen podcast, which extended to 90 min (ends 15:30). 28 Jul is also open if this needs to move.',
   },
 
   // ---------- MON 27 JUL ----------
@@ -519,7 +519,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'pod-lorin',
     date: '2026-07-26',
     start: '14:00',
-    end: '14:45',
+    end: '15:30',
     title: 'Scaling Wisdom Podcast: Lorin Krenn & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -530,7 +530,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'MOVED off 29 Jul (16 Jul): Lorin told Gareth he flies 6am on Wed 29, so the 29th is unusable — the old 15:00 slot was impossible. Re-homed to Sun 26 Jul 14:00, a Vishen NON-stage day: Vishen is free after his 10:00–12:00 Talking Heads, Lorin is otherwise free, and the studio opens at 14:00 as Kaitlin\'s Marisa interview wraps (before the 15:30 Shi interview). Comfortably clear of Lorin\'s departure. Lorin makeup 13:30–14:00 (green room). Verified clean.',
+    notes: 'MOVED off 29 Jul (16 Jul): Lorin flies 6am Wed 29, so the 29th is unusable — the old 15:00 slot was impossible. Re-homed to Sun 26 Jul, a Vishen NON-stage day. Extended to a full 90 min (14:00–15:30) per Gareth\'s podcast standard. Vishen free after his 10:00–12:00 Talking Heads, Lorin otherwise free; studio opens at 14:00 as Kaitlin\'s Marisa interview wraps. The Shi interview was nudged to 15:45 to give a studio reset after this. Lorin makeup 13:30–14:00 (green room). Verified clean.',
   },
   {
     id: 'int-zen-takai',
