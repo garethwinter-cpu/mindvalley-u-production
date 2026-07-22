@@ -6,7 +6,7 @@ import ShootsView from './views/ShootsView'
 import AlertsView from './views/AlertsView'
 import PodcastBriefingsView from './views/PodcastBriefingsView'
 import SocialView from './views/SocialView'
-import { ACTIONS, CONFLICTS } from './data/schedule'
+import { ACTIONS, CONFLICTS, DAYS, todayISO } from './data/schedule'
 import { PODCAST_BRIEFINGS } from './data/podcastBriefings'
 import { SOCIAL_CONTENT } from './data/social'
 import { ProfileProvider } from './profile'
@@ -76,7 +76,12 @@ function daysToKickoff(): string {
 
 export default function App() {
   const [tab, setTabState] = useState<Tab>(tabFromHash)
-  const [day, setDay] = useState('2026-07-17')
+  // Default the day view to today (Tallinn) — or the next upcoming day, falling back
+  // to the last day once the event has wrapped.
+  const [day, setDay] = useState(() => {
+    const t = todayISO()
+    return DAYS.find((d) => d.date >= t)?.date ?? DAYS[DAYS.length - 1].date
+  })
   const [now, setNow] = useState(() => new Date())
 
   useEffect(() => {

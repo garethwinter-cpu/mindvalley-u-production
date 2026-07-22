@@ -368,6 +368,33 @@ body {
   border-color: var(--brand);
   color: var(--white);
 }
+/* Expired days: pushed to the end of the strip and dimmed as done. */
+.day-nav button.done {
+  background: var(--bg-subtle, #f4f4f5);
+  border-color: var(--border, #e4e4e7);
+  border-style: dashed;
+  color: var(--text-muted, #9ca3af);
+  opacity: 0.7;
+}
+.day-nav button.done:hover {
+  opacity: 1;
+  color: var(--text-muted, #9ca3af);
+  border-color: var(--border-strong);
+}
+.day-nav button.done.active {
+  background: var(--text-muted, #9ca3af);
+  border-color: var(--text-muted, #9ca3af);
+  border-style: solid;
+  color: var(--white);
+  opacity: 1;
+}
+.day-nav .day-tick {
+  color: var(--positive, #16a34a);
+  font-weight: 700;
+}
+.day-nav button.done.active .day-tick {
+  color: var(--white);
+}
 
 .evt-list {
   display: flex;

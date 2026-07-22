@@ -8,6 +8,17 @@ export const EMBODIMENT = 'Embodiment Stage (Cauldron Hall)'
 export const EXPERIENCE = 'Experience Stage (Stalker Hall)'
 export const VENUE = 'Kultuurikatel, Tallinn'
 
+/** Today's date in Tallinn as YYYY-MM-DD — used to order the day nav (upcoming first,
+ *  expired days pushed to the end and marked done) and to pick the default day. */
+export function todayISO(): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Tallinn',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date())
+}
+
 export const DAYS: DayMeta[] = [
   { date: '2026-07-06', label: 'Mon 6 Jul', theme: 'Pre-sprint — remote', week: 0 },
   { date: '2026-07-16', label: 'Thu 16 Jul', theme: 'Pre-event', week: 0 },

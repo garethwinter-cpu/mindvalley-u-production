@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DAYS, EVENTS } from '../data/schedule'
+import { DAYS, EVENTS, todayISO } from '../data/schedule'
 import { ChipFilter, Legend, PriorityBadge, StatusBadge, TypeBadge, AuthorBadge, creativeCredits, fmtTime, involvesPerson, isPartyTagged, isSmallHall, matchesChipFilter, requiredPeople, sortKey } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
@@ -29,11 +29,22 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
       </p>
 
       <div className="day-nav">
-        {DAYS.map((d) => (
-          <button key={d.date} className={d.date === day.date ? 'active' : ''} onClick={() => onPick(d.date)}>
-            {d.label.replace(' Jul', '/7').replace(' Aug', '/8')}
-          </button>
-        ))}
+        {(() => {
+          const today = todayISO()
+          // Upcoming (today + future) first; expired days pushed to the end and marked done.
+          const upcoming = DAYS.filter((d) => d.date >= today)
+          const past = DAYS.filter((d) => d.date < today)
+          return [...upcoming, ...past].map((d) => {
+            const done = d.date < today
+            const cls = [d.date === day.date ? 'active' : '', done ? 'done' : ''].filter(Boolean).join(' ')
+            return (
+              <button key={d.date} className={cls} onClick={() => onPick(d.date)} title={done ? 'Done' : undefined}>
+                {done && <span className="day-tick" aria-hidden>✓ </span>}
+                {d.label.replace(' Jul', '/7').replace(' Aug', '/8')}
+              </button>
+            )
+          })
+        })()}
       </div>
 
       <div className="who-filter">
