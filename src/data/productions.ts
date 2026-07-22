@@ -86,8 +86,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
-    status: 'confirmed',
-    notes: 'MOVED off 22 Jul (14 Jul): John flies the morning of the 22nd, so his usable window is the 20th (lands 11am) and the 21st. This is the ONLY window all four are free: John after his 16:30 portrait, Vishen after his 15:35 portrait, studio + unit 1 after the Regan interview (16:15). Wraps by 6pm, before the 7:30 Sazerac. Audited against team + other speakers — clean.',
+    status: 'done',
+    notes: 'DONE (recorded 21 Jul). John flies the morning of the 22nd; the 21st was the only window all four were free — John after his 16:30 portrait, Vishen after his 15:35 portrait, studio + unit 1 after the Regan interview. Wrapped by 6pm before the 7:30 Sazerac.',
   },
   {
     id: 'int-john-lee',
