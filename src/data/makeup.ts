@@ -44,6 +44,10 @@ const FEMALE_TALENT = new Set([
 // (Kaitlin was here but is now treated as talent — she's on camera interviewing.)
 const HOSTS = new Set(['gareth', 'vishen', 'eni'])
 
+// Talent who do their own hair/makeup — never get an MUA buffer generated for them
+// (Chiara King does her own, per Gareth 21 Jul).
+const SELF_MAKEUP = new Set(['chiara-king'])
+
 // Types that mean a person is already in hair/makeup (so a following studio
 // shoot needs a touch-up, not a fresh buffer).
 const ON_CAMERA: ReadonlySet<string> = new Set(['production', 'podcast', 'portrait', 'stage-talk', 'hosting'])
@@ -87,7 +91,7 @@ export function buildMakeupEvents(base: ScheduleEvent[]): ScheduleEvent[] {
   const out: ScheduleEvent[] = []
   for (const shoot of base.filter(isStudioShoot)) {
     const call = toMin(shoot.start!)
-    const guests = (shoot.speakers ?? []).filter((p) => !HOSTS.has(p))
+    const guests = (shoot.speakers ?? []).filter((p) => !HOSTS.has(p) && !SELF_MAKEUP.has(p))
 
     // A guest is "cold" unless they finished an on-camera slot shortly before this
     // call time (then they're already made up). The grace window is their buffer,
