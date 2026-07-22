@@ -60,9 +60,9 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     location: 'Remote — Regan + Vishen deliver remotely',
     speakers: ['regan-hillyer', 'vishen'],
     vishen: true,
-    status: 'confirmed',
+    status: 'done',
     notes:
-      'CONFIRMED via promo (13 Jul) — moved from 17 to 16 Jul. Fully remote, self-produced — Gareth’s team NOT needed. Times: 9am LA / 12pm NY / 5pm London = 7pm Tallinn. Funnel webinar for the Wealth Code Accelerator (25–26 Jul).',
+      'DONE (delivered 16 Jul). Fully remote, self-produced — Gareth’s team NOT needed. Times: 9am LA / 12pm NY / 5pm London = 7pm Tallinn. Funnel webinar for the Wealth Code Accelerator (25–26 Jul).',
   },
   {
     id: 'priestley-accel-1',
