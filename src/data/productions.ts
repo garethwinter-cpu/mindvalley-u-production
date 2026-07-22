@@ -291,7 +291,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-23',
     start: '16:00',
     end: '17:00',
-    title: 'Chiara King podcast — guest Emelia (we facilitate)',
+    title: 'Chiara King podcast — guest Emilia Niglas (we facilitate)',
     type: 'podcast',
     location: STUDIO,
     speakers: ['chiara-king'],
@@ -301,7 +301,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: ['khairul'],
     priority: 6,
     status: 'tentative',
-    notes: 'ADDED per Gareth (21 Jul) — third Chiara episode, straight after her Lorin episode (wraps 16:00). 4:00–5:00pm in the Energiakeskus studio; studio + unit 1 free after Lorin. Chiara does her own makeup, and she\'s warm off the back-to-back session. This makes it three Chiara episodes in a row (Marisa 13:00, Lorin 14:30, Emelia 16:00). Guest is external — named in the title, not the speaker roster. GUEST SURNAME TBC (just "Emelia" so far).',
+    notes: 'ADDED per Gareth (21 Jul) — third Chiara episode, straight after her Lorin episode (wraps 16:00). 4:00–5:00pm in the Energiakeskus studio; studio + unit 1 free after Lorin. Chiara does her own makeup, and she\'s warm off the back-to-back session. This makes it three Chiara episodes in a row (Marisa 13:00, Lorin 14:30, Emilia 16:00). Guest Emilia Niglas is external — named in the title, not the speaker roster.',
   },
 
   // ---------- FRI 24 JUL ----------
