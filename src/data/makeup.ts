@@ -61,6 +61,24 @@ const bufferFor = (id: string) => (FEMALE_TALENT.has(id) ? 60 : 30)
 // touch-up, not a fresh call, even with a modest gap. Grace window in minutes.
 const STILL_CAMERA_READY_AFTER_HOSTING = 150
 
+// Per-shoot overrides for a makeup block's time/location — for talent who prep
+// off-site or in a specific room instead of the default green room. Keyed by the
+// SHOOT id (the makeup block is `makeup-<shootId>`).
+const MAKEUP_OVERRIDES: Record<
+  string,
+  { start?: string; end?: string; location?: string; note?: string }
+> = {
+  // Regan preps at her hotel and comes to the venue camera-ready (Gareth, 21 Jul).
+  'mc-regan-aom': {
+    start: '09:30',
+    end: '10:30',
+    location: 'Nuune Boutique Hotel',
+    note: 'At her hotel — Regan gets ready off-site, then travels to the studio for the 11:00 masterclass.',
+  },
+  // Chiara + Marisa glam in the Author Lounge / VIP Area (Gareth, 21 Jul).
+  'pod-chiara-marisa': { location: 'Author Lounge / VIP Area' },
+}
+
 /**
  * Derive the makeup/wardrobe blocks from the base schedule. Returns one block
  * per studio shoot that has at least one "cold" guest (not already camera-ready).
@@ -92,21 +110,23 @@ export function buildMakeupEvents(base: ScheduleEvent[]): ScheduleEvent[] {
 
     const buf = cold.some((g) => FEMALE_TALENT.has(g)) ? 60 : 30
     const names = cold.map((id) => person(id).name).join(', ')
+    const ov = MAKEUP_OVERRIDES[shoot.id] ?? {}
+    const baseNote = `${buf}-min pre-shoot buffer (${
+      buf === 60 ? 'includes a female author — up to 1h' : 'men — 30 min'
+    }) so talent is camera-ready for ${shoot.title} at ${shoot.start}. Hair, makeup & wardrobe.`
     out.push({
       id: `makeup-${shoot.id}`,
       date: shoot.date,
-      start: fromMin(call - buf),
-      end: shoot.start,
+      start: ov.start ?? fromMin(call - buf),
+      end: ov.end ?? shoot.start,
       title: `Makeup & wardrobe — ${names}`,
       type: 'makeup',
-      location: 'Makeup / Green Room',
+      location: ov.location ?? 'Makeup / Green Room',
       speakers: cold,
       // Attach the makeup artist so all these blocks roll up into the "Makeup"
       // person page — a shareable call sheet of every time the MUA is needed.
       crew: ['makeup'],
-      notes: `${buf}-min pre-shoot buffer (${
-        buf === 60 ? 'includes a female author — up to 1h' : 'men — 30 min'
-      }) so talent is camera-ready for ${shoot.title} at ${shoot.start}. Hair, makeup & wardrobe.`,
+      notes: ov.note ? `${baseNote} ${ov.note}` : baseNote,
     })
   }
   return out
