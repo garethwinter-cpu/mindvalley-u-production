@@ -82,6 +82,14 @@ const MAKEUP_OVERRIDES: Record<
   },
   // Chiara + Marisa glam in the Author Lounge / VIP Area (Gareth, 21 Jul).
   'pod-chiara-marisa': { location: 'Author Lounge / VIP Area' },
+  // Kristina + Marisa prep at their hotel for the Sat 10:00 podcast — the weekend
+  // studio (and green room) aren't accessible before 10am, so they come in ready.
+  'pod-kristina-marisa': {
+    start: '08:00',
+    end: '09:00',
+    location: 'Nuune Boutique Hotel',
+    note: 'At the hotel — weekend green room/studio is locked until 10am, so Kristina + Marisa glam off-site 08:00–09:00 and travel in camera-ready for the 10:00 record.',
+  },
 }
 
 /**
