@@ -335,8 +335,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'mc-ja-duality',
     date: '2026-07-24',
-    start: '10:00',
-    end: '11:30',
+    start: '11:00',
+    end: '12:30',
     title: 'Jeffrey Allen — NEW Duality Masterclass (with Vishen)',
     type: 'production',
     location: STUDIO,
@@ -380,8 +380,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'assets-ja',
     date: '2026-07-24',
-    start: '11:30',
-    end: '12:00',
+    start: '12:30',
+    end: '13:00',
     title: 'Jeffrey Allen — Masterclass Marketing Assets (Duality + Manifesting collection)',
     type: 'production',
     location: STUDIO,
@@ -389,7 +389,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     gareth: true,
     status: 'tentative',
-    notes: 'CONSOLIDATED into the masterclass session per Gareth (16 Jul, Option A): last 30 min of a 2h Jeffrey block (masterclass 10:00–11:30, assets 11:30–12:00) while he\'s still lit, mic\'d and in makeup; the separate 14:00–16:00 shoot is dropped. SCOPE: capture the THREE hero items live — Straight Up Invite, Story Ad, Technique Demo (the biggest enrolment drivers). The other 5 from Jeffrey\'s confirmed 8-item suite (Tips on the Move, Hooks/CTAs, Email PLC, 2× retargeting) are deferred. Jeffrey to be given a heads-up (he approved the fuller set); stays tentative until he\'s acknowledged.',
+    notes: 'Captured in the 30 min right after the masterclass while Jeffrey\'s still lit, mic\'d and in makeup. MOVED to 12:30–13:00 (Gareth, 23 Jul) with the masterclass, which shifted to an 11:00 start. SCOPE: the THREE hero items live — Straight Up Invite, Story Ad, Technique Demo. Snappy guest-swap into Kaitlin\'s 13:00 studio shoot (same crew). Jeffrey approved the fuller set; stays tentative until acknowledged.',
   },
 
   // ---------- SAT 25 JUL ----------
