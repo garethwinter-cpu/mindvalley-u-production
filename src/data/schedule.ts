@@ -227,7 +227,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     location: MAIN_STAGE,
     speakers: ['regan-hillyer'],
     gareth: true,
-    crew: CREW_CORE,
+    crew: ['kuhan', 'jason'],
     director: 'gareth',
     status: 'tentative',
     notes:
@@ -257,7 +257,7 @@ const EVENT_ITEMS: ScheduleEvent[] = [
     location: MAIN_STAGE,
     speakers: ['regan-hillyer'],
     gareth: true,
-    crew: CREW_CORE,
+    crew: ['kuhan', 'jason'],
     director: 'gareth',
     status: 'tentative',
     notes:

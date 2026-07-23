@@ -147,20 +147,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Anchored right after Dan\'s 10:30 studio interview (wraps 11:15) — he\'s on-site and camera-ready. Woodblock + Kuhan (Jason backup); no clash with the parallel Wineland interview in Energiakeskus.',
   },
-  {
-    id: 'tom-regan',
-    date: '2026-07-24',
-    start: '16:00',
-    end: '16:20',
-    title: 'Tom Kirby funny interview — Regan Hillyer on manifesting',
-    type: 'social-media',
-    location: 'Woodblock (Studio 2)',
-    speakers: ['regan-hillyer', 'tom-kirby'],
-    crew: ['kuhan'],
-    cameraOps: ['kuhan'],
-    status: 'tentative',
-    notes: 'MOVED to Fri 24 (21 Jul) — Regan\'s masterclass postponed off Thu 23 to Sat, so she\'s no longer at the venue Thursday. Slots right after her 3–4pm Vishen script session, in the Woodblock with Kuhan (she\'s on-site + camera-ready). Her window closes 27 Jul.',
-  },
+  // Tom Kirby × Regan funny interview — KILLED (Gareth, 21 Jul). Airtable record marked Cancelled.
 
   // ---------- REGAN × VISHEN SEQUENCE (Gareth priority, 21 Jul): scripts Fri → shoot Sat → ads Sun ----------
   {
