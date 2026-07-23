@@ -976,6 +976,18 @@ body {
 .sch-day.has-overlap {
   border-color: var(--orange);
 }
+/* Expired days in a person's itinerary: dropped to the bottom and dimmed as done. */
+.sch-day-done {
+  opacity: 0.55;
+  border-style: dashed;
+}
+.sch-day-done:hover {
+  opacity: 1;
+}
+.sch-day-tick {
+  color: var(--positive, #16a34a);
+  font-weight: 700;
+}
 .sch-day-head {
   display: flex;
   align-items: baseline;

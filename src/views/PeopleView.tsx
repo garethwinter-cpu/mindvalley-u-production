@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
-import { DAYS, EVENTS } from '../data/schedule'
+import { DAYS, EVENTS, todayISO } from '../data/schedule'
 import { EDITORIAL_EVENTS } from '../data/editorial'
 import { StatusBadge, TypeBadge, TYPE_ICON, AuthorBadge, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
 import type { ScheduleEvent } from '../data/types'
@@ -95,7 +95,7 @@ function fmtDayShort(d: string) {
 }
 
 /** One day's call sheet: call → wrap with blocks and the gaps between them shown as breaks. */
-function DayCard({ day }: { day: DaySchedule }) {
+function DayCard({ day, past = false }: { day: DaySchedule; past?: boolean }) {
   const loc = (e: ScheduleEvent) => e.location ?? ''
   // interleave timed blocks with the gaps that follow them
   const rows: JSX.Element[] = []
@@ -135,9 +135,12 @@ function DayCard({ day }: { day: DaySchedule }) {
   })
 
   return (
-    <div className={`sch-day${day.hasOverlap ? ' has-overlap' : ''}`}>
+    <div className={`sch-day${day.hasOverlap ? ' has-overlap' : ''}${past ? ' sch-day-done' : ''}`}>
       <div className="sch-day-head">
-        <span className="sch-day-date">{fmtDayShort(day.date)}</span>
+        <span className="sch-day-date">
+          {past && <span className="sch-day-tick" aria-hidden>✓ </span>}
+          {fmtDayShort(day.date)}
+        </span>
         {day.callMin != null && (
           <span className="sch-day-span">
             Call {fmtClock(day.callMin)} · wrap {fmtClock(day.wrapMin!)}
@@ -367,9 +370,16 @@ export default function PeopleView() {
                   )}
                 </div>
                 <div className="sch-list">
-                  {sched.days.filter((d) => d.timed.length || d.untimed.length).map((d) => (
-                    <DayCard key={d.date} day={d} />
-                  ))}
+                  {(() => {
+                    const today = todayISO()
+                    const visible = sched.days.filter((d) => d.timed.length || d.untimed.length)
+                    // Today + upcoming first; expired days drop to the bottom, marked done.
+                    const upcoming = visible.filter((d) => d.date >= today)
+                    const past = visible.filter((d) => d.date < today)
+                    return [...upcoming, ...past].map((d) => (
+                      <DayCard key={d.date} day={d} past={d.date < today} />
+                    ))
+                  })()}
                 </div>
               </>
             )}

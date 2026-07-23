@@ -930,9 +930,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'th-vishen-1',
-    date: '2026-07-26',
-    start: '10:00',
-    end: '12:00',
+    date: '2026-07-29',
+    start: '12:15',
+    end: '14:15',
     title: 'Vishen — Talking Heads (YouTube)',
     type: 'production',
     location: STUDIO,
@@ -943,6 +943,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'BLOCKED per Gareth (14 Jul): 2h Vishen solo talking-head session for YouTube. CONSOLIDATED to a SINGLE session per Gareth (16 Jul) — the second block (was 31 Jul) is dropped, and this one moved to a friendly slot: Sun 26 Jul morning, when Vishen is fresh and otherwise free, rather than stacked after a 3h masterclass. Verified clean: studio + unit 1 + Gareth free (Wineland interview ends 09:45, Eric interview not until 12:15); banks the content before the heavy final week.',
+    notes: 'MOVED to week 2 per Gareth (21 Jul) — Vishen couldn\'t make the Sun 26 Jul slot. Re-homed to Wed 29 Jul 12:15–14:15: a clean midday 2h with studio + unit 1 + Gareth free (Kwik masterclass wraps 11:30, Jolene interview not until 14:15), and it respects Vishen\'s "not before 11" preference. 2h Vishen solo talking-head session for YouTube. Backup slot if this shifts: Tue 28 Jul 16:00–18:00.',
   },
 ]
