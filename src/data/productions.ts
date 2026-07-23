@@ -367,8 +367,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-kristina-marisa',
     date: '2026-07-25',
-    start: '09:00',
-    end: '10:30',
+    start: '10:00',
+    end: '11:30',
     title: 'Kristina Mand-Lakhiani × Marisa Peer podcast',
     type: 'podcast',
     location: STUDIO,
@@ -380,7 +380,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 7,
     status: 'confirmed',
     notes:
-      'PLACED per Gareth (16 Jul) — Kristina chose Option 1, the cleanest slot: a quiet Saturday for both (Marisa has nothing else on the 25th, Kristina\'s only stage session is the 22nd). Two-hander, no Vishen needed. 90-min record with headroom to ~11:00 before the studio resets for Dan Brulé\'s 11:30 interview. Both are women, so a 60-min makeup call from 08:00 (chair free). Held firm; we\'ll move it if Marisa\'s team asks to change it (confirmation via Matt Pridham still in flight).',
+      'MOVED to 10:00–11:30 (Gareth, 21 Jul) — the studio isn\'t accessible before 10am on the weekend, so the old 09:00 start was impossible. 90-min record, then a 30-min reset before Regan\'s 12:00 masterclass. Two-hander, no Vishen. Both women, so a 60-min makeup call 09:00–10:00 (green room — assumes green-room access before the 10am studio open; else they prep at their hotel).',
   },
   {
     id: 'int-dan-brule',
