@@ -114,25 +114,30 @@ export default function App() {
         </div>
         <nav className="mv-nav">
           <button className={tab === 'overview' ? 'active' : ''} onClick={() => setTab('overview')}>
-            Overview
+            <span className="mv-nav-ic" aria-hidden>🗺️</span>Overview
           </button>
           <button className={tab === 'day' ? 'active' : ''} onClick={() => setTab('day')}>
-            Day
+            <span className="mv-nav-ic" aria-hidden>📅</span>Day
           </button>
           <button className={tab === 'shoots' ? 'active' : ''} onClick={() => setTab('shoots')}>
-            Shoots
+            <span className="mv-nav-ic" aria-hidden>🎬</span>Shoots
           </button>
           <button className={tab === 'people' ? 'active' : ''} onClick={() => setTab('people')}>
-            People
+            <span className="mv-nav-ic" aria-hidden>👥</span>People
           </button>
           <button className={tab === 'podcast' ? 'active' : ''} onClick={() => setTab('podcast')}>
-            Podcast ({PODCAST_BRIEFINGS.length})
+            <span className="mv-nav-ic" aria-hidden>🎙️</span>Podcast
+            <span className="mv-nav-count">{PODCAST_BRIEFINGS.length}</span>
           </button>
           <button className={tab === 'social' ? 'active' : ''} onClick={() => setTab('social')}>
-            Social ({SOCIAL_CONTENT.length})
+            <span className="mv-nav-ic" aria-hidden>📱</span>Social
+            <span className="mv-nav-count">{SOCIAL_CONTENT.length}</span>
           </button>
           <button className={tab === 'alerts' ? 'active' : ''} onClick={() => setTab('alerts')}>
-            Actions ({ACTIONS.length + CONFLICTS.length})
+            <span className="mv-nav-ic" aria-hidden>⚡</span>Actions
+            <span className={`mv-nav-count${CONFLICTS.length > 0 ? ' alert' : ''}`}>
+              {ACTIONS.length + CONFLICTS.length}
+            </span>
           </button>
         </nav>
         <div className="mv-clock" title="Local time in Tallinn (EEST, UTC+3)">

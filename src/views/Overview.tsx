@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DAYS, EVENTS } from '../data/schedule'
+import { DAYS, EVENTS, todayISO } from '../data/schedule'
 import type { DayMeta } from '../data/types'
 import { ChipFilter, Legend, isSmallHall, matchesChipFilter, sortKey } from '../ui'
 
@@ -7,11 +7,13 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
   const all = EVENTS.filter((e) => e.date === day.date).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
   const events = all.filter((e) => matchesChipFilter(e, filter))
   const conflicts = all.filter((e) => e.status === 'conflict').length
-  const isToday = day.date === new Date().toISOString().slice(0, 10)
+  const today = todayISO()
+  const isToday = day.date === today
+  const past = day.date < today
   const allDone = all.length > 0 && all.every((e) => e.status === 'done')
 
   return (
-    <div className={`ov-day${isToday ? ' today' : ''}`} onClick={() => onOpen(day.date)}>
+    <div className={`ov-day${isToday ? ' today' : ''}${past || allDone ? ' ov-day-covered' : ''}`} onClick={() => onOpen(day.date)}>
       <div className="ov-day-head">
         <span className="ov-day-date">{day.label}</span>
         <span className="ov-day-theme">{day.theme}</span>

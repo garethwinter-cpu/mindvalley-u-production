@@ -124,6 +124,33 @@ body {
   color: var(--brand);
   border-bottom-color: var(--brand);
 }
+.mv-nav button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.mv-nav-ic {
+  font-size: 13px;
+  opacity: 0.85;
+  line-height: 1;
+}
+.mv-nav-count {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--bg-subtle, #f1f1f4);
+  color: var(--text-muted, #9ca3af);
+}
+.mv-nav button.active .mv-nav-count {
+  background: color-mix(in srgb, var(--brand) 15%, transparent);
+  color: var(--brand);
+}
+.mv-nav-count.alert {
+  background: var(--red, #dc2626);
+  color: #fff;
+}
 
 .mv-clock {
   margin-left: auto;
@@ -987,6 +1014,45 @@ body {
 .sch-day-tick {
   color: var(--positive, #16a34a);
   font-weight: 700;
+}
+
+/* ---- "Covered" (done or past) productions: divider + greyed rows, to tidy lists ---- */
+.evt-covered-divider,
+.cat-covered-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted, #9ca3af);
+}
+.evt-covered-divider::before,
+.evt-covered-divider::after,
+.cat-covered-divider::before,
+.cat-covered-divider::after {
+  content: '';
+  flex: 1;
+  border-top: 1px dashed var(--border, #e4e4e7);
+}
+.evt-done,
+.cat-row-done {
+  opacity: 0.5;
+}
+.evt-done:hover,
+.cat-row-done:hover {
+  opacity: 1;
+}
+.ov-day-covered {
+  opacity: 0.55;
+}
+.ov-day-covered:hover {
+  opacity: 1;
+}
+.ov-day-covered.today {
+  opacity: 1;
 }
 .sch-day-head {
   display: flex;

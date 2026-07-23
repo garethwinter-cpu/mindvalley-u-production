@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DAYS, EVENTS } from '../data/schedule'
+import { DAYS, EVENTS, isCovered } from '../data/schedule'
 import { person } from '../data/people'
 import { Headshot } from '../profile'
 import { StatusBadge, AuthorBadge, TYPE_ICON, fmtTime, requiredPeople } from '../ui'
@@ -43,11 +43,40 @@ function fmtDate(d: string) {
 }
 const sortKey = (e: ScheduleEvent) => e.date + (e.start ?? '99:99')
 
+function CatRow({ e, onOpenDay, covered = false }: { e: ScheduleEvent; onOpenDay: (date: string) => void; covered?: boolean }) {
+  const people = requiredPeople(e).filter((id) => id !== 'gareth' || e.type === 'production')
+  return (
+    <button className={`cat-row${covered ? ' cat-row-done' : ''}`} onClick={() => onOpenDay(e.date)}>
+      <div className="cat-row-when">
+        <span className="cat-row-date">{fmtDate(e.date)}</span>
+        <span className="cat-row-time">{e.start ? `${fmtTime(e.start)}${e.end ? `–${fmtTime(e.end)}` : ''}` : 'All day'}</span>
+      </div>
+      <div className="cat-row-main">
+        <div className="cat-row-title">
+          <span className="cat-row-emoji">{TYPE_ICON[e.type]}</span>
+          {e.title}
+          <StatusBadge status={e.status} />
+          <AuthorBadge event={e} />
+        </div>
+        {e.location && <div className="cat-row-loc">{e.location}</div>}
+      </div>
+      <div className="cat-row-people">
+        {people.slice(0, 4).map((id) => (
+          <Headshot key={id} id={id} size={24} />
+        ))}
+      </div>
+    </button>
+  )
+}
+
 export default function ShootsView({ onOpenDay }: { onOpenDay: (date: string) => void }) {
   const [cat, setCat] = useState(CATEGORIES[0].key)
   const active = CATEGORIES.find((c) => c.key === cat)!
   const counts = Object.fromEntries(CATEGORIES.map((c) => [c.key, EVENTS.filter(c.match).length]))
-  const items = EVENTS.filter(active.match).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
+  const all = EVENTS.filter(active.match).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
+  // Covered (done or past) shoots drop below a divider, greyed, to tidy the slate.
+  const items = all.filter((e) => !isCovered(e))
+  const coveredItems = all.filter((e) => isCovered(e))
 
   return (
     <div>
@@ -66,32 +95,18 @@ export default function ShootsView({ onOpenDay }: { onOpenDay: (date: string) =>
       </div>
 
       <div className="cat-list">
-        {items.length === 0 && <div className="empty">Nothing in this category yet.</div>}
-        {items.map((e) => {
-          const people = requiredPeople(e).filter((id) => id !== 'gareth' || e.type === 'production')
-          return (
-            <button key={e.id} className="cat-row" onClick={() => onOpenDay(e.date)}>
-              <div className="cat-row-when">
-                <span className="cat-row-date">{fmtDate(e.date)}</span>
-                <span className="cat-row-time">{e.start ? `${fmtTime(e.start)}${e.end ? `–${fmtTime(e.end)}` : ''}` : 'All day'}</span>
-              </div>
-              <div className="cat-row-main">
-                <div className="cat-row-title">
-                  <span className="cat-row-emoji">{TYPE_ICON[e.type]}</span>
-                  {e.title}
-                  <StatusBadge status={e.status} />
-                  <AuthorBadge event={e} />
-                </div>
-                {e.location && <div className="cat-row-loc">{e.location}</div>}
-              </div>
-              <div className="cat-row-people">
-                {people.slice(0, 4).map((id) => (
-                  <Headshot key={id} id={id} size={24} />
-                ))}
-              </div>
-            </button>
-          )
-        })}
+        {all.length === 0 && <div className="empty">Nothing in this category yet.</div>}
+        {items.map((e) => (
+          <CatRow key={e.id} e={e} onOpenDay={onOpenDay} />
+        ))}
+        {coveredItems.length > 0 && (
+          <div className="cat-covered-divider">
+            <span>✓ Covered · {coveredItems.length}</span>
+          </div>
+        )}
+        {coveredItems.map((e) => (
+          <CatRow key={e.id} e={e} onOpenDay={onOpenDay} covered />
+        ))}
       </div>
     </div>
   )

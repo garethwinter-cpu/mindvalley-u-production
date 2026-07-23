@@ -19,6 +19,12 @@ export function todayISO(): string {
   }).format(new Date())
 }
 
+/** A production is "covered" once it's marked done or its day has passed — these
+ *  drop to the bottom of the lists, greyed out, to tidy the live pages. */
+export function isCovered(e: { date: string; status?: string }): boolean {
+  return e.status === 'done' || e.date < todayISO()
+}
+
 export const DAYS: DayMeta[] = [
   { date: '2026-07-06', label: 'Mon 6 Jul', theme: 'Pre-sprint — remote', week: 0 },
   { date: '2026-07-16', label: 'Thu 16 Jul', theme: 'Pre-event', week: 0 },

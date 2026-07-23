@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
-import { DAYS, EVENTS, todayISO } from '../data/schedule'
+import { DAYS, EVENTS, todayISO, isCovered } from '../data/schedule'
 import { EDITORIAL_EVENTS } from '../data/editorial'
 import { StatusBadge, TypeBadge, TYPE_ICON, AuthorBadge, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
 import type { ScheduleEvent } from '../data/types'
@@ -54,34 +54,51 @@ function fmtDate(d: string) {
   return `${Number(dd)}/${Number(m)}`
 }
 
+function EventRow({ e, covered = false }: { e: ScheduleEvent; covered?: boolean }) {
+  return (
+    <div className={`evt${e.status === 'conflict' ? ' conflict' : ''}${covered ? ' evt-done' : ''}`}>
+      <div className="evt-time">
+        {fmtDate(e.date)}
+        <small>
+          {fmtTime(e.start)}
+          {e.end ? `–${fmtTime(e.end)}` : ''}
+        </small>
+      </div>
+      <div>
+        <div className="evt-title">
+          {e.title}
+          <TypeBadge type={e.type} />
+          <StatusBadge status={e.status} />
+          <AuthorBadge event={e} />
+        </div>
+        {e.location && <div className="evt-loc">{e.location}</div>}
+        {availabilityWarnings(e).map((w) => (
+          <div key={w.personId} className={`evt-avail avail-${w.kind}`}>
+            {w.kind === 'before' || w.kind === 'after' ? '⛔' : '⚠️'} {w.message}
+          </div>
+        ))}
+        {e.notes && <div className="evt-notes">{e.notes}</div>}
+      </div>
+    </div>
+  )
+}
+
 function EventList({ events }: { events: ScheduleEvent[] }) {
+  // Covered (done or past) productions drop below a divider, greyed, to tidy the page.
+  const active = events.filter((e) => !isCovered(e))
+  const covered = events.filter((e) => isCovered(e))
   return (
     <div className="evt-list" style={{ marginBottom: 24 }}>
-      {events.map((e) => (
-        <div key={e.id} className={`evt${e.status === 'conflict' ? ' conflict' : ''}`}>
-          <div className="evt-time">
-            {fmtDate(e.date)}
-            <small>
-              {fmtTime(e.start)}
-              {e.end ? `–${fmtTime(e.end)}` : ''}
-            </small>
-          </div>
-          <div>
-            <div className="evt-title">
-              {e.title}
-              <TypeBadge type={e.type} />
-              <StatusBadge status={e.status} />
-              <AuthorBadge event={e} />
-            </div>
-            {e.location && <div className="evt-loc">{e.location}</div>}
-            {availabilityWarnings(e).map((w) => (
-              <div key={w.personId} className={`evt-avail avail-${w.kind}`}>
-                {w.kind === 'before' || w.kind === 'after' ? '⛔' : '⚠️'} {w.message}
-              </div>
-            ))}
-            {e.notes && <div className="evt-notes">{e.notes}</div>}
-          </div>
+      {active.map((e) => (
+        <EventRow key={e.id} e={e} />
+      ))}
+      {covered.length > 0 && (
+        <div className="evt-covered-divider">
+          <span>✓ Covered · {covered.length}</span>
         </div>
+      )}
+      {covered.map((e) => (
+        <EventRow key={e.id} e={e} covered />
       ))}
     </div>
   )
