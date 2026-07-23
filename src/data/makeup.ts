@@ -73,11 +73,12 @@ const MAKEUP_OVERRIDES: Record<
   { start?: string; end?: string; location?: string; note?: string }
 > = {
   // Regan preps at her hotel and comes to the venue camera-ready (Gareth, 21 Jul).
+  // Masterclass is now Sat 25 Jul 12:00–15:00 → makeup 10:00 at the hotel (travel in).
   'mc-regan-aom': {
-    start: '09:30',
-    end: '10:30',
+    start: '10:00',
+    end: '11:00',
     location: 'Nuune Boutique Hotel',
-    note: 'At her hotel — Regan gets ready off-site, then travels to the studio for the 11:00 masterclass.',
+    note: 'At her hotel — Regan gets ready off-site from 10:00, then travels in for the 12:00 masterclass shoot.',
   },
   // Chiara + Marisa glam in the Author Lounge / VIP Area (Gareth, 21 Jul).
   'pod-chiara-marisa': { location: 'Author Lounge / VIP Area' },
