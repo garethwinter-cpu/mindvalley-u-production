@@ -1,16 +1,22 @@
 import { useState } from 'react'
 import { DAYS, EVENTS, todayISO } from '../data/schedule'
-import { ChipFilter, Legend, PriorityBadge, StatusBadge, TypeBadge, AuthorBadge, creativeCredits, fmtTime, involvesPerson, isPartyTagged, isSmallHall, matchesChipFilter, requiredPeople, sortKey } from '../ui'
+import { ChipFilter, Legend, PriorityBadge, StatusBadge, TypeBadge, AuthorBadge, creativeCredits, fmtTime, involvesPerson, isPartyTagged, isSmallHall, matchesChipFilters, requiredPeople, sortKey } from '../ui'
 import { PersonLink } from '../profile'
 import { PEOPLE } from '../data/people'
 
 export default function DayView({ date, onPick }: { date: string; onPick: (d: string) => void }) {
   const [who, setWho] = useState('all')
-  const [filter, setFilter] = useState<ChipFilter>('all')
+  const [filters, setFilters] = useState<Set<ChipFilter>>(() => new Set())
+  const toggleFilter = (f: ChipFilter) =>
+    setFilters((prev) => {
+      const next = new Set(prev)
+      next.has(f) ? next.delete(f) : next.add(f)
+      return next
+    })
   const day = DAYS.find((d) => d.date === date) ?? DAYS[0]
   const events = EVENTS.filter((e) => e.date === day.date)
     .filter((e) => who === 'all' || involvesPerson(e, who))
-    .filter((e) => matchesChipFilter(e, filter))
+    .filter((e) => matchesChipFilters(e, filters))
     .sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
 
   const speakers = PEOPLE.filter((p) => p.role === 'speaker')
@@ -73,12 +79,12 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
         )}
       </div>
 
-      <Legend active={filter} onSelect={setFilter} />
+      <Legend active={filters} onToggle={toggleFilter} onClear={() => setFilters(new Set())} />
 
       <div className="evt-list">
         {events.length === 0 && (
           <div className="empty">
-            {who === 'all' && filter === 'all'
+            {who === 'all' && filters.size === 0
               ? 'Nothing scheduled. Recovery day — or an opportunity.'
               : 'Nothing matches this filter today.'}
           </div>

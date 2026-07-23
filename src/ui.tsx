@@ -174,11 +174,23 @@ export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[]
   { key: 'social', label: 'Parties', dotClass: '' },
 ]
 
-export function matchesChipFilter(e: ScheduleEvent, filter: ChipFilter): boolean {
+function matchesOne(e: ScheduleEvent, filter: ChipFilter): boolean {
   if (filter === 'all') return true
   if (filter === 'small-hall') return e.location === COMMUNITY
   if (filter === 'social') return e.type === 'social' || !!e.party
   return e.type === filter
+}
+
+export function matchesChipFilter(e: ScheduleEvent, filter: ChipFilter): boolean {
+  return matchesOne(e, filter)
+}
+
+/** Multi-select: an empty set means "show everything"; otherwise the event must
+ *  match ANY of the selected chips (OR). */
+export function matchesChipFilters(e: ScheduleEvent, active: ReadonlySet<ChipFilter>): boolean {
+  if (active.size === 0) return true
+  for (const f of active) if (matchesOne(e, f)) return true
+  return false
 }
 
 export function isSmallHall(e: ScheduleEvent): boolean {
@@ -199,22 +211,31 @@ export function creativeCredits(e: ScheduleEvent): { label: string; ids: string[
   return out
 }
 
-export function Legend({ active, onSelect }: { active: ChipFilter; onSelect: (f: ChipFilter) => void }) {
+export function Legend({
+  active,
+  onToggle,
+  onClear,
+}: {
+  active: ReadonlySet<ChipFilter>
+  onToggle: (f: ChipFilter) => void
+  onClear: () => void
+}) {
   return (
     <div className="legend">
       {FILTER_META.map((m) => (
         <button
           key={m.key}
-          className={`legend-item${active === m.key ? ' active' : ''}`}
-          onClick={() => onSelect(active === m.key ? 'all' : m.key)}
+          className={`legend-item${active.has(m.key) ? ' active' : ''}`}
+          aria-pressed={active.has(m.key)}
+          onClick={() => onToggle(m.key)}
         >
           <span className={`dot ${m.dotClass}`} />
           {m.label}
         </button>
       ))}
-      {active !== 'all' && (
-        <button className="legend-clear" onClick={() => onSelect('all')}>
-          Clear filter
+      {active.size > 0 && (
+        <button className="legend-clear" onClick={onClear}>
+          Clear filter{active.size > 1 ? 's' : ''}
         </button>
       )}
     </div>

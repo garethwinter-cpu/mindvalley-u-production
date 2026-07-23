@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { DAYS, EVENTS, todayISO } from '../data/schedule'
 import type { DayMeta } from '../data/types'
-import { ChipFilter, Legend, isSmallHall, matchesChipFilter, sortKey } from '../ui'
+import { ChipFilter, Legend, isSmallHall, matchesChipFilters, sortKey } from '../ui'
 
-function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; onOpen: (date: string) => void }) {
+function DayCard({ day, filters, onOpen }: { day: DayMeta; filters: ReadonlySet<ChipFilter>; onOpen: (date: string) => void }) {
   const all = EVENTS.filter((e) => e.date === day.date).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
-  const events = all.filter((e) => matchesChipFilter(e, filter))
+  const events = all.filter((e) => matchesChipFilters(e, filters))
   const conflicts = all.filter((e) => e.status === 'conflict').length
   const today = todayISO()
   const isToday = day.date === today
@@ -26,14 +26,20 @@ function DayCard({ day, filter, onOpen }: { day: DayMeta; filter: ChipFilter; on
           {e.title}
         </span>
       ))}
-      {events.length === 0 && <span className="empty">{filter === 'all' ? 'Clear' : '—'}</span>}
+      {events.length === 0 && <span className="empty">{filters.size === 0 ? 'Clear' : '—'}</span>}
       {allDone && <span className="ov-day-done">Done</span>}
     </div>
   )
 }
 
 export default function Overview({ onOpenDay }: { onOpenDay: (date: string) => void }) {
-  const [filter, setFilter] = useState<ChipFilter>('all')
+  const [filters, setFilters] = useState<Set<ChipFilter>>(() => new Set())
+  const toggleFilter = (f: ChipFilter) =>
+    setFilters((prev) => {
+      const next = new Set(prev)
+      next.has(f) ? next.delete(f) : next.add(f)
+      return next
+    })
   const weeks: { label: string; days: DayMeta[] }[] = [
     { label: 'Pre-event — 16–19 July', days: DAYS.filter((d) => d.week === 0) },
     { label: 'Week 1 — 20–26 July', days: DAYS.filter((d) => d.week === 1) },
@@ -47,13 +53,13 @@ export default function Overview({ onOpenDay }: { onOpenDay: (date: string) => v
         Every commitment from first shoot to wrap. Click a day for the full call sheet. Click the Key below to
         filter.
       </p>
-      <Legend active={filter} onSelect={setFilter} />
+      <Legend active={filters} onToggle={toggleFilter} onClear={() => setFilters(new Set())} />
       {weeks.map((w) => (
         <div key={w.label}>
           <div className="ov-week-label">{w.label}</div>
           <div className="ov-grid">
             {w.days.map((d) => (
-              <DayCard key={d.date} day={d} filter={filter} onOpen={onOpenDay} />
+              <DayCard key={d.date} day={d} filters={filters} onOpen={onOpenDay} />
             ))}
           </div>
         </div>
