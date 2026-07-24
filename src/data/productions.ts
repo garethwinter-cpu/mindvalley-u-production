@@ -431,8 +431,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-marisa',
     date: '2026-07-26',
-    start: '13:15',
-    end: '14:00',
+    start: '12:15',
+    end: '13:00',
     title: 'Author Interview: Kaitlin & Marisa Peer',
     type: 'production',
     location: STUDIO,
@@ -491,8 +491,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-eric',
     date: '2026-07-26',
-    start: '12:15',
-    end: '13:00',
+    start: '13:15',
+    end: '14:00',
     title: 'Author Interview: Kaitlin & Eric Edmeades',
     type: 'production',
     location: STUDIO,
