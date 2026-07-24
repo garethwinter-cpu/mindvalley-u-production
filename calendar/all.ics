@@ -1,0 +1,1898 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MVU 2026 Production HQ//EN
+X-WR-CALNAME:MVU 2026 Production — All
+X-WR-TIMEZONE:Europe/Tallinn
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Tallinn
+BEGIN:STANDARD
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:priestley-webinar@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley — accelerator webinar (Zoom\, self-hosted)
+DTSTART;TZID=Europe/Tallinn:20260706T190000
+DTEND;TZID=Europe/Tallinn:20260706T203000
+LOCATION:Remote — Zoom
+DESCRIPTION:Status: DONE\nWho: Daniel Priestley\nHandled — no crew required. 5pm London = 7pm Tallinn\, 90 min. Funnel webinar driving signups to the 18–19 Jul intensive.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-webinar@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer + Vishen — "Break Through Your Money Block" (free live webinar)
+DTSTART;TZID=Europe/Tallinn:20260716T190000
+DTEND;TZID=Europe/Tallinn:20260716T200000
+LOCATION:Remote — Regan + Vishen deliver remotely
+DESCRIPTION:Status: DONE\nWho: Regan Hillyer\, Vishen Lakhiani\nDONE (delivered 16 Jul). Fully remote\, self-produced — Gareth’s team NOT needed. Times: 9am LA / 12pm NY / 5pm London = 7pm Tallinn. Funnel webinar for the Wealth Code Accelerator (25–26 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:priestley-accel-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley Accelerator — day 1: Getting Oversubscribed (4h) + Upsell Landing Page Video
+DTSTART;VALUE=DATE:20260718
+LOCATION:Remote + streamed
+DESCRIPTION:Status: TENTATIVE\nWho: Daniel Priestley\nPer Gareth: remote delivery. Microsite bills it “live in-person + streamed” — confirm final format. Start time TBD. Sessions: Only Oversubscribed Businesses Make Profit / Your Capacity & Your People / Make Your Market Then Your Sales. Matches the Airtable "Science of Growing Customers" Shoots record\, split Day 1/Day 2 (13 Jul). SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this intensive in this same session — the product recording and the sales video for it\, shot together with the same resource while Priestley is in this environment. Only one landing-page record exists (dated Day 1)\, so that’s the priority day for it.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:priestley-accel-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley Accelerator — day 2: Your 12-Month Customer Engine (4h)
+DTSTART;VALUE=DATE:20260719
+LOCATION:Remote + streamed
+DESCRIPTION:Status: TENTATIVE\nWho: Daniel Priestley\nRemote delivery per Gareth. Sessions: Three-Part Year / Short-Long-Lead Form / Telegraph Capacity / Build 12-Month Calendar live. Start time TBD. Day 2 of the Airtable "Science of Growing Customers" record split (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-reg@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Registration
+DTSTART;TZID=Europe/Tallinn:20260720T093000
+DTEND;TZID=Europe/Tallinn:20260720T120000
+LOCATION:Kultuurikatel\, Tallinn
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-welcome@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Welcome / Orientation by Vishen
+DTSTART;TZID=Europe/Tallinn:20260720T131500
+DTEND;TZID=Europe/Tallinn:20260720T144500
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\nTime corrected to 13:15–14:45 on 16 Jul to match the new Speaker Agenda Airtable (was 11:00–13:30).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-community@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Community Connections with Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260720T150000
+DTEND;TZID=Europe/Tallinn:20260720T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Eric Edmeades\nAuthor now attributed per 13 Jul sheet check (was unattributed).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-fuckup@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:“Fuck Up” Session Open Mic
+DTSTART;TZID=Europe/Tallinn:20260720T160000
+DTEND;TZID=Europe/Tallinn:20260720T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Daniel Priestley\, Vishen Lakhiani\, John Lee\nCONFIRMED happening — line-up Daniel\, Vishen\, John Lee. CONTENT ANGLE: Daniel Priestley is a DJ by passion (serial entrepreneur who secretly spins) — have him close the session with a short DJ set. The roving social team (Jason + Kuhan) grab it: the "the growth guy is also a DJ" reveal is a strong personal/social piece\, and it sets up a lovely thread in his 14:00 interview earlier the same day. His only 20 Jul commitment before this is that interview\, so he is free to lean in.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-tribe@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:LEARNLIFE Parent Meeting / Tribe Meeting
+DTSTART;TZID=Europe/Tallinn:20260720T171500
+DTEND;TZID=Europe/Tallinn:20260720T174500
+LOCATION:Community Stage (Small Hall) + Experience Stage (Stalker Hall)
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Blue Block Party
+DTSTART;TZID=Europe/Tallinn:20260720T190000
+DTEND;TZID=Europe/Tallinn:20260720T230000
+LOCATION:Kultuurikatel\, Tallinn
+DESCRIPTION:Who: Jason Roper\nAd-hoc party filming — Jason (roving social). Alternating with Kuhan across the parties so each gets rest nights. OPPORTUNITY: Daniel Priestley (a hobby DJ\, and it is his last night — he departs the 21st) is a natural fit to DJ this party\; if he is up for it\, it extends the afternoon open-mic DJ moment into a bigger evening social piece.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-priestley-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley
+DTSTART;TZID=Europe/Tallinn:20260721T100000
+DTEND;TZID=Europe/Tallinn:20260721T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Daniel Priestley\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-priestley-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley + Jeremy Harbour (25min + 5)
+DTSTART;TZID=Europe/Tallinn:20260721T110000
+DTEND;TZID=Europe/Tallinn:20260721T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Daniel Priestley\, Jeremy Harbour\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-priestley-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Daniel Priestley
+DTSTART;TZID=Europe/Tallinn:20260721T121000
+DTEND;TZID=Europe/Tallinn:20260721T123000
+DESCRIPTION:Who: Daniel Priestley\, Karen\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-bookclub@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Book Club
+DTSTART;TZID=Europe/Tallinn:20260721T123000
+DTEND;TZID=Europe/Tallinn:20260721T131500
+LOCATION:Kultuurikatel\, Tallinn
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T140000
+DTEND;TZID=Europe/Tallinn:20260721T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:John Lee
+DTSTART;TZID=Europe/Tallinn:20260721T150000
+DTEND;TZID=Europe/Tallinn:20260721T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: John Lee\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-vishen-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T151500
+DTEND;TZID=Europe/Tallinn:20260721T153500
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\, Meng\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-johnlee-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — John Lee
+DTSTART;TZID=Europe/Tallinn:20260721T161000
+DTEND;TZID=Europe/Tallinn:20260721T163000
+DESCRIPTION:Who: John Lee\, Meng\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-natalie@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Natalie Ellis
+DTSTART;TZID=Europe/Tallinn:20260721T161500
+DTEND;TZID=Europe/Tallinn:20260721T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Natalie Ellis\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-sazerac@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sazerac
+DTSTART;TZID=Europe/Tallinn:20260721T193000
+DTEND;TZID=Europe/Tallinn:20260721T233000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-ja-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260722T100000
+DTEND;TZID=Europe/Tallinn:20260722T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jeffrey Allen\nJeffrey's accelerator material is captured live across his four stage sessions today (per the Overview agenda) — the separate studio accelerator recording days (25/26 Jul) were removed as redundant (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-ja-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260722T110000
+DTEND;TZID=Europe/Tallinn:20260722T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jeffrey Allen\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-ja-3@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260722T140000
+DTEND;TZID=Europe/Tallinn:20260722T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jeffrey Allen\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-ja-4@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260722T150000
+DTEND;TZID=Europe/Tallinn:20260722T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jeffrey Allen\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-ja-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260722T161500
+DTEND;TZID=Europe/Tallinn:20260722T163500
+DESCRIPTION:Who: Jeffrey Allen\, Mardo\nLocation TBD. Confirmed by author (Jeffrey Allen\, email 14 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260722T161500
+DTEND;TZID=Europe/Tallinn:20260722T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Regan Hillyer\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-regan-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260722T171000
+DTEND;TZID=Europe/Tallinn:20260722T173000
+DESCRIPTION:Who: Regan Hillyer\, Mardo\nLocation TBD. Straight after her talk.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-fce-dawn@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:First Class Experience — Dawn Hoang
+DTSTART;TZID=Europe/Tallinn:20260722T124500
+DTEND;TZID=Europe/Tallinn:20260722T134500
+LOCATION:Experience Stage (Stalker Hall)
+DESCRIPTION:Who: Dawn Hoang\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul22-author-dinner@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Dinner
+DTSTART;TZID=Europe/Tallinn:20260722T210000
+DTEND;TZID=Europe/Tallinn:20260722T003000
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-ong@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Simon Alexander Ong (2 × 25min + 5)
+DTSTART;TZID=Europe/Tallinn:20260723T100000
+DTEND;TZID=Europe/Tallinn:20260723T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Simon Alexander Ong\nMarked “to confirm” in agenda.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-thurlow@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Cynthia Thurlow
+DTSTART;TZID=Europe/Tallinn:20260723T110000
+DTEND;TZID=Europe/Tallinn:20260723T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Cynthia Thurlow\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-jade@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jade Shaw (90 min)
+DTSTART;TZID=Europe/Tallinn:20260723T140000
+DTEND;TZID=Europe/Tallinn:20260723T153000
+LOCATION:Embodiment Stage (Cauldron Hall)
+DESCRIPTION:Who: Jade Shaw\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-brule-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Dan Brulé (embodiment)
+DTSTART;TZID=Europe/Tallinn:20260723T140000
+DTEND;TZID=Europe/Tallinn:20260723T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Dan Brulé\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-brule-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Dan Brulé (embodiment)
+DTSTART;TZID=Europe/Tallinn:20260723T150000
+DTEND;TZID=Europe/Tallinn:20260723T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Dan Brulé\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-lyon@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Dr. Scott Lyon
+DTSTART;TZID=Europe/Tallinn:20260723T161500
+DTEND;TZID=Europe/Tallinn:20260723T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Dr. Scott Lyon\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul23-cabaret@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Midnight Cabaret VIP Party
+DTSTART;TZID=Europe/Tallinn:20260723T210000
+DTEND;TZID=Europe/Tallinn:20260723T010000
+DESCRIPTION:Who: Jason Roper\nAd-hoc party filming — Jason (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-wineland-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:John Wineland (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260724T100000
+DTEND;TZID=Europe/Tallinn:20260724T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: John Wineland\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-wineland-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:John Wineland (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260724T110000
+DTEND;TZID=Europe/Tallinn:20260724T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: John Wineland\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-peer@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260724T140000
+DTEND;TZID=Europe/Tallinn:20260724T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Marisa Peer\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-peer-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260724T161000
+DTEND;TZID=Europe/Tallinn:20260724T163000
+DESCRIPTION:Who: Marisa Peer\, Karen\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-krenn-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lorin Krenn
+DTSTART;TZID=Europe/Tallinn:20260724T150000
+DTEND;TZID=Europe/Tallinn:20260724T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Lorin Krenn\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-krenn-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lorin Krenn
+DTSTART;TZID=Europe/Tallinn:20260724T161500
+DTEND;TZID=Europe/Tallinn:20260724T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Lorin Krenn\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-awards@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Mindvalley Awards Ceremony — FULL VIDEO TEAM (timing still TBC on source)
+DTSTART;TZID=Europe/Tallinn:20260724T180000
+DTEND;TZID=Europe/Tallinn:20260724T190000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\, Nadir Salam\, Kuhan Kunasegaran\nPer Fisher (voice note\, 13 Jul): this needs the full production team's focus\, not passive coverage — many speakers fly in specifically for the video/photo opportunity here\, and a strong asset can lift a speaker's fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul\, Nadir\, Kuhan) + Gareth — they're all already on-site for the awards\, working together\, so no separate resourcing needed. Kaitlin O'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Black Block Party
+DTSTART;TZID=Europe/Tallinn:20260724T190000
+DTEND;TZID=Europe/Tallinn:20260724T230000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-accel-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Wealth Code Accelerator — day 1: See It & Clear It (3h) + Upsell Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260725T170000
+DTEND;TZID=Europe/Tallinn:20260725T200000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\, Jason Roper\nCONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul)\, matches the microsite\; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling. SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for the Wealth Code Accelerator in this same session — product + sales video shot together while Regan and the crew are already set up. Only one landing-page record exists (dated Day 1).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul25-eric-allday@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Eric Edmeades — all-day stage commitment (NEW\, 9am–4pm)
+DTSTART;TZID=Europe/Tallinn:20260725T090000
+DTEND;TZID=Europe/Tallinn:20260725T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Eric Edmeades\nNEW as of 13 Jul sheet check — replaces the old single-hour tentative slot. Runs parallel to Regan’s accelerator. No studio shoots are booked against Eric this day\, so no clash — but he is unavailable for anything else on the 25th.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul25-opening-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Opening Party — Marvelous Wonderland
+DTSTART;TZID=Europe/Tallinn:20260725T203000
+DTEND;TZID=Europe/Tallinn:20260725T020000
+DESCRIPTION:Who: Jason Roper\nAd-hoc party filming — Jason (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-accel-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Wealth Code Accelerator — day 2: Become It & Activate It (4h)
+DTSTART;TZID=Europe/Tallinn:20260726T170000
+DTEND;TZID=Europe/Tallinn:20260726T210000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\, Jason Roper\nCONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). Regan departs 27 Jul per Speaker DATES\, so this 9pm finish sits safely inside her window (the previous note saying she left on the 26th was wrong). Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-reg@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Registration (week 2)
+DTSTART;TZID=Europe/Tallinn:20260727T083000
+DTEND;TZID=Europe/Tallinn:20260727T100000
+LOCATION:Kultuurikatel\, Tallinn
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-shy-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Shi Heng Yi (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260727T100000
+DTEND;TZID=Europe/Tallinn:20260727T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Shi Heng Yi\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-shy-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Shi Heng Yi (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260727T110000
+DTEND;TZID=Europe/Tallinn:20260727T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Shi Heng Yi\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-krenn-men@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lorin Krenn (men only)
+DTSTART;TZID=Europe/Tallinn:20260727T110000
+DTEND;TZID=Europe/Tallinn:20260727T120000
+LOCATION:Experience Stage (Stalker Hall)
+DESCRIPTION:Who: Lorin Krenn\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-shy-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Shi Heng Yi
+DTSTART;TZID=Europe/Tallinn:20260727T121000
+DTEND;TZID=Europe/Tallinn:20260727T123000
+DESCRIPTION:Who: Shi Heng Yi\, Karen\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-newbie@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Newbie Orientation
+DTSTART;TZID=Europe/Tallinn:20260727T130000
+DTEND;TZID=Europe/Tallinn:20260727T140000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-shy-fireside@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Shi Heng Yi Fireside with Vishen (→ Scaling Wisdom launch episode)
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Shi Heng Yi\, Vishen Lakhiani\nRecorded ON STAGE and cut into the FIRST Scaling Wisdom podcast episode (per Gareth's call with Vishen\, 14 Jul). This is one of Vishen's five high-star podcasts — no separate studio recording.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-krenn-women@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lorin Krenn (women only)
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T150000
+LOCATION:Experience Stage (Stalker Hall)
+DESCRIPTION:Who: Lorin Krenn\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-elrod@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Hal Elrod
+DTSTART;TZID=Europe/Tallinn:20260727T150000
+DTEND;TZID=Europe/Tallinn:20260727T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Hal Elrod\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-sheleana-wineland@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sheleana Aiyana & John Wineland
+DTSTART;TZID=Europe/Tallinn:20260727T161500
+DTEND;TZID=Europe/Tallinn:20260727T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Sheleana Aiyana\, John Wineland\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:White Block Party
+DTSTART;TZID=Europe/Tallinn:20260727T190000
+DTEND;TZID=Europe/Tallinn:20260727T230000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-zen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Zen Samurai (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Zen Samurai\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-dawn@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Dawn Hoang (Embodiment)
+DTSTART;TZID=Europe/Tallinn:20260728T110000
+DTEND;TZID=Europe/Tallinn:20260728T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Dawn Hoang\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-dawn-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Dawn Hoang
+DTSTART;TZID=Europe/Tallinn:20260728T121000
+DTEND;TZID=Europe/Tallinn:20260728T123000
+DESCRIPTION:Who: Dawn Hoang\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-sheleana@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sheleana Aiyana
+DTSTART;TZID=Europe/Tallinn:20260728T140000
+DTEND;TZID=Europe/Tallinn:20260728T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Sheleana Aiyana\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-sheleana-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Sheleana Aiyana
+DTSTART;TZID=Europe/Tallinn:20260728T151000
+DTEND;TZID=Europe/Tallinn:20260728T153000
+DESCRIPTION:Who: Sheleana Aiyana\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-brighten@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Dr. Jolene Brighten
+DTSTART;TZID=Europe/Tallinn:20260728T150000
+DTEND;TZID=Europe/Tallinn:20260728T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Dr. Jolene Brighten\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-jamie@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jamie Sea
+DTSTART;TZID=Europe/Tallinn:20260728T161500
+DTEND;TZID=Europe/Tallinn:20260728T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jamie Sea\nNot on Speaker DATES — window unknown.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul28-sazerac@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sazerac
+DTSTART;TZID=Europe/Tallinn:20260728T193000
+DTEND;TZID=Europe/Tallinn:20260728T000000
+DESCRIPTION:Who: Jason Roper\nAd-hoc party filming — Jason (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-eric@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260729T100000
+DTEND;TZID=Europe/Tallinn:20260729T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Eric Edmeades\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-eric-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260729T111000
+DTEND;TZID=Europe/Tallinn:20260729T113000
+DESCRIPTION:Who: Eric Edmeades\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-nick@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Nick Santonastasso
+DTSTART;TZID=Europe/Tallinn:20260729T110000
+DTEND;TZID=Europe/Tallinn:20260729T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Nick Santonastasso\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-nick-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Nick Santonastasso
+DTSTART;TZID=Europe/Tallinn:20260729T121000
+DTEND;TZID=Europe/Tallinn:20260729T123000
+DESCRIPTION:Who: Nick Santonastasso\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-wendt@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Maria Wendt
+DTSTART;TZID=Europe/Tallinn:20260729T140000
+DTEND;TZID=Europe/Tallinn:20260729T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Maria Wendt\nNot on Speaker DATES — window unknown.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260729T150000
+DTEND;TZID=Europe/Tallinn:20260729T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Paul McKenna\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-mckenna-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260729T161000
+DTEND;TZID=Europe/Tallinn:20260729T163000
+DESCRIPTION:Who: Paul McKenna\, Mardo\nLocation TBD. Confirmed by author (Paul McKenna\, email 14 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen
+DTSTART;TZID=Europe/Tallinn:20260729T161500
+DTEND;TZID=Europe/Tallinn:20260729T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-fce-dawn@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:First Class Experience — Dawn Hoang
+DTSTART;TZID=Europe/Tallinn:20260729T161500
+DTEND;TZID=Europe/Tallinn:20260729T171500
+LOCATION:Experience Stage (Stalker Hall)
+DESCRIPTION:Who: Dawn Hoang\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-author-dinner@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Dinner
+DTSTART;TZID=Europe/Tallinn:20260729T210000
+DTEND;TZID=Europe/Tallinn:20260729T003000
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-kwik-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik — Accelerator (stage\, part 1)
+DTSTART;TZID=Europe/Tallinn:20260730T100000
+DTEND;TZID=Europe/Tallinn:20260730T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jim Kwik\nJim's accelerator is delivered live on the Main Stage on the 30th (per the Google Sheet) — this and part 2 are the accelerator itself\, captured live by the stage team. The Vishen fireside at 15:00 is separate.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-pringle@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Rachel Pringle (Embodiment\, 90 min)
+DTSTART;TZID=Europe/Tallinn:20260730T100000
+DTEND;TZID=Europe/Tallinn:20260730T113000
+LOCATION:Embodiment Stage (Cauldron Hall)
+DESCRIPTION:Who: Rachel Pringle\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-kwik-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik — Accelerator (stage\, part 2)
+DTSTART;TZID=Europe/Tallinn:20260730T110000
+DTEND;TZID=Europe/Tallinn:20260730T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jim Kwik\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-kwik-3@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik (stage)
+DTSTART;TZID=Europe/Tallinn:20260730T140000
+DTEND;TZID=Europe/Tallinn:20260730T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jim Kwik\nPer the MVU Overview sheet\, the 2–3pm Main Stage slot is Jim Kwik solo. Corrected 14 Jul — the old "Maya 25min + Kristina? 25min" was wrong: Maya is in the Small Hall at this time (see jul30-maya-smallhall)\, and Kristina is not listed in this slot.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-maya-smallhall@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Maya Raichoora — Small Hall talk
+DTSTART;TZID=Europe/Tallinn:20260730T140000
+DTEND;TZID=Europe/Tallinn:20260730T143000
+LOCATION:Community Stage (Small Hall)
+DESCRIPTION:Who: Maya Raichoora\nFrom the MVU Overview sheet (Small Hall tab\, per Gareth): the 2–3pm slot is Maya Raichoora + Maha Rouabhia (shared hour). End trimmed to 14:30 on 16 Jul to match the new Speaker Agenda Airtable (Maya 14:00–14:30).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-kwik-fireside@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen + Jim Kwik Fireside
+DTSTART;TZID=Europe/Tallinn:20260730T150000
+DTEND;TZID=Europe/Tallinn:20260730T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jim Kwik\, Vishen Lakhiani\nPart of Jim's stage event on the 30th — separate from his Superbrain masterclass (the standalone studio session with Vishen on the 29th). Both feature Vishen but they are different deliverables.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (swappable)
+DTSTART;TZID=Europe/Tallinn:20260730T161500
+DTEND;TZID=Europe/Tallinn:20260730T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vishen-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Vishen
+DTSTART;TZID=Europe/Tallinn:20260730T171500
+DTEND;TZID=Europe/Tallinn:20260730T173500
+DESCRIPTION:Who: Vishen Lakhiani\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vip@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Summer By The Bay VIP Party
+DTSTART;TZID=Europe/Tallinn:20260730T210000
+DTEND;TZID=Europe/Tallinn:20260730T010000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-grant@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Robert Grant
+DTSTART;TZID=Europe/Tallinn:20260731T100000
+DTEND;TZID=Europe/Tallinn:20260731T110000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: PLACEHOLDER\nWho: Robert Grant\nMarked “Robert Grant?” in agenda.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-vishen-content@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (content only)
+DTSTART;TZID=Europe/Tallinn:20260731T110000
+DTEND;TZID=Europe/Tallinn:20260731T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-vishen-sales@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (potential sales)
+DTSTART;TZID=Europe/Tallinn:20260731T140000
+DTEND;TZID=Europe/Tallinn:20260731T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-closing@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Closing Ceremony — Youth Performances + Valerija Ribbon Workshop
+DTSTART;TZID=Europe/Tallinn:20260731T150000
+DTEND;TZID=Europe/Tallinn:20260731T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-sanctum@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sanctum?
+DTSTART;TZID=Europe/Tallinn:20260731T161500
+DTEND;TZID=Europe/Tallinn:20260731T190000
+DESCRIPTION:Status: PLACEHOLDER\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Estonia Block Party
+DTSTART;TZID=Europe/Tallinn:20260731T190000
+DTEND;TZID=Europe/Tallinn:20260731T230000
+DESCRIPTION:Who: Jason Roper\nAd-hoc party filming — Jason (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-ai-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen AI Accelerator — “Become a World Class Expert and Authority” + Upsell Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260801T110000
+DTEND;TZID=Europe/Tallinn:20260801T180000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\, Kuhan Kunasegaran\nSANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame's live capture covers the product recording\, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up. FIXED (data audit\, 13 Jul): crew was all 3 (khairul+nadir+kuhan)\, which silently conflicted with Nadir's parallel unit-2 studio shoots this same window (assets-rachel-membership\, int-maya) — narrowed to unit 1 (khairul+kuhan) so Nadir stays free for the studio\, matching those events' existing notes.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:aug1-closing-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Closing Party
+DTSTART;TZID=Europe/Tallinn:20260801T203000
+DTEND;TZID=Europe/Tallinn:20260801T020000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:aug1-soiree@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Nordic Summer Soiree
+DTSTART;TZID=Europe/Tallinn:20260801T190000
+DTEND;TZID=Europe/Tallinn:20260801T230000
+DESCRIPTION:Status: TENTATIVE\nFrom overview tab — may be the same event as Closing Party. Confirm.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-20@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260720
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-21@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260721
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-22@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260722
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-23@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260723
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-24@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260724
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-25@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260725
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-26@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260726
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-27@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260727
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-28@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260728
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-29@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260729
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-30@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260730
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-07-31@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260731
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:social-media-2026-08-01@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daily social media capture (ad-hoc + stage snippets)
+DTSTART;VALUE=DATE:20260801
+LOCATION:Roaming — across venue
+DESCRIPTION:Roving social team = Jason + Kuhan (ad-hoc\, all day). They tag-team so each gets rolling meal/refreshment breaks and neither is on camera the whole day — one roams while the other rests/edits. Collecting toward the daily ad-hoc concepts + stage-talk snippets. See the Social tab.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jeffrey-allen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260721T100000
+DTEND;TZID=Europe/Tallinn:20260721T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: Jeffrey Allen\, Kaitlin O'Toole\, Nadir Salam\nMOVED to 10:00 at Jeffrey's request (email 14 Jul): he collects Hisami from TLL (lands 7:30am)\, so a 9am start was too tight. Pushed John Lee's interview to 11:00 to clear the slot. Day before his 4-block stage day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260721T153000
+DTEND;TZID=Europe/Tallinn:20260721T161500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Regan Hillyer\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Scaling Wisdom Podcast: John Lee & Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T163000
+DTEND;TZID=Europe/Tallinn:20260721T180000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: Gareth Winter\, John Lee\, Vishen Lakhiani\, Khairul Johari\nDONE (recorded 21 Jul). John flies the morning of the 22nd\; the 21st was the only window all four were free — John after his 16:30 portrait\, Vishen after his 15:35 portrait\, studio + unit 1 after the Regan interview. Wrapped by 6pm before the 7:30 Sazerac.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & John Lee
+DTSTART;TZID=Europe/Tallinn:20260721T110000
+DTEND;TZID=Europe/Tallinn:20260721T114500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: John Lee\, Kaitlin O'Toole\, Khairul Johari\nBATCHED to 21 Jul (from 22\, his departure day) — pairs with Kaitlin's Jeffrey Allen interview in a morning block. Nudged from 10:30 to 11:00 (14 Jul) after Jeffrey's interview moved to 10:00–10:45 at his request\, so the two no longer overlap. John Lee free this slot (his stage talk is 3pm)\; before Jade's noon assets. Kaitlin batching plan (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-tribe-training@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — Tribe Speaker storytelling training (run-and-gun capture)
+DTSTART;TZID=Europe/Tallinn:20260721T131500
+DTEND;TZID=Europe/Tallinn:20260721T140000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\, Kuhan Kunasegaran\nVishen request (WhatsApp\, 16 Jul): "Tues 1:15pm to 2pm I need someone with me at MVU as I'm doing live training with Tribe Speakers on storytelling. I want this filmed. One cam\, Hormozi style interacting w students. Can be filmed w one human\, iPhone and two lapel mics." ROAMING-UNIT job\, not a studio shoot: Kuhan is primary shooter (Jason backup) with a light kit (iPhone + 2 lapel mics) — no draw on the studio unit or the studio room. Sits cleanly between the 11:00 Kaitlin/John Lee interview and the 16:30 John Lee podcast\; Kuhan is otherwise roaming until the 19:30 Sazerac\, so pulling him for 45 min is the low-cost option. Kit + one-cam spec logged in the Shoots Airtable "Capture Brief / Kit" field so it does not get lost among the studio slate.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-dan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Dan Brulé on breathwork
+DTSTART;TZID=Europe/Tallinn:20260722T113000
+DTEND;TZID=Europe/Tallinn:20260722T115000
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Dan Brulé\, Tom Kirby\, Kuhan Kunasegaran\nAnchored right after Dan's 10:30 studio interview (wraps 11:15) — he's on-site and camera-ready. Woodblock + Kuhan (Jason backup)\; no clash with the parallel Wineland interview in Energiakeskus.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-vishen-scripts@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan × Vishen — script working session
+DTSTART;TZID=Europe/Tallinn:20260724T150000
+DTEND;TZID=Europe/Tallinn:20260724T160000
+LOCATION:Author Lounge / VIP Area
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Vishen Lakhiani\nPRIORITY (Gareth\, 21 Jul). Vishen + Regan work on the masterclass scripts ahead of Saturday's shoot — a working/prep session\, not a camera shoot\, so no studio or camera crew. Both free Fri afternoon (Vishen clear after his 11:30 Jeffrey masterclass\, Regan otherwise free). MAKEUP FLAG: Gareth noted "MUA 4pm" but that falls after this 3–4pm session — set to 1:00pm at the Nuune Hotel to match the Sat/Sun pattern (glam ~2h before\, travel in)\; confirm.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-regan-scripts@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260724T130000
+DTEND;TZID=Europe/Tallinn:20260724T140000
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Regan Hillyer\, Makeup\nFor Regan's 3–4pm Vishen script session. At her hotel (travels in). NOTE: Gareth wrote "MUA 4pm" but that's after the session — placed at 1pm (2h before) to match the Sat/Sun pattern\; confirm the time.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:ads-regan-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer — Wealth Code Accelerator ads / upsell
+DTSTART;TZID=Europe/Tallinn:20260726T160000
+DTEND;TZID=Europe/Tallinn:20260726T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\nPRIORITY (Gareth\, 21 Jul). Accelerator upsell ads\, shot on the Main Stage right before Regan's 17:00 Wealth Code accelerator\, then rolls straight into it. Makeup 2:00pm at the Nuune Hotel (travels in). Kuhan shoots (+ Gareth directs) so the studio unit (Khairul/Nadir) stays on the Shi Heng Yi interview (15:45–16:30)\; Kuhan then continues onto the accelerator on the same stage. On the Main Stage\, NOT the studio. Regan's window closes 27 Jul.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-ads-regan-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260726T140000
+DTEND;TZID=Europe/Tallinn:20260726T150000
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Regan Hillyer\, Makeup\nFor Regan's 4pm accelerator ads (and rolling into her 5pm accelerator). At her hotel\, travels in — per Gareth (21 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-jade@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Jade Shaw on astral projection & OOB
+DTSTART;TZID=Europe/Tallinn:20260723T154500
+DTEND;TZID=Europe/Tallinn:20260723T160500
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Jade Shaw\, Tom Kirby\, Kuhan Kunasegaran\nRight after Jade's 14:00–15:30 embodiment session — she's on-site. NOTE: Jade's formal marketing assets were cut earlier (low ROI)\, but she's here through 30 Jul\, so this quick social piece is a no-cost add on the social team.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Vishen on bending reality
+DTSTART;TZID=Europe/Tallinn:20260727T151500
+DTEND;TZID=Europe/Tallinn:20260727T153500
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\, Tom Kirby\, Kuhan Kunasegaran\nRight after Vishen's 14:00–15:00 Shi Heng Yi fireside — he's warm and it's his lightest day. Woodblock + Kuhan.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-dawn@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Dawn Hoang on Kundalini
+DTSTART;TZID=Europe/Tallinn:20260728T123000
+DTEND;TZID=Europe/Tallinn:20260728T125000
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Dawn Hoang\, Tom Kirby\, Kuhan Kunasegaran\nStraight off Dawn's portrait (ends 12:30) so she's camera-ready. Woodblock + Kuhan. Her window is wide (to 3 Aug) if it needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-daniel-combined@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley — combined block: Gareth interview + Eric’s-daughter podcast
+DTSTART;TZID=Europe/Tallinn:20260721T123000
+DTEND;TZID=Europe/Tallinn:20260721T134500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Daniel Priestley\, Khairul Johari\, Nadir Salam\nCOMBINED per Gareth (16 Jul): one ~75-min premium-studio block straight off Daniel’s 12:10–12:30 portrait\, so he arrives already in hair/makeup (no separate glam). Two deliverables in ~1h of his time: (1) Eric Edmeades’s daughter interviews Daniel for her podcast (~35–40 min — a favour\; Daniel and Eric are close friends)\, then (2) Gareth’s own short segment with Daniel (~15–20 min). Pulled EARLY (off the portrait) rather than the 3pm slot. HARD STOP: Daniel departs 14:30 (2:30pm) on the 21st (confirmed 16 Jul)\, so this block wraps at 13:45 with a 45-min buffer\, and the events team’s 3pm "Author Interview: Gareth & Daniel Priestley" filming slot (15:00–15:20\, record recznJLe2Kzvnnts8) is now IMPOSSIBLE — he is gone by then — and must be dropped. Replaces the standalone Woodblock favour shoot too. Studio + Gareth + both units free\; verified clean.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-regan-aom@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer — NEW Art of Manifesting Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260725T120000
+DTEND;TZID=Europe/Tallinn:20260725T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nPOSTPONED from Thu 23 to Sat 25 Jul\, expanded to a full 3-hour record 12:00–15:00 (Gareth\, 21 Jul — top priority). Makeup 10:00 at the Nuune Boutique Hotel (Regan preps off-site\, travels in). Regan's marketing assets are captured WITHIN this 3h block (the separate Thu assets slot is folded in). Vishen is free 12:00–15:00 once the Jeffrey×Vishen podcast is cancelled (see pod-ja removal). Studio free from 10:30 (after Kristina×Marisa) through 15:00. Part of the Fri script → Sat shoot → Sun ads Regan sequence.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-chiara-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Chiara King podcast — guest Marisa Peer (we facilitate)
+DTSTART;TZID=Europe/Tallinn:20260723T130000
+DTEND;TZID=Europe/Tallinn:20260723T143000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Chiara King\, Marisa Peer\, Khairul Johari\nLOCKED (Gareth\, 21 Jul). Chiara’s own podcast\, we facilitate (FX3 + Rode). Chiara (20–25) and Marisa both in town\; both free this afternoon (no stage). Thu 23 Jul 13:00–14:30\, right after Regan’s assets and before Chiara’s Lorin episode (14:30). PULLED from 16:30 to 13:00 (16 Jul) after the Regan masterclass shortened to 2h.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-chiara-lorin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Chiara King podcast — guest Lorin Krenn (we facilitate)
+DTSTART;TZID=Europe/Tallinn:20260723T143000
+DTEND;TZID=Europe/Tallinn:20260723T160000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Chiara King\, Lorin Krenn\, Khairul Johari\nCONFIRMED (replaces the cancelled Chiara + Paul McKenna episode). Back-to-back with her Marisa episode — one studio setup\, both her guests in a row. Lorin in Tallinn 22–29\, free this afternoon. PULLED to 14:30 with the Marisa episode (16 Jul optimisation) — the old 18:00 slot made 23 Jul a very long studio day. In Airtable.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-chiara-emelia@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Chiara King podcast — guest Emilia Niglas (we facilitate)
+DTSTART;TZID=Europe/Tallinn:20260723T160000
+DTEND;TZID=Europe/Tallinn:20260723T170000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Chiara King\, Khairul Johari\nADDED per Gareth (21 Jul) — third Chiara episode\, straight after her Lorin episode (wraps 16:00). 4:00–5:00pm in the Energiakeskus studio\; studio + unit 1 free after Lorin. Chiara does her own makeup\, and she's warm off the back-to-back session. This makes it three Chiara episodes in a row (Marisa 13:00\, Lorin 14:30\, Emilia 16:00). Guest Emilia Niglas is external — named in the title\, not the speaker roster.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-ja-duality@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen — NEW Duality Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260724T110000
+DTEND;TZID=Europe/Tallinn:20260724T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Jeffrey Allen\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Jeffrey Allen\, email 14 Jul — "this is great planning... everything else looks great"). MC DNA 2.0\, a refresh in the new format (not a straight reshoot). Suggested teaching: The Mental Noise Dial / Energetic Grounding Technique.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-kaitlin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kaitlin O’Toole — studio shoot
+DTSTART;TZID=Europe/Tallinn:20260724T130000
+DTEND;TZID=Europe/Tallinn:20260724T140000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Kaitlin studio shoot\, Fri 24 1:00–2:00pm. Studio free after Jeffrey’s masterclass (wraps 12:00)\; Kaitlin free until the 6pm Awards\; Gareth free before his 3pm script session. CONTENT TBC — confirm what we’re filming (host links / interview / her own piece) to finalise. Makeup 12:00–13:00 (green room).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-shoot-kaitlin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O’Toole
+DTSTART;TZID=Europe/Tallinn:20260724T120000
+DTEND;TZID=Europe/Tallinn:20260724T130000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\n60-min call so Kaitlin’s camera-ready for her 1:00pm studio shoot.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-ja@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen — Masterclass Marketing Assets (Duality + Manifesting collection)
+DTSTART;TZID=Europe/Tallinn:20260724T123000
+DTEND;TZID=Europe/Tallinn:20260724T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jeffrey Allen\, Khairul Johari\nCaptured in the 30 min right after the masterclass while Jeffrey's still lit\, mic'd and in makeup. MOVED to 12:30–13:00 (Gareth\, 23 Jul) with the masterclass\, which shifted to an 11:00 start. SCOPE: the THREE hero items live — Straight Up Invite\, Story Ad\, Technique Demo. Snappy guest-swap into Kaitlin's 13:00 studio shoot (same crew). Jeffrey approved the fuller set\; stays tentative until acknowledged.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-kristina-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kristina Mand-Lakhiani × Marisa Peer podcast
+DTSTART;TZID=Europe/Tallinn:20260725T100000
+DTEND;TZID=Europe/Tallinn:20260725T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kristina Mand-Lakhiani\, Marisa Peer\, Khairul Johari\, Nadir Salam\nMOVED to 10:00–11:30 (Gareth\, 21 Jul) — the studio isn't accessible before 10am on the weekend\, so the old 09:00 start was impossible. 90-min record\, then a 30-min reset before Regan's 12:00 masterclass. Two-hander\, no Vishen. Both women\, so a 60-min makeup call 09:00–10:00 (green room — assumes green-room access before the 10am studio open\; else they prep at their hotel).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-dan-brule@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Dan Brulé
+DTSTART;TZID=Europe/Tallinn:20260722T103000
+DTEND;TZID=Europe/Tallinn:20260722T111500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Dan Brulé\, Nadir Salam\nMOVED to Wed 22 Jul (Gareth\, 21 Jul) to decompress the tight Sat 25th (Jeffrey's two-podcast day). The 22nd is Jeffrey's main-stage day\, so the Energiakeskus studio + our unit sit idle — perfect for a couple of Gareth-led interviews. First call 10:00 (nothing before 10am per Gareth): makeup 10:00\, interview 10:30–11:15\, then a 15-min reset into John Wineland at 11:30. Dan is in town 20–28 Jul\; reassigned from Kaitlin to Gareth (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260726T121500
+DTEND;TZID=Europe/Tallinn:20260726T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Marisa Peer\, Kaitlin O'Toole\, Nadir Salam\nBATCHED to 26 Jul (from 25) — clusters with Kaitlin's Eric Edmeades + Shi Heng Yi interviews into one afternoon block\, freeing 25 Jul. Marisa's window (21 Jul–2 Aug) covers it\; slots into Nadir's 13:00–14:00 gap. Kaitlin batching plan (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-jeffrey@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast: Marisa × Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260725T160000
+DTEND;TZID=Europe/Tallinn:20260725T173000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Marisa Peer\, Jeffrey Allen\, Khairul Johari\, Nadir Salam\nLOCKED 4:00–5:30pm (Gareth\, 21 Jul) — Matt's requested time. Works now that Regan's accelerator camera is Kuhan+Jason: that frees Khairul + Nadir to run this in the studio while Gareth produces the accelerator on the Main Stage (Gareth won't be present for the whole podcast — the unit handles it\, it's Marisa's facilitated 2-hander). Jeffrey's LAST day (flies 26 Jul) so it stays Saturday. Runs after Regan's 12:00–15:00 masterclass. Marisa's 2nd podcast of the day (after Kristina 09:00).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-wineland@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & John Wineland
+DTSTART;TZID=Europe/Tallinn:20260722T113000
+DTEND;TZID=Europe/Tallinn:20260722T121500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, John Wineland\, Nadir Salam\nMOVED to Wed 22 Jul (Gareth\, 21 Jul) to lift it off the heaviest studio day (Sun 26th). Runs second in the 22nd's open studio: 15-min reset off Dan Brulé's interview\, makeup 11:00\, interview 11:30–12:15. John is in town 20–27 Jul (the old note calling the 26th his departure day was stale — he has a 27th stage slot)\, so the 22nd is well within his window. Reassigned from Kaitlin to Gareth (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-eric@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260726T131500
+DTEND;TZID=Europe/Tallinn:20260726T140000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Eric Edmeades\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:ads-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — ads shoot
+DTSTART;TZID=Europe/Tallinn:20260726T110000
+DTEND;TZID=Europe/Tallinn:20260726T120000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Vishen ads shoot\, Sun 26 11:00–12:00. Weekend studio opens 10am\; runs right after Kaitlin's 10:00–11:00 content shoot\, before the 12:15 Marisa interview. Vishen free until his 2pm Lorin podcast. Gareth + unit 1. CONTENT TBC — confirm which product/campaign to label + brief.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-kaitlin-sun@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kaitlin O’Toole — content shoot
+DTSTART;TZID=Europe/Tallinn:20260726T100000
+DTEND;TZID=Europe/Tallinn:20260726T110000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Kaitlin content shoot\, Sun 26 10:00–11:00 (studio opens 10am on the weekend). Runs first\, then Vishen's ads 11:00–12:00\, then Kaitlin's Marisa interview 12:15. Gareth + unit 1. Kaitlin glams off-site (green room gated until 10) — see makeup.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-shoot-kaitlin-sun@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O’Toole
+DTSTART;TZID=Europe/Tallinn:20260726T084500
+DTEND;TZID=Europe/Tallinn:20260726T094500
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\nOff-site glam for Kaitlin's 10:00 content shoot — the weekend green room/studio is locked until 10am\, so she preps at the hotel and travels in. NOTE: hotel assumed Nuune (the author-prep hotel) — confirm Kaitlin's actual hotel.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-shy@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Shi Heng Yi
+DTSTART;TZID=Europe/Tallinn:20260726T154500
+DTEND;TZID=Europe/Tallinn:20260726T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Shi Heng Yi\, Kaitlin O'Toole\, Nadir Salam\nArrival day — keep light. NUDGED 15:30→15:45 (16 Jul) to leave a studio reset after the Lorin×Vishen podcast\, which extended to 90 min (ends 15:30). 28 Jul is also open if this needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-own-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast — "Your Mind\, Your Rules" (Episode 1\, PENCILLED)
+DTSTART;TZID=Europe/Tallinn:20260727T110000
+DTEND;TZID=Europe/Tallinn:20260727T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: PLACEHOLDER\nWho: Marisa Peer\, Khairul Johari\nPENCILLED placeholder — Marisa's own book podcast (facilitated by us\; not the Scaling Wisdom episode with Vishen). Per our capacity proposal (p-marisa-podcast-count\, 13 Jul): recommended max 3 episodes in-house\, best batched on Mon 27 Jul (the most open studio day). No guest/topic confirmed yet — reply to Elise McDonald (Marisa's team) to lock in.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-own-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast (YMYR) — 90-min slot\, guest TBC
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Marisa Peer\, Khairul Johari\nHELD 90-min YMYR booking (14:00–15:30) — Marisa's team asked to extend this Monday 2pm slot from 1h to 90 min (21 Jul)\; guest still TBC (Sabrina Stocker is on Tue 28th\, not here — corrected 21 Jul). Maya Raichoora's interview nudged 15:15→15:45 for a studio reset after this. Confirm guest with Elise/Nicola.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna & Vishen — NEW EB / Total Self Confidence Masterclass
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Paul McKenna\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul — "this all looks good to me"). MC DNA 2.0. Time-saver per brief: use the Hypnotic Trance Audio for the teaching segment — Paul & Vishen open and intro into it\; Vishen does the entrepreneur-pathway close.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna — Masterclass Marketing Assets
+DTSTART;TZID=Europe/Tallinn:20260730T151500
+DTEND;TZID=Europe/Tallinn:20260730T171500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Paul McKenna\, Khairul Johari\nMOVED to 30 Jul (14 Jul) to protect Paul's voice: he flagged his voice won't hold for a full day\, so we split his load across two days. The Hypnotherapy Cert assets are time-sensitive and stay on the 28th\; these masterclass assets are NOT urgent\, so they move to the 30th afternoon (after his 12:00 interview\, once the studio clears at 15:00). Confirmed by author for the shoot itself\; the date split needs his OK (see email).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-mckenna-cert@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna — Hypnotherapy Cert Marketing Assets
+DTSTART;TZID=Europe/Tallinn:20260728T150000
+DTEND;TZID=Europe/Tallinn:20260728T160000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Paul McKenna\, Khairul Johari\nTIME-SENSITIVE — must be captured on the 28th (launch deadline)\, so it stays here while the non-urgent masterclass assets move to the 30th. Kept at 15:00–16:00 to give Paul a voice rest after his masterclass (now ends 12:00\, so ~3h rest) — deliberately NOT pulled forward with the other 16 Jul optimisation for exactly this reason. Just this one short 1h block on top of a masterclass that is largely Trance-Audio-driven (light on his live voice)\, so the 28th is no longer a full talking day. Solves Paul's voice-stamina concern (email 14 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-sheleana@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Eni & Sheleana Aiyana
+DTSTART;TZID=Europe/Tallinn:20260728T090000
+DTEND;TZID=Europe/Tallinn:20260728T094500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Sheleana Aiyana\, Eni Selfo\, Nadir Salam\nCONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot. Per Kaitlin (14 Jul): Sheleana prefers MORNINGS\, not too late in the afternoon\, and departs 29 Jul\, so this morning slot on her talk day is ideal. Deliberately the morning OF her 2pm stage talk so her hair and makeup carry through the day (glam once\, touch up before the talk). It is the only studio morning window that day — McKenna's masterclass ties up the crew 10am-1pm. Eni interviews (feminine-energy call). ACTION: author relations to confirm with Sheleana she is happy doing the 9am interview the morning of her talk (per Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-own-3@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast (YMYR) — guest Sabrina Stocker
+DTSTART;TZID=Europe/Tallinn:20260728T130000
+DTEND;TZID=Europe/Tallinn:20260728T143000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Marisa Peer\, Khairul Johari\nGUEST CONFIRMED: Sabrina Stocker\, Tue 28 Jul 13:00–14:30 (Matt\, 21 Jul). Sits before Paul McKenna's 15:00 cert assets on unit 1. Sabrina is an external YMYR guest (not an MVU author)\, so named in the title rather than the speaker roster.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-kwik-superbrain@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik — Superbrain Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260729T100000
+DTEND;TZID=Europe/Tallinn:20260729T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jim Kwik\, Vishen Lakhiani\, Khairul Johari\nDay after he lands\; his stage day is the 30th (where his accelerator is delivered live). One continuous 10:00–13:00 studio block: teaching with Vishen runs to ~12:15 (the Quest teaching-audio time-saver keeps it tight)\, then Vishen wraps and Jim stays on solo for the accelerator landing-page video (see accel-upsell-kwik) in the same session. The studio flips to the Jolene podcast at 13:30. (Nadir back on camera here — the Zen Samurai meditation that ran parallel was killed 14 Jul.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jolene@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Dr. Jolene Brighten
+DTSTART;TZID=Europe/Tallinn:20260729T141500
+DTEND;TZID=Europe/Tallinn:20260729T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Dr. Jolene Brighten\, Nadir Salam\nDeparture day. Sits at 14:15\, before the Lorin podcast at 15:00. (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild — this Gareth-hosted author interview is a separate deliverable and stands alone\; confirm we still want it.) Stays with Gareth (Kaitlin is capped at 9 interviews per her commercial agreement).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-lorin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Scaling Wisdom Podcast: Lorin Krenn & Vishen
+DTSTART;TZID=Europe/Tallinn:20260726T140000
+DTEND;TZID=Europe/Tallinn:20260726T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Lorin Krenn\, Vishen Lakhiani\, Khairul Johari\nMOVED off 29 Jul (16 Jul): Lorin flies 6am Wed 29\, so the 29th is unusable — the old 15:00 slot was impossible. Re-homed to Sun 26 Jul\, a Vishen NON-stage day. Extended to a full 90 min (14:00–15:30) per Gareth's podcast standard. Vishen free after his 10:00–12:00 Talking Heads\, Lorin otherwise free\; studio opens at 14:00 as Kaitlin's Marisa interview wraps. The Shi interview was nudged to 15:45 to give a studio reset after this. Lorin makeup 13:30–14:00 (green room). Verified clean.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-zen-takai@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Sensei Zen Takai
+DTSTART;TZID=Europe/Tallinn:20260729T154500
+DTEND;TZID=Europe/Tallinn:20260729T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Sensei Zen Takai\, Nadir Salam\nNow 15:45\, straight after the Lorin podcast (ends 15:45) — re-spaced 14 Jul to clear the old overlap. Last of Gareth's four sequential 29 Jul afternoon sessions. Stays with Gareth (Kaitlin capped at 9 per her commercial agreement).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:talk-iris-wagner@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Iris Wagner — "Your Voice. Your Message. Before It's Too Late: How to Preserve Your Authentic Legacy in the Age of AI." (20 min)
+DTSTART;TZID=Europe/Tallinn:20260730T110000
+DTEND;TZID=Europe/Tallinn:20260730T112000
+LOCATION:Community Stage (Small Hall)
+DESCRIPTION:Who: Iris Wagner\nCONFIRMED via 2026 SMALL HALL Overview sheet — 20-min Tribe slot\, Thu 30 Jul\, 11–12 block. Sticking to this stage slot only — no separate studio content shoot (decided 13 Jul). Per Iris's 13 Jul brief: venue not yet confirmed to her by Mirell Sork (we have it as Community Stage) — she's asked Vishen to attend and\, if appropriate\, introduce her\; awaiting his confirmation.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-maria-wendt@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:⚠️ Scaling Wisdom Podcast: Maria Wendt & Vishen
+DTSTART;TZID=Europe/Tallinn:20260730T110000
+DTEND;TZID=Europe/Tallinn:20260730T114500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: CONFLICT\nWho: Gareth Winter\, Maria Wendt\, Vishen Lakhiani\, Khairul Johari\nMaria is not on Speaker DATES — window unknown.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260730T121500
+DTEND;TZID=Europe/Tallinn:20260730T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Paul McKenna\, Kaitlin O'Toole\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul). NUDGED 12:00→12:15 (16 Jul): Kaitlin is MC'ing the main stage until 12:00 (Jim Kwik session)\, so she can't start at 12:00. Now straight after she comes off stage — she's already in hair/makeup from hosting (no separate glam)\, just Paul gets a touch-up. Keeps Kaitlin as interviewer per Gareth.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-nick@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Nick Santonastasso
+DTSTART;TZID=Europe/Tallinn:20260730T130000
+DTEND;TZID=Europe/Tallinn:20260730T134500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Nick Santonastasso\, Nadir Salam\nReassigned from Kaitlin to Gareth (13 Jul prioritization pass). (His Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild\; this author interview stands alone — confirm we still want it.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jamie-sea@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Jamie Sea
+DTSTART;TZID=Europe/Tallinn:20260730T141500
+DTEND;TZID=Europe/Tallinn:20260730T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jamie Sea\, Nadir Salam\nReassigned from Kaitlin to Gareth (13 Jul prioritization pass). (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild\; this author interview stands alone — confirm we still want it.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Rachel Pringle
+DTSTART;TZID=Europe/Tallinn:20260801T100000
+DTEND;TZID=Europe/Tallinn:20260801T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Rachel Pringle\, Kaitlin O'Toole\, Nadir Salam\nHer last day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-rachel-membership@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:⚠️ Rachel Pringle — Membership Marketing Assets (“Sing from the Same Hymn Sheet” — Relationships)
+DTSTART;TZID=Europe/Tallinn:20260801T110000
+DTEND;TZID=Europe/Tallinn:20260801T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: CONFLICT\nWho: Rachel Pringle\, Nadir Salam\nRuns on unit 2 while unit 1 + Still Frame capture the Vishen AI Accelerator. Her departure day — confirm.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-iris-vishen-parents-d1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Memoirs Productions with Mohan & Roopi (Day 1 of 3)
+DTSTART;TZID=Europe/Tallinn:20260803T093000
+DTEND;TZID=Europe/Tallinn:20260803T163000
+LOCATION:Mohan & Roopi's apartment\, Tallinn (~10 min walk from Kultuurikatel)
+DESCRIPTION:Status: TENTATIVE\nWho: Iris Wagner\, Mohan Lakhiani\, Roopi Lakhiani\nIRIS-RUN — Gareth decided (13 Jul) no MV crew stays on for this\; Iris resources it entirely herself (crew\, kit\, catering all her side). On the calendar for awareness only (Vishen's parents\, post-event). 9:30am–4:30pm\, flexible around Mohan & Roopi's energy\; some segments a closed set for privacy. Vishen welcome to join.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-iris-vishen-parents-d2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Memoirs Productions with Mohan & Roopi (Day 2 of 3)
+DTSTART;TZID=Europe/Tallinn:20260804T093000
+DTEND;TZID=Europe/Tallinn:20260804T163000
+LOCATION:Mohan & Roopi's apartment\, Tallinn (~10 min walk from Kultuurikatel)
+DESCRIPTION:Status: TENTATIVE\nWho: Iris Wagner\, Mohan Lakhiani\, Roopi Lakhiani\nDay 2 of 3 — Iris-run\, no MV crew. See Day 1 notes.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-iris-vishen-parents-d3@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Memoirs Productions with Mohan & Roopi (Day 3 of 3 — + Hayden & Eve AMA)
+DTSTART;TZID=Europe/Tallinn:20260805T093000
+DTEND;TZID=Europe/Tallinn:20260805T163000
+LOCATION:Mohan & Roopi's apartment\, Tallinn (~10 min walk from Kultuurikatel)
+DESCRIPTION:Status: TENTATIVE\nWho: Iris Wagner\, Mohan Lakhiani\, Roopi Lakhiani\, Hayden Lakhiani\, Eve Lakhiani\nDay 3 of 3 — Iris-run\, no MV crew. Iris wants Hayden & Eve in for a grandparents "Ask Me Anything" (needs Vishen to confirm the kids' availability — his tracked window ends 2 Aug\; see a-vishen-window-legacy).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:accel-upsell-kwik@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik — Accelerator Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260729T113000
+DTEND;TZID=Europe/Tallinn:20260729T121500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jim Kwik\, Khairul Johari\nThe accelerator itself is delivered LIVE on the Main Stage on 30 Jul (per the Google Sheet) — this is just the sales/landing-page video for it. Folded into the tail of Jim's 29 Jul masterclass session (after Vishen wraps ~12:15\, Jim stays on solo)\, since his 30th is stage-packed all day. No extra studio slot\; frees his departure-eve.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer — NEW RTHA / Uncompromised Life Masterclass
+DTSTART;TZID=Europe/Tallinn:20260731T100000
+DTEND;TZID=Europe/Tallinn:20260731T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Marisa Peer\, Khairul Johari\nMC DNA 2.0. Time-saver per brief: use one of Marisa’s hypnosis audios from the Quest (limiting beliefs) for the teaching segment. Camera: Khairul only — Nadir runs unit 2 (Lee Holden) in parallel (14 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Lee Holden
+DTSTART;TZID=Europe/Tallinn:20260731T144500
+DTEND;TZID=Europe/Tallinn:20260731T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Lee Holden\, Kaitlin O'Toole\, Nadir Salam\nA sit-down interview needs the sound-controlled Energiakeskus studio\, NOT the Woodblock (Studio 2)\, which is a social-testimonial / vox-pop space (Gareth\, 21 Jul). Serialised after Lee's asset suite in the one studio: Marisa has Energiakeskus 10:00–12:45\, Lee's assets 12:45–14:45\, then this at 14:45. Kaitlin is off the main stage after 12:00 and Lee rolls straight in camera-ready off his assets\, so no extra makeup. Nadir operates. Lee's window runs to 2 Aug\, so there's slack if it needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast (YMYR) — guest Rachel Pringle Urb
+DTSTART;TZID=Europe/Tallinn:20260731T160000
+DTEND;TZID=Europe/Tallinn:20260731T173000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Marisa Peer\, Rachel Pringle\, Khairul Johari\nCONFIRMED (Matt\, 21 Jul): Rachel Pringle Urb (arrives 29th) on Marisa's "Your Mind\, Your Rules" podcast\, Fri 31 Jul 4:00–5:30pm (90 min). Slots into the open Energiakeskus afternoon after Lee Holden's interview wraps (15:30)\, with a 30-min reset. Marisa free after her 12:45 assets\; Rachel free all day. Unit 1 (Khairul) free by then. Both women — one 60-min makeup call at 15:00. Last studio session of the run.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lee Holden — Masterclass Marketing Assets (Modern QiGong + Longevity collection)
+DTSTART;TZID=Europe/Tallinn:20260731T124500
+DTEND;TZID=Europe/Tallinn:20260731T144500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Lee Holden\, Nadir Salam\n8-item suite. RESOLVED 21 Jul — was pencilled into a phantom parallel "Studio — Unit 2"\; Gareth confirmed the only second space is the Woodblock (Studio 2)\, which is for social testimonials + vox pops\, not sound-controlled formal capture. So this consolidates into the one Energiakeskus studio\, serialised after Marisa's masterclass + assets (which hold the room until 12:45). Nadir operates on unit 2\; Khairul/Gareth are free by then. Lee's window runs to 2 Aug if it needs to slide.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-maya@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Maya Raichoora
+DTSTART;TZID=Europe/Tallinn:20260727T154500
+DTEND;TZID=Europe/Tallinn:20260727T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Maya Raichoora\, Nadir Salam\nMOVED from 1 Aug (was inside Gareth's Vishen AI Accelerator\, 11am-6pm — impossible). NUDGED 15:15→15:45 (21 Jul) to clear a studio reset after Marisa's Ep2 podcast extended to 90 min (ends 15:30). Maya free all day the 27th (her only other slot is the 30th). Nadir free\; studio clear after Marisa. 28 Jul afternoon is the fallback.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer — Masterclass Marketing Assets (RTHA collection)
+DTSTART;TZID=Europe/Tallinn:20260731T113000
+DTEND;TZID=Europe/Tallinn:20260731T124500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Marisa Peer\, Khairul Johari\nReduced suite. PULLED to 12:00 (16 Jul) straight after Marisa's 2h masterclass so she stays camera-ready (no re-makeup) and her studio day ends by 13:15. Moved onto unit 1 (continuing from her masterclass)\; the old "free unit 1" reason is gone now that Vishen's Talking Heads left the 31st. Unit 2 stays on the Lee Holden block.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:th-vishen-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — Talking Heads (YouTube)
+DTSTART;TZID=Europe/Tallinn:20260729T121500
+DTEND;TZID=Europe/Tallinn:20260729T141500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\nMOVED to week 2 per Gareth (21 Jul) — Vishen couldn't make the Sun 26 Jul slot. Re-homed to Wed 29 Jul 12:15–14:15: a clean midday 2h with studio + unit 1 + Gareth free (Kwik masterclass wraps 11:30\, Jolene interview not until 14:15)\, and it respects Vishen's "not before 11" preference. 2h Vishen solo talking-head session for YouTube. Backup slot if this shifts: Tue 28 Jul 16:00–18:00.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul20-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin (soundcheck)
+DTSTART;TZID=Europe/Tallinn:20260720T110000
+DTEND;TZID=Europe/Tallinn:20260720T121500
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nSADU sound check / stage prep. From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul20-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260720T131500
+DTEND;TZID=Europe/Tallinn:20260720T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for the Vishen opening + afternoon stage block. From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul22-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260722T100000
+DTEND;TZID=Europe/Tallinn:20260722T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Jeffrey Allen (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul22-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260722T140000
+DTEND;TZID=Europe/Tallinn:20260722T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Jeffrey Allen + Regan (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul23-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260723T094000
+DTEND;TZID=Europe/Tallinn:20260723T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Lee Holden / Simon Ong / Cynthia Thurlow (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul23-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260723T140000
+DTEND;TZID=Europe/Tallinn:20260723T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Dan Brulé / Scott Lyon (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul27-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260727T100000
+DTEND;TZID=Europe/Tallinn:20260727T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Shi Heng Yi (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul27-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Shi+Vishen / Hal / Sheleana+Wineland (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul28-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Zen Takai / Dawn Hoang (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul28-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260728T140000
+DTEND;TZID=Europe/Tallinn:20260728T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Sheleana / Jolene / Jamie Sea (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul30@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260730T094000
+DTEND;TZID=Europe/Tallinn:20260730T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Lee Holden intro + Jim Kwik (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The McKenna interview was moved to 12:15 to clear this.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul31@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260731T100000
+DTEND;TZID=Europe/Tallinn:20260731T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Rola Diab + Vishen (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The Lee Holden interview was moved to 13:00 to clear this.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-jeffrey-allen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Jeffrey Allen\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260721T090000
+DTEND;TZID=Europe/Tallinn:20260721T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Jeffrey Allen\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Jeffrey Allen at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Regan Hillyer\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260721T143000
+DTEND;TZID=Europe/Tallinn:20260721T153000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Regan Hillyer\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Regan Hillyer at 15:30. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — John Lee
+DTSTART;TZID=Europe/Tallinn:20260721T103000
+DTEND;TZID=Europe/Tallinn:20260721T110000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: John Lee\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Kaitlin & John Lee at 11:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-mc-regan-aom@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260725T100000
+DTEND;TZID=Europe/Tallinn:20260725T110000
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Regan Hillyer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Regan Hillyer — NEW Art of Manifesting Masterclass (with Vishen) at 12:00. Hair\, makeup & wardrobe. At her hotel — Regan gets ready off-site from 10:00\, then travels in for the 12:00 masterclass shoot.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-chiara-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260723T120000
+DTEND;TZID=Europe/Tallinn:20260723T130000
+LOCATION:Author Lounge / VIP Area
+DESCRIPTION:Who: Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Chiara King podcast — guest Marisa Peer (we facilitate) at 13:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-chiara-lorin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Lorin Krenn
+DTSTART;TZID=Europe/Tallinn:20260723T140000
+DTEND;TZID=Europe/Tallinn:20260723T143000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Lorin Krenn\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Chiara King podcast — guest Lorin Krenn (we facilitate) at 14:30. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-mc-ja-duality@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260724T103000
+DTEND;TZID=Europe/Tallinn:20260724T110000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Jeffrey Allen\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Jeffrey Allen — NEW Duality Masterclass (with Vishen) at 11:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-kristina-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kristina Mand-Lakhiani\, Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260725T080000
+DTEND;TZID=Europe/Tallinn:20260725T090000
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Kristina Mand-Lakhiani\, Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Kristina Mand-Lakhiani × Marisa Peer podcast at 10:00. Hair\, makeup & wardrobe. At the hotel — weekend green room/studio is locked until 10am\, so Kristina + Marisa glam off-site 08:00–09:00 and travel in camera-ready for the 10:00 record.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-dan-brule@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Dan Brulé
+DTSTART;TZID=Europe/Tallinn:20260722T100000
+DTEND;TZID=Europe/Tallinn:20260722T103000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Dan Brulé\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Gareth & Dan Brulé at 10:30. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260726T111500
+DTEND;TZID=Europe/Tallinn:20260726T121500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Marisa Peer at 12:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-marisa-jeffrey@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer\, Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260725T150000
+DTEND;TZID=Europe/Tallinn:20260725T160000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Jeffrey Allen\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer podcast: Marisa × Jeffrey Allen at 16:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-wineland@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — John Wineland
+DTSTART;TZID=Europe/Tallinn:20260722T110000
+DTEND;TZID=Europe/Tallinn:20260722T113000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: John Wineland\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Gareth & John Wineland at 11:30. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-eric@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260726T124500
+DTEND;TZID=Europe/Tallinn:20260726T131500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Eric Edmeades\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Kaitlin & Eric Edmeades at 13:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-shy@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Shi Heng Yi\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260726T144500
+DTEND;TZID=Europe/Tallinn:20260726T154500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Shi Heng Yi\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Shi Heng Yi at 15:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-marisa-own-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260727T100000
+DTEND;TZID=Europe/Tallinn:20260727T110000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer podcast — "Your Mind\, Your Rules" (Episode 1\, PENCILLED) at 11:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-marisa-own-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260727T130000
+DTEND;TZID=Europe/Tallinn:20260727T140000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer podcast (YMYR) — 90-min slot\, guest TBC at 14:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-mc-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260728T093000
+DTEND;TZID=Europe/Tallinn:20260728T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Paul McKenna\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Paul McKenna & Vishen — NEW EB / Total Self Confidence Masterclass at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-sheleana@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Sheleana Aiyana
+DTSTART;TZID=Europe/Tallinn:20260728T080000
+DTEND;TZID=Europe/Tallinn:20260728T090000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Sheleana Aiyana\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Eni & Sheleana Aiyana at 09:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-marisa-own-3@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260728T120000
+DTEND;TZID=Europe/Tallinn:20260728T130000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer podcast (YMYR) — guest Sabrina Stocker at 13:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-mc-kwik-superbrain@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Jim Kwik
+DTSTART;TZID=Europe/Tallinn:20260729T093000
+DTEND;TZID=Europe/Tallinn:20260729T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Jim Kwik\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Jim Kwik — Superbrain Masterclass (with Vishen) at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-jolene@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Dr. Jolene Brighten
+DTSTART;TZID=Europe/Tallinn:20260729T131500
+DTEND;TZID=Europe/Tallinn:20260729T141500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Dr. Jolene Brighten\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Gareth & Dr. Jolene Brighten at 14:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-lorin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Lorin Krenn
+DTSTART;TZID=Europe/Tallinn:20260726T133000
+DTEND;TZID=Europe/Tallinn:20260726T140000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Lorin Krenn\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Scaling Wisdom Podcast: Lorin Krenn & Vishen at 14:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-zen-takai@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Sensei Zen Takai
+DTSTART;TZID=Europe/Tallinn:20260729T151500
+DTEND;TZID=Europe/Tallinn:20260729T154500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Sensei Zen Takai\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Gareth & Sensei Zen Takai at 15:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-maria-wendt@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Maria Wendt
+DTSTART;TZID=Europe/Tallinn:20260730T100000
+DTEND;TZID=Europe/Tallinn:20260730T110000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Maria Wendt\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Scaling Wisdom Podcast: Maria Wendt & Vishen at 11:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260730T114500
+DTEND;TZID=Europe/Tallinn:20260730T121500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Paul McKenna\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Kaitlin & Paul McKenna at 12:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-nick@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Nick Santonastasso
+DTSTART;TZID=Europe/Tallinn:20260730T123000
+DTEND;TZID=Europe/Tallinn:20260730T130000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Nick Santonastasso\, Makeup\n30-min pre-shoot buffer (men — 30 min) so talent is camera-ready for Author Interview: Gareth & Nick Santonastasso at 13:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-jamie-sea@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Jamie Sea
+DTSTART;TZID=Europe/Tallinn:20260730T131500
+DTEND;TZID=Europe/Tallinn:20260730T141500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Jamie Sea\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Gareth & Jamie Sea at 14:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Rachel Pringle\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260801T090000
+DTEND;TZID=Europe/Tallinn:20260801T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Rachel Pringle\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Rachel Pringle at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-mc-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260731T090000
+DTEND;TZID=Europe/Tallinn:20260731T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer — NEW RTHA / Uncompromised Life Masterclass at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260731T134500
+DTEND;TZID=Europe/Tallinn:20260731T144500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Lee Holden at 14:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-pod-marisa-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer\, Rachel Pringle
+DTSTART;TZID=Europe/Tallinn:20260731T150000
+DTEND;TZID=Europe/Tallinn:20260731T160000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Rachel Pringle\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Marisa Peer podcast (YMYR) — guest Rachel Pringle Urb at 16:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-maya@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Maya Raichoora
+DTSTART;TZID=Europe/Tallinn:20260727T144500
+DTEND;TZID=Europe/Tallinn:20260727T154500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Maya Raichoora\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Gareth & Maya Raichoora at 15:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+END:VCALENDAR

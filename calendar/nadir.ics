@@ -1,0 +1,247 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MVU 2026 Production HQ//EN
+X-WR-CALNAME:MVU 2026 — Nadir Salam
+X-WR-TIMEZONE:Europe/Tallinn
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Tallinn
+BEGIN:STANDARD
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jul24-awards@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Mindvalley Awards Ceremony — FULL VIDEO TEAM (timing still TBC on source)
+DTSTART;TZID=Europe/Tallinn:20260724T180000
+DTEND;TZID=Europe/Tallinn:20260724T190000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\, Nadir Salam\, Kuhan Kunasegaran\nPer Fisher (voice note\, 13 Jul): this needs the full production team's focus\, not passive coverage — many speakers fly in specifically for the video/photo opportunity here\, and a strong asset can lift a speaker's fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul\, Nadir\, Kuhan) + Gareth — they're all already on-site for the awards\, working together\, so no separate resourcing needed. Kaitlin O'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jeffrey-allen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260721T100000
+DTEND;TZID=Europe/Tallinn:20260721T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: Jeffrey Allen\, Kaitlin O'Toole\, Nadir Salam\nMOVED to 10:00 at Jeffrey's request (email 14 Jul): he collects Hisami from TLL (lands 7:30am)\, so a 9am start was too tight. Pushed John Lee's interview to 11:00 to clear the slot. Day before his 4-block stage day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260721T153000
+DTEND;TZID=Europe/Tallinn:20260721T161500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Regan Hillyer\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-daniel-combined@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Daniel Priestley — combined block: Gareth interview + Eric’s-daughter podcast
+DTSTART;TZID=Europe/Tallinn:20260721T123000
+DTEND;TZID=Europe/Tallinn:20260721T134500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Daniel Priestley\, Khairul Johari\, Nadir Salam\nCOMBINED per Gareth (16 Jul): one ~75-min premium-studio block straight off Daniel’s 12:10–12:30 portrait\, so he arrives already in hair/makeup (no separate glam). Two deliverables in ~1h of his time: (1) Eric Edmeades’s daughter interviews Daniel for her podcast (~35–40 min — a favour\; Daniel and Eric are close friends)\, then (2) Gareth’s own short segment with Daniel (~15–20 min). Pulled EARLY (off the portrait) rather than the 3pm slot. HARD STOP: Daniel departs 14:30 (2:30pm) on the 21st (confirmed 16 Jul)\, so this block wraps at 13:45 with a 45-min buffer\, and the events team’s 3pm "Author Interview: Gareth & Daniel Priestley" filming slot (15:00–15:20\, record recznJLe2Kzvnnts8) is now IMPOSSIBLE — he is gone by then — and must be dropped. Replaces the standalone Woodblock favour shoot too. Studio + Gareth + both units free\; verified clean.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-regan-aom@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer — NEW Art of Manifesting Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260725T120000
+DTEND;TZID=Europe/Tallinn:20260725T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nPOSTPONED from Thu 23 to Sat 25 Jul\, expanded to a full 3-hour record 12:00–15:00 (Gareth\, 21 Jul — top priority). Makeup 10:00 at the Nuune Boutique Hotel (Regan preps off-site\, travels in). Regan's marketing assets are captured WITHIN this 3h block (the separate Thu assets slot is folded in). Vishen is free 12:00–15:00 once the Jeffrey×Vishen podcast is cancelled (see pod-ja removal). Studio free from 10:30 (after Kristina×Marisa) through 15:00. Part of the Fri script → Sat shoot → Sun ads Regan sequence.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-ja-duality@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen — NEW Duality Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260724T110000
+DTEND;TZID=Europe/Tallinn:20260724T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Jeffrey Allen\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Jeffrey Allen\, email 14 Jul — "this is great planning... everything else looks great"). MC DNA 2.0\, a refresh in the new format (not a straight reshoot). Suggested teaching: The Mental Noise Dial / Energetic Grounding Technique.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-kristina-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kristina Mand-Lakhiani × Marisa Peer podcast
+DTSTART;TZID=Europe/Tallinn:20260725T100000
+DTEND;TZID=Europe/Tallinn:20260725T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kristina Mand-Lakhiani\, Marisa Peer\, Khairul Johari\, Nadir Salam\nMOVED to 10:00–11:30 (Gareth\, 21 Jul) — the studio isn't accessible before 10am on the weekend\, so the old 09:00 start was impossible. 90-min record\, then a 30-min reset before Regan's 12:00 masterclass. Two-hander\, no Vishen. Both women\, so a 60-min makeup call 09:00–10:00 (green room — assumes green-room access before the 10am studio open\; else they prep at their hotel).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-dan-brule@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Dan Brulé
+DTSTART;TZID=Europe/Tallinn:20260722T103000
+DTEND;TZID=Europe/Tallinn:20260722T111500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Dan Brulé\, Nadir Salam\nMOVED to Wed 22 Jul (Gareth\, 21 Jul) to decompress the tight Sat 25th (Jeffrey's two-podcast day). The 22nd is Jeffrey's main-stage day\, so the Energiakeskus studio + our unit sit idle — perfect for a couple of Gareth-led interviews. First call 10:00 (nothing before 10am per Gareth): makeup 10:00\, interview 10:30–11:15\, then a 15-min reset into John Wineland at 11:30. Dan is in town 20–28 Jul\; reassigned from Kaitlin to Gareth (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260726T121500
+DTEND;TZID=Europe/Tallinn:20260726T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Marisa Peer\, Kaitlin O'Toole\, Nadir Salam\nBATCHED to 26 Jul (from 25) — clusters with Kaitlin's Eric Edmeades + Shi Heng Yi interviews into one afternoon block\, freeing 25 Jul. Marisa's window (21 Jul–2 Aug) covers it\; slots into Nadir's 13:00–14:00 gap. Kaitlin batching plan (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-marisa-jeffrey@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Marisa Peer podcast: Marisa × Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260725T160000
+DTEND;TZID=Europe/Tallinn:20260725T173000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Marisa Peer\, Jeffrey Allen\, Khairul Johari\, Nadir Salam\nLOCKED 4:00–5:30pm (Gareth\, 21 Jul) — Matt's requested time. Works now that Regan's accelerator camera is Kuhan+Jason: that frees Khairul + Nadir to run this in the studio while Gareth produces the accelerator on the Main Stage (Gareth won't be present for the whole podcast — the unit handles it\, it's Marisa's facilitated 2-hander). Jeffrey's LAST day (flies 26 Jul) so it stays Saturday. Runs after Regan's 12:00–15:00 masterclass. Marisa's 2nd podcast of the day (after Kristina 09:00).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-wineland@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & John Wineland
+DTSTART;TZID=Europe/Tallinn:20260722T113000
+DTEND;TZID=Europe/Tallinn:20260722T121500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, John Wineland\, Nadir Salam\nMOVED to Wed 22 Jul (Gareth\, 21 Jul) to lift it off the heaviest studio day (Sun 26th). Runs second in the 22nd's open studio: 15-min reset off Dan Brulé's interview\, makeup 11:00\, interview 11:30–12:15. John is in town 20–27 Jul (the old note calling the 26th his departure day was stale — he has a 27th stage slot)\, so the 22nd is well within his window. Reassigned from Kaitlin to Gareth (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-eric@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260726T131500
+DTEND;TZID=Europe/Tallinn:20260726T140000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Eric Edmeades\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-shy@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Shi Heng Yi
+DTSTART;TZID=Europe/Tallinn:20260726T154500
+DTEND;TZID=Europe/Tallinn:20260726T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Shi Heng Yi\, Kaitlin O'Toole\, Nadir Salam\nArrival day — keep light. NUDGED 15:30→15:45 (16 Jul) to leave a studio reset after the Lorin×Vishen podcast\, which extended to 90 min (ends 15:30). 28 Jul is also open if this needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna & Vishen — NEW EB / Total Self Confidence Masterclass
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Paul McKenna\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul — "this all looks good to me"). MC DNA 2.0. Time-saver per brief: use the Hypnotic Trance Audio for the teaching segment — Paul & Vishen open and intro into it\; Vishen does the entrepreneur-pathway close.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-sheleana@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Eni & Sheleana Aiyana
+DTSTART;TZID=Europe/Tallinn:20260728T090000
+DTEND;TZID=Europe/Tallinn:20260728T094500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Sheleana Aiyana\, Eni Selfo\, Nadir Salam\nCONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot. Per Kaitlin (14 Jul): Sheleana prefers MORNINGS\, not too late in the afternoon\, and departs 29 Jul\, so this morning slot on her talk day is ideal. Deliberately the morning OF her 2pm stage talk so her hair and makeup carry through the day (glam once\, touch up before the talk). It is the only studio morning window that day — McKenna's masterclass ties up the crew 10am-1pm. Eni interviews (feminine-energy call). ACTION: author relations to confirm with Sheleana she is happy doing the 9am interview the morning of her talk (per Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jolene@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Dr. Jolene Brighten
+DTSTART;TZID=Europe/Tallinn:20260729T141500
+DTEND;TZID=Europe/Tallinn:20260729T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Dr. Jolene Brighten\, Nadir Salam\nDeparture day. Sits at 14:15\, before the Lorin podcast at 15:00. (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild — this Gareth-hosted author interview is a separate deliverable and stands alone\; confirm we still want it.) Stays with Gareth (Kaitlin is capped at 9 interviews per her commercial agreement).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-zen-takai@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Sensei Zen Takai
+DTSTART;TZID=Europe/Tallinn:20260729T154500
+DTEND;TZID=Europe/Tallinn:20260729T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Sensei Zen Takai\, Nadir Salam\nNow 15:45\, straight after the Lorin podcast (ends 15:45) — re-spaced 14 Jul to clear the old overlap. Last of Gareth's four sequential 29 Jul afternoon sessions. Stays with Gareth (Kaitlin capped at 9 per her commercial agreement).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260730T121500
+DTEND;TZID=Europe/Tallinn:20260730T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Paul McKenna\, Kaitlin O'Toole\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul). NUDGED 12:00→12:15 (16 Jul): Kaitlin is MC'ing the main stage until 12:00 (Jim Kwik session)\, so she can't start at 12:00. Now straight after she comes off stage — she's already in hair/makeup from hosting (no separate glam)\, just Paul gets a touch-up. Keeps Kaitlin as interviewer per Gareth.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-nick@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Nick Santonastasso
+DTSTART;TZID=Europe/Tallinn:20260730T130000
+DTEND;TZID=Europe/Tallinn:20260730T134500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Nick Santonastasso\, Nadir Salam\nReassigned from Kaitlin to Gareth (13 Jul prioritization pass). (His Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild\; this author interview stands alone — confirm we still want it.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jamie-sea@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Jamie Sea
+DTSTART;TZID=Europe/Tallinn:20260730T141500
+DTEND;TZID=Europe/Tallinn:20260730T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jamie Sea\, Nadir Salam\nReassigned from Kaitlin to Gareth (13 Jul prioritization pass). (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen's slate rebuild\; this author interview stands alone — confirm we still want it.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Rachel Pringle
+DTSTART;TZID=Europe/Tallinn:20260801T100000
+DTEND;TZID=Europe/Tallinn:20260801T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Rachel Pringle\, Kaitlin O'Toole\, Nadir Salam\nHer last day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-rachel-membership@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:⚠️ Rachel Pringle — Membership Marketing Assets (“Sing from the Same Hymn Sheet” — Relationships)
+DTSTART;TZID=Europe/Tallinn:20260801T110000
+DTEND;TZID=Europe/Tallinn:20260801T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: CONFLICT\nWho: Rachel Pringle\, Nadir Salam\nRuns on unit 2 while unit 1 + Still Frame capture the Vishen AI Accelerator. Her departure day — confirm.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Lee Holden
+DTSTART;TZID=Europe/Tallinn:20260731T144500
+DTEND;TZID=Europe/Tallinn:20260731T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Lee Holden\, Kaitlin O'Toole\, Nadir Salam\nA sit-down interview needs the sound-controlled Energiakeskus studio\, NOT the Woodblock (Studio 2)\, which is a social-testimonial / vox-pop space (Gareth\, 21 Jul). Serialised after Lee's asset suite in the one studio: Marisa has Energiakeskus 10:00–12:45\, Lee's assets 12:45–14:45\, then this at 14:45. Kaitlin is off the main stage after 12:00 and Lee rolls straight in camera-ready off his assets\, so no extra makeup. Nadir operates. Lee's window runs to 2 Aug\, so there's slack if it needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:assets-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Lee Holden — Masterclass Marketing Assets (Modern QiGong + Longevity collection)
+DTSTART;TZID=Europe/Tallinn:20260731T124500
+DTEND;TZID=Europe/Tallinn:20260731T144500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Lee Holden\, Nadir Salam\n8-item suite. RESOLVED 21 Jul — was pencilled into a phantom parallel "Studio — Unit 2"\; Gareth confirmed the only second space is the Woodblock (Studio 2)\, which is for social testimonials + vox pops\, not sound-controlled formal capture. So this consolidates into the one Energiakeskus studio\, serialised after Marisa's masterclass + assets (which hold the room until 12:45). Nadir operates on unit 2\; Khairul/Gareth are free by then. Lee's window runs to 2 Aug if it needs to slide.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-maya@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Gareth & Maya Raichoora
+DTSTART;TZID=Europe/Tallinn:20260727T154500
+DTEND;TZID=Europe/Tallinn:20260727T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Maya Raichoora\, Nadir Salam\nMOVED from 1 Aug (was inside Gareth's Vishen AI Accelerator\, 11am-6pm — impossible). NUDGED 15:15→15:45 (21 Jul) to clear a studio reset after Marisa's Ep2 podcast extended to 90 min (ends 15:30). Maya free all day the 27th (her only other slot is the 30th). Nadir free\; studio clear after Marisa. 28 Jul afternoon is the fallback.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+END:VCALENDAR

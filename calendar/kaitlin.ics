@@ -1,0 +1,310 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MVU 2026 Production HQ//EN
+X-WR-CALNAME:MVU 2026 — Kaitlin O'Toole
+X-WR-TIMEZONE:Europe/Tallinn
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Tallinn
+BEGIN:STANDARD
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jul24-awards@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Mindvalley Awards Ceremony — FULL VIDEO TEAM (timing still TBC on source)
+DTSTART;TZID=Europe/Tallinn:20260724T180000
+DTEND;TZID=Europe/Tallinn:20260724T190000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\, Nadir Salam\, Kuhan Kunasegaran\nPer Fisher (voice note\, 13 Jul): this needs the full production team's focus\, not passive coverage — many speakers fly in specifically for the video/photo opportunity here\, and a strong asset can lift a speaker's fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul\, Nadir\, Kuhan) + Gareth — they're all already on-site for the awards\, working together\, so no separate resourcing needed. Kaitlin O'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-jeffrey-allen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Jeffrey Allen
+DTSTART;TZID=Europe/Tallinn:20260721T100000
+DTEND;TZID=Europe/Tallinn:20260721T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: Jeffrey Allen\, Kaitlin O'Toole\, Nadir Salam\nMOVED to 10:00 at Jeffrey's request (email 14 Jul): he collects Hisami from TLL (lands 7:30am)\, so a 9am start was too tight. Pushed John Lee's interview to 11:00 to clear the slot. Day before his 4-block stage day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Regan Hillyer
+DTSTART;TZID=Europe/Tallinn:20260721T153000
+DTEND;TZID=Europe/Tallinn:20260721T161500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Regan Hillyer\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & John Lee
+DTSTART;TZID=Europe/Tallinn:20260721T110000
+DTEND;TZID=Europe/Tallinn:20260721T114500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: John Lee\, Kaitlin O'Toole\, Khairul Johari\nBATCHED to 21 Jul (from 22\, his departure day) — pairs with Kaitlin's Jeffrey Allen interview in a morning block. Nudged from 10:30 to 11:00 (14 Jul) after Jeffrey's interview moved to 10:00–10:45 at his request\, so the two no longer overlap. John Lee free this slot (his stage talk is 3pm)\; before Jade's noon assets. Kaitlin batching plan (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-kaitlin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kaitlin O’Toole — studio shoot
+DTSTART;TZID=Europe/Tallinn:20260724T130000
+DTEND;TZID=Europe/Tallinn:20260724T140000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Kaitlin studio shoot\, Fri 24 1:00–2:00pm. Studio free after Jeffrey’s masterclass (wraps 12:00)\; Kaitlin free until the 6pm Awards\; Gareth free before his 3pm script session. CONTENT TBC — confirm what we’re filming (host links / interview / her own piece) to finalise. Makeup 12:00–13:00 (green room).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-shoot-kaitlin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O’Toole
+DTSTART;TZID=Europe/Tallinn:20260724T120000
+DTEND;TZID=Europe/Tallinn:20260724T130000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\n60-min call so Kaitlin’s camera-ready for her 1:00pm studio shoot.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Marisa Peer
+DTSTART;TZID=Europe/Tallinn:20260726T121500
+DTEND;TZID=Europe/Tallinn:20260726T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Marisa Peer\, Kaitlin O'Toole\, Nadir Salam\nBATCHED to 26 Jul (from 25) — clusters with Kaitlin's Eric Edmeades + Shi Heng Yi interviews into one afternoon block\, freeing 25 Jul. Marisa's window (21 Jul–2 Aug) covers it\; slots into Nadir's 13:00–14:00 gap. Kaitlin batching plan (13 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-eric@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Eric Edmeades
+DTSTART;TZID=Europe/Tallinn:20260726T131500
+DTEND;TZID=Europe/Tallinn:20260726T140000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Eric Edmeades\, Kaitlin O'Toole\, Nadir Salam\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-kaitlin-sun@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Kaitlin O’Toole — content shoot
+DTSTART;TZID=Europe/Tallinn:20260726T100000
+DTEND;TZID=Europe/Tallinn:20260726T110000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Kaitlin content shoot\, Sun 26 10:00–11:00 (studio opens 10am on the weekend). Runs first\, then Vishen's ads 11:00–12:00\, then Kaitlin's Marisa interview 12:15. Gareth + unit 1. Kaitlin glams off-site (green room gated until 10) — see makeup.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-shoot-kaitlin-sun@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O’Toole
+DTSTART;TZID=Europe/Tallinn:20260726T084500
+DTEND;TZID=Europe/Tallinn:20260726T094500
+LOCATION:Nuune Boutique Hotel
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\nOff-site glam for Kaitlin's 10:00 content shoot — the weekend green room/studio is locked until 10am\, so she preps at the hotel and travels in. NOTE: hotel assumed Nuune (the author-prep hotel) — confirm Kaitlin's actual hotel.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-shy@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Shi Heng Yi
+DTSTART;TZID=Europe/Tallinn:20260726T154500
+DTEND;TZID=Europe/Tallinn:20260726T163000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Shi Heng Yi\, Kaitlin O'Toole\, Nadir Salam\nArrival day — keep light. NUDGED 15:30→15:45 (16 Jul) to leave a studio reset after the Lorin×Vishen podcast\, which extended to 90 min (ends 15:30). 28 Jul is also open if this needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Paul McKenna
+DTSTART;TZID=Europe/Tallinn:20260730T121500
+DTEND;TZID=Europe/Tallinn:20260730T130000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Paul McKenna\, Kaitlin O'Toole\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul). NUDGED 12:00→12:15 (16 Jul): Kaitlin is MC'ing the main stage until 12:00 (Jim Kwik session)\, so she can't start at 12:00. Now straight after she comes off stage — she's already in hair/makeup from hosting (no separate glam)\, just Paul gets a touch-up. Keeps Kaitlin as interviewer per Gareth.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Rachel Pringle
+DTSTART;TZID=Europe/Tallinn:20260801T100000
+DTEND;TZID=Europe/Tallinn:20260801T104500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Rachel Pringle\, Kaitlin O'Toole\, Nadir Salam\nHer last day.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:int-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Author Interview: Kaitlin & Lee Holden
+DTSTART;TZID=Europe/Tallinn:20260731T144500
+DTEND;TZID=Europe/Tallinn:20260731T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Lee Holden\, Kaitlin O'Toole\, Nadir Salam\nA sit-down interview needs the sound-controlled Energiakeskus studio\, NOT the Woodblock (Studio 2)\, which is a social-testimonial / vox-pop space (Gareth\, 21 Jul). Serialised after Lee's asset suite in the one studio: Marisa has Energiakeskus 10:00–12:45\, Lee's assets 12:45–14:45\, then this at 14:45. Kaitlin is off the main stage after 12:00 and Lee rolls straight in camera-ready off his assets\, so no extra makeup. Nadir operates. Lee's window runs to 2 Aug\, so there's slack if it needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul20-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin (soundcheck)
+DTSTART;TZID=Europe/Tallinn:20260720T110000
+DTEND;TZID=Europe/Tallinn:20260720T121500
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nSADU sound check / stage prep. From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul20-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260720T131500
+DTEND;TZID=Europe/Tallinn:20260720T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for the Vishen opening + afternoon stage block. From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul22-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260722T100000
+DTEND;TZID=Europe/Tallinn:20260722T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Jeffrey Allen (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul22-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260722T140000
+DTEND;TZID=Europe/Tallinn:20260722T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Jeffrey Allen + Regan (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul23-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260723T094000
+DTEND;TZID=Europe/Tallinn:20260723T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Lee Holden / Simon Ong / Cynthia Thurlow (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul23-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260723T140000
+DTEND;TZID=Europe/Tallinn:20260723T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Dan Brulé / Scott Lyon (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul27-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260727T100000
+DTEND;TZID=Europe/Tallinn:20260727T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Shi Heng Yi (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul27-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Shi+Vishen / Hal / Sheleana+Wineland (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul28-am@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Zen Takai / Dawn Hoang (AM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul28-pm@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260728T140000
+DTEND;TZID=Europe/Tallinn:20260728T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Sheleana / Jolene / Jamie Sea (PM). From the Speaker Agenda (Host = Kaitlin).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul30@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260730T094000
+DTEND;TZID=Europe/Tallinn:20260730T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Lee Holden intro + Jim Kwik (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The McKenna interview was moved to 12:15 to clear this.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:host-kaitlin-jul31@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Main stage hosting — Kaitlin
+DTSTART;TZID=Europe/Tallinn:20260731T100000
+DTEND;TZID=Europe/Tallinn:20260731T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Kaitlin O'Toole\nMC for Rola Diab + Vishen (10:00–12:00). From the Speaker Agenda (Host = Kaitlin). The Lee Holden interview was moved to 13:00 to clear this.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-jeffrey-allen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Jeffrey Allen\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260721T090000
+DTEND;TZID=Europe/Tallinn:20260721T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Jeffrey Allen\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Jeffrey Allen at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-regan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Regan Hillyer\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260721T143000
+DTEND;TZID=Europe/Tallinn:20260721T153000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Regan Hillyer\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Regan Hillyer at 15:30. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-marisa@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Marisa Peer\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260726T111500
+DTEND;TZID=Europe/Tallinn:20260726T121500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Marisa Peer\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Marisa Peer at 12:15. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-shy@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Shi Heng Yi\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260726T144500
+DTEND;TZID=Europe/Tallinn:20260726T154500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Shi Heng Yi\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Shi Heng Yi at 15:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-rachel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Rachel Pringle\, Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260801T090000
+DTEND;TZID=Europe/Tallinn:20260801T100000
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Rachel Pringle\, Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Rachel Pringle at 10:00. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:makeup-int-lee-holden@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Makeup & wardrobe — Kaitlin O'Toole
+DTSTART;TZID=Europe/Tallinn:20260731T134500
+DTEND;TZID=Europe/Tallinn:20260731T144500
+LOCATION:Makeup / Green Room
+DESCRIPTION:Who: Kaitlin O'Toole\, Makeup\n60-min pre-shoot buffer (includes a female author — up to 1h) so talent is camera-ready for Author Interview: Kaitlin & Lee Holden at 14:45. Hair\, makeup & wardrobe.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,152 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MVU 2026 Production HQ//EN
+X-WR-CALNAME:MVU 2026 — Kuhan Kunasegaran
+X-WR-TIMEZONE:Europe/Tallinn
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Tallinn
+BEGIN:STANDARD
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jul21-sazerac@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Sazerac
+DTSTART;TZID=Europe/Tallinn:20260721T193000
+DTEND;TZID=Europe/Tallinn:20260721T233000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-awards@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Mindvalley Awards Ceremony — FULL VIDEO TEAM (timing still TBC on source)
+DTSTART;TZID=Europe/Tallinn:20260724T180000
+DTEND;TZID=Europe/Tallinn:20260724T190000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Kaitlin O'Toole\, Khairul Johari\, Nadir Salam\, Kuhan Kunasegaran\nPer Fisher (voice note\, 13 Jul): this needs the full production team's focus\, not passive coverage — many speakers fly in specifically for the video/photo opportunity here\, and a strong asset can lift a speaker's fee by 10–20k. Plan wide shots + a rehearsed handheld move (reference: the Lynda piece Kuhan shot handheld) rather than one static camera. Only 1hr — crew is free from 4pm that day (Jeffrey Allen MC/assets wrap by 4). CREW CONFIRMED (13 Jul): full core team (Khairul\, Nadir\, Kuhan) + Gareth — they're all already on-site for the awards\, working together\, so no separate resourcing needed. Kaitlin O'Toole hosting. Only open item is the exact timing on the source sheet (see ch-mv-awards-timing).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul24-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Black Block Party
+DTSTART;TZID=Europe/Tallinn:20260724T190000
+DTEND;TZID=Europe/Tallinn:20260724T230000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-accel-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Wealth Code Accelerator — day 1: See It & Clear It (3h) + Upsell Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260725T170000
+DTEND;TZID=Europe/Tallinn:20260725T200000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\, Jason Roper\nCONFIRMED 5–8pm — verified against MAIN STAGE Overview sheet (13 Jul)\, matches the microsite\; the old detailed-agenda 9am–4pm reading is stale. Session plan: Two Wealth Identities / Financial Frequency & Set Point / Inherited Money Ceiling. SANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for the Wealth Code Accelerator in this same session — product + sales video shot together while Regan and the crew are already set up. Only one landing-page record exists (dated Day 1).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-accel-2@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Wealth Code Accelerator — day 2: Become It & Activate It (4h)
+DTSTART;TZID=Europe/Tallinn:20260726T170000
+DTEND;TZID=Europe/Tallinn:20260726T210000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\, Jason Roper\nCONFIRMED 5–9pm — verified against MAIN STAGE Overview sheet (13 Jul). Regan departs 27 Jul per Speaker DATES\, so this 9pm finish sits safely inside her window (the previous note saying she left on the 26th was wrong). Sessions: Blocking the Receiving / Wealth Formula / Money + Meaning Fusion / Identity Installation.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:White Block Party
+DTSTART;TZID=Europe/Tallinn:20260727T190000
+DTEND;TZID=Europe/Tallinn:20260727T230000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vip@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Summer By The Bay VIP Party
+DTSTART;TZID=Europe/Tallinn:20260730T210000
+DTEND;TZID=Europe/Tallinn:20260730T010000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-ai-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen AI Accelerator — “Become a World Class Expert and Authority” + Upsell Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260801T110000
+DTEND;TZID=Europe/Tallinn:20260801T180000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\, Kuhan Kunasegaran\nSANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame's live capture covers the product recording\, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up. FIXED (data audit\, 13 Jul): crew was all 3 (khairul+nadir+kuhan)\, which silently conflicted with Nadir's parallel unit-2 studio shoots this same window (assets-rachel-membership\, int-maya) — narrowed to unit 1 (khairul+kuhan) so Nadir stays free for the studio\, matching those events' existing notes.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:aug1-closing-party@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Closing Party
+DTSTART;TZID=Europe/Tallinn:20260801T203000
+DTEND;TZID=Europe/Tallinn:20260801T020000
+DESCRIPTION:Who: Kuhan Kunasegaran\nAd-hoc party filming — Kuhan (roving social).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-tribe-training@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — Tribe Speaker storytelling training (run-and-gun capture)
+DTSTART;TZID=Europe/Tallinn:20260721T131500
+DTEND;TZID=Europe/Tallinn:20260721T140000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\, Kuhan Kunasegaran\nVishen request (WhatsApp\, 16 Jul): "Tues 1:15pm to 2pm I need someone with me at MVU as I'm doing live training with Tribe Speakers on storytelling. I want this filmed. One cam\, Hormozi style interacting w students. Can be filmed w one human\, iPhone and two lapel mics." ROAMING-UNIT job\, not a studio shoot: Kuhan is primary shooter (Jason backup) with a light kit (iPhone + 2 lapel mics) — no draw on the studio unit or the studio room. Sits cleanly between the 11:00 Kaitlin/John Lee interview and the 16:30 John Lee podcast\; Kuhan is otherwise roaming until the 19:30 Sazerac\, so pulling him for 45 min is the low-cost option. Kit + one-cam spec logged in the Shoots Airtable "Capture Brief / Kit" field so it does not get lost among the studio slate.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-dan@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Dan Brulé on breathwork
+DTSTART;TZID=Europe/Tallinn:20260722T113000
+DTEND;TZID=Europe/Tallinn:20260722T115000
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Dan Brulé\, Tom Kirby\, Kuhan Kunasegaran\nAnchored right after Dan's 10:30 studio interview (wraps 11:15) — he's on-site and camera-ready. Woodblock + Kuhan (Jason backup)\; no clash with the parallel Wineland interview in Energiakeskus.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:ads-regan-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer — Wealth Code Accelerator ads / upsell
+DTSTART;TZID=Europe/Tallinn:20260726T160000
+DTEND;TZID=Europe/Tallinn:20260726T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Kuhan Kunasegaran\nPRIORITY (Gareth\, 21 Jul). Accelerator upsell ads\, shot on the Main Stage right before Regan's 17:00 Wealth Code accelerator\, then rolls straight into it. Makeup 2:00pm at the Nuune Hotel (travels in). Kuhan shoots (+ Gareth directs) so the studio unit (Khairul/Nadir) stays on the Shi Heng Yi interview (15:45–16:30)\; Kuhan then continues onto the accelerator on the same stage. On the Main Stage\, NOT the studio. Regan's window closes 27 Jul.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-jade@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Jade Shaw on astral projection & OOB
+DTSTART;TZID=Europe/Tallinn:20260723T154500
+DTEND;TZID=Europe/Tallinn:20260723T160500
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Jade Shaw\, Tom Kirby\, Kuhan Kunasegaran\nRight after Jade's 14:00–15:30 embodiment session — she's on-site. NOTE: Jade's formal marketing assets were cut earlier (low ROI)\, but she's here through 30 Jul\, so this quick social piece is a no-cost add on the social team.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Vishen on bending reality
+DTSTART;TZID=Europe/Tallinn:20260727T151500
+DTEND;TZID=Europe/Tallinn:20260727T153500
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\, Tom Kirby\, Kuhan Kunasegaran\nRight after Vishen's 14:00–15:00 Shi Heng Yi fireside — he's warm and it's his lightest day. Woodblock + Kuhan.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-dawn@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Dawn Hoang on Kundalini
+DTSTART;TZID=Europe/Tallinn:20260728T123000
+DTEND;TZID=Europe/Tallinn:20260728T125000
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Dawn Hoang\, Tom Kirby\, Kuhan Kunasegaran\nStraight off Dawn's portrait (ends 12:30) so she's camera-ready. Woodblock + Kuhan. Her window is wide (to 3 Aug) if it needs to move.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,254 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MVU 2026 Production HQ//EN
+X-WR-CALNAME:MVU 2026 — Vishen Lakhiani
+X-WR-TIMEZONE:Europe/Tallinn
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Tallinn
+BEGIN:STANDARD
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:regan-webinar@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer + Vishen — "Break Through Your Money Block" (free live webinar)
+DTSTART;TZID=Europe/Tallinn:20260716T190000
+DTEND;TZID=Europe/Tallinn:20260716T200000
+LOCATION:Remote — Regan + Vishen deliver remotely
+DESCRIPTION:Status: DONE\nWho: Regan Hillyer\, Vishen Lakhiani\nDONE (delivered 16 Jul). Fully remote\, self-produced — Gareth’s team NOT needed. Times: 9am LA / 12pm NY / 5pm London = 7pm Tallinn. Funnel webinar for the Wealth Code Accelerator (25–26 Jul).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-welcome@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Welcome / Orientation by Vishen
+DTSTART;TZID=Europe/Tallinn:20260720T131500
+DTEND;TZID=Europe/Tallinn:20260720T144500
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\nTime corrected to 13:15–14:45 on 16 Jul to match the new Speaker Agenda Airtable (was 11:00–13:30).\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul20-fuckup@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:“Fuck Up” Session Open Mic
+DTSTART;TZID=Europe/Tallinn:20260720T160000
+DTEND;TZID=Europe/Tallinn:20260720T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Daniel Priestley\, Vishen Lakhiani\, John Lee\nCONFIRMED happening — line-up Daniel\, Vishen\, John Lee. CONTENT ANGLE: Daniel Priestley is a DJ by passion (serial entrepreneur who secretly spins) — have him close the session with a short DJ set. The roving social team (Jason + Kuhan) grab it: the "the growth guy is also a DJ" reveal is a strong personal/social piece\, and it sets up a lovely thread in his 14:00 interview earlier the same day. His only 20 Jul commitment before this is that interview\, so he is free to lean in.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T140000
+DTEND;TZID=Europe/Tallinn:20260721T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul21-vishen-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T151500
+DTEND;TZID=Europe/Tallinn:20260721T153500
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\, Meng\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul27-shy-fireside@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Shi Heng Yi Fireside with Vishen (→ Scaling Wisdom launch episode)
+DTSTART;TZID=Europe/Tallinn:20260727T140000
+DTEND;TZID=Europe/Tallinn:20260727T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Shi Heng Yi\, Vishen Lakhiani\nRecorded ON STAGE and cut into the FIRST Scaling Wisdom podcast episode (per Gareth's call with Vishen\, 14 Jul). This is one of Vishen's five high-star podcasts — no separate studio recording.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul29-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen
+DTSTART;TZID=Europe/Tallinn:20260729T161500
+DTEND;TZID=Europe/Tallinn:20260729T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-kwik-fireside@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen + Jim Kwik Fireside
+DTSTART;TZID=Europe/Tallinn:20260730T150000
+DTEND;TZID=Europe/Tallinn:20260730T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Jim Kwik\, Vishen Lakhiani\nPart of Jim's stage event on the 30th — separate from his Superbrain masterclass (the standalone studio session with Vishen on the 29th). Both feature Vishen but they are different deliverables.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (swappable)
+DTSTART;TZID=Europe/Tallinn:20260730T161500
+DTEND;TZID=Europe/Tallinn:20260730T170000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul30-vishen-photo@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Portraits — Vishen
+DTSTART;TZID=Europe/Tallinn:20260730T171500
+DTEND;TZID=Europe/Tallinn:20260730T173500
+DESCRIPTION:Who: Vishen Lakhiani\, Mardo\nLocation TBD\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-vishen-content@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (content only)
+DTSTART;TZID=Europe/Tallinn:20260731T110000
+DTEND;TZID=Europe/Tallinn:20260731T120000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-vishen-sales@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen (potential sales)
+DTSTART;TZID=Europe/Tallinn:20260731T140000
+DTEND;TZID=Europe/Tallinn:20260731T150000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:jul31-closing@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Closing Ceremony — Youth Performances + Valerija Ribbon Workshop
+DTSTART;TZID=Europe/Tallinn:20260731T150000
+DTEND;TZID=Europe/Tallinn:20260731T160000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Full schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-ai-accel@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen AI Accelerator — “Become a World Class Expert and Authority” + Upsell Landing Page Video
+DTSTART;TZID=Europe/Tallinn:20260801T110000
+DTEND;TZID=Europe/Tallinn:20260801T180000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Who: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\, Kuhan Kunasegaran\nSANDWICHED per Gareth (13 Jul): also capturing the "Upsell Landing Page Video" for this accelerator in the same session — Still Frame's live capture covers the product recording\, our crew grabs the sales-video footage alongside it while Vishen and the environment are already set up. FIXED (data audit\, 13 Jul): crew was all 3 (khairul+nadir+kuhan)\, which silently conflicted with Nadir's parallel unit-2 studio shoots this same window (assets-rachel-membership\, int-maya) — narrowed to unit 1 (khairul+kuhan) so Nadir stays free for the studio\, matching those events' existing notes.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-john-lee@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Scaling Wisdom Podcast: John Lee & Vishen
+DTSTART;TZID=Europe/Tallinn:20260721T163000
+DTEND;TZID=Europe/Tallinn:20260721T180000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: DONE\nWho: Gareth Winter\, John Lee\, Vishen Lakhiani\, Khairul Johari\nDONE (recorded 21 Jul). John flies the morning of the 22nd\; the 21st was the only window all four were free — John after his 16:30 portrait\, Vishen after his 15:35 portrait\, studio + unit 1 after the Regan interview. Wrapped by 6pm before the 7:30 Sazerac.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:vishen-tribe-training@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — Tribe Speaker storytelling training (run-and-gun capture)
+DTSTART;TZID=Europe/Tallinn:20260721T131500
+DTEND;TZID=Europe/Tallinn:20260721T140000
+LOCATION:Main Stage (Black Box)
+DESCRIPTION:Status: DONE\nWho: Vishen Lakhiani\, Kuhan Kunasegaran\nVishen request (WhatsApp\, 16 Jul): "Tues 1:15pm to 2pm I need someone with me at MVU as I'm doing live training with Tribe Speakers on storytelling. I want this filmed. One cam\, Hormozi style interacting w students. Can be filmed w one human\, iPhone and two lapel mics." ROAMING-UNIT job\, not a studio shoot: Kuhan is primary shooter (Jason backup) with a light kit (iPhone + 2 lapel mics) — no draw on the studio unit or the studio room. Sits cleanly between the 11:00 Kaitlin/John Lee interview and the 16:30 John Lee podcast\; Kuhan is otherwise roaming until the 19:30 Sazerac\, so pulling him for 45 min is the low-cost option. Kit + one-cam spec logged in the Shoots Airtable "Capture Brief / Kit" field so it does not get lost among the studio slate.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:regan-vishen-scripts@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan × Vishen — script working session
+DTSTART;TZID=Europe/Tallinn:20260724T150000
+DTEND;TZID=Europe/Tallinn:20260724T160000
+LOCATION:Author Lounge / VIP Area
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Vishen Lakhiani\nPRIORITY (Gareth\, 21 Jul). Vishen + Regan work on the masterclass scripts ahead of Saturday's shoot — a working/prep session\, not a camera shoot\, so no studio or camera crew. Both free Fri afternoon (Vishen clear after his 11:30 Jeffrey masterclass\, Regan otherwise free). MAKEUP FLAG: Gareth noted "MUA 4pm" but that falls after this 3–4pm session — set to 1:00pm at the Nuune Hotel to match the Sat/Sun pattern (glam ~2h before\, travel in)\; confirm.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:tom-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Tom Kirby funny interview — Vishen on bending reality
+DTSTART;TZID=Europe/Tallinn:20260727T151500
+DTEND;TZID=Europe/Tallinn:20260727T153500
+LOCATION:Woodblock (Studio 2)
+DESCRIPTION:Status: TENTATIVE\nWho: Vishen Lakhiani\, Tom Kirby\, Kuhan Kunasegaran\nRight after Vishen's 14:00–15:00 Shi Heng Yi fireside — he's warm and it's his lightest day. Woodblock + Kuhan.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-regan-aom@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Regan Hillyer — NEW Art of Manifesting Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260725T120000
+DTEND;TZID=Europe/Tallinn:20260725T150000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Regan Hillyer\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nPOSTPONED from Thu 23 to Sat 25 Jul\, expanded to a full 3-hour record 12:00–15:00 (Gareth\, 21 Jul — top priority). Makeup 10:00 at the Nuune Boutique Hotel (Regan preps off-site\, travels in). Regan's marketing assets are captured WITHIN this 3h block (the separate Thu assets slot is folded in). Vishen is free 12:00–15:00 once the Jeffrey×Vishen podcast is cancelled (see pod-ja removal). Studio free from 10:30 (after Kristina×Marisa) through 15:00. Part of the Fri script → Sat shoot → Sun ads Regan sequence.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-ja-duality@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jeffrey Allen — NEW Duality Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260724T110000
+DTEND;TZID=Europe/Tallinn:20260724T123000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Jeffrey Allen\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Jeffrey Allen\, email 14 Jul — "this is great planning... everything else looks great"). MC DNA 2.0\, a refresh in the new format (not a straight reshoot). Suggested teaching: The Mental Noise Dial / Energetic Grounding Technique.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:ads-vishen@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — ads shoot
+DTSTART;TZID=Europe/Tallinn:20260726T110000
+DTEND;TZID=Europe/Tallinn:20260726T120000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\nADDED per Gareth (23 Jul) — 1-hour Vishen ads shoot\, Sun 26 11:00–12:00. Weekend studio opens 10am\; runs right after Kaitlin's 10:00–11:00 content shoot\, before the 12:15 Marisa interview. Vishen free until his 2pm Lorin podcast. Gareth + unit 1. CONTENT TBC — confirm which product/campaign to label + brief.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-mckenna@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Paul McKenna & Vishen — NEW EB / Total Self Confidence Masterclass
+DTSTART;TZID=Europe/Tallinn:20260728T100000
+DTEND;TZID=Europe/Tallinn:20260728T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Who: Gareth Winter\, Paul McKenna\, Vishen Lakhiani\, Khairul Johari\, Nadir Salam\nCONFIRMED BY AUTHOR (Paul McKenna\, email 14 Jul — "this all looks good to me"). MC DNA 2.0. Time-saver per brief: use the Hypnotic Trance Audio for the teaching segment — Paul & Vishen open and intro into it\; Vishen does the entrepreneur-pathway close.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:mc-kwik-superbrain@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Jim Kwik — Superbrain Masterclass (with Vishen)
+DTSTART;TZID=Europe/Tallinn:20260729T100000
+DTEND;TZID=Europe/Tallinn:20260729T113000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Jim Kwik\, Vishen Lakhiani\, Khairul Johari\nDay after he lands\; his stage day is the 30th (where his accelerator is delivered live). One continuous 10:00–13:00 studio block: teaching with Vishen runs to ~12:15 (the Quest teaching-audio time-saver keeps it tight)\, then Vishen wraps and Jim stays on solo for the accelerator landing-page video (see accel-upsell-kwik) in the same session. The studio flips to the Jolene podcast at 13:30. (Nadir back on camera here — the Zen Samurai meditation that ran parallel was killed 14 Jul.)\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-lorin@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Scaling Wisdom Podcast: Lorin Krenn & Vishen
+DTSTART;TZID=Europe/Tallinn:20260726T140000
+DTEND;TZID=Europe/Tallinn:20260726T153000
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Lorin Krenn\, Vishen Lakhiani\, Khairul Johari\nMOVED off 29 Jul (16 Jul): Lorin flies 6am Wed 29\, so the 29th is unusable — the old 15:00 slot was impossible. Re-homed to Sun 26 Jul\, a Vishen NON-stage day. Extended to a full 90 min (14:00–15:30) per Gareth's podcast standard. Vishen free after his 10:00–12:00 Talking Heads\, Lorin otherwise free\; studio opens at 14:00 as Kaitlin's Marisa interview wraps. The Shi interview was nudged to 15:45 to give a studio reset after this. Lorin makeup 13:30–14:00 (green room). Verified clean.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:pod-maria-wendt@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:⚠️ Scaling Wisdom Podcast: Maria Wendt & Vishen
+DTSTART;TZID=Europe/Tallinn:20260730T110000
+DTEND;TZID=Europe/Tallinn:20260730T114500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: CONFLICT\nWho: Gareth Winter\, Maria Wendt\, Vishen Lakhiani\, Khairul Johari\nMaria is not on Speaker DATES — window unknown.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+BEGIN:VEVENT
+UID:th-vishen-1@mvu2026-production
+DTSTAMP:20260724T124428Z
+SUMMARY:Vishen — Talking Heads (YouTube)
+DTSTART;TZID=Europe/Tallinn:20260729T121500
+DTEND;TZID=Europe/Tallinn:20260729T141500
+LOCATION:Energiakeskus Studio\, Tallinn
+DESCRIPTION:Status: TENTATIVE\nWho: Gareth Winter\, Vishen Lakhiani\, Khairul Johari\nMOVED to week 2 per Gareth (21 Jul) — Vishen couldn't make the Sun 26 Jul slot. Re-homed to Wed 29 Jul 12:15–14:15: a clean midday 2h with studio + unit 1 + Gareth free (Kwik masterclass wraps 11:30\, Jolene interview not until 14:15)\, and it respects Vishen's "not before 11" preference. 2h Vishen solo talking-head session for YouTube. Backup slot if this shifts: Tue 28 Jul 16:00–18:00.\nFull schedule: https://garethwinter-cpu.github.io/mindvalley-u-production/
+END:VEVENT
+END:VCALENDAR
