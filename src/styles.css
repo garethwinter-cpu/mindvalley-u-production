@@ -1054,6 +1054,19 @@ body {
 .ov-day-covered.today {
   opacity: 1;
 }
+
+/* Per-person itinerary category filter */
+.pp-filter {
+  margin: 4px 0 20px;
+}
+.pp-filter-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted, #9ca3af);
+  margin-bottom: 8px;
+}
 .sch-day-head {
   display: flex;
   align-items: baseline;

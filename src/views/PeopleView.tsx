@@ -4,7 +4,8 @@ import { PEOPLE, person } from '../data/people'
 import { AUTHOR_PROFILES, AUTHORS_TABLE_URL } from '../data/authors'
 import { DAYS, EVENTS, todayISO, isCovered } from '../data/schedule'
 import { EDITORIAL_EVENTS } from '../data/editorial'
-import { StatusBadge, TypeBadge, TYPE_ICON, AuthorBadge, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
+import { StatusBadge, TypeBadge, TYPE_ICON, AuthorBadge, Legend, matchesChipFilters, fmtTime, involvesPerson, isOurProduction, availabilityWarnings } from '../ui'
+import type { ChipFilter } from '../ui'
 import type { ScheduleEvent } from '../data/types'
 import { Headshot } from '../profile'
 import type { PersonRole } from '../data/types'
@@ -125,6 +126,7 @@ function DayCard({ day, past = false }: { day: DaySchedule; past?: boolean }) {
         <span className="sch-icon" title={e.type} aria-hidden>{TYPE_ICON[e.type]}</span>
         <span className="sch-what">
           {e.title}
+          <TypeBadge type={e.type} />
           {loc(e) && <span className="sch-loc"> · {loc(e)}</span>}
         </span>
       </div>,
@@ -243,22 +245,35 @@ export default function PeopleView() {
     return () => window.removeEventListener('hashchange', onHash)
   }, [])
 
+  // Category filter for this person's itinerary (empty = show all).
+  const [filters, setFilters] = useState<Set<ChipFilter>>(() => new Set())
+  const toggleFilter = (f: ChipFilter) =>
+    setFilters((prev) => {
+      const next = new Set(prev)
+      next.has(f) ? next.delete(f) : next.add(f)
+      return next
+    })
+
   const p = person(selected)
   const profile = AUTHOR_PROFILES[selected]
   const wa = p.whatsapp?.replace(/[^0-9]/g, '')
   const sortKey = (e: ScheduleEvent) => e.date + (e.start ?? '')
-  // Venue + production commitments (shown in the categorized lists below)
-  const venueEvents = EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
+  // Venue + production commitments (shown in the categorized lists below), narrowed
+  // by any active category chips so you can filter an individual's itinerary.
+  const venueEvents = EVENTS.filter((e) => involvesPerson(e, selected) && matchesChipFilters(e, filters)).sort((a, b) =>
     sortKey(a).localeCompare(sortKey(b)),
   )
   // Post-production / edit deliverables (Creative column, kept off the venue Overview)
-  const editorial = EDITORIAL_EVENTS.filter((e) => involvesPerson(e, selected)).sort((a, b) =>
+  const editorial = EDITORIAL_EVENTS.filter((e) => involvesPerson(e, selected) && matchesChipFilters(e, filters)).sort((a, b) =>
     sortKey(a).localeCompare(sortKey(b)),
   )
   const events = [...venueEvents, ...editorial].sort((a, b) => sortKey(a).localeCompare(sortKey(b)))
   const content = venueEvents.filter(isOurProduction)
   const eventCommitments = venueEvents.filter((e) => !isOurProduction(e))
   const sched = buildSchedule(events)
+  // Does this person have ANY commitments (ignoring the filter)? Gates the filter chips.
+  const hasAnyCommitments =
+    EVENTS.some((e) => involvesPerson(e, selected)) || EDITORIAL_EVENTS.some((e) => involvesPerson(e, selected))
 
   return (
     <div>
@@ -345,7 +360,18 @@ export default function PeopleView() {
             {p.remote && <div className="pp-window">Working remotely — receives material for edit.</div>}
             {profile?.bio && <p className="modal-bio">{profile.bio}</p>}
 
-            {events.length === 0 && <div className="empty">No scheduled commitments in the data yet.</div>}
+            {hasAnyCommitments && (
+              <div className="pp-filter">
+                <div className="pp-filter-label">Filter by type</div>
+                <Legend active={filters} onToggle={toggleFilter} onClear={() => setFilters(new Set())} />
+              </div>
+            )}
+
+            {events.length === 0 && (
+              <div className="empty">
+                {hasAnyCommitments ? 'Nothing matches this filter for this person.' : 'No scheduled commitments in the data yet.'}
+              </div>
+            )}
 
             {sched.committedDays > 0 && (
               <>
