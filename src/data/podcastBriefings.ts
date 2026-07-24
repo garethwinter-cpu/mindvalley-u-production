@@ -32,22 +32,10 @@ export const PODCAST_BRIEFINGS: PodcastBriefing[] = [
     angle: 'If pursued at all, a de-risked personal story: From a Takeaway Kitchen to Financial Freedom — steered away from any course/seminar promotion.',
     flag: 'SIGNIFICANT BRAND-SAFETY RISK: litigation with his own company (Wealth Dragons Group PLC, 2024); the PLC was delisted from the Vienna Stock Exchange (Jul 2024) citing the dispute; the UK property-seminar space around him carries documented high-pressure upsell + refund/"scam" complaints. Vet litigation status; never repeat "listed PLC / current CEO". Note: Vishen rated this ★9 and it is on the slate — legal vetting still advised.',
   },
-  {
-    personId: 'jeffrey-allen',
-    episodeId: 'pod-ja',
-    date: '2026-07-25',
-    start: '12:30',
-    who: 'Energy healing teacher and Mindvalley author; the "healer’s healer" who moved from software engineering into online energy work.',
-    reach: 'Instagram ~110K; Facebook ~50K; own YouTube modest. Big reach is inside Mindvalley’s ecosystem (claims 1M+ introduced, 100,000s of paying students) rather than owned channels. Cross-promo value moderate, largely via Mindvalley.',
-    topics: ['energy healing', 'intuition', 'clairvoyance', 'manifesting', 'higher consciousness'],
-    credentials: 'Mindvalley’s Duality (7-week) and Unlocking Transcendence (60-day); founder of Spirit Mind; ran a clairvoyant school in Japan.',
-    interviewPresence: 'Does interviews (Lorin Krenn, Jason Marc Campbell, Mindvalley content). Calm, warm, guided-practice oriented — a facilitator more than a performer; experiential rather than punchy.',
-    audienceOverlap: 'Extremely high — already a core Mindvalley teacher, so his topics/audience are essentially a subset of Vishen’s.',
-    fit: 'MEDIUM',
-    fitReason: 'Perfect thematic/brand alignment, but an in-house figure with a modest independent audience and no contrarian/viral hook — brings warmth and credibility rather than new reach.',
-    angle: 'The Energy Healer Who Left Silicon Valley: Feel Energy in 10 Minutes (live demo)',
-    flag: '"Familiar face" risk (audience may have seen him inside Mindvalley); energy-healing framing is credibility-sensitive for skeptics.',
-  },
+  // Jeffrey Allen's Scaling Wisdom podcast (pod-ja) was CANCELLED (21 Jul — no time,
+  // he flies 26 Jul), so his guest-briefing card is removed from the Podcast tab.
+  // (He still guests on Marisa's YMYR podcast, which is Marisa's show, not a Scaling
+  // Wisdom episode.) Fit/angle data preserved in git history if the episode revives.
   {
     personId: 'shi-heng-yi',
     episodeId: 'jul27-shy-fireside',
