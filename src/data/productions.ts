@@ -433,8 +433,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'mc-eric-stage-effect',
     date: '2026-07-26',
-    start: '12:00',
-    end: '14:00',
+    start: '12:30',
+    end: '14:30',
     title: 'Eric Edmeades — The Stage Effect Masterclass (with Vishen)',
     type: 'production',
     location: STUDIO,
@@ -446,7 +446,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'confirmed',
-    notes: 'PRIORITY (Gareth, 24 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. Sun 26 12:00–14:00: a fresh after-11 block, right after the Kaitlin × Marisa interview (15-min set reset) and straight into Vishen\'s 2pm Lorin podcast. This REPLACES the separate Kaitlin × Eric author interview (killed — Eric\'s covered by the masterclass). Eric makeup 11:30 (green room). NOTE: Vishen runs masterclass → Lorin podcast back-to-back (12:00–15:30) — a big continuous block for him.',
+    notes: 'PRIORITY (Gareth, 24 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. Sun 26 12:30–14:30 (start pushed 30 min at Vishen\'s request), after the Kaitlin × Marisa interview. This REPLACES the separate Kaitlin × Eric author interview (killed — Eric\'s covered by the masterclass). Eric makeup 12:00 (green room). Vishen then gets a 30-min reset (14:30–15:00) before his 15:00 Lorin podcast.',
   },
   // Scaling Wisdom Podcast: Jeffrey Allen × Vishen — CANCELLED (Gareth, 21 Jul):
   // Regan's masterclass was postponed onto Sat 25 Jul 12:00–15:00, which needs the
