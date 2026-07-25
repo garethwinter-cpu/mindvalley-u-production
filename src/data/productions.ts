@@ -431,8 +431,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'int-marisa',
     date: '2026-07-26',
-    start: '12:15',
-    end: '13:00',
+    start: '11:00',
+    end: '11:45',
     title: 'Author Interview: Kaitlin & Marisa Peer',
     type: 'production',
     location: STUDIO,
@@ -442,7 +442,25 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
-    notes: 'BATCHED to 26 Jul (from 25) — clusters with Kaitlin\'s Eric Edmeades + Shi Heng Yi interviews into one afternoon block, freeing 25 Jul. Marisa\'s window (21 Jul–2 Aug) covers it; slots into Nadir\'s 13:00–14:00 gap. Kaitlin batching plan (13 Jul).',
+    notes: 'SLID to 11:00–11:45 (Gareth, 24 Jul) to sit ahead of the Eric × Vishen masterclass. Kaitlin rolls off her 10:00 content shoot; Marisa glams 10:00–11:00 (green room opens 10 on the weekend). Kaitlin batching plan.',
+  },
+  {
+    id: 'mc-eric-stage-effect',
+    date: '2026-07-26',
+    start: '12:00',
+    end: '14:00',
+    title: 'Eric Edmeades — The Stage Effect Masterclass (with Vishen)',
+    type: 'production',
+    location: STUDIO,
+    speakers: ['eric-edmeades', 'vishen'],
+    vishen: true,
+    gareth: true,
+    crew: FULL,
+    director: 'gareth',
+    cameraOps: CAMERA_CREW,
+    priority: 10,
+    status: 'confirmed',
+    notes: 'PRIORITY (Gareth, 24 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. Sun 26 12:00–14:00: a fresh after-11 block, right after the Kaitlin × Marisa interview (15-min set reset) and straight into Vishen\'s 2pm Lorin podcast. This REPLACES the separate Kaitlin × Eric author interview (killed — Eric\'s covered by the masterclass). Eric makeup 11:30 (green room). NOTE: Vishen runs masterclass → Lorin podcast back-to-back (12:00–15:30) — a big continuous block for him.',
   },
   // Scaling Wisdom Podcast: Jeffrey Allen × Vishen — CANCELLED (Gareth, 21 Jul):
   // Regan's masterclass was postponed onto Sat 25 Jul 12:00–15:00, which needs the
@@ -488,21 +506,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'MOVED to Wed 22 Jul (Gareth, 21 Jul) to lift it off the heaviest studio day (Sun 26th). Runs second in the 22nd\'s open studio: 15-min reset off Dan Brulé\'s interview, makeup 11:00, interview 11:30–12:15. John is in town 20–27 Jul (the old note calling the 26th his departure day was stale — he has a 27th stage slot), so the 22nd is well within his window. Reassigned from Kaitlin to Gareth (13 Jul).',
   },
-  {
-    id: 'int-eric',
-    date: '2026-07-26',
-    start: '13:15',
-    end: '14:00',
-    title: 'Author Interview: Kaitlin & Eric Edmeades',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['eric-edmeades', 'kaitlin'],
-    crew: UNIT2,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 10,
-    status: 'tentative',
-  },
+  // Kaitlin × Eric Edmeades author interview — KILLED (Gareth, 24 Jul): Eric is now
+  // covered by the 2-hour Eric × Vishen "Stage Effect" masterclass on Sun 26, so the
+  // separate interview is redundant. Airtable record marked Cancelled.
   {
     id: 'ads-vishen',
     date: '2026-07-27',
