@@ -505,9 +505,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'ads-vishen',
-    date: '2026-07-26',
-    start: '11:00',
-    end: '12:00',
+    date: '2026-07-27',
+    start: '16:30',
+    end: '17:30',
     title: 'Vishen — ads shoot',
     type: 'production',
     location: STUDIO,
@@ -519,7 +519,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'confirmed',
-    notes: 'ADDED per Gareth (23 Jul) — 1-hour Vishen ads shoot, Sun 26 11:00–12:00. Weekend studio opens 10am; runs right after Kaitlin\'s 10:00–11:00 content shoot, before the 12:15 Marisa interview. Vishen free until his 2pm Lorin podcast. Gareth + unit 1. CONTENT TBC — confirm which product/campaign to label + brief.',
+    notes: 'MOVED off Sun 26 to Mon 27 16:30–17:30 (Gareth, 24 Jul) to de-clutter a busy Sunday. Studio free after Maya\'s interview (16:30); Vishen free after his 2pm fireside + tom-vishen slot. Gareth rolls off Maya\'s interview into this. CONTENT TBC — confirm product/campaign.',
   },
   {
     id: 'shoot-kaitlin-sun',
@@ -552,9 +552,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-shy',
-    date: '2026-07-26',
-    start: '15:45',
-    end: '16:30',
+    date: '2026-07-27',
+    start: '12:30',
+    end: '13:15',
     title: 'Author Interview: Kaitlin & Shi Heng Yi',
     type: 'production',
     location: STUDIO,
@@ -564,7 +564,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'tentative',
-    notes: 'Arrival day — keep light. NUDGED 15:30→15:45 (16 Jul) to leave a studio reset after the Lorin×Vishen podcast, which extended to 90 min (ends 15:30). 28 Jul is also open if this needs to move.',
+    notes: 'MOVED off Sun 26 to Mon 27 12:30–13:15 (Gareth, 24 Jul) to de-clutter a busy Sunday. Shi is camera-ready off his 12:10 portrait; Kaitlin is off the morning main-stage hosting (ends 12:00); studio free 12:30–14:00 between Marisa\'s two own-podcast slots. Nadir operates.',
   },
 
   // ---------- MON 27 JUL ----------
