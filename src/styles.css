@@ -649,6 +649,7 @@ body {
 .dot.t-stage-talk { background: var(--brand); }
 .dot.t-podcast { background: var(--blue); }
 .dot.t-production { background: var(--green); }
+.dot.flt-masterclass { background: var(--teal, #0d9488); }
 .dot.t-portrait { background: var(--pink); }
 .dot.t-accelerator { background: var(--orange); }
 .dot.loc-small-hall { background: var(--brand-dark); }

@@ -161,10 +161,15 @@ export function isOurProduction(e: ScheduleEvent): boolean {
 }
 
 /** Clickable Key/legend — filters by type, or by the Small Hall location (a cross-cutting filter) */
-export type ChipFilter = 'all' | EventType | 'small-hall'
+export type ChipFilter = 'all' | EventType | 'small-hall' | 'masterclass'
+
+/** Masterclasses are studio productions with an `mc-` id — they get their own chip,
+ *  and "Studio production" excludes them so the two chips are distinct sets. */
+export const isMasterclass = (e: ScheduleEvent) => e.id.startsWith('mc-')
 
 export const FILTER_META: { key: ChipFilter; label: string; dotClass: string }[] = [
   { key: 'stage-talk', label: 'Stage talk', dotClass: 't-stage-talk' },
+  { key: 'masterclass', label: 'Masterclass', dotClass: 'flt-masterclass' },
   { key: 'podcast', label: 'Podcast', dotClass: 't-podcast' },
   { key: 'production', label: 'Studio production', dotClass: 't-production' },
   { key: 'portrait', label: 'Portraits', dotClass: 't-portrait' },
@@ -178,6 +183,8 @@ function matchesOne(e: ScheduleEvent, filter: ChipFilter): boolean {
   if (filter === 'all') return true
   if (filter === 'small-hall') return e.location === COMMUNITY
   if (filter === 'social') return e.type === 'social' || !!e.party
+  if (filter === 'masterclass') return isMasterclass(e)
+  if (filter === 'production') return e.type === 'production' && !isMasterclass(e)
   return e.type === filter
 }
 
