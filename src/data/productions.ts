@@ -745,7 +745,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'conflict',
-    notes: 'Maria is not on Speaker DATES — window unknown.',
+    notes: 'AVAILABILITY FLAG (source audit, 25 Jul): Author x Event Airtable now shows Maria in Tallinn 27 Jul → 30 Jul. This 11:00 podcast is on her DEPARTURE DAY — a morning record on her flight-out day is a real risk. She arrives 27 Jul, so 28 or 29 Jul are safer. Confirm her flight time or move earlier before locking.',
   },
   {
     id: 'int-mckenna',
