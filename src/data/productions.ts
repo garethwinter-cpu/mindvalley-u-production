@@ -606,8 +606,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'mc-mckenna',
     date: '2026-07-28',
-    start: '10:00',
-    end: '11:30',
+    start: '11:00',
+    end: '12:30',
     title: 'Paul McKenna & Vishen — NEW EB / Total Self Confidence Masterclass',
     type: 'production',
     location: STUDIO,
