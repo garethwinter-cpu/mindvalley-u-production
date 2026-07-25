@@ -218,21 +218,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'Right after Jade\'s 14:00–15:30 embodiment session — she\'s on-site. NOTE: Jade\'s formal marketing assets were cut earlier (low ROI), but she\'s here through 30 Jul, so this quick social piece is a no-cost add on the social team.',
   },
-  {
-    id: 'tom-vishen',
-    date: '2026-07-27',
-    start: '15:15',
-    end: '15:35',
-    title: 'Tom Kirby funny interview — Vishen on bending reality',
-    type: 'social-media',
-    location: 'Woodblock (Studio 2)',
-    speakers: ['vishen', 'tom-kirby'],
-    vishen: true,
-    crew: ['kuhan'],
-    cameraOps: ['kuhan'],
-    status: 'tentative',
-    notes: 'Right after Vishen\'s 14:00–15:00 Shi Heng Yi fireside — he\'s warm and it\'s his lightest day. Woodblock + Kuhan.',
-  },
+  // Tom Kirby × Vishen funny interview — REMOVED (Gareth, 24 Jul). Airtable marked Cancelled.
   {
     id: 'tom-dawn',
     date: '2026-07-28',
