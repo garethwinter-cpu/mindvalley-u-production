@@ -268,7 +268,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: FULL,
     director: 'gareth',
     cameraOps: CAMERA_CREW,
-    status: 'confirmed',
+    status: 'done',
     notes: 'POSTPONED from Thu 23 to Sat 25 Jul, expanded to a full 3-hour record 12:00–15:00 (Gareth, 21 Jul — top priority). Makeup 10:00 at the Nuune Boutique Hotel (Regan preps off-site, travels in). Regan\'s marketing assets are captured WITHIN this 3h block (the separate Thu assets slot is folded in). Vishen is free 12:00–15:00 once the Jeffrey×Vishen podcast is cancelled (see pod-ja removal). Studio free from 10:30 (after Kristina×Marisa) through 15:00. Part of the Fri script → Sat shoot → Sun ads Regan sequence.',
   },
   {
@@ -393,7 +393,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     priority: 7,
-    status: 'confirmed',
+    status: 'done',
     notes:
       'MOVED to 10:00–11:30 (Gareth, 21 Jul) — the studio isn\'t accessible before 10am on the weekend, so the old 09:00 start was impossible. 90-min record, then a 30-min reset before Regan\'s 12:00 masterclass. Two-hander, no Vishen. Both women, so a 60-min makeup call 09:00–10:00 (green room — assumes green-room access before the 10am studio open; else they prep at their hotel).',
   },
@@ -466,7 +466,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'nadir',
     cameraOps: ['khairul', 'nadir'],
     priority: 6,
-    status: 'confirmed',
+    status: 'done',
     authorConfirmed: true,
     notes: 'LOCKED 4:00–5:30pm (Gareth, 21 Jul) — Matt\'s requested time. Works now that Regan\'s accelerator camera is Kuhan+Jason: that frees Khairul + Nadir to run this in the studio while Gareth produces the accelerator on the Main Stage (Gareth won\'t be present for the whole podcast — the unit handles it, it\'s Marisa\'s facilitated 2-hander). Jeffrey\'s LAST day (flies 26 Jul) so it stays Saturday. Runs after Regan\'s 12:00–15:00 masterclass. Marisa\'s 2nd podcast of the day (after Kristina 09:00).',
   },
