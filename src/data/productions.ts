@@ -498,8 +498,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'ads-vishen',
     date: '2026-07-27',
-    start: '16:30',
-    end: '17:30',
+    start: '17:15',
+    end: '18:15',
     title: 'Vishen — ads shoot',
     type: 'production',
     location: STUDIO,
@@ -511,7 +511,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'confirmed',
-    notes: 'MOVED off Sun 26 to Mon 27 16:30–17:30 (Gareth, 24 Jul) to de-clutter a busy Sunday. Studio free after Maya\'s interview (16:30); Vishen free after his 2pm fireside + tom-vishen slot. Gareth rolls off Maya\'s interview into this. CONTENT TBC — confirm product/campaign.',
+    notes: 'MOVED to 17:15–18:15 (Gareth, 26 Jul) — the last of Monday\'s four crew priorities (Shi × Kaitlin → Shi × Vishen fireside → Marisa podcast → Vishen ads). Runs straight after Marisa\'s podcast in the studio. Vishen free from 15:00 (after the fireside); wraps before the 19:00 party. CONTENT TBC — confirm product/campaign.',
   },
   // Kaitlin content shoot (Sun 26 10:00–11:00) + its hotel makeup — REMOVED (Gareth, 24 Jul).
   {
@@ -549,15 +549,15 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-marisa-own-2',
     date: '2026-07-27',
-    start: '14:00',
-    end: '15:30',
+    start: '15:45',
+    end: '17:15',
     title: 'Marisa Peer podcast (YMYR) — 90-min slot, guest TBC',
     type: 'podcast',
     location: STUDIO,
     speakers: ['marisa-peer'],
     crew: UNIT1,
     status: 'tentative',
-    notes: 'HELD 90-min YMYR booking (14:00–15:30) — Marisa\'s team asked to extend this Monday 2pm slot from 1h to 90 min (21 Jul); guest still TBC (Sabrina Stocker is on Tue 28th, not here — corrected 21 Jul). Maya Raichoora\'s interview nudged 15:15→15:45 for a studio reset after this. Confirm guest with Elise/Nicola.',
+    notes: 'MOVED off the original 2pm (Gareth, 26 Jul): the 2pm slot collided with the Shi × Vishen fireside, which takes BOTH Nadir + Khairul to the Black Box. This now runs 15:45–17:15, once the crew has moved the kit back up from the Black Box (15:00–15:45). Takes the studio slot Maya\'s interview vacated (Maya moved to Tue 28). 90-min YMYR booking; guest still TBC (Sabrina Stocker is on Tue 28th). Confirm guest with Elise/Nicola.',
   },
 
   // ---------- TUE 28 JUL ----------
@@ -954,9 +954,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-maya',
-    date: '2026-07-27',
-    start: '15:45',
-    end: '16:30',
+    date: '2026-07-28',
+    start: '10:00',
+    end: '10:45',
     title: 'Author Interview: Gareth & Maya Raichoora',
     type: 'production',
     location: STUDIO,
@@ -967,7 +967,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'tentative',
-    notes: 'MOVED from 1 Aug (was inside Gareth\'s Vishen AI Accelerator, 11am-6pm — impossible). NUDGED 15:15→15:45 (21 Jul) to clear a studio reset after Marisa\'s Ep2 podcast extended to 90 min (ends 15:30). Maya free all day the 27th (her only other slot is the 30th). Nadir free; studio clear after Marisa. 28 Jul afternoon is the fallback.',
+    notes: 'MOVED to Tue 28 Jul 10:00–10:45 (Gareth, 26 Jul) — off Monday, whose studio 2pm slot went to Marisa\'s podcast (bumped by the Shi × Vishen fireside crew clash). Also de-risks Maya\'s Monday ARRIVAL day: she lands the 27th, so filming her settled on Tue morning is safer. Slots in before the 11:00 McKenna masterclass; makeup 09:00–10:00.',
   },
   {
     id: 'assets-marisa',
