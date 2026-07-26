@@ -81,6 +81,9 @@ export interface DayMeta {
   /** Event agenda marks this day "NO INTERVIEWS" — confirmed via Eni (13 Jul) that this
    *  means no STAGE/press interviews, not our studio podcast/interview capture. Informational only. */
   noInterviews?: boolean
+  /** Day is not available for production (studio wrapped / no access). Greyed in the day
+   *  nav — still clickable so any pre-booked post-event shoots remain visible. */
+  unavailable?: boolean
 }
 
 export interface Conflict {

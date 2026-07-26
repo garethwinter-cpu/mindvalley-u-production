@@ -42,9 +42,13 @@ export default function DayView({ date, onPick }: { date: string; onPick: (d: st
           const past = DAYS.filter((d) => d.date < today)
           return [...upcoming, ...past].map((d) => {
             const done = d.date < today
-            const cls = [d.date === day.date ? 'active' : '', done ? 'done' : ''].filter(Boolean).join(' ')
+            const unavailable = !done && d.unavailable
+            const cls = [d.date === day.date ? 'active' : '', done ? 'done' : '', unavailable ? 'unavailable' : '']
+              .filter(Boolean)
+              .join(' ')
+            const title = done ? 'Done' : unavailable ? 'Not available — studio wrapped' : undefined
             return (
-              <button key={d.date} className={cls} onClick={() => onPick(d.date)} title={done ? 'Done' : undefined}>
+              <button key={d.date} className={cls} onClick={() => onPick(d.date)} title={title}>
                 {done && <span className="day-tick" aria-hidden>✓ </span>}
                 {d.label.replace(' Jul', '/7').replace(' Aug', '/8')}
               </button>

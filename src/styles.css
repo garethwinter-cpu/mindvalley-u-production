@@ -415,6 +415,27 @@ body {
   color: var(--white);
   opacity: 1;
 }
+/* Unavailable days (studio wrapped / no access): greyed like done, but no tick and not dimmed
+   away — still clickable so any pre-booked post-event shoots stay reachable. */
+.day-nav button.unavailable {
+  background: var(--bg-subtle, #f4f4f5);
+  border-color: var(--border, #e4e4e7);
+  border-style: dashed;
+  color: var(--text-muted, #9ca3af);
+  opacity: 0.6;
+}
+.day-nav button.unavailable:hover {
+  opacity: 1;
+  color: var(--text-muted, #9ca3af);
+  border-color: var(--border-strong);
+}
+.day-nav button.unavailable.active {
+  background: var(--text-muted, #9ca3af);
+  border-color: var(--text-muted, #9ca3af);
+  border-style: solid;
+  color: var(--white);
+  opacity: 1;
+}
 .day-nav .day-tick {
   color: var(--positive, #16a34a);
   font-weight: 700;
