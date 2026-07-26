@@ -432,9 +432,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'mc-eric-stage-effect',
-    date: '2026-07-28',
-    start: '16:00',
-    end: '18:00',
+    date: '2026-07-31',
+    start: '12:00',
+    end: '14:00',
     title: 'Eric Edmeades — The Stage Effect Masterclass (with Vishen)',
     type: 'production',
     location: STUDIO,
@@ -446,7 +446,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'confirmed',
-    notes: 'PRIORITY (Gareth, 24 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. RESCHEDULED to Tue 28 Jul 16:00–18:00 (26 Jul): Vishen cancelled the original Sun 26 session on the day. Tuesday afternoon is his first clean 2h block — his only commitment that day is the 11:00 McKenna masterclass, so he\'s fresh in the afternoon. Studio clear from 16:00 (after the McKenna cert assets). Eric makeup 15:30 (green room). This still REPLACES the separate Kaitlin × Eric author interview (killed — Eric\'s covered by the masterclass).',
+    notes: 'PRIORITY (Gareth, 26 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. RESCHEDULED to Fri 31 Jul 12:00–14:00: Tuesday didn\'t work for Eric, and this is Vishen\'s one clean midday gap on Friday (busy 11:00–12:00 content, then 14:00–16:00 sales + closing ceremony) — a fresh daytime slot rather than an evening one. Eric\'s Friday is otherwise open. This displaced Marisa\'s + Lee Holden\'s Friday asset shoots, which moved to Tue 28 (the slot this masterclass vacated). Eric makeup 11:30 (green room). Replaces the killed Kaitlin × Eric author interview.',
   },
   // Scaling Wisdom Podcast: Jeffrey Allen × Vishen — CANCELLED (Gareth, 21 Jul):
   // Regan's masterclass was postponed onto Sat 25 Jul 12:00–15:00, which needs the
@@ -929,9 +929,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'assets-lee-holden',
-    date: '2026-07-31',
-    start: '12:45',
-    end: '14:45',
+    date: '2026-07-28',
+    start: '17:15',
+    end: '19:15',
     title: 'Lee Holden — Masterclass Marketing Assets (Modern QiGong + Longevity collection)',
     type: 'production',
     location: STUDIO,
@@ -939,7 +939,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT2,
     director: 'nadir',
     status: 'tentative',
-    notes: '8-item suite. RESOLVED 21 Jul — was pencilled into a phantom parallel "Studio — Unit 2"; Gareth confirmed the only second space is the Woodblock (Studio 2), which is for social testimonials + vox pops, not sound-controlled formal capture. So this consolidates into the one Energiakeskus studio, serialised after Marisa\'s masterclass + assets (which hold the room until 12:45). Nadir operates on unit 2; Khairul/Gareth are free by then. Lee\'s window runs to 2 Aug if it needs to slide.',
+    notes: '8-item suite. MOVED to Tue 28 Jul 17:15–19:15 (Gareth, 26 Jul) — off Friday to free the 12:00–14:00 studio window for the Eric × Vishen masterclass. Lands in the Tue slot the Eric masterclass vacated (studio + crew free after 16:00). Lee also has his author interview Friday 14:45; his window runs to 2 Aug. Nadir operates on unit 2.',
   },
   {
     id: 'int-maya',
@@ -960,9 +960,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'assets-marisa',
-    date: '2026-07-31',
-    start: '11:30',
-    end: '12:45',
+    date: '2026-07-28',
+    start: '16:00',
+    end: '17:15',
     title: 'Marisa Peer — Masterclass Marketing Assets (RTHA collection)',
     type: 'production',
     location: STUDIO,
@@ -971,7 +971,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: UNIT1,
     status: 'tentative',
-    notes: 'Reduced suite. PULLED to 12:00 (16 Jul) straight after Marisa\'s 2h masterclass so she stays camera-ready (no re-makeup) and her studio day ends by 13:15. Moved onto unit 1 (continuing from her masterclass); the old "free unit 1" reason is gone now that Vishen\'s Talking Heads left the 31st. Unit 2 stays on the Lee Holden block.',
+    notes: 'Reduced suite. MOVED to Tue 28 Jul 16:00–17:15 (Gareth, 26 Jul) — off Friday to free the 12:00–14:00 window for the Eric × Vishen masterclass. Efficient on Tuesday: Marisa is already in the studio that day (her own-podcast #3 at 13:00), and this lands in the slot the Eric masterclass vacated. Unit 1.',
   },
   {
     id: 'th-vishen-1',
