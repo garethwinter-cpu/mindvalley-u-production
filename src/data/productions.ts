@@ -532,20 +532,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
 
   // ---------- MON 27 JUL ----------
-  {
-    id: 'pod-marisa-own-1',
-    date: '2026-07-27',
-    start: '11:00',
-    end: '12:30',
-    title: 'Marisa Peer podcast — "Your Mind, Your Rules" (Episode 1, PENCILLED)',
-    type: 'podcast',
-    location: STUDIO,
-    speakers: ['marisa-peer'],
-    crew: UNIT1,
-    status: 'placeholder',
-    notes:
-      'PENCILLED placeholder — Marisa\'s own book podcast (facilitated by us; not the Scaling Wisdom episode with Vishen). Per our capacity proposal (p-marisa-podcast-count, 13 Jul): recommended max 3 episodes in-house, best batched on Mon 27 Jul (the most open studio day). No guest/topic confirmed yet — reply to Elise McDonald (Marisa\'s team) to lock in.',
-  },
+  // Marisa Peer podcast "Your Mind, Your Rules" (pod-marisa-own-1, 11:00–12:30 placeholder)
+  // — REMOVED (Gareth, 26 Jul). It was a pencilled extra episode; Marisa has confirmed her
+  // 15:45 YMYR slot (pod-marisa-own-2) instead, so this speculative morning hold is dropped.
   {
     id: 'pod-marisa-own-2',
     date: '2026-07-27',
