@@ -722,8 +722,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-maria-wendt',
     date: '2026-07-30',
-    start: '11:15',
-    end: '12:00',
+    start: '11:00',
+    end: '11:45',
     title: 'Scaling Wisdom Podcast: Maria Wendt & Vishen',
     type: 'podcast',
     location: STUDIO,
@@ -734,7 +734,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'conflict',
-    notes: 'AVAILABILITY FLAG (source audit, 25 Jul): Author x Event Airtable now shows Maria in Tallinn 27 Jul → 30 Jul. This 11:00 podcast is on her DEPARTURE DAY — a morning record on her flight-out day is a real risk. She arrives 27 Jul, so 28 or 29 Jul are safer. Confirm her flight time or move earlier before locking.',
+    notes: 'AVAILABILITY FLAG (source audit, 25 Jul): Author x Event Airtable shows Maria in Tallinn 27 Jul → 30 Jul. This 11:00 podcast is on her DEPARTURE DAY — a morning record on her flight-out day is a real risk. She arrives 27 Jul, so 28 or 29 Jul are safer. Confirm her flight time or move earlier before locking. (Back to 11:00 — the 11:15 nudge is no longer needed now that Marisa\'s masterclass moved off Thursday to Mon 27.)',
   },
   {
     id: 'int-mckenna',
@@ -881,9 +881,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'mc-marisa',
-    date: '2026-07-30',
-    start: '09:00',
-    end: '11:00',
+    date: '2026-07-27',
+    start: '10:00',
+    end: '12:00',
     title: 'Marisa Peer & Vishen — NEW RTHA / Uncompromised Life Masterclass',
     type: 'production',
     location: STUDIO,
@@ -894,7 +894,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: ['khairul'],
     status: 'tentative',
-    notes: 'MC DNA 2.0. WITH VISHEN (data corrected 27 Jul — was wrongly flagged Marisa-solo). MOVED to Thu 30 Jul 09:00–11:00 (Gareth, 27 Jul) to un-stack Friday, which had TWO 2h masterclasses (this + Eric). Thursday 09:00–11:00 is the one free 2h studio window and Vishen is free then. No interference with Lee (his interview is Thu 17:15–19:15). Makeup 08:00–09:00. Maria Wendt\'s podcast nudged to 11:15 to give Vishen + the studio a 15-min reset after this. Time-saver: use a Quest hypnosis audio for the teaching segment. Camera: Khairul.',
+    notes: 'MC DNA 2.0. WITH VISHEN. MOVED to Mon 27 Jul 10:00–12:00 (Gareth, 27 Jul). The Thu 30 09:00 slot broke the "no Vishen filming before 10am" rule, and Thursday has no 2h window after 10:00. Monday\'s morning is empty (studio + crew idle until int-shy at 12:30), Vishen + Marisa are free, and this gives every masterclass its own day (Mon Marisa / Tue McKenna / Wed Kwik / Fri Eric — un-stacked). Starts at 10:00 (rule-compliant). Makeup 09:00–10:00. 30-min reset before int-shy at 12:30; Vishen then free until his 14:00 fireside. Camera: Khairul.',
   },
   {
     id: 'int-lee-holden',
