@@ -943,9 +943,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-maya',
-    date: '2026-07-30',
-    start: '10:00',
-    end: '10:45',
+    date: '2026-07-29',
+    start: '16:30',
+    end: '17:15',
     title: 'Author Interview: Gareth & Maya Raichoora',
     type: 'production',
     location: STUDIO,
@@ -956,7 +956,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'tentative',
-    notes: 'MOVED to Thu 30 Jul 10:00–10:45 (Gareth, 27 Jul) — off a very heavy Tuesday (9h+ booked) onto Thursday, the week\'s lightest recording day (~5h). Maya is well settled by Thu (she lands Mon 27), the crew is fresh, and it slots into Thursday\'s empty 09:00–11:00 morning before the first shoot at 11:00. Makeup 09:00–10:00.',
+    notes: 'MOVED to Wed 29 Jul 16:30–17:15 (source audit, 27 Jul). The earlier Thu 30 10:00 slot CLASHED with Maya\'s Juniors talk (Terrace Hall, Thu 30 10:00–10:45) — surfaced when her sessions were re-pulled from Author x Event. Wednesday is her one clear day (adult talk is Tue 28 15:00–16:00; Juniors is Thu 30 morning), so her interview lands here, off the heavy Tuesday, with no clash. Straight after int-zen-takai; makeup ~15:30–16:30.',
   },
   {
     id: 'assets-marisa',
