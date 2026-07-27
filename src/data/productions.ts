@@ -943,7 +943,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'int-maya',
-    date: '2026-07-28',
+    date: '2026-07-30',
     start: '10:00',
     end: '10:45',
     title: 'Author Interview: Gareth & Maya Raichoora',
@@ -956,7 +956,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'tentative',
-    notes: 'MOVED to Tue 28 Jul 10:00–10:45 (Gareth, 26 Jul) — off Monday, whose studio 2pm slot went to Marisa\'s podcast (bumped by the Shi × Vishen fireside crew clash). Also de-risks Maya\'s Monday ARRIVAL day: she lands the 27th, so filming her settled on Tue morning is safer. Slots in before the 11:00 McKenna masterclass; makeup 09:00–10:00.',
+    notes: 'MOVED to Thu 30 Jul 10:00–10:45 (Gareth, 27 Jul) — off a very heavy Tuesday (9h+ booked) onto Thursday, the week\'s lightest recording day (~5h). Maya is well settled by Thu (she lands Mon 27), the crew is fresh, and it slots into Thursday\'s empty 09:00–11:00 morning before the first shoot at 11:00. Makeup 09:00–10:00.',
   },
   {
     id: 'assets-marisa',
