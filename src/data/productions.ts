@@ -881,9 +881,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'mc-marisa',
-    date: '2026-07-27',
-    start: '10:00',
-    end: '12:00',
+    date: '2026-07-29',
+    start: '17:15',
+    end: '19:15',
     title: 'Marisa Peer & Vishen — NEW RTHA / Uncompromised Life Masterclass',
     type: 'production',
     location: STUDIO,
@@ -894,7 +894,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: ['khairul'],
     status: 'tentative',
-    notes: 'MC DNA 2.0. WITH VISHEN. MOVED to Mon 27 Jul 10:00–12:00 (Gareth, 27 Jul). The Thu 30 09:00 slot broke the "no Vishen filming before 10am" rule, and Thursday has no 2h window after 10:00. Monday\'s morning is empty (studio + crew idle until int-shy at 12:30), Vishen + Marisa are free, and this gives every masterclass its own day (Mon Marisa / Tue McKenna / Wed Kwik / Fri Eric — un-stacked). Starts at 10:00 (rule-compliant). Makeup 09:00–10:00. 30-min reset before int-shy at 12:30; Vishen then free until his 14:00 fireside. Camera: Khairul.',
+    notes: 'MC DNA 2.0. WITH VISHEN. Wed 29 Jul 17:15–19:15 (Gareth, 27 Jul). The Friday stack was abandoned — it would have forced Vishen off his 11:00–12:00 Main Stage content slot, which he\'s keeping. Wednesday evening is the only clean future 2h Vishen+studio window (it\'s Mon afternoon already; Vishen\'s week is otherwise full). Runs straight after Maya\'s interview (16:30–17:15); Vishen free after his 17:00 stage slot. Starts 17:15 (Vishen 10am rule OK). NOTE: Wednesday now carries two masterclasses (Kwik 10:00–12:00 AM + this PM) — spread across the day. Makeup ~16:15–17:15. Camera: Khairul.',
   },
   {
     id: 'int-lee-holden',
