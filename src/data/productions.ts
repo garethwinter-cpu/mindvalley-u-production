@@ -654,23 +654,11 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   // Zen Samurai "5 Elements Meditations" KILLED (14 Jul) — not producing these. Sensei Zen
   // Takai keeps his Gareth interview (29 Jul) and his 28 Jul Embodiment stage session.
-  {
-    id: 'int-jolene',
-    date: '2026-07-29',
-    start: '14:45',
-    end: '15:30',
-    title: 'Author Interview: Gareth & Dr. Jolene Brighten',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['jolene-brighten', 'gareth'],
-    crew: UNIT2,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 4,
-    status: 'tentative',
-    notes: 'Departure day. Sits at 14:15, before the Lorin podcast at 15:00. (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild — this Gareth-hosted author interview is a separate deliverable and stands alone; confirm we still want it.) Stays with Gareth (Kaitlin is capped at 9 interviews per her commercial agreement).',
-  },
+  // Author Interview: Gareth & Dr. Jolene Brighten (int-jolene, Wed 29 14:45–15:30) —
+  // REMOVED (Gareth, 27 Jul). Her Scaling Wisdom podcast was already cut (16 Jul); this
+  // low-priority (pri 4) author interview sat on her departure day (flight risk) and on the
+  // overloaded Wednesday, so it's dropped. Her Tue 28 Main Stage talk (jul28-brighten) is the
+  // event's session and is untouched.
   {
     id: 'pod-lorin',
     date: '2026-07-26',
