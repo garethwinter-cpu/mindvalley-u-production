@@ -589,8 +589,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'assets-mckenna-cert',
     date: '2026-07-28',
-    start: '15:00',
-    end: '16:00',
+    start: '10:00',
+    end: '11:00',
     title: 'Paul McKenna — Hypnotherapy Cert Marketing Assets',
     type: 'production',
     location: STUDIO,
@@ -600,7 +600,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     status: 'confirmed',
     authorConfirmed: true,
-    notes: 'TIME-SENSITIVE — must be captured on the 28th (launch deadline), so it stays here while the non-urgent masterclass assets move to the 30th. Kept at 15:00–16:00 to give Paul a voice rest after his masterclass (now ends 12:00, so ~3h rest) — deliberately NOT pulled forward with the other 16 Jul optimisation for exactly this reason. Just this one short 1h block on top of a masterclass that is largely Trance-Audio-driven (light on his live voice), so the 28th is no longer a full talking day. Solves Paul\'s voice-stamina concern (email 14 Jul).',
+    notes: 'PULLED to 10:00–11:00 (Gareth, 27 Jul) as the lead-in to the McKenna × Vishen masterclass (11:00–13:00) — one continuous 3-hour McKenna studio block 10:00–13:00, Vishen joins at 11:00. Still hits the launch-deadline requirement to capture on the 28th. Glam once at 09:30. NOTE: this reverses the earlier voice-rest placement (was 15:00 to rest Paul\'s voice after the masterclass, per his 14 Jul stamina email) — now he records cert assets then straight into the masterclass. Mitigated because the masterclass is largely Trance-Audio-driven (light on his live voice), but flag to Paul.',
   },
   // Author Interview: Eni & Sheleana Aiyana (int-sheleana, Tue 28 09:00–09:45) —
   // REMOVED (Gareth, 27 Jul): Sheleana can't make it. Her Tue 28 Main Stage talk

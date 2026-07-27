@@ -82,6 +82,14 @@ const MAKEUP_OVERRIDES: Record<
   },
   // Chiara + Marisa glam in the Author Lounge / VIP Area (Gareth, 21 Jul).
   'pod-chiara-marisa': { location: 'Author Lounge / VIP Area' },
+  // McKenna records a continuous 3h block Tue 28 (cert assets 10:00–11:00 → masterclass
+  // 11:00–13:00), so he glams ONCE before the 10:00 start rather than the default 10:30
+  // masterclass call (which would land mid-recording).
+  'mc-mckenna': {
+    start: '09:30',
+    end: '10:00',
+    note: 'One glam call before McKenna\'s continuous 10:00–13:00 studio block (cert assets → masterclass). Touch-up before Vishen joins at 11:00.',
+  },
   // Kristina + Marisa prep at their hotel for the Sat 10:00 podcast — the weekend
   // studio (and green room) aren't accessible before 10am, so they come in ready.
   'pod-kristina-marisa': {
