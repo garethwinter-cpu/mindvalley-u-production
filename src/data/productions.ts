@@ -602,23 +602,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     authorConfirmed: true,
     notes: 'TIME-SENSITIVE — must be captured on the 28th (launch deadline), so it stays here while the non-urgent masterclass assets move to the 30th. Kept at 15:00–16:00 to give Paul a voice rest after his masterclass (now ends 12:00, so ~3h rest) — deliberately NOT pulled forward with the other 16 Jul optimisation for exactly this reason. Just this one short 1h block on top of a masterclass that is largely Trance-Audio-driven (light on his live voice), so the 28th is no longer a full talking day. Solves Paul\'s voice-stamina concern (email 14 Jul).',
   },
-  {
-    id: 'int-sheleana',
-    date: '2026-07-28',
-    start: '09:00',
-    end: '09:45',
-    title: 'Author Interview: Eni & Sheleana Aiyana',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['sheleana-aiyana', 'eni'],
-    crew: UNIT2,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 5,
-    status: 'confirmed',
-    notes:
-      'CONFIRMED (13 Jul) — Sheleana takes the 9-9:45am slot. Per Kaitlin (14 Jul): Sheleana prefers MORNINGS, not too late in the afternoon, and departs 29 Jul, so this morning slot on her talk day is ideal. Deliberately the morning OF her 2pm stage talk so her hair and makeup carry through the day (glam once, touch up before the talk). It is the only studio morning window that day — McKenna\'s masterclass ties up the crew 10am-1pm. Eni interviews (feminine-energy call). ACTION: author relations to confirm with Sheleana she is happy doing the 9am interview the morning of her talk (per Kaitlin).',
-  },
+  // Author Interview: Eni & Sheleana Aiyana (int-sheleana, Tue 28 09:00–09:45) —
+  // REMOVED (Gareth, 27 Jul): Sheleana can't make it. Her Tue 28 Main Stage talk
+  // (jul28-sheleana) and 27 Jul stage session are the event's and are untouched.
   {
     id: 'pod-marisa-own-3',
     date: '2026-07-28',
