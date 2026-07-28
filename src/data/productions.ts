@@ -570,8 +570,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-marisa-own-3',
     date: '2026-07-28',
-    start: '13:15',
-    end: '14:45',
+    start: '16:00',
+    end: '17:30',
     title: 'Marisa Peer podcast (YMYR) — guest Sabrina Stocker',
     type: 'podcast',
     location: STUDIO,
@@ -579,7 +579,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: UNIT1,
     status: 'confirmed',
     notes:
-      'GUEST CONFIRMED: Sabrina Stocker, Tue 28 Jul 13:00–14:30 (Matt, 21 Jul). Sits before Paul McKenna\'s 15:00 cert assets on unit 1. Sabrina is an external YMYR guest (not an MVU author), so named in the title rather than the speaker roster.',
+      'MOVED to 16:00–17:30 (Gareth, 27 Jul — was 13:15–14:45). Guest: Sabrina Stocker, an external YMYR guest (not an MVU author), so named in the title rather than the speaker roster. Now the last studio session of Tuesday, straight after the Vishen ads shoot (ends 16:00). CONFIRM the new 4pm start with Matt/Elise — it was booked at 13:00.',
   },
 
   // ---------- WED 29 JUL ----------
