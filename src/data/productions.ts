@@ -786,23 +786,11 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'The accelerator itself is delivered LIVE on the Main Stage on 30 Jul (per the Google Sheet) — this is just the sales/landing-page video for it. Folded into the tail of Jim\'s 29 Jul masterclass session (after Vishen wraps ~12:15, Jim stays on solo), since his 30th is stage-packed all day. No extra studio slot; frees his departure-eve.',
   },
-  {
-    id: 'mc-marisa',
-    date: '2026-07-29',
-    start: '17:15',
-    end: '19:15',
-    title: 'Marisa Peer & Vishen — NEW RTHA / Uncompromised Life Masterclass',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['marisa-peer', 'vishen'],
-    vishen: true,
-    gareth: true,
-    crew: UNIT1,
-    director: 'gareth',
-    cameraOps: ['khairul'],
-    status: 'tentative',
-    notes: 'MC DNA 2.0. WITH VISHEN. Wed 29 Jul 17:15–19:15 (Gareth, 27 Jul). The Friday stack was abandoned — it would have forced Vishen off his 11:00–12:00 Main Stage content slot, which he\'s keeping. Wednesday evening is the only clean future 2h Vishen+studio window (it\'s Mon afternoon already; Vishen\'s week is otherwise full). Runs straight after Maya\'s interview (16:30–17:15); Vishen free after his 17:00 stage slot. Starts 17:15 (Vishen 10am rule OK). NOTE: Wednesday now carries two masterclasses (Kwik 10:00–12:00 AM + this PM) — spread across the day. Makeup ~16:15–17:15. Camera: Khairul.',
-  },
+  // Marisa Peer & Vishen — NEW RTHA / Uncompromised Life Masterclass (mc-marisa, was Wed 29
+  // 17:15–19:15) — REMOVED (Gareth, 27 Jul): "we will not film it". Her RTHA marketing assets
+  // (assets-marisa) were already dropped on 27 Jul, so Marisa now has no masterclass or asset
+  // capture this run — only her podcasts (YMYR Ep2 Mon 27, Ep3 Tue 28, Rachel Fri 31) and the
+  // completed Kristina/Jeffrey/Chiara episodes + her Kaitlin author interview.
   {
     id: 'int-lee-holden',
     date: '2026-07-30',
