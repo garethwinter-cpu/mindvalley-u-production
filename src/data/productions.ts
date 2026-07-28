@@ -394,9 +394,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   },
   {
     id: 'mc-eric-stage-effect',
-    date: '2026-07-31',
-    start: '12:00',
-    end: '14:00',
+    date: '2026-07-30',
+    start: '13:00',
+    end: '15:00',
     title: 'Eric Edmeades — The Stage Effect Masterclass (with Vishen)',
     type: 'production',
     location: STUDIO,
@@ -408,7 +408,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 10,
     status: 'confirmed',
-    notes: 'PRIORITY (Gareth, 26 Jul) — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. RESCHEDULED to Fri 31 Jul 12:00–14:00: Tuesday didn\'t work for Eric, and this is Vishen\'s one clean midday gap on Friday (busy 11:00–12:00 content, then 14:00–16:00 sales + closing ceremony) — a fresh daytime slot rather than an evening one. Eric\'s Friday is otherwise open. This displaced Marisa\'s + Lee Holden\'s Friday asset shoots, which moved to Tue 28 (the slot this masterclass vacated). Eric makeup 11:30 (green room). Replaces the killed Kaitlin × Eric author interview.',
+    notes: 'PRIORITY — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. MOVED OFF FRIDAY to Thu 30 Jul 13:00–15:00 (Gareth, 27 Jul, verified against the MVU Overview Google Sheet): Friday is a Vishen STAGE day — he is on Main Stage 11:00–12:00 (content), 14:00–15:00 (potential sales) and 15:00–16:00 (Youth Performances + Ribbon Workshop), so the old 12:00–14:00 studio slot sat inside his only lunch break and left him no break 11:00–16:00. Thursday 13:00–15:00 is his clean midday window (free 11:45–15:00, before the 15:00 Kwik fireside). Cost: the Nick Santonastasso + Jamie Sea author interviews were dropped to clear it. Eric makeup 12:30 (green room).',
   },
   // Scaling Wisdom Podcast: Jeffrey Allen × Vishen — CANCELLED (Gareth, 21 Jul):
   // Regan's masterclass was postponed onto Sat 25 Jul 12:00–15:00, which needs the
@@ -689,40 +689,11 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     authorConfirmed: true,
     notes: 'CONFIRMED BY AUTHOR (Paul McKenna, email 14 Jul). NUDGED 12:00→12:15 (16 Jul): Kaitlin is MC\'ing the main stage until 12:00 (Jim Kwik session), so she can\'t start at 12:00. Now straight after she comes off stage — she\'s already in hair/makeup from hosting (no separate glam), just Paul gets a touch-up. Keeps Kaitlin as interviewer per Gareth.',
   },
-  {
-    id: 'int-nick',
-    date: '2026-07-30',
-    start: '13:00',
-    end: '13:45',
-    title: 'Author Interview: Gareth & Nick Santonastasso',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['nick-santonastasso', 'gareth'],
-    crew: UNIT2,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 2,
-    status: 'tentative',
-    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). (His Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild; this author interview stands alone — confirm we still want it.)',
-  },
-  {
-    id: 'int-jamie-sea',
-    date: '2026-07-30',
-    start: '14:15',
-    end: '15:00',
-    title: 'Author Interview: Gareth & Jamie Sea',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['jamie-sea', 'gareth'],
-    crew: UNIT2,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 4,
-    status: 'tentative',
-    notes: 'Reassigned from Kaitlin to Gareth (13 Jul prioritization pass). (Her Scaling Wisdom podcast was CUT 16 Jul in Vishen\'s slate rebuild; this author interview stands alone — confirm we still want it.)',
-  },
+  // Author interviews with Nick Santonastasso (int-nick, was Thu 30 13:00–13:45, pri 2) and
+  // Jamie Sea (int-jamie-sea, was Thu 30 14:15–15:00, pri 4) — BOTH REMOVED (Gareth, 27 Jul)
+  // to clear Thu 13:00–15:00 for the Eric × Vishen masterclass, which had to come off Friday
+  // (Vishen is on stage all Friday). Both were low-priority standalone interviews whose
+  // Scaling Wisdom podcasts were already cut on 16 Jul, and Jamie's sat on her departure day.
 
   // ---------- SAT 1 AUG ----------
   {
