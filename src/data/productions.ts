@@ -888,8 +888,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   {
     id: 'pod-marisa-rachel',
     date: '2026-07-31',
-    start: '16:00',
-    end: '17:30',
+    start: '15:30',
+    end: '17:00',
     title: 'Marisa Peer podcast (YMYR) — guest Rachel Pringle Urb',
     type: 'podcast',
     location: STUDIO,
@@ -900,7 +900,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     priority: 6,
     status: 'confirmed',
     authorConfirmed: true,
-    notes: 'CONFIRMED (Matt, 21 Jul): Rachel Pringle Urb (arrives 29th) on Marisa\'s "Your Mind, Your Rules" podcast, Fri 31 Jul 4:00–5:30pm (90 min). Slots into the open Energiakeskus afternoon after Lee Holden\'s interview wraps (15:30), with a 30-min reset. Marisa free after her 12:45 assets; Rachel free all day. Unit 1 (Khairul) free by then. Both women — one 60-min makeup call at 15:00. Last studio session of the run.',
+    notes: 'PULLED 30 min earlier to Fri 31 Jul 15:30–17:00 (Gareth, 27 Jul — was 16:00–17:30). Rachel Pringle Urb (arrives 29th) on Marisa\'s "Your Mind, Your Rules" podcast, 90 min. Friday afternoon is wide open after the Eric masterclass (ends 14:00) — Lee\'s interview moved to Thursday. Marisa + Rachel both free; unit 1 (Khairul). Both women — one 60-min makeup call at 14:30. CONFIRM the new 3:30pm start with Matt/Rachel (was confirmed at 4pm). Rachel\'s own interview + assets follow this evening.',
   },
   {
     id: 'assets-lee-holden',
