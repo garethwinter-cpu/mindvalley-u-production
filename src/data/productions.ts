@@ -459,9 +459,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   // separate interview is redundant. Airtable record marked Cancelled.
   {
     id: 'ads-vishen',
-    date: '2026-07-27',
-    start: '17:15',
-    end: '18:15',
+    date: '2026-07-28',
+    start: '15:00',
+    end: '16:00',
     title: 'Vishen — ads shoot',
     type: 'production',
     location: STUDIO,
@@ -473,7 +473,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     cameraOps: CAMERA_CREW,
     priority: 5,
     status: 'confirmed',
-    notes: 'MOVED to 17:15–18:15 (Gareth, 26 Jul) — the last of Monday\'s four crew priorities (Shi × Kaitlin → Shi × Vishen fireside → Marisa podcast → Vishen ads). Runs straight after Marisa\'s podcast in the studio. Vishen free from 15:00 (after the fireside); wraps before the 19:00 party. CONTENT TBC — confirm product/campaign.',
+    notes: 'MOVED to Tue 28 Jul 15:00–16:00 (Gareth, 27 Jul) — takes the studio slot Marisa\'s marketing assets vacated (those were removed). Off Monday evening, where it was jammed straight after Marisa\'s podcast (17:15) and ran up against the 19:00 party. Tuesday 3pm is clean: Vishen free after the 11:00–13:00 McKenna masterclass, studio clear after Marisa\'s podcast (14:45). CONTENT TBC — confirm product/campaign.',
   },
   // Kaitlin content shoot (Sun 26 10:00–11:00) + its hotel makeup — REMOVED (Gareth, 24 Jul).
   {
@@ -885,21 +885,10 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'MOVED to Wed 29 Jul 16:30–17:15 (source audit, 27 Jul). The earlier Thu 30 10:00 slot CLASHED with Maya\'s Juniors talk (Terrace Hall, Thu 30 10:00–10:45) — surfaced when her sessions were re-pulled from Author x Event. Wednesday is her one clear day (adult talk is Tue 28 15:00–16:00; Juniors is Thu 30 morning), so her interview lands here, off the heavy Tuesday, with no clash. Straight after int-zen-takai; makeup ~15:30–16:30.',
   },
-  {
-    id: 'assets-marisa',
-    date: '2026-07-28',
-    start: '16:00',
-    end: '17:15',
-    title: 'Marisa Peer — Masterclass Marketing Assets (RTHA collection)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['marisa-peer'],
-    crew: UNIT1,
-    director: 'gareth',
-    cameraOps: UNIT1,
-    status: 'tentative',
-    notes: 'Reduced suite. MOVED to Tue 28 Jul 16:00–17:15 (Gareth, 26 Jul) — off Friday to free the 12:00–14:00 window for the Eric × Vishen masterclass. Efficient on Tuesday: Marisa is already in the studio that day (her own-podcast #3 at 13:00), and this lands in the slot the Eric masterclass vacated. Unit 1.',
-  },
+  // Marisa Peer — Masterclass Marketing Assets (assets-marisa, was Tue 28 16:00–17:15) —
+  // REMOVED (Gareth, 27 Jul), replaced in the Tuesday schedule by the Vishen ads shoot at
+  // 15:00. Marisa is still in the studio Wed 29 for her 17:15–19:15 masterclass, so capture
+  // any needed RTHA assets within/around that session (same pattern as Lee Holden's).
   {
     id: 'th-vishen-1',
     date: '2026-07-29',
