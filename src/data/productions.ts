@@ -864,20 +864,10 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     authorConfirmed: true,
     notes: 'PULLED 30 min earlier to Fri 31 Jul 15:30–17:00 (Gareth, 27 Jul — was 16:00–17:30). Rachel Pringle Urb (arrives 29th) on Marisa\'s "Your Mind, Your Rules" podcast, 90 min. Friday afternoon is wide open after the Eric masterclass (ends 14:00) — Lee\'s interview moved to Thursday. Marisa + Rachel both free; unit 1 (Khairul). Both women — one 60-min makeup call at 14:30. CONFIRM the new 3:30pm start with Matt/Rachel (was confirmed at 4pm). Rachel\'s own interview + assets follow this evening.',
   },
-  {
-    id: 'assets-lee-holden',
-    date: '2026-07-28',
-    start: '17:15',
-    end: '19:15',
-    title: 'Lee Holden — Masterclass Marketing Assets (Modern QiGong + Longevity collection)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['lee-holden'],
-    crew: UNIT2,
-    director: 'nadir',
-    status: 'tentative',
-    notes: '8-item suite. MOVED to Tue 28 Jul 17:15–19:15 (Gareth, 26 Jul) — off Friday to free the 12:00–14:00 studio window for the Eric × Vishen masterclass. Lands in the Tue slot the Eric masterclass vacated (studio + crew free after 16:00). Lee also has his author interview Friday 14:45; his window runs to 2 Aug. Nadir operates on unit 2.',
-  },
+  // Lee Holden — Masterclass Marketing Assets (assets-lee-holden, was Tue 28 17:15–19:15) —
+  // REMOVED (Gareth, 27 Jul): Lee is already in the studio Thursday for his 2h interview
+  // (int-lee-holden, Thu 30 17:15–19:15), so the separate Tuesday assets shoot is dropped —
+  // capture what's needed within/around the Thursday session instead.
   {
     id: 'int-maya',
     date: '2026-07-29',
