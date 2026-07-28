@@ -133,21 +133,10 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
   // on the Energiakeskus studio or the studio unit. Each is anchored right after that author's
   // existing on-site slot so they're already camera-ready (worked backwards from author time).
   // 20-min quick captures per Gareth (21 Jul). All tentative — movable per author.
-  {
-    id: 'tom-dan',
-    date: '2026-07-22',
-    start: '11:30',
-    end: '11:50',
-    title: 'Tom Kirby funny interview — Dan Brulé on breathwork',
-    type: 'social-media',
-    location: 'Woodblock (Studio 2)',
-    speakers: ['dan-brule', 'tom-kirby'],
-    crew: ['kuhan'],
-    cameraOps: ['kuhan'],
-    status: 'tentative',
-    notes: 'Anchored right after Dan\'s 10:30 studio interview (wraps 11:15) — he\'s on-site and camera-ready. Woodblock + Kuhan (Jason backup); no clash with the parallel Wineland interview in Energiakeskus.',
-  },
-  // Tom Kirby × Regan funny interview — KILLED (Gareth, 21 Jul). Airtable record marked Cancelled.
+  // Tom Kirby "funny interview" series (tom-dan 22 Jul, tom-jade 23 Jul, tom-dawn 28 Jul) —
+  // ALL REMOVED (Gareth, 27 Jul): Tom Kirby has left Mindvalley U and gone home. The 22 + 23 Jul
+  // captures are in the past (may already be filmed — content still usable if so); the 28 Jul
+  // Dawn Hoang one is dropped from the forward schedule. Tom × Regan was already killed (21 Jul).
 
   // ---------- REGAN × VISHEN SEQUENCE (Gareth priority, 21 Jul): scripts Fri → shoot Sat → ads Sun ----------
   {
@@ -204,35 +193,8 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     crew: ['makeup'],
     notes: 'For Regan\'s 4pm accelerator ads (and rolling into her 5pm accelerator). At her hotel, travels in — per Gareth (21 Jul).',
   },
-  {
-    id: 'tom-jade',
-    date: '2026-07-23',
-    start: '15:45',
-    end: '16:05',
-    title: 'Tom Kirby funny interview — Jade Shaw on astral projection & OOB',
-    type: 'social-media',
-    location: 'Woodblock (Studio 2)',
-    speakers: ['jade-shaw', 'tom-kirby'],
-    crew: ['kuhan'],
-    cameraOps: ['kuhan'],
-    status: 'tentative',
-    notes: 'Right after Jade\'s 14:00–15:30 embodiment session — she\'s on-site. NOTE: Jade\'s formal marketing assets were cut earlier (low ROI), but she\'s here through 30 Jul, so this quick social piece is a no-cost add on the social team.',
-  },
-  // Tom Kirby × Vishen funny interview — REMOVED (Gareth, 24 Jul). Airtable marked Cancelled.
-  {
-    id: 'tom-dawn',
-    date: '2026-07-28',
-    start: '12:30',
-    end: '12:50',
-    title: 'Tom Kirby funny interview — Dawn Hoang on Kundalini',
-    type: 'social-media',
-    location: 'Woodblock (Studio 2)',
-    speakers: ['dawn-hoang', 'tom-kirby'],
-    crew: ['kuhan'],
-    cameraOps: ['kuhan'],
-    status: 'tentative',
-    notes: 'Straight off Dawn\'s portrait (ends 12:30) so she\'s camera-ready. Woodblock + Kuhan. Her window is wide (to 3 Aug) if it needs to move.',
-  },
+  // tom-jade (23 Jul) + tom-dawn (28 Jul) — REMOVED with the rest of the Tom Kirby series
+  // (Gareth, 27 Jul — he has left MVU). Tom × Vishen and Tom × Regan were already killed.
 
   {
     id: 'int-daniel-combined',
