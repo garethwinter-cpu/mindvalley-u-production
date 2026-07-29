@@ -392,24 +392,13 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'SLID to 11:00–11:45 (Gareth, 24 Jul) to sit ahead of the Eric × Vishen masterclass. Kaitlin rolls off her 10:00 content shoot; Marisa glams 10:00–11:00 (green room opens 10 on the weekend). Kaitlin batching plan.',
   },
-  {
-    id: 'mc-eric-stage-effect',
-    date: '2026-07-30',
-    start: '13:00',
-    end: '15:00',
-    title: 'Eric Edmeades — The Stage Effect Masterclass (with Vishen)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['eric-edmeades', 'vishen'],
-    vishen: true,
-    gareth: true,
-    crew: FULL,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 10,
-    status: 'confirmed',
-    notes: 'PRIORITY — 2-hour masterclass for Eric\'s Quest "The Stage Effect", with Vishen. MOVED OFF FRIDAY to Thu 30 Jul 13:00–15:00 (Gareth, 27 Jul, verified against the MVU Overview Google Sheet): Friday is a Vishen STAGE day — he is on Main Stage 11:00–12:00 (content), 14:00–15:00 (potential sales) and 15:00–16:00 (Youth Performances + Ribbon Workshop), so the old 12:00–14:00 studio slot sat inside his only lunch break and left him no break 11:00–16:00. Thursday 13:00–15:00 is his clean midday window (free 11:45–15:00, before the 15:00 Kwik fireside). Cost: the Nick Santonastasso + Jamie Sea author interviews were dropped to clear it. Eric makeup 12:30 (green room).',
-  },
+  // Eric Edmeades — The Stage Effect Masterclass with Vishen (mc-eric-stage-effect, last at
+  // Thu 30 Jul 13:00–15:00) — REMOVED (Gareth, 27 Jul). Priority-10 capture, cancelled after
+  // four attempted homes (Sun 26 → Tue 28 → Fri 31 → Thu 30): Vishen cancelled the original
+  // session, Eric couldn't do Tuesday, and Friday turned out to be a full Vishen stage day.
+  // NOTE: the Nick Santonastasso + Jamie Sea author interviews were dropped on 27 Jul purely
+  // to clear the Thursday window for this — they can be reinstated if wanted, since the
+  // masterclass no longer needs that slot.
   // Scaling Wisdom Podcast: Jeffrey Allen × Vishen — CANCELLED (Gareth, 21 Jul):
   // Regan's masterclass was postponed onto Sat 25 Jul 12:00–15:00, which needs the
   // studio + Vishen exactly when this ran. Jeffrey flies Sun 26, so it can't move to
@@ -624,23 +613,9 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'PUSHED to 15:00–16:30 (Gareth, 24 Jul) so Vishen gets an hour\'s break after the 12:00–14:00 Eric masterclass instead of going straight from one into the other. Lorin flies 6am Wed 29 so Sunday is his window. Runs into the Regan ads slot for Gareth, so the Regan pre-accelerator ads (16:00–17:00, Main Stage) run on Kuhan solo while Gareth stays on this podcast. Lorin makeup 14:00–15:00 (green room).',
   },
-  {
-    id: 'int-zen-takai',
-    date: '2026-07-29',
-    start: '15:45',
-    end: '16:30',
-    title: 'Author Interview: Gareth & Sensei Zen Takai',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['zen-takai', 'gareth'],
-    crew: UNIT2,
-    gareth: true,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    priority: 4,
-    status: 'tentative',
-    notes: 'Now 15:45, straight after the Lorin podcast (ends 15:45) — re-spaced 14 Jul to clear the old overlap. Last of Gareth\'s four sequential 29 Jul afternoon sessions. Stays with Gareth (Kaitlin capped at 9 per her commercial agreement).',
-  },
+  // Author Interview: Gareth & Sensei Zen Takai (int-zen-takai, was Wed 29 15:45–16:30) —
+  // REMOVED (Gareth, 27 Jul): the studio time is reallocated to Vishen's YouTube talking-heads
+  // shoot (th-vishen-1), which extends to fill it. His Tue 28 Main Stage session is unaffected.
 
   // ---------- THU 30 JUL ----------
   {
@@ -852,7 +827,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     id: 'th-vishen-1',
     date: '2026-07-29',
     start: '12:45',
-    end: '14:45',
+    end: '16:00',
     title: 'Vishen — Talking Heads (YouTube)',
     type: 'production',
     location: STUDIO,
@@ -863,6 +838,6 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     director: 'gareth',
     cameraOps: CAMERA_CREW,
     status: 'tentative',
-    notes: 'MOVED to week 2 per Gareth (21 Jul) — Vishen couldn\'t make the Sun 26 Jul slot. Re-homed to Wed 29 Jul 12:15–14:15: a clean midday 2h with studio + unit 1 + Gareth free (Kwik masterclass wraps 11:30, Jolene interview not until 14:15), and it respects Vishen\'s "not before 11" preference. 2h Vishen solo talking-head session for YouTube. Backup slot if this shifts: Tue 28 Jul 16:00–18:00.',
+    notes: 'EXTENDED to 12:45–16:00 (Gareth, 27 Jul — "we need this time for Vishen YouTube"): the Zen Takai interview was removed and its studio time reallocated here, giving a 3h15 Vishen solo talking-head run instead of 2h. Capped at 16:00 to leave a 15-min buffer before his 16:15 Main Stage slot. Vishen solo, unit 1, Gareth directs.',
   },
 ]
