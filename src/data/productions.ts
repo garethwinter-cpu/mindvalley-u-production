@@ -687,21 +687,11 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     status: 'tentative',
     notes: 'MOVED from 1 Aug to Thu 31 Jul (source audit, 25 Jul) — 1 Aug is Rachel\'s departure/flight day AND Vishen\'s all-day accelerator AND the last studio day. She\'s already in-studio 31st 16:00–17:30 for the Marisa YMYR podcast, so she does her own interview straight after (camera-ready, no new makeup call). Priority 9 shoot now off the flight-day crunch.',
   },
-  {
-    id: 'assets-rachel-membership',
-    date: '2026-07-31',
-    start: '18:30',
-    end: '20:00',
-    title: 'Rachel Pringle — Membership Marketing Assets (“Sing from the Same Hymn Sheet” — Relationships)',
-    type: 'production',
-    location: STUDIO,
-    speakers: ['rachel-pringle'],
-    crew: UNIT2,
-    director: 'gareth',
-    cameraOps: CAMERA_CREW,
-    status: 'tentative',
-    notes: 'MOVED from 1 Aug to Thu 31 Jul (source audit, 25 Jul), straight after her author interview — keeps all of Rachel\'s captures on the 31st (a day she\'s confirmed in-studio) and off her 1 Aug departure day. Evening block on the studio; Rachel camera-ready from the Marisa podcast.',
-  },
+  // Rachel Pringle — Membership Marketing Assets ("Sing from the Same Hymn Sheet" —
+  // Relationships) (assets-rachel-membership, was Fri 31 Jul 18:30–20:00) — REMOVED
+  // (Gareth, 30 Jul). Rachel still has her author interview Fri 31 17:45–18:30 and the
+  // Marisa YMYR podcast at 15:30, so she is still captured that day; only the evening
+  // asset block is dropped. Friday now wraps at 18:30 instead of 20:00.
 
   // (2 Aug is studio pack/travel — no shoots)
 
