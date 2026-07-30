@@ -771,7 +771,7 @@ export const PRODUCTION_EVENTS: ScheduleEvent[] = [
     date: '2026-07-31',
     start: '12:00',
     end: '14:00',
-    title: 'Author Interview: Kaitlin & Lee Holden (2-hour session)',
+    title: 'Lee Holden VSL',
     type: 'production',
     location: STUDIO,
     speakers: ['lee-holden', 'kaitlin'],
